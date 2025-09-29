@@ -1,0 +1,206 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bluesky"
+description = "A Python application with comprehensive development environment"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Bluesky Team"}
+]
+keywords = ["application", "development", "python"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.12,<3.14"
+version = "0.1.0"
+dependencies = [
+    "numpy==1.26.2",
+    "pandas>=2.2.0",
+    "python-dateutil==2.8.2",
+    "pytz==2023.3.post1",
+    "six==1.16.0",
+    "tzdata==2023.3",
+    "xmltodict==0.13.0",
+    "unidecode==1.3.8",
+    "click==8.1.7",
+    "colorama==0.4.6",
+    "pyfiglet==1.0.2",
+    "requests==2.32.3",
+    "filelock==3.18.0",
+    "pyyaml==6.0.1",
+    "packaging>=20.0",
+    "openstudio==3.9.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==8.3.3",
+]
+dev = [
+    "pytest==8.3.3",
+    "pytest-xdist>=3.0.0",
+    "pre-commit>=3.0.0",
+    "black>=22.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/bluesky"
+Repository = "https://github.com/yourusername/bluesky"
+Documentation = "https://github.com/yourusername/bluesky/blob/main/README.md"
+
+[project.scripts]
+bluesky = "bluesky.cli.main:main"
+bluesky-deps = "bluesky.utils.dependencies:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"bluesky.resources" = ["*.json", "*.xml", "*.yaml"]
+
+[tool.bluesky.dependencies]
+openstudio_version = "3.9.0"
+openstudio_sha = "c77fbb9569"
+openstudio_hpxml_version = "v1.9.1"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--tb=short",
+]
+markers = [
+    "unit: unit tests",
+    "integration: integration tests",
+    "slow: tests that take a long time to run",
+]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = false
+disallow_untyped_decorators = false
+no_implicit_optional = false
+disallow_any_unimported = false
+disallow_any_expr = false
+disallow_any_decorated = false
+disallow_any_explicit = false
+disallow_any_generics = false
+disallow_subclassing_any = false
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    "xmltodict.*",
+    "openstudio.*",
+    "pyfiglet.*",
+    "colorama.*",
+    "filelock.*",
+    "unidecode.*",
+]
+ignore_missing_imports = true
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+    # directories
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/fixtures
+)/
+'''
+
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "tests/fixtures",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "C",   # flake8-comprehensions
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+    "C901",  # too complex
+    "B904",  # raise from None
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]  # Allow unused imports in __init__.py files
+"tests/**/*" = [
+    "B011",  # Do not call assert False
+    "F401",  # Allow unused imports in tests
+    "F811",  # Allow redefinition of unused variables in tests
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["bluesky"]
+force-single-line = true

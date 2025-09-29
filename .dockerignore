@@ -1,0 +1,60 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.mypy_cache
+.pytest_cache
+.hypothesis
+.ruff_cache
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+
+# Project specific
+output/
+logs/
+*.tmp
+*.temp
+tests/fixtures/
+dist/
+build/
+*.egg-info/
+
+# Documentation
+docs/_build/
+
+# Certificates (exclude from image, will be mounted)
+.devcontainer/certs/*.pem
+.devcontainer/certs/*.crt
+.devcontainer/certs/*.certificates
