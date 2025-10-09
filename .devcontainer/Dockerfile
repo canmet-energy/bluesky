@@ -13,6 +13,10 @@ RUN chmod +x /tmp/certctl-safe.sh && \
     /tmp/certctl-safe.sh certs-refresh && \
     rm -rf /tmp/certctl-safe.sh /tmp/certs/
 
+# Unified dev environment init (venv + prompt)
+COPY .devcontainer/scripts/dev-env-init.sh /etc/profile.d/dev-env-init.sh
+RUN chmod 644 /etc/profile.d/dev-env-init.sh
+
 # Environment Configuration
 ENV DEBIAN_FRONTEND=noninteractive
 # Note: Certificate environment variables now managed dynamically by certctl-safe

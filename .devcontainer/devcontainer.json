@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
-	"name": "H2K_HPXML",
+	"name": "Bluesky",
 	"build": {
 		"dockerfile": "./Dockerfile",
 		"context": ".."
@@ -23,7 +23,9 @@
 				"janisdd.vscode-edit-csv",
 				"qwtel.sqlite-viewer",
 				"ms-toolsai.jupyter",
-				"openai.chatgpt"
+				"openai.chatgpt",
+				"Anthropic.claude-code",
+				"GitHub.copilot"
 			],
 			"settings": {
 				// Copies ~/.gitconfig (and relevant includes) into the container
@@ -35,9 +37,11 @@
 					"*.hpxml": "xml",
 					"*.sql": "sqlite"
 				},
-				"python.terminal.activateEnvironment": true,
+				// Re-enable extension auto activation to ensure environment loads if profile script runs too early
 				"python.defaultInterpreterPath": "./.venv/bin/python",
-				"python.terminal.activateEnvInCurrentTerminal": true,
+				"python.terminal.activateEnvInCurrentTerminal": false,
+				// Auto venv activation + prompt handled by /etc/profile.d/dev-env-init.sh (unified script)
+				"python.terminal.activateEnvironment": false,
 				"python.terminal.executeInFileDir": false,
 				"python.formatting.provider": "black",
 				"python.linting.enabled": true,

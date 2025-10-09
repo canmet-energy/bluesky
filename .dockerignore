@@ -53,8 +53,3 @@ build/
 
 # Documentation
 docs/_build/
-
-# Certificates (exclude from image, will be mounted)
-.devcontainer/certs/*.pem
-.devcontainer/certs/*.crt
-.devcontainer/certs/*.certificates
