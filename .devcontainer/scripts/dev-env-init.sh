@@ -93,14 +93,29 @@ _dev_user_segment() {  # Username only (keeps prompt compact)
   printf '%s%s%s' "$C_GREEN" "${USER:-user}" "$C_RESET"
 }
 
+_dev_gpu_segment() {  # Show GPU icon if NVIDIA runtime present (cached)
+  if [ -n "${DEV_GPU_ICON_CACHED:-}" ]; then
+    [ -n "$DEV_GPU_ICON_CACHED" ] && printf '%s' "$DEV_GPU_ICON_CACHED"
+    return 0
+  fi
+  if command -v nvidia-smi >/dev/null 2>&1; then
+    # Simple assumption: if nvidia-smi exists, GPU accessible; choose universal icon
+    DEV_GPU_ICON_CACHED='⚡'
+    printf '%s' "$DEV_GPU_ICON_CACHED"
+  else
+    DEV_GPU_ICON_CACHED=''
+  fi
+}
+
 _dev_build_ps1() {     # Classic multi-line prompt only
-  local ec=$? arrow="${C_DIM}➜${C_RESET}" git path venv user exitc
+  local ec=$? arrow="${C_DIM}➜${C_RESET}" git path venv user exitc gpu
   exitc=$(_dev_exit_segment $ec)
   venv=$(_dev_venv_segment)
   user=$(_dev_user_segment)
   path=$(_dev_path_segment)
   git=$(_dev_git_segment)
-  PS1="${exitc}${venv}${user} ${arrow} ${path} ${git}\n$ "
+  gpu=$(_dev_gpu_segment)
+  PS1="${exitc}${venv}${user} ${arrow} ${path} ${git}${gpu:+ $gpu}\n$ "
 }
 
 ## Hook into PROMPT_COMMAND (prepend once)
