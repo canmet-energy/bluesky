@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     unzip \
+    jq \
     # Development tools
     build-essential \
     # Runtime libraries needed by OpenStudio
