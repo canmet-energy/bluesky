@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash:*)",
+      "Bash(code --list-extensions)",
+      "Read(//home/vscode/.aws/**)",
+      "Read(//home/vscode/.vscode-server/**)",
+      "Bash(aws sts get-caller-identity:*)",
+      "Bash(sha1sum)",
+      "Bash(awk:*)",
+      "Bash(ln:*)",
+      "Read(//home/vscode/.local/bin/**)",
+      "Bash(chmod:*)",
+      "Bash(aws-sync-sso:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
