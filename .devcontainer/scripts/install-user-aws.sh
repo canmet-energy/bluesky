@@ -80,14 +80,15 @@ ensure_path_export() {
 ensure_path_export
 export PATH="$USER_BIN_DIR:$PATH"
 
+AWS_CLI_SKIP_INSTALL=false
 if command -v aws >/dev/null 2>&1 && [ "$FORCE" = false ]; then
     CURRENT_PATH="$(command -v aws)"
     if [[ "$CURRENT_PATH" == "$AWS_BIN_LINK" || "$CURRENT_PATH" == $AWS_LOCAL_DIR/* ]]; then
         log "✅ AWS CLI already installed at $CURRENT_PATH (use --force to reinstall)"
-        exit 0
+        AWS_CLI_SKIP_INSTALL=true
     else
         log "ℹ️  An AWS CLI already exists at $CURRENT_PATH (outside user-local target). Use --force to override with user-local install."
-        exit 0
+        AWS_CLI_SKIP_INSTALL=true
     fi
 fi
 
@@ -130,25 +131,29 @@ install_aws_cli_user() {
 
 
 
-install_aws_cli_user
-
-# Verify installation
-echo "🔍 Verifying AWS CLI installation..."
-if ! command -v aws >/dev/null 2>&1; then
-    echo "❌ aws not found in PATH after install" >&2; exit 1
+if [ "$AWS_CLI_SKIP_INSTALL" = false ]; then
+    install_aws_cli_user
 fi
-INSTALLED_VERSION=$(aws --version 2>&1 || true)
-echo "✅ AWS CLI installed"
-echo "   Version: $INSTALLED_VERSION"
-echo "   Binary: $(command -v aws)"
-echo "   Root Dir: $AWS_LOCAL_DIR"
-echo "   User Bin: $USER_BIN_DIR"
 
-echo "🧪 Testing basic command..."
-if aws help >/dev/null 2>&1; then
-    echo "✅ Help command OK"
-else
-    echo "⚠️  Help command returned non-zero (continuing)"
+# Verify installation (only if we just installed)
+if [ "$AWS_CLI_SKIP_INSTALL" = false ]; then
+    echo "🔍 Verifying AWS CLI installation..."
+    if ! command -v aws >/dev/null 2>&1; then
+        echo "❌ aws not found in PATH after install" >&2; exit 1
+    fi
+    INSTALLED_VERSION=$(aws --version 2>&1 || true)
+    echo "✅ AWS CLI installed"
+    echo "   Version: $INSTALLED_VERSION"
+    echo "   Binary: $(command -v aws)"
+    echo "   Root Dir: $AWS_LOCAL_DIR"
+    echo "   User Bin: $USER_BIN_DIR"
+
+    echo "🧪 Testing basic command..."
+    if aws help >/dev/null 2>&1; then
+        echo "✅ Help command OK"
+    else
+        echo "⚠️  Help command returned non-zero (continuing)"
+    fi
 fi
 
 echo "� Attempting user-local Session Manager plugin install..."
@@ -174,7 +179,9 @@ else
     echo "ℹ️  Session Manager plugin download skipped/failed (non-fatal)"
 fi
 
-echo "🎉 AWS CLI user-local installation complete!"
+if [ "$AWS_CLI_SKIP_INSTALL" = false ]; then
+    echo "🎉 AWS CLI user-local installation complete!"
+fi
 
 # Configure AWS CLI with SSO settings for NRCan
 echo "⚙️  Configuring AWS CLI with default SSO profile..."
@@ -255,6 +262,50 @@ else
     echo "ℹ️  VS Code CLI not found; skipping extension installation"
 fi
 
+# Configure .mcp.json in project root
+echo "⚙️  Configuring .mcp.json..."
+MCP_CONFIG_FILE="/workspaces/bluesky/.mcp.json"
+
+# Define the AWS MCP server configuration
+read -r -d '' AWS_MCP_CONFIG <<'MCPEOF' || true
+{
+  "mcpServers": {
+    "aws-api-mcp-server": {
+      "command": "uv",
+      "args": ["tool", "run", "awslabs.aws-api-mcp-server@latest"],
+      "env": {
+        "AWS_REGION": "ca-central-1"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "aws-knowledge-mcp-server": {
+      "command": "uv",
+      "args": ["tool", "run", "fastmcp", "run", "https://knowledge-mcp.global.api.aws"],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+MCPEOF
+
+# Create or update .mcp.json
+if [ -f "$MCP_CONFIG_FILE" ]; then
+    # File exists, merge configurations (recursive merge using jq's * operator)
+    echo "  Updating existing .mcp.json..."
+    TMP_FILE=$(mktemp)
+    jq -s '.[0] * .[1]' "$MCP_CONFIG_FILE" <(echo "$AWS_MCP_CONFIG") > "$TMP_FILE" && mv "$TMP_FILE" "$MCP_CONFIG_FILE"
+    echo "  ✅ Updated .mcp.json with AWS MCP servers"
+else
+    # File doesn't exist, create it
+    echo "  Creating new .mcp.json..."
+    echo "$AWS_MCP_CONFIG" | jq '.' > "$MCP_CONFIG_FILE"
+    echo "  ✅ Created .mcp.json with AWS MCP servers"
+fi
+
+echo "  Location: $MCP_CONFIG_FILE"
+echo ""
+
 cat <<EOF
 💡 Usage examples:
     aws --version                 # Show version
@@ -271,8 +322,16 @@ cat <<EOF
     - aws configure               # Static credentials (not recommended)
     - Set env vars: AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY / AWS_REGION
 
+🤖 MCP Servers:
+    AWS MCP servers configured for Claude Code and GitHub Copilot integration
+    - aws-api-mcp-server: Natural language AWS API access
+    - aws-knowledge-mcp-server: AWS documentation and knowledge base
+    Configuration: See .mcp.json in project root
+    Note: Packages will be automatically downloaded by uv when first used
+
 📚 Resources:
     Docs: https://docs.aws.amazon.com/cli/
     Reference: https://awscli.amazonaws.com/v2/documentation/api/latest/index.html
     Config guide: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+    MCP Servers: https://awslabs.github.io/mcp/
 EOF
