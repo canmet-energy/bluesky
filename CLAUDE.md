@@ -12,6 +12,21 @@ Bluesky is a Python CLI application (Python >=3.12, <3.14) with a focus on corpo
 - `bluesky.core`: Reserved for domain logic (currently empty scaffold ready for expansion)
 - `.devcontainer/`: DevContainer infrastructure with robust certificate management via `certctl-safe.sh`
 
+**MCP Integration:**
+The project includes MCP (Model Context Protocol) server configuration in `.mcp.json`:
+- `aws-api-mcp-server`: AWS CLI command execution via uv tool
+- `aws-knowledge-mcp-server`: AWS documentation and knowledge access
+- Default region: `ca-central-1`
+
+**DevContainer Features:**
+- Python 3.12 with UV package manager (configurable via `DEVCONTAINER_UV_VERSION`, `DEVCONTAINER_PYTHON_VERSION`)
+- Node.js 22.11.0 (configurable via `DEVCONTAINER_NODE_VERSION`)
+- Optional GPU/AI stack (controlled by `ENABLE_GPU_AI` environment variable)
+- WSLg support for GUI applications with X11 and Wayland
+- Docker-in-Docker support
+- Pre-configured VS Code extensions: Python, Black, MyPy, Jupyter, Claude Code, GitHub Copilot
+- Automatic virtual environment activation via `/etc/profile.d/dev-env-init.sh`
+
 ## Build and Test Commands
 
 ### Installation
@@ -181,12 +196,36 @@ Keep CLI modules thin—move business logic to `bluesky.core/`.
 4. Verify certs placed in `.devcontainer/certs/` before rebuild
 5. Rebuild container after adding certs
 
+### Configuring DevContainer Environment
+Key environment variables in `.devcontainer/devcontainer.json`:
+- `DEVCONTAINER_PYTHON_VERSION`: Python version for venv (default: "3.12")
+- `DEVCONTAINER_UV_VERSION`: UV package manager version (default: "0.8.15")
+- `DEVCONTAINER_NODE_VERSION`: Node.js version (default: "22.11.0")
+- `ENABLE_GPU_AI`: Enable GPU AI stack installation ("0" to disable, "1" to enable)
+- `UV_PROJECT_ENVIRONMENT`: Path to project venv (default: `${containerWorkspaceFolder}/.venv`)
+
+### Working with AWS MCP Servers
+The project includes two AWS MCP servers configured in `.mcp.json`:
+1. **aws-api-mcp-server**: Execute AWS CLI commands programmatically
+   - Run via: `uv tool run awslabs.aws-api-mcp-server@latest`
+   - Default region: `ca-central-1`
+2. **aws-knowledge-mcp-server**: Access AWS documentation
+   - Run via: `uv tool run fastmcp run https://knowledge-mcp.global.api.aws`
+
+AWS credentials and SSO configuration handled by `.devcontainer/scripts/install-user-aws.sh`
+
 ## Important Files
 
 - `src/bluesky/cli/main.py` - CLI entry point (currently single-command, ready for group refactor)
 - `src/bluesky/utils/dependencies.py` - Dependency manager (OpenStudio installation)
 - `.devcontainer/scripts/certctl-safe.sh` - Certificate management script (sourced by install scripts)
+- `.devcontainer/scripts/dev-env-init.sh` - Unified shell initialization script for venv activation and prompt
 - `.devcontainer/scripts/post-create.sh` - DevContainer lifecycle hook
+- `.devcontainer/scripts/install-user-aws.sh` - AWS CLI and SSO configuration installer
+- `.devcontainer/scripts/install-user-uv.sh` - UV package manager installer
+- `.devcontainer/scripts/install-user-nodejs.sh` - Node.js installer
+- `.devcontainer/devcontainer.json` - DevContainer configuration with environment variables
+- `.mcp.json` - MCP server configuration for AWS tools
 - `pyproject.toml` - All configuration: dependencies, tool settings, version pins
 - `tests/unit/test_main.py` - CLI test examples
 
