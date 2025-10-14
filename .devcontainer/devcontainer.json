@@ -110,9 +110,6 @@
 		}
 	},
 	"mounts": [
-		// AWS credentials support - works for both Windows and Unix-like systems
-		// Note: Writable to allow MCP server log directory creation
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind",
 		// Docker socket for Docker-in-Docker support
 		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
 	],

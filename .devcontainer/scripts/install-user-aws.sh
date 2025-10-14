@@ -175,17 +175,101 @@ else
 fi
 
 echo "🎉 AWS CLI user-local installation complete!"
+
+# Configure AWS CLI with SSO settings for NRCan
+echo "⚙️  Configuring AWS CLI with default SSO profile..."
+mkdir -p ~/.aws
+
+# Only create config if it doesn't already exist
+if [ ! -f ~/.aws/config ]; then
+    cat > ~/.aws/config << 'EOF'
+[default]
+sso_start_url = https://nrcan-rncan.awsapps.com/start
+sso_region = ca-central-1
+sso_account_id = 834599497928
+sso_role_name = PowerUser
+region = ca-central-1
+output = json
+EOF
+    echo "✅ AWS CLI SSO config created at ~/.aws/config"
+else
+    echo "ℹ️  AWS config already exists at ~/.aws/config (skipping)"
+fi
+
+# Create helper script to sync AWS Toolkit SSO tokens with AWS CLI
+cat > "$USER_BIN_DIR/aws-sync-sso" << 'SYNCEOF'
+#!/bin/bash
+# Sync AWS Toolkit VSCode SSO tokens with AWS CLI
+# This allows you to login once via AWS Toolkit and use the same session in CLI
+
+SSO_CACHE_DIR="$HOME/.aws/sso/cache"
+SSO_START_URL="https://nrcan-rncan.awsapps.com/start"
+
+# Calculate the expected filename for AWS CLI
+EXPECTED_HASH=$(echo -n "$SSO_START_URL" | sha1sum | awk '{print $1}')
+EXPECTED_FILE="$SSO_CACHE_DIR/$EXPECTED_HASH.json"
+
+# Find the AWS Toolkit token file (contains accessToken)
+TOOLKIT_TOKEN=$(find "$SSO_CACHE_DIR" -name "*.json" -type f -exec grep -l "accessToken" {} \; 2>/dev/null | head -n 1)
+
+if [ -z "$TOOLKIT_TOKEN" ]; then
+    echo "⚠️  No AWS Toolkit SSO token found. Please login via AWS Toolkit in VSCode first."
+    exit 1
+fi
+
+# Create or update symlink
+if [ -L "$EXPECTED_FILE" ] || [ -f "$EXPECTED_FILE" ]; then
+    rm -f "$EXPECTED_FILE"
+fi
+
+ln -sf "$TOOLKIT_TOKEN" "$EXPECTED_FILE"
+echo "✅ SSO token synced: AWS CLI can now use AWS Toolkit session"
+echo "   Token: $(basename "$TOOLKIT_TOKEN")"
+echo "   Linked to: $EXPECTED_HASH.json"
+SYNCEOF
+
+chmod +x "$USER_BIN_DIR/aws-sync-sso"
+echo "✅ Created helper script: aws-sync-sso"
+
+# Sync tokens if AWS Toolkit has already created a token
+if [ -d ~/.aws/sso/cache ]; then
+    echo "🔄 Syncing existing AWS Toolkit SSO tokens..."
+    "$USER_BIN_DIR/aws-sync-sso" 2>/dev/null || true
+fi
+
+# Install AWS Toolkit VS Code extension if not present
+echo "🔌 Checking for AWS Toolkit VS Code extension..."
+if command -v code >/dev/null 2>&1; then
+    EXTENSION_ID="amazonwebservices.aws-toolkit-vscode"
+    if code --list-extensions 2>/dev/null | grep -q "^$EXTENSION_ID$"; then
+        echo "✅ AWS Toolkit extension already installed"
+    else
+        echo "📦 Installing AWS Toolkit VS Code extension..."
+        if code --install-extension "$EXTENSION_ID" >/dev/null 2>&1; then
+            echo "✅ AWS Toolkit extension installed successfully"
+        else
+            echo "⚠️  Failed to install AWS Toolkit extension (non-fatal)"
+        fi
+    fi
+else
+    echo "ℹ️  VS Code CLI not found; skipping extension installation"
+fi
+
 cat <<EOF
 💡 Usage examples:
     aws --version                 # Show version
-    aws configure                 # Configure credentials
     aws sts get-caller-identity   # Test credentials
     aws s3 ls                     # List S3 buckets
 
-🔗 Next steps:
-    1. (Optional) Restart shell or: source ~/.bashrc
-    2. Configure credentials: aws configure
-    3. Or set env vars: AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY / AWS_REGION
+🔗 SSO Authentication (Recommended):
+    1. Login via AWS Toolkit extension in VSCode (click AWS icon in sidebar)
+    2. AWS CLI will automatically use the same session - no separate login needed!
+    3. If needed, run: aws-sync-sso (to manually sync tokens)
+
+🔗 Alternative authentication methods:
+    - aws configure sso           # Traditional SSO login via CLI
+    - aws configure               # Static credentials (not recommended)
+    - Set env vars: AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY / AWS_REGION
 
 📚 Resources:
     Docs: https://docs.aws.amazon.com/cli/
