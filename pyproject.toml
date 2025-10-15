@@ -36,7 +36,7 @@ dependencies = [
     "click==8.1.7",
     "colorama==0.4.6",
     "pyfiglet==1.0.2",
-    "requests==2.32.3",
+    "requests>=2.32.4",  # Security: CVE-2024-47081
     "filelock==3.18.0",
     "pyyaml==6.0.1",
     "packaging>=20.0",
@@ -66,7 +66,6 @@ Documentation = "https://github.com/yourusername/bluesky/blob/main/README.md"
 
 [project.scripts]
 bluesky = "bluesky.cli.main:main"
-bluesky-deps = "bluesky.utils.dependencies:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -77,11 +76,6 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "bluesky.resources" = ["*.json", "*.xml", "*.yaml"]
-
-[tool.bluesky.dependencies]
-openstudio_version = "3.9.0"
-openstudio_sha = "c77fbb9569"
-openstudio_hpxml_version = "v1.9.1"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

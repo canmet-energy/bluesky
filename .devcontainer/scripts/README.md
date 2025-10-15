@@ -1,14 +1,11 @@
 # DevContainer Installation Scripts
 
-This directory contains modular installation scripts for the H2K-HPXML development container. These scripts make the Dockerfile cleaner, more maintainable, and allow for easier testing and reuse.
+This directory contains modular installation scripts for the Bluesky development container. These scripts make the Dockerfile cleaner, more maintainable, and allow for easier testing and reuse.
 
 ## Script Overview
 
-### `install-dev-tools.sh`
-Legacy helper (kept only if referenced elsewhere). Prefer invoking individual scripts directly. Certificate logic is fully unified under `certctl.sh`.
-
-### `certctl.sh`
-Unified certificate utility (strict-only) replaces all former certificate scripts. Only `certctl.sh` remains for certificate installation, probing, environment emission, and a user banner (MOTD snapshot functionality removed for simplicity).
+### `certctl-safe.sh`
+Unified certificate utility (strict-only) replaces all former certificate scripts. Handles certificate installation, probing, environment emission, and a user banner (MOTD snapshot functionality removed for simplicity).
 
 Commands:
 ```
@@ -39,80 +36,90 @@ Exit codes:
 30 install error (certificate store)
 ```
 
-### Individual Installation Scripts
+### Core Scripts
 
-#### `install-uv.sh`
-Installs UV Python package manager:
+#### `post-create.sh`
+DevContainer lifecycle hook that runs after container creation:
+- Sets up Python virtual environment with configurable version
+- Installs project dependencies (including h2k-hpxml, OpenStudio, EnergyPlus)
+- Optional: Installs GPU AI stack (PyTorch with CUDA) if `ENABLE_GPU_AI=1`
+- Configures shell environment for automatic venv activation
+- Configures Docker socket permissions
+- Updates certificate status banner
+
+#### `dev-env-init.sh`
+Shell initialization script for venv activation and prompt customization:
+- Automatically activated via `/etc/profile.d/dev-env-init.sh`
+- Handles virtual environment activation
+- Provides custom shell prompt
+
+### User-Level Installation Scripts (No sudo required)
+
+#### `install-user-uv.sh`
+Installs UV Python package manager user-locally:
 - Downloads from GitHub releases
-- Installs to `/usr/local/bin/uv`
-- Respects `CURL_FLAGS` for certificate handling
+- Installs to `~/.local/bin/uv`
+- Configurable version via `DEVCONTAINER_UV_VERSION` environment variable
+- Certificate-aware downloads using `CURL_FLAGS`
 
-#### `install-github-cli.sh` 
-Installs GitHub CLI:
-- Adds GitHub CLI apt repository
-- Installs via apt package manager
-- Respects `CURL_FLAGS` for repository key download
-
-#### `install-docker-cli.sh`
-Installs Docker CLI and Compose plugin:
-- Adds Docker apt repository  
-- Installs docker-ce-cli and docker-compose-plugin
-- Sets up docker group for vscode user
-- Respects `CURL_FLAGS` for repository key download
-
-#### `install-nodejs.sh`
-Installs Node.js for development tooling:
+#### `install-user-nodejs.sh`
+Installs Node.js user-locally for development tooling:
 - Downloads Node.js binary distribution
-- Installs to `/usr/local/`
-- Creates symlinks in `/usr/bin/`
-- Configures npm for potentially insecure environments
-- Respects `CURL_FLAGS` for download
-
-#### `install-python.sh`
-Installs Python with version management:
-- Uses UV for Python version management (requires `install-uv.sh`)
-- Supports Python versions 3.8, 3.9, 3.10, 3.11, 3.12, 3.13 (default: 3.11)
-- Command-line options: `--version`, `--help`
-- Verifies installation and tests basic functionality
+- Installs to `~/.local/`
+- Configurable version via `DEVCONTAINER_NODE_VERSION` environment variable
+- Configures npm for certificate environments
 - Certificate-aware downloads using `CURL_FLAGS`
 
-#### `install-ruby.sh`
-Installs Ruby with flexible installation methods:
-- System method: Via apt package manager (fast, limited versions)
-- rbenv method: Via rbenv (flexible versions, slower compilation)
-- Supports Ruby versions (system packages available for 3.0, 3.1, 3.2)
-- Command-line options: `--version`, `--method`, `--help`
-- Installs bundler and verifies installation
-- Certificate-aware downloads using `CURL_FLAGS`
-
-#### `install-csharp.sh`
-Installs .NET SDK and C# development tools:
-- Apt method: Via Microsoft's official apt repository (recommended)
-- Manual method: Via Microsoft's install script (more versions available)
-- Supports .NET versions 6.0 (LTS), 7.0, 8.0 (LTS), 9.0 (default: 8.0)
-- Command-line options: `--version`, `--method`, `--help`
-- Installs global tools (dotnet-ef, dotnet-format) for development
-- Certificate-aware downloads using `CURL_FLAGS`
-
-#### `install-aws-cli.sh`
-Installs AWS CLI v2 via AWS's official installer:
-- Uses AWS's official installer for latest version and best compatibility
+#### `install-user-aws.sh`
+Comprehensive AWS CLI setup with SSO and MCP integration:
+- Installs AWS CLI v2 user-locally via AWS's official installer
 - Supports x86_64 and aarch64 architectures automatically
-- Only supports AWS CLI v2 (v1 is in maintenance mode)
-- Command-line options: `--help`
-- Includes AWS Session Manager plugin for EC2 access
+- Installs AWS Session Manager plugin for EC2 access
+- Configures AWS SSO for NRCan (ca-central-1 region, PowerUser role)
+- Creates `aws-sync-sso` helper script to sync AWS Toolkit VSCode tokens with CLI
+- Installs AWS Toolkit VSCode extension automatically
+- Configures AWS MCP servers in `.mcp.json`:
+  - `aws-api-mcp-server`: Natural language AWS API access
+  - `aws-knowledge-mcp-server`: AWS documentation access
+- Command-line options: `--help`, `--force`, `--quiet`
 - Certificate-aware downloads using `CURL_FLAGS`
 
-#### Custom certificate installation
-Handled by `certctl install` (old `install-certificates.sh` deleted).
-
-#### `install-claude-cli.sh`
+#### `install-user-claude-cli.sh`
 Installs Claude CLI (Anthropic's command-line interface):
-- Requires Node.js and npm (installed via `install-nodejs.sh`)
+- Requires Node.js and npm (installed via `install-user-nodejs.sh`)
 - Installs globally via npm: `@anthropic-ai/claude-cli`
 - Provides comprehensive error handling and diagnostics
 - Tests npm registry connectivity if installation fails
 - Includes usage instructions and documentation links
+
+#### `install-user-github-copilot-cli.sh`
+Installs GitHub Copilot CLI:
+- Requires Node.js and npm (installed via `install-user-nodejs.sh`)
+- Installs globally via npm: `@githubnext/github-copilot-cli`
+- Provides command-line AI assistance
+- Certificate-aware installation
+
+### System-Level Installation Scripts (Require sudo)
+
+#### `install-system-csharp.sh`
+Installs .NET SDK and C# development tools:
+- Installs via apt from Microsoft's official repository
+- Provides C# development capabilities
+- Certificate-aware downloads using `CURL_FLAGS`
+
+#### `install-system-docker-cli.sh`
+Installs Docker CLI and Compose plugin:
+- Adds Docker apt repository
+- Installs docker-ce-cli and docker-compose-plugin
+- Sets up docker group for vscode user
+- Certificate-aware repository key download using `CURL_FLAGS`
+
+#### `install-system-github-cli.sh`
+Installs GitHub CLI (`gh` command):
+- Adds GitHub CLI apt repository
+- Installs via apt package manager
+- Provides `gh` command for GitHub operations
+- Certificate-aware repository key download using `CURL_FLAGS`
 
 ## Benefits of Modular Approach
 
@@ -123,82 +130,42 @@ Installs Claude CLI (Anthropic's command-line interface):
 5. **Clean Dockerfile**: Main Dockerfile remains focused on structure, not implementation details
 6. **Version Management**: Tool versions are centralized in individual scripts
 
-## Usage in Dockerfile
+## Usage
 
-```dockerfile
-# Install custom certificates (optional)
-COPY .devcontainer/certs* /tmp/certs/
-COPY .devcontainer/scripts/certctl.sh /tmp/certctl.sh
-RUN chmod +x /tmp/certctl.sh && /tmp/certctl.sh install && rm -f /tmp/certctl.sh
+### In DevContainer
 
-# Copy scripts and install tools (certctl supplies CURL_FLAGS & user banner)
-COPY .devcontainer/scripts/ /tmp/install-scripts/
-RUN chmod +x /tmp/install-scripts/*.sh && \
-  cp /tmp/install-scripts/certctl.sh /usr/local/bin/certctl && chmod +x /usr/local/bin/certctl && \
-  eval "$(certctl env --quiet)" || true && \
-  certctl refresh --quiet || true && \
-  /tmp/install-scripts/install-uv.sh && \
-  /tmp/install-scripts/install-github-cli.sh && \
-  /tmp/install-scripts/install-docker-cli.sh && \
-  /tmp/install-scripts/install-nodejs.sh && \
-  /tmp/install-scripts/install-python.sh && \
-  /tmp/install-scripts/install-ruby.sh && \
-  # Optional: /tmp/install-scripts/install-claude-cli.sh && \
-  rm -rf /var/lib/apt/lists/* /tmp/install-scripts
-```
+The scripts are designed to be used within the Bluesky DevContainer environment. The `post-create.sh` script automatically runs after container creation and handles core setup.
 
-### Build Arguments for Version Control
+**Optional installations** can be run manually inside the container:
 
-The Dockerfile supports build arguments to customize Python and Ruby versions:
-
-```dockerfile
-# Build arguments with defaults
-ARG PYTHON_VERSION=3.11
-ARG RUBY_VERSION=3.2
-ARG RUBY_METHOD=system
-
-# Usage in installation scripts
-/tmp/install-scripts/install-python.sh --version ${PYTHON_VERSION} && \
-/tmp/install-scripts/install-ruby.sh --version ${RUBY_VERSION} --method ${RUBY_METHOD} && \
-```
-
-**Build with custom versions:**
 ```bash
-# Docker build with custom versions
-docker build --build-arg PYTHON_VERSION=3.12 \
-             --build-arg RUBY_VERSION=3.1 \
-             --build-arg RUBY_METHOD=rbenv \
-             -t h2k-hpxml .
+# Install AWS CLI with SSO and MCP integration
+bash .devcontainer/scripts/install-user-aws.sh
 
-# Docker Compose with build args
-docker-compose build --build-arg PYTHON_VERSION=3.12
+# Install Node.js
+bash .devcontainer/scripts/install-user-nodejs.sh
+
+# Install Claude CLI (requires Node.js first)
+bash .devcontainer/scripts/install-user-nodejs.sh
+bash .devcontainer/scripts/install-user-claude-cli.sh
+
+# Install GitHub Copilot CLI (requires Node.js first)
+bash .devcontainer/scripts/install-user-github-copilot-cli.sh
 ```
 
-**VS Code Dev Container:**
-Update `.devcontainer/devcontainer.json`:
+### Environment Configuration
+
+The DevContainer supports environment variables for version control in `.devcontainer/devcontainer.json`:
+
 ```json
 {
-  "build": {
-    "dockerfile": "./Dockerfile",
-    "context": "..",
-    "args": {
-      "PYTHON_VERSION": "3.12",
-      "RUBY_VERSION": "3.1",
-      "RUBY_METHOD": "rbenv"
-    }
+  "containerEnv": {
+    "DEVCONTAINER_PYTHON_VERSION": "3.12",
+    "DEVCONTAINER_NODE_VERSION": "22.11.0",
+    "DEVCONTAINER_UV_VERSION": "0.8.15",
+    "ENABLE_GPU_AI": "0"
   }
 }
-```
-
-### Alternative: Using Master Script
-
-For simpler usage, you can use the master script:
-
-```dockerfile
-COPY .devcontainer/scripts/ /tmp/install-scripts/
-RUN chmod +x /tmp/install-scripts/*.sh && \
-    /tmp/install-scripts/install-dev-tools.sh && \
-    rm -rf /tmp/install-scripts
 ```
 
 ## Corporate Network Support
@@ -233,82 +200,128 @@ Lenient mode removed: strict-only (all targets must succeed).
 
 ## Standalone Usage
 
-Individual scripts can be run independently outside of Docker:
+Individual scripts can be run independently:
 
 ```bash
-# Install Claude CLI after Node.js is available
-export CURL_FLAGS="-fsSL"  # or "-fsSLk" for insecure
-.devcontainer/scripts/install-claude-cli.sh
+# Set certificate flags if needed
+export CURL_FLAGS="-fsSL"  # or "-fsSLk" for insecure environments
+
+# Install AWS CLI
+.devcontainer/scripts/install-user-aws.sh
+
+# Install Node.js and Claude CLI
+.devcontainer/scripts/install-user-nodejs.sh
+.devcontainer/scripts/install-user-claude-cli.sh
 ```
 
-**Prerequisites for Claude CLI:**
-- Node.js must be installed first (`install-nodejs.sh`)
-- npm registry must be accessible
-- Sufficient permissions for global npm installation
+**Prerequisites:**
+- Scripts assume a Debian/Ubuntu-based Linux environment
+- User-level scripts don't require sudo
+- System-level scripts require sudo access
+- Some scripts have dependencies (e.g., Claude CLI requires Node.js)
 
-## Version Selection Examples
+## Installation Examples
 
-The new Python and Ruby installation scripts support version selection:
-
-### Python Installation Examples
+### AWS CLI Installation
 ```bash
-# Install default Python (3.11)
-./install-python.sh
+# Install with default settings
+bash .devcontainer/scripts/install-user-aws.sh
 
-# Install specific Python version
-./install-python.sh --version 3.12
+# Force reinstall
+bash .devcontainer/scripts/install-user-aws.sh --force
 
-# Show help and available versions
-./install-python.sh --help
+# Quiet mode
+bash .devcontainer/scripts/install-user-aws.sh --quiet
+
+# Show help
+bash .devcontainer/scripts/install-user-aws.sh --help
 ```
 
-### Ruby Installation Examples
+### Node.js Installation
 ```bash
-# Install default Ruby via system packages (3.2)
-./install-ruby.sh
+# Install with version from environment variable
+DEVCONTAINER_NODE_VERSION=20.10.0 bash .devcontainer/scripts/install-user-nodejs.sh
 
-# Install specific Ruby version via system packages
-./install-ruby.sh --version 3.1
-
-# Install Ruby via rbenv for maximum version flexibility
-./install-ruby.sh --version 3.2 --method rbenv
-
-# Show help and available options
-./install-ruby.sh --help
+# Or use default version (22.11.0)
+bash .devcontainer/scripts/install-user-nodejs.sh
 ```
 
-### C# Installation Examples
+### Claude/Copilot CLI Installation
 ```bash
-# Install default .NET (8.0 LTS) via apt
-./install-csharp.sh
-
-# Install specific .NET version via apt
-./install-csharp.sh --version 6.0
-
-# Install .NET via Microsoft's install script
-./install-csharp.sh --version 8.0 --method manual
-
-# Show help and available options
-./install-csharp.sh --help
+# Requires Node.js to be installed first
+bash .devcontainer/scripts/install-user-nodejs.sh
+bash .devcontainer/scripts/install-user-claude-cli.sh
+bash .devcontainer/scripts/install-user-github-copilot-cli.sh
 ```
 
-### AWS CLI Installation Examples
+## Security Scanning
+
+### `security-scan.sh`
+Comprehensive security scanning script that checks for vulnerabilities across multiple dimensions:
+- **Python Dependencies**: Scans for known CVEs using pip-audit and Safety
+- **Python Code**: Static analysis with Bandit to detect security issues
+- **Node.js Dependencies**: npm audit on global packages (if installed)
+- **Installed Tool Inventory**: Version tracking for Python, Node.js, AWS CLI, GitHub CLI, Docker
+- **Container Configuration**: Scans DevContainer configs with Trivy
+- **System Packages**: Checks for available security updates (apt)
+- **Shell Scripts**: Pattern analysis for dangerous shell constructs
+
+**Features:**
+- Auto-installs required security tools (pip-audit, bandit, safety, trivy)
+- Automatically detects and scans optional tools installed via install-*.sh scripts
+- Generates JSON reports and consolidated Markdown summary
+- Provides actionable remediation recommendations
+- Supports quick scans and custom output directories
+- Gracefully skips unavailable tools with informative warnings
+
+**Usage:**
 ```bash
-# Install AWS CLI v2 (simple, no options needed)
-./install-aws-cli.sh
+# Full security scan (recommended weekly)
+.devcontainer/scripts/security-scan.sh
 
-# Show help and information
-./install-aws-cli.sh --help
+# Quick scan (skips slower container scans)
+.devcontainer/scripts/security-scan.sh --quick
+
+# Custom output directory
+.devcontainer/scripts/security-scan.sh --output-dir /workspace/security-reports
+
+# Skip tool installation (if already installed)
+.devcontainer/scripts/security-scan.sh --skip-install
+
+# Show help
+.devcontainer/scripts/security-scan.sh --help
 ```
+
+**Output:**
+Reports are saved to timestamped directories:
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/security-report.md` - Main consolidated report
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/pip-audit.json` - Python dependency vulnerabilities
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/bandit.json` - Python code security issues
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/npm-audit.json` - Node.js dependency vulnerabilities (if installed)
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/npm-global-packages.json` - Installed npm packages
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/installed-versions.txt` - Tool version inventory
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/trivy-*.json` - Container/config scans
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/dpkg-packages.txt` - System packages
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/security-updates.txt` - Available security updates
+- `/tmp/security-reports/YYYYMMDD_HHMMSS/safety.json` - Alternative Python dependency check
+
+**Exit Codes:**
+- `0` - Scan completed successfully, no critical issues
+- `1` - Scan failed or critical vulnerabilities found
+- `2` - Invalid arguments
+
+**Recommended Schedule:**
+- **Weekly**: Full scan during development
+- **Pre-commit**: Quick scan before major commits
+- **CI/CD**: Automated scanning in pipeline
+- **After dependency updates**: Full scan to verify no new vulnerabilities
 
 ## Updating Tool Versions
 
-To update tool versions, modify the version variables in the individual scripts:
-- UV: Edit `UV_VERSION` in `install-uv.sh`
-- Node.js: Edit `NODE_VERSION` in `install-nodejs.sh`
-- Python: Use `--version` argument (supported: 3.8-3.13)
-- Ruby: Use `--version` argument (system packages: 3.0-3.2, rbenv: any available)
-- C#/.NET: Use `--version` argument (supported: 6.0, 7.0, 8.0, 9.0)
-- AWS CLI: Only v2 supported (v1 is deprecated)
-- Claude CLI: Uses latest from npm registry (`@anthropic-ai/claude-cli`)
-- GitHub CLI and Docker CLI use latest from their respective repositories
+To update tool versions, modify environment variables or script defaults:
+- **UV**: Set `DEVCONTAINER_UV_VERSION` environment variable
+- **Node.js**: Set `DEVCONTAINER_NODE_VERSION` environment variable
+- **Python**: Set `DEVCONTAINER_PYTHON_VERSION` environment variable
+- **AWS CLI**: Always installs latest v2 from AWS
+- **Claude CLI**: Always installs latest from npm registry
+- **GitHub Copilot CLI**: Always installs latest from npm registry

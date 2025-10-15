@@ -1,5 +1,5 @@
 #!/bin/bash
-# Post-create setup script for H2K-HPXML devcontainer
+# Post-create setup script for Bluesky devcontainer
 # This script runs after the container is created to set up the development environment
 
 set -e  # Exit on error
@@ -37,8 +37,8 @@ uv venv --python "$_PY_REQ" --clear
 uv pip install -e '.[dev]'
 
 # Install dependencies such as OpenStudio, EnergyPlus, HPXML, etc.
-echo "📦 Installing H2K dependencies...This may take a minute..."
-uv run h2k-deps --install-quiet
+echo "📦 Installing OpenStudio-HPXML dependencies...This may take a minute..."
+uv run os-setup --install-quiet
 
 # Optional: GPU AI/LLM stack (PyTorch w/ CUDA) if host provides NVIDIA runtime
 # Accept legacy ENABLE_ML_GPU for backward compatibility
@@ -79,15 +79,15 @@ fi
 echo "📝 Configuring Git..."
 # git config --global user.email 'phylroy.lopez@nrcan.gc.ca' && git config --global user.name 'Phylroy Lopez'
 
-# Configure bash environment for auto-activation of virtual environment (venv) for h2k-hpxml python.
+# Configure bash environment for auto-activation of virtual environment (venv)
 echo "⚙️ Configuring shell environment..."
 
 # Add virtual environment auto-activation to bashrc
-if ! grep -q 'Auto-activate h2k-hpxml venv' ~/.bashrc 2>/dev/null; then
+if ! grep -q 'Auto-activate project venv' ~/.bashrc 2>/dev/null; then
     cat >> ~/.bashrc << 'EOF'
 
-# Auto-activate h2k-hpxml venv
-for CANDIDATE in /workspaces/h2k-hpxml /workspaces/h2k_hpxml; do
+# Auto-activate project venv
+for CANDIDATE in /workspaces/bluesky /workspaces/*; do
   if [ -f "${CANDIDATE}/.venv/bin/activate" ] && [ -z "$VIRTUAL_ENV" ]; then
     . "${CANDIDATE}/.venv/bin/activate"
     echo "🐍 Virtual environment activated: $(python --version)"

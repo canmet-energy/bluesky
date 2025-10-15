@@ -14,7 +14,7 @@ Concise, project-specific guidance for AI coding agents working in this repo.
 ## 2. Key Workflows
 - Install (editable): `pip install -e .` or `pip install -e ".[dev]"` (Python >=3.12 enforced in `pyproject.toml`).
 - Run CLI: `bluesky --help`, examples in README.
-- Dependency manager: `bluesky-deps --check-only` or `--auto-install` to fetch external (OpenStudio) pieces.
+- Energy simulation dependencies: OpenStudio and EnergyPlus are automatically installed via the `h2k-hpxml` Python package.
 - Tests: `pytest` (config in `[tool.pytest.ini_options]`; markers: `unit`, `integration`, `slow`). Keep new tests in `tests/unit/` unless exercising cross-component flows.
 - Lint / Format: `ruff check src/ --fix`, `black src/`, `mypy src/` (mypy mostly permissive; `ignore_missing_imports = true`).
 - DevContainer build: relies on scripts in `.devcontainer/scripts/` which respect `CURL_FLAGS` and certificate state.

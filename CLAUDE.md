@@ -44,9 +44,8 @@ pip install -e ".[dev]"
 bluesky --help
 bluesky --name "Developer" --fancy --color cyan
 
-# Dependency manager
-bluesky-deps --check-only        # Check dependencies only
-bluesky-deps --auto-install      # Install missing dependencies
+# Verify energy simulation dependencies
+python -c "import openstudio; import h2k_hpxml; print('✓ Energy simulation tools ready')"
 ```
 
 ### Testing
@@ -114,15 +113,16 @@ The project has a sophisticated certificate management system for corporate prox
 
 ### Dependency Configuration
 
-Dependencies (especially OpenStudio) are configured in `pyproject.toml` under `[tool.bluesky.dependencies]`:
+Energy simulation dependencies (OpenStudio, EnergyPlus, OS-HPXML) are managed through the `h2k-hpxml` package:
 ```toml
-[tool.bluesky.dependencies]
-openstudio_version = "3.9.0"
-openstudio_sha = "c77fbb9569"
-openstudio_hpxml_version = "v1.9.1"
+dependencies = [
+    "h2k-hpxml @ git+https://github.com/canmet-energy/h2k-hpxml.git@refactor",
+    "openstudio==3.9.0",  # Installed via h2k-hpxml
+    ...
+]
 ```
 
-`DependencyManager` in `bluesky/utils/dependencies.py` reads this config and handles platform-specific installation (Debian `.deb` preferred, fallback to `.tar.gz`).
+The `h2k-hpxml` library handles platform-specific installation automatically, eliminating the need for manual dependency management.
 
 ### CLI Design
 
@@ -153,9 +153,9 @@ Keep CLI modules thin—move business logic to `bluesky.core/`.
 - Prefer Rich output (Panels, Text with style tags like `[bold cyan]`) over plain print
 
 ### Dependencies
-- `_load_dependency_config()` searches: CWD, parent dirs, `~/.bluesky/` for `pyproject.toml`
-- Extend search paths by appending to list, don't reorder existing paths
+- Energy simulation dependencies (OpenStudio, EnergyPlus) are managed via `h2k-hpxml` package
 - Version pins in pyproject.toml must be manually synced with `click.version_option()` in CLI (no dynamic version import yet)
+- All dependencies specified in `pyproject.toml` are installed automatically via pip/uv
 
 ### Testing
 - Unit tests in `tests/unit/`, integration tests in `tests/integration/`
@@ -183,11 +183,11 @@ Keep CLI modules thin—move business logic to `bluesky.core/`.
 3. Add tests in `tests/unit/` using `CliRunner`
 4. Update `pyproject.toml` `[project.scripts]` if adding new entry point
 
-### Adding External Dependency Management
-1. Add config keys to `[tool.bluesky.dependencies]` in `pyproject.toml`
-2. Add helper methods to `DependencyManager` class
-3. Expose CLI flags in `bluesky-deps` command
-4. Handle platform detection (Windows vs Linux) and installation methods
+### Adding Python Package Dependencies
+1. Add dependencies to `dependencies` list in `pyproject.toml`
+2. For complex external tools, prefer existing pip-installable wrappers (like `h2k-hpxml` for OpenStudio)
+3. Use version constraints appropriately (`==` for exact, `>=` for minimum with security fixes)
+4. Document any special installation requirements in README.md
 
 ### Troubleshooting Certificate Issues
 1. Check cert status: `certctl certs-status`
@@ -217,7 +217,6 @@ AWS credentials and SSO configuration handled by `.devcontainer/scripts/install-
 ## Important Files
 
 - `src/bluesky/cli/main.py` - CLI entry point (currently single-command, ready for group refactor)
-- `src/bluesky/utils/dependencies.py` - Dependency manager (OpenStudio installation)
 - `.devcontainer/scripts/certctl-safe.sh` - Certificate management script (sourced by install scripts)
 - `.devcontainer/scripts/dev-env-init.sh` - Unified shell initialization script for venv activation and prompt
 - `.devcontainer/scripts/post-create.sh` - DevContainer lifecycle hook
@@ -240,13 +239,13 @@ Update both simultaneously when bumping versions.
 ## Package Dependencies
 
 Notable dependencies with specific roles:
-- `openstudio==3.9.0` - Energy modeling library (platform-specific installation via bluesky-deps)
-- `h2k-hpxml` - Git dependency from GitHub (refactor branch)
+- `h2k-hpxml` - NRCan's H2K to HPXML library (includes OpenStudio and EnergyPlus installation)
+- `openstudio==3.9.0` - Energy modeling library (installed via h2k-hpxml)
 - `click` - CLI framework
 - `rich` - Terminal formatting and output
 - `pyfiglet` - ASCII art generation
 - `pandas`, `numpy` - Data processing
-- `requests` - HTTP client (respects `REQUESTS_CA_BUNDLE`)
+- `requests>=2.32.4` - HTTP client (respects `REQUESTS_CA_BUNDLE`, CVE-2024-47081 fixed)
 
 ## Pre-commit Hooks
 
