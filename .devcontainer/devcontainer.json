@@ -11,8 +11,7 @@
 		"UV_PYTHON_PREFERENCE": "managed",
 		"ENABLE_GPU_AI": "0", // Set to 0 to skip GPU AI/LLM stack (PyTorch etc.) installation
 		"DEVCONTAINER_NODE_VERSION": "22.11.0", // Node.js version installed by install-user-nodejs.sh (override as needed)
-		"DEVCONTAINER_UV_VERSION": "0.8.15" // UV (Python package manager) version installed by install-user-uv.sh
-		,
+		"DEVCONTAINER_UV_VERSION": "0.8.15", // UV (Python package manager) version installed by install-user-uv.sh
 		"DEVCONTAINER_PYTHON_VERSION": "3.12" // Python version used when creating the virtual environment
 	},
 	"customizations": {
@@ -110,8 +109,11 @@
 		}
 	},
 	"mounts": [
-		// Docker socket for Docker-in-Docker support
-		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+		// Docker socket for Docker-in-Docker support enable if needed
+		// Uncomment the line below to enable Docker socket access
+		// Note: This is not recommended for security reasons unless you trust the container
+		// and understand the implications of running Docker inside a container.
+		// "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
 	],
 	"postCreateCommand": ".devcontainer/scripts/post-create.sh",
 	"containerUser": "vscode",
