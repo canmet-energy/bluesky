@@ -42,6 +42,7 @@ dependencies = [
     "packaging>=20.0",
     "openstudio==3.9.0",
     "rich>=13.0.0",
+    "eppy==0.5.63",
     "h2k-hpxml @ git+https://github.com/canmet-energy/h2k-hpxml.git@refactor",
 ]
 

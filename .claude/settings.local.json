@@ -2,7 +2,20 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "Bash(bluesky-deps:*)"
+      "Bash(bluesky-deps:*)",
+      "Bash(pip --version)",
+      "Bash(uv pip install:*)",
+      "Bash(pip-audit:*)",
+      "Bash(safety check:*)",
+      "Read(//tmp/**)",
+      "Bash(bandit:*)",
+      "Bash(curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh)",
+      "Bash(sh:*)",
+      "Bash(/tmp/trivy:*)",
+      "Bash(shellcheck:*)",
+      "Bash(tee:*)",
+      "Bash(.devcontainer/scripts/security-scan.sh:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

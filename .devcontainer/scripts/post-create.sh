@@ -16,9 +16,19 @@ if command -v certctl >/dev/null 2>&1; then
     sudo sed -i 's/^    # certctl_banner 2>\/dev\/null || true$/    certctl_banner 2>\/dev\/null || true/' /etc/profile.d/certctl-env.sh || true
 fi
 
-# Fix Docker socket permissions for Docker-in-Docker support Useful for testing Dockerfile builds
-echo "🐳 Configuring Docker socket permissions..."
-sudo chgrp docker /var/run/docker.sock
+# Detect Docker socket mount (host Docker access).
+echo "🐳 Checking Docker support..."
+if [ -S /var/run/docker.sock ]; then
+  echo "✅ Docker support active (host socket mounted)."
+  # Attempt to set group for convenience; ignore failure if group doesn't exist
+  if getent group docker >/dev/null 2>&1; then
+    sudo chgrp docker /var/run/docker.sock 2>/dev/null || echo "ℹ️ Could not change group to 'docker' (non-critical)."
+  fi
+  echo "   Security notice: Mounting /var/run/docker.sock grants this container broad control over the host Docker daemon (effectively root-level via container creation, volume mounts, image pulls)."
+  echo "   Use ONLY in trusted development environments; avoid in production or with untrusted code."
+else
+  echo "ℹ️ Docker-in-Docker support not activated (socket not mounted)."
+fi
 
 # Set up Python virtual environment as required by the project
 echo "🐍 Setting up Python virtual environment..."
