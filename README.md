@@ -13,10 +13,10 @@ This repository provides researchers with a ready-to-use development environment
 
 ### DevContainer Environment
 - Full VS Code DevContainer support with reproducible builds
-- Certificate management for NRCan corporate network environments
+- Certificate management for corporate network environments (Place your corporate cert file in .devcontainer/certs)
 - Pre-configured development tools (Black, Ruff, MyPy, Pytest)
 - WSLg support for GUI applications
-- Docker-in-Docker for containerized workflows
+- Docker-in-Docker for containerized workflows (optional)
 
 ### Optional Installations
 Additional tools available via optional install scripts:
@@ -173,6 +173,7 @@ bluesky/
 ├── .devcontainer/               # DevContainer configuration
 │   ├── Dockerfile
 │   ├── devcontainer.json
+│   ├── certs/                   # Place your corporate certificate .crt file here and rebuild your container if required.
 │   └── scripts/                 # Setup and utility scripts
 ├── pyproject.toml               # Project configuration
 ├── README.md                    # This file
@@ -271,7 +272,7 @@ For project-specific research questions, consult with your research team or supe
 
 ## License
 
-MIT License - See LICENSE file for details.
+GPLv3 - See LICENSE file for details.
 
 ---
 

@@ -104,3 +104,25 @@ echo ""
 echo "🔗 For more information:"
 echo "   - Documentation: https://docs.anthropic.com/claude/reference/cli"
 echo "   - GitHub: https://github.com/anthropics/claude-cli"
+
+# Attempt to install VS Code extension Anthropic.claude-code if code CLI is available
+echo ""
+echo "🔌 Checking for VS Code CLI to install Anthropic.claude-code extension..."
+if command -v code >/dev/null 2>&1; then
+    # List installed extensions and check if Anthropic.claude-code already present
+    if code --list-extensions | grep -qi '^Anthropic\.claude-code$'; then
+        echo "✅ VS Code extension 'Anthropic.claude-code' already installed."
+    else
+        echo "📥 Installing VS Code extension 'Anthropic.claude-code'..."
+        if code --install-extension Anthropic.claude-code --force >/dev/null 2>&1; then
+            echo "✅ VS Code extension 'Anthropic.claude-code' installed successfully."
+        else
+            echo "❌ Failed to install VS Code extension 'Anthropic.claude-code'."
+            echo "   Possible reasons: offline mode, marketplace access blocked, or CLI not fully initialized."
+            echo "   You can retry later manually with: code --install-extension Anthropic.claude-code"
+        fi
+    fi
+else
+    echo "ℹ️ VS Code 'code' CLI not found in PATH. Skipping extension installation."
+    echo "   To enable CLI: In VS Code, open Command Palette and search 'Shell Command: Install 'code' command in PATH' (on supported platforms)."
+fi
