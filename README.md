@@ -2,7 +2,7 @@
 
 **A quick-start template for building energy simulation research and development.**
 
-This repository provides researchers with a ready-to-use development environment for building energy simulation work. It's designed for researchers who need to focus on their R&D rather than configuration management.
+This repository provides researchers with a ready-to-use development environment for building energy simulation work. It's designed for researchers who need to focus on their R&D rather than configuration management. Use this as a starting point for your bluesky ideas. Future work will include access to MCP servers to support weather, simulation workflow, and building model development with Python and Ruby.  
 
 ## What's Included
 
@@ -64,7 +64,7 @@ git checkout -b my-research-project
 **What happens automatically:**
 - Python 3.12 environment is configured with UV package manager
 - OpenStudio and EnergyPlus are installed via the `h2k-hpxml` library
-- All Python dependencies from `pyproject.toml` are installed
+- All typical research Python dependencies from `pyproject.toml` are installed
 - Certificate management is configured for NRCan network
 - Development tools are ready (black, ruff, mypy, pytest)
 - Optional: GPU AI stack (PyTorch with CUDA) if `ENABLE_GPU_AI=1` in devcontainer.json
