@@ -35,6 +35,16 @@ RUN apt-get update && apt-get install -y \
     jq \
     # Development tools
     build-essential \
+    autoconf \
+    bison \
+    patch \
+    rustc \
+    # Ruby build dependencies
+    libreadline-dev \
+    libyaml-dev \
+    libffi-dev \
+    zlib1g-dev \
+    libssl-dev \
     # Runtime libraries needed by OpenStudio
     libgfortran5 \
     libgomp1 \
