@@ -1,0 +1,470 @@
+#!/usr/bin/env python3
+"""
+Hot2000 CLI Wrapper (Python version)
+Simple single-file processing with results written back to original location
+"""
+
+import os
+import sys
+import shutil
+import subprocess
+import time
+import signal
+import argparse
+from pathlib import Path
+from datetime import datetime
+from typing import List, Optional, Tuple, Dict
+
+
+class Hot2000Config:
+    """Configuration constants for Hot2000 wrapper"""
+
+    WINEARCH = "win32"
+    WINEPREFIX = "/home/vscode/.wine_hot2000"
+    WINEDEBUG = "-all"
+    HOT2000_EXE = "/home/vscode/.wine_hot2000/drive_c/h2kcli/HOT2000.exe"
+    HOT2000_DIR = "/home/vscode/.wine_hot2000/drive_c/h2kcli"
+    PROCESSED_FILE_SIZE_THRESHOLD = 100000
+    DEFAULT_TIMEOUT = 60
+    DEFAULT_DISPLAY = ":99"
+
+
+class Hot2000Logger:
+    """Logging utility for Hot2000 operations"""
+
+    @staticmethod
+    def info(message: str) -> None:
+        print(f"[{datetime.now().isoformat()}] INFO: {message}", file=sys.stderr)
+
+    @staticmethod
+    def error(message: str) -> None:
+        print(f"[{datetime.now().isoformat()}] ERROR: {message}", file=sys.stderr)
+
+    @staticmethod
+    def success(message: str) -> None:
+        print(f"[{datetime.now().isoformat()}] SUCCESS: {message}", file=sys.stderr)
+
+
+class Hot2000Environment:
+    """Wine environment setup and management"""
+
+    def __init__(self):
+        self.config = Hot2000Config()
+        self.logger = Hot2000Logger()
+        self._setup_environment()
+
+    def _setup_environment(self) -> None:
+        """Setup Wine environment variables"""
+        os.environ["WINEARCH"] = self.config.WINEARCH
+        os.environ["WINEPREFIX"] = self.config.WINEPREFIX
+        os.environ["WINEDEBUG"] = self.config.WINEDEBUG
+
+    def validate_installation(self) -> bool:
+        """Validate Hot2000 and Wine installation"""
+        if not os.path.isfile(self.config.HOT2000_EXE):
+            self.logger.error(f"HOT2000.exe not found at {self.config.HOT2000_EXE}")
+            return False
+
+        try:
+            result = subprocess.run(
+                ["wine", "--version"], capture_output=True, text=True, timeout=10
+            )
+            if result.returncode != 0:
+                self.logger.error("Wine not accessible")
+                return False
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            self.logger.error("Wine not accessible")
+            return False
+
+        return True
+
+    def setup_display(self, display_num: int = 99) -> bool:
+        """Setup virtual display (Xvfb) if needed"""
+        try:
+            # Check if display is already available
+            result = subprocess.run(["xset", "q"], capture_output=True, timeout=5)
+            if result.returncode == 0:
+                return True
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            pass
+
+        self.logger.info(f"Setting up virtual display :{display_num}...")
+
+        # Kill any existing Xvfb on the display
+        try:
+            subprocess.run(["pkill", "-f", f"Xvfb :{display_num}"], capture_output=True, timeout=5)
+            time.sleep(1)
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            pass
+
+        # Start new Xvfb instance
+        try:
+            subprocess.Popen(
+                ["Xvfb", f":{display_num}", "-screen", "0", "1024x768x16"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            os.environ["DISPLAY"] = f":{display_num}"
+            time.sleep(3)
+
+            # Verify display is working
+            result = subprocess.run(["xset", "q"], capture_output=True, timeout=5)
+            if result.returncode != 0:
+                self.logger.error("Display setup failed")
+                return False
+
+            self.logger.info(f"Virtual display :{display_num} ready")
+            return True
+
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            self.logger.error("Display setup failed")
+            return False
+
+
+class Hot2000LogFile:
+    """Log file management for Hot2000 operations"""
+
+    def __init__(self, log_path: Path, input_file: Path, description: str = "HOT2000 execution"):
+        self.log_path = log_path
+        self.description = description
+        self._init_log(input_file)
+
+    def _init_log(self, input_file: Path) -> None:
+        """Initialize log file with standard header"""
+        with open(self.log_path, "w") as f:
+            f.write(f"{self.description} started at {datetime.now()}\n")
+            f.write(f"Input file: {input_file}\n")
+            f.write("=================================\n")
+
+    def write(self, message: str) -> None:
+        """Write message to log file"""
+        with open(self.log_path, "a") as f:
+            f.write(f"{message}\n")
+
+    def finalize(self, exit_code: int, timeout_seconds: int) -> None:
+        """Finalize log file with completion status"""
+        with open(self.log_path, "a") as f:
+            f.write("=================================\n")
+
+            if exit_code == 0:
+                f.write(f"HOT2000 execution completed successfully at {datetime.now()}\n")
+            elif exit_code == 124:
+                f.write(
+                    f"HOT2000 execution timed out after {timeout_seconds} seconds at {datetime.now()}\n"
+                )
+            else:
+                f.write(
+                    f"HOT2000 execution failed with exit code {exit_code} at {datetime.now()}\n"
+                )
+
+
+class Hot2000Processor:
+    """Core Hot2000 file processing with headless-first optimization"""
+
+    def __init__(self):
+        self.env = Hot2000Environment()
+        self.config = Hot2000Config()
+        self.logger = Hot2000Logger()
+        self.processing_successful = False
+        self.processing_mode = ""
+        self.original_size = 0
+        self.processed_size = 0
+
+    def process_file(
+        self,
+        input_file: Path,
+        output_file: Path = None,
+        timeout_seconds: int = None,
+        extra_args: List[str] = None,
+    ) -> int:
+        """
+        Process h2k file with headless-first optimization
+        Returns exit code (0 for success)
+        """
+        if timeout_seconds is None:
+            timeout_seconds = self.config.DEFAULT_TIMEOUT
+
+        if extra_args is None:
+            extra_args = []
+
+        if not input_file.exists():
+            self.logger.error(f"Input file not found: {input_file}")
+            return 1
+
+        # Setup working environment
+        working_basename = input_file.name
+        working_file = Path(self.config.HOT2000_DIR) / working_basename
+
+        # Determine output file location
+        if output_file is None:
+            output_file = input_file
+            log_file_path = input_file.parent / f"{input_file.stem}.log"
+        else:
+            log_file_path = output_file.parent / f"{output_file.stem}.log"
+
+        # Initialize log
+        log_file = Hot2000LogFile(log_file_path, input_file)
+
+        # Copy input file to Hot2000 working directory
+        shutil.copy2(input_file, working_file)
+
+        # Change to Hot2000 directory for processing
+        original_cwd = os.getcwd()
+        os.chdir(self.config.HOT2000_DIR)
+
+        try:
+            self.original_size = input_file.stat().st_size
+            exit_code = self._process_with_fallback(
+                working_basename, log_file, timeout_seconds, extra_args
+            )
+
+            # Copy processed file to output location if successful
+            if self.processing_successful and working_file.exists():
+                # Ensure output directory exists
+                output_file.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(working_file, output_file)
+                print(f"Results written to: {output_file}")
+            elif self.processing_successful:
+                print("WARNING: Processed file not found")
+                exit_code = 1
+
+            # Finalize log
+            log_file.finalize(exit_code, timeout_seconds)
+            print(f"Execution log saved to: {log_file_path}")
+
+            return exit_code
+
+        finally:
+            os.chdir(original_cwd)
+
+    def _process_with_fallback(
+        self,
+        working_basename: str,
+        log_file: Hot2000LogFile,
+        timeout_seconds: int,
+        extra_args: List[str],
+    ) -> int:
+        """Process file with headless-first, display fallback strategy"""
+
+        # OPTIMIZATION: Try headless execution first (2x faster)
+        log_file.write("Attempting headless execution (faster)...")
+
+        if self._try_headless_processing(working_basename, log_file, timeout_seconds, extra_args):
+            return 0
+
+        # If headless failed, fallback to display mode
+        log_file.write("=================================")
+        log_file.write("Headless failed, trying with display...")
+
+        # Ensure display is available
+        if not self.env.setup_display(99):
+            self.logger.error("Cannot setup display for fallback processing")
+            log_file.write("ERROR: Display setup failed")
+            return 1
+
+        return self._try_display_processing(working_basename, log_file, timeout_seconds, extra_args)
+
+    def _try_headless_processing(
+        self,
+        working_basename: str,
+        log_file: Hot2000LogFile,
+        timeout_seconds: int,
+        extra_args: List[str],
+    ) -> bool:
+        """Try headless execution"""
+        try:
+            # Remove DISPLAY for headless execution
+            env = os.environ.copy()
+            env.pop("DISPLAY", None)
+
+            cmd = ["wine", "HOT2000.exe", "-silent", "-inp", working_basename] + extra_args
+
+            with open(log_file.log_path, "a") as f:
+                result = subprocess.run(
+                    cmd, timeout=timeout_seconds, stdout=f, stderr=subprocess.STDOUT, env=env
+                )
+
+            if result.returncode == 0 and Path(working_basename).exists():
+                # Check if file was actually processed (size should increase significantly)
+                processed_size = Path(working_basename).stat().st_size
+
+                if processed_size > self.config.PROCESSED_FILE_SIZE_THRESHOLD:
+                    log_file.write(f"Headless execution completed successfully at {datetime.now()}")
+                    self.processing_successful = True
+                    self.processing_mode = "headless"
+                    self.processed_size = processed_size
+                    return True
+                else:
+                    log_file.write("Headless execution produced insufficient output")
+            else:
+                log_file.write(f"Headless execution failed with exit code {result.returncode}")
+
+        except subprocess.TimeoutExpired:
+            log_file.write("Headless execution timed out or failed")
+        except Exception as e:
+            log_file.write(f"Headless execution error: {e}")
+
+        return False
+
+    def _try_display_processing(
+        self,
+        working_basename: str,
+        log_file: Hot2000LogFile,
+        timeout_seconds: int,
+        extra_args: List[str],
+    ) -> int:
+        """Try display mode execution"""
+        try:
+            # Restore original file for display mode attempt
+            original_file = Path(f"{working_basename}.orig")
+            if original_file.exists():
+                shutil.copy2(original_file, working_basename)
+
+            cmd = ["wine", "HOT2000.exe", "-silent", "-inp", working_basename] + extra_args
+
+            with open(log_file.log_path, "a") as f:
+                result = subprocess.run(
+                    cmd, timeout=timeout_seconds, stdout=f, stderr=subprocess.STDOUT
+                )
+
+            if result.returncode == 0:
+                log_file.write(f"Display mode execution completed successfully at {datetime.now()}")
+                self.processing_successful = True
+                self.processing_mode = "display"
+                if Path(working_basename).exists():
+                    self.processed_size = Path(working_basename).stat().st_size
+                return 0
+            else:
+                log_file.write(f"Display mode execution failed with exit code {result.returncode}")
+                return 1
+
+        except subprocess.TimeoutExpired:
+            log_file.write(
+                f"Display mode execution timed out after {timeout_seconds} seconds at {datetime.now()}"
+            )
+            self.logger.error(f"Processing timed out after {timeout_seconds}s: {working_basename}")
+            return 124
+        except Exception as e:
+            log_file.write(f"Display mode execution error: {e}")
+            self.logger.error(f"Processing failed with error: {e}")
+            return 1
+
+
+class Hot2000CLI:
+    """Command line interface for Hot2000 wrapper"""
+
+    def __init__(self):
+        self.processor = Hot2000Processor()
+        self.logger = Hot2000Logger()
+
+    def create_parser(self) -> argparse.ArgumentParser:
+        """Create command line argument parser"""
+        parser = argparse.ArgumentParser(
+            description="Hot2000 CLI Wrapper with safe input/output separation",
+            formatter_class=argparse.RawDescriptionHelpFormatter,
+            epilog="""Examples:
+  # Process single file to specific output file
+  hot2000 examples/3Storey_8Unit.h2k /tmp/result.h2k
+  
+  # Process single file to output directory (keeps same filename)
+  hot2000 examples/3Storey_8Unit.h2k /tmp/results/
+  
+  # Custom timeout
+  hot2000 examples/3Storey_8Unit.h2k /tmp/results/ --timeout 120
+""",
+        )
+
+        parser.add_argument("input", type=str, help="Input .h2k file to process")
+
+        parser.add_argument(
+            "output", type=str, help="Output file or directory for processed results"
+        )
+
+        parser.add_argument(
+            "--timeout",
+            "-t",
+            type=int,
+            default=Hot2000Config.DEFAULT_TIMEOUT,
+            help=f"Timeout in seconds per file (default: {Hot2000Config.DEFAULT_TIMEOUT})",
+        )
+
+        parser.add_argument(
+            "--extra-args", nargs="*", default=[], help="Additional arguments to pass to Hot2000"
+        )
+
+        return parser
+
+    def main(self, args: List[str]) -> int:
+        """Main entry point"""
+        parser = self.create_parser()
+
+        # Parse arguments
+        parsed_args = parser.parse_args(args[1:])
+
+        # Setup Wine environment
+        if not self.processor.env.validate_installation():
+            print("ERROR: Wine environment setup failed")
+            return 1
+
+        input_path = Path(parsed_args.input).resolve()
+        output_path = Path(parsed_args.output).resolve()
+
+        # Process single file
+        if not input_path.is_file():
+            print(f"ERROR: Input file does not exist: {input_path}")
+            return 1
+
+        return self._process_single_file(input_path, output_path, parsed_args)
+
+    def _process_single_file(self, input_file: Path, output_path: Path, args) -> int:
+        """Process a single file"""
+        # Determine output file location
+        output_str = str(output_path)
+        if output_str.endswith("/"):
+            # Ends with slash - treat as directory
+            output_path.mkdir(parents=True, exist_ok=True)
+            output_file = output_path / input_file.name
+        elif output_path.exists() and output_path.is_dir():
+            # Existing directory
+            output_file = output_path / input_file.name
+        elif "." not in output_path.name:
+            # No file extension - treat as directory
+            output_path.mkdir(parents=True, exist_ok=True)
+            output_file = output_path / input_file.name
+        else:
+            # Has extension - treat as specific file path
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            output_file = output_path
+
+        print(f"Processing file: {input_file.name}")
+        print(f"Output will be saved to: {output_file}")
+
+        # Process the file (always with output separation)
+        exit_code = self.processor.process_file(
+            input_file, output_file, timeout_seconds=args.timeout, extra_args=args.extra_args
+        )
+
+        return self._show_results(exit_code)
+
+    def _show_results(self, exit_code: int) -> int:
+        """Show processing results"""
+        if exit_code == 0:
+            mode_msg = (
+                "Headless execution successful (faster mode)"
+                if self.processor.processing_mode == "headless"
+                else "Display mode execution successful"
+            )
+            print(f"✅ {mode_msg}")
+        elif exit_code == 124:
+            print(
+                f"ERROR: HOT2000 execution timed out after {Hot2000Config.DEFAULT_TIMEOUT} seconds"
+            )
+        else:
+            print(f"ERROR: HOT2000 execution failed with exit code {exit_code}")
+
+        return exit_code
+
+
+if __name__ == "__main__":
+    cli = Hot2000CLI()
+    sys.exit(cli.main(sys.argv))

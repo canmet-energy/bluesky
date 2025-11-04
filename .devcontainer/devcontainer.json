@@ -68,7 +68,13 @@
 						]
 					}
 				},
-				"terminal.integrated.defaultProfile.linux": "bash"
+				"terminal.integrated.defaultProfile.linux": "bash",
+				// Hot2000 CLI Wine environment for integrated terminal
+				"terminal.integrated.env.linux": {
+					"WINEARCH": "win32",
+					"WINEPREFIX": "/home/vscode/.wine_hot2000",
+					"WINEDEBUG": "-all"
+				}
 			}
 		}
 	},
@@ -90,7 +96,12 @@
 		"--volume=/run/desktop/mnt/host/wslg/.X11-unix:/tmp/.X11-unix",
 		"--volume=/run/desktop/mnt/host/wslg:/mnt/wslg",
 		// GPU support
-		"--gpus=all"
+		"--gpus=all",
+		// Hot2000 CLI Wine support - required for running Windows applications under Wine
+		"--env=WINEDEBUG=-all",
+		"--env=WINEFSYNC=1",
+		"--cap-add=SYS_PTRACE",
+		"--security-opt=seccomp=unconfined"
 	],
 	"forwardPorts": [
 		8080,

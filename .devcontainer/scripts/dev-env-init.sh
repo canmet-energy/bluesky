@@ -39,6 +39,11 @@ if [ "$_DEV_ENV_DO_BOOTSTRAP" = "1" ] && [ -z "${VIRTUAL_ENV:-}" ]; then
   fi
   # shellcheck disable=SC1091
   [ -f "$VENV_PATH/bin/activate" ] && . "$VENV_PATH/bin/activate" >/dev/null 2>&1 || true
+
+  # Add user bin directory to PATH if not already present
+  if [ -d "$HOME/.local/bin" ] && [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
+    export PATH="$HOME/.local/bin:$PATH"
+  fi
 fi
 
 ## Color palette assembly ----------------------------------------------------
