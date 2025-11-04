@@ -35,6 +35,10 @@ venv/
 env/
 ENV/
 
+# Ruby gems (bundler)
+vendor/bundle/
+.bundle/
+
 # IDE and editor files
 .vscode/settings.json
 .idea/

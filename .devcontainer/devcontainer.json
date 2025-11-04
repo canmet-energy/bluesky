@@ -15,7 +15,10 @@
 		"DEVCONTAINER_UV_VERSION": "0.8.15", // UV (Python package manager) version installed by install-user-uv.sh
 		"DEVCONTAINER_PYTHON_VERSION": "3.12", // Python version used when creating the virtual environment
 		"DEVCONTAINER_RUBY_VERSION": "3.2.2", // Ruby version used when creating the virtual environment
-		"DEVCONTAINER_OS_STANDARDS": "0.8.4" //OS standards ruby gem version. 
+		"DEVCONTAINER_OS_STANDARDS": "0.8.4", // OpenStudio standards ruby gem version (tag format: v0.8.4)
+		"DEVCONTAINER_EPPY_VERSION": "0.5.63", // Eppy (EnergyPlus IDF parser) Python package version
+		"DEVCONTAINER_H2K_HPXML_BRANCH": "main", // H2K-HPXML git branch to use
+		"DEVCONTAINER_OPENSTUDIO_VERSION": "3.9.0" // OpenStudio Python package version 
 	},
 	"customizations": {
 		"vscode": {

@@ -40,11 +40,11 @@ dependencies = [
     "filelock==3.18.0",
     "pyyaml==6.0.1",
     "packaging>=20.0",
-    "openstudio==3.9.0",
     "rich>=13.0.0",
+    "boto3>=1.28.0",  # AWS SDK for Python,
+    "openstudio==3.9.0",
+    "h2k-hpxml @ git+https://github.com/canmet-energy/h2k-hpxml.git@main",
     "eppy==0.5.63",
-    "h2k-hpxml @ git+https://github.com/canmet-energy/h2k-hpxml.git@refactor",
-    "boto3>=1.28.0",  # AWS SDK for Python
 ]
 
 [project.optional-dependencies]

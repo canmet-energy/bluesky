@@ -1,4 +1,4 @@
-# Development-only Dockerfile for H2K-HPXML CLI tool
+# Development-only Dockerfile for Bluesky projects
 # Simplified single-stage container focused on development workflow
 
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04
@@ -114,16 +114,34 @@ ENV PATH="/app/.venv/bin:$PATH" \
 
 # Set up for development workflow
 USER vscode
-WORKDIR /workspaces/h2k_hpxml
+WORKDIR /workspaces/bluesky
 ENV DOCKER_BUILD_CONTEXT=true
+# Ensure user-local bin (Node, uv, etc.) is visible during install scripts
+ENV PATH="/home/vscode/.local/bin:$PATH"
 
 # Install user-level tools (UV, Node.js) - no sudo required
 # This allows npm install -g and UV operations without sudo
 # Python will be installed by UV during post-create setup
 RUN bash -c '. /usr/local/bin/certctl 2>/dev/null || true && \
     certctl_load 2>/dev/null || true && \
-    /tmp/install-scripts/install-user-uv.sh && \
+    /tmp/install-scripts/install-user-uv.sh'
+RUN bash -c '. /usr/local/bin/certctl 2>/dev/null || true && \
+    certctl_load 2>/dev/null || true && \
     /tmp/install-scripts/install-user-nodejs.sh'
+RUN bash -c '. /usr/local/bin/certctl 2>/dev/null || true && \
+    certctl_load 2>/dev/null || true && \
+    /tmp/install-scripts/install-user-ruby.sh'
+RUN bash -c '. /usr/local/bin/certctl 2>/dev/null || true && \
+    certctl_load 2>/dev/null || true && \
+    /tmp/install-scripts/install-user-aws.sh'
+RUN bash -c '. /usr/local/bin/certctl 2>/dev/null || true && \
+    certctl_load 2>/dev/null || true && \
+    /tmp/install-scripts/install-user-claude-cli.sh'
+RUN bash -c '. /usr/local/bin/certctl 2>/dev/null || true && \
+    certctl_load 2>/dev/null || true && \
+    /tmp/install-scripts/install-user-github-copilot-cli.sh'
+
+
 
 # Add user tools to PATH for vscode user
 ENV PATH="/home/vscode/.local/bin:$PATH"
