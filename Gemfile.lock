@@ -6,32 +6,171 @@ GIT
     openstudio-standards (0.8.4)
       tbd (~> 3)
 
+GIT
+  remote: https://github.com/canmet-energy/BuildingSync-gem.git
+  revision: 2fd23d3d0e394ece9a6290928ea370012e94ada6
+  tag: develop
+  specs:
+    buildingsync (0.3.0)
+      bundler (>= 2.1)
+      openstudio-common-measures (>= 0.6.1)
+      openstudio-ee (>= 0.6.0)
+      openstudio-extension (>= 0.5.1)
+      openstudio-model-articulation (>= 0.6.1)
+      openstudio-standards (>= 0.8.2)
+
+GIT
+  remote: https://github.com/canmet-energy/openstudio-calibration-gem.git
+  revision: e433d56fb257f627f95592124a01fc8d0f4c6ad0
+  tag: develop
+  specs:
+    openstudio-calibration (0.12.2)
+      bundler (>= 2.4.10)
+      multipart-post (= 2.4.0)
+      openstudio-extension (>= 0.9.3)
+      openstudio-standards (>= 0.8.2)
+
+GIT
+  remote: https://github.com/canmet-energy/openstudio-common-measures-gem.git
+  revision: 7395eb57c5496f4fc1276e5547389f34b26d6a45
+  branch: develop
+  specs:
+    openstudio-common-measures (0.12.3)
+      bundler (>= 2.4.10)
+      multipart-post (= 2.4.0)
+      openstudio-extension (~> 0.9.3)
+      openstudio-standards (~> 0.8.2)
+
+GIT
+  remote: https://github.com/canmet-energy/openstudio-ee-gem.git
+  revision: 80a7db164146b1870f6bc2e59e09bdebb7db13af
+  tag: develop
+  specs:
+    openstudio-ee (0.12.5)
+      bundler (>= 2.4.10)
+      multipart-post (= 2.4.0)
+      openstudio-extension (>= 0.9.3)
+      openstudio-standards (>= 0.8.2)
+
+GIT
+  remote: https://github.com/canmet-energy/openstudio-extension-gem.git
+  revision: 5d31cd41073b997c72e0555e442794bf3bc64e18
+  branch: develop
+  specs:
+    openstudio-extension (0.9.4)
+      addressable (= 2.8.1)
+      bcl (~> 0.9.1)
+      bundler (>= 2.4.10)
+      octokit (~> 4.18.0)
+      openstudio-workflow (~> 2.5.0)
+      openstudio_measure_tester (~> 0.5.0)
+      parallel (~> 1.19.1)
+      regexp_parser (= 2.9.0)
+
+GIT
+  remote: https://github.com/canmet-energy/openstudio-load-flexibility-measures-gem.git
+  revision: 0a57ebcaabe6eff806b5b54130d5425f283a11e6
+  tag: develop
+  specs:
+    openstudio-load-flexibility-measures (0.11.1)
+      bundler (>= 2.4.10)
+      multipart-post (= 2.4.0)
+      openstudio-extension (>= 0.9.3)
+      openstudio-standards (>= 0.8.2)
+
+GIT
+  remote: https://github.com/canmet-energy/openstudio-model-articulation-gem.git
+  revision: 2054fbe18996ac14bc18c7f0646ddc64eca3b40c
+  tag: develop
+  specs:
+    openstudio-model-articulation (0.12.2)
+      bundler (>= 2.4.10)
+      multipart-post (= 2.4.0)
+      openstudio-extension (>= 0.9.3)
+      openstudio-standards (>= 0.8.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
+    ansi (1.5.0)
     ast (2.4.3)
+    bcl (0.9.1)
+      builder (= 3.2.4)
+      faraday (~> 1.10.4)
+      minitar (~> 0.9)
+      openstudio_measure_tester (~> 0.5.0)
+      rexml (= 3.2.5)
+      rubyzip (~> 2.3.2)
+      spreadsheet (= 1.2.9)
+      uuid (~> 2.3.9)
+      yamler (= 0.1.0)
+      zliby (= 0.0.5)
+    builder (3.2.4)
     diff-lcs (1.6.2)
+    faraday (1.10.4)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0)
+      faraday-multipart (~> 1.0)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.0)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      faraday-retry (~> 1.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.1)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-multipart (1.1.1)
+      multipart-post (~> 2.0)
+    faraday-net_http (1.0.2)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    faraday-retry (1.0.3)
+    git (1.13.2)
+      addressable (~> 2.8)
+      rchardet (~> 1.8)
     json (2.15.2)
     json-schema (4.3.1)
       addressable (>= 2.8)
-    language_server-protocol (3.17.0.5)
-    lint_roller (1.1.0)
+    macaddr (1.7.2)
+      systemu (~> 2.6.5)
     matrix (0.4.3)
+    minitar (0.12.1)
+    minitest (5.14.4)
+    minitest-reporters (1.4.3)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    multipart-post (2.4.0)
+    octokit (4.18.0)
+      faraday (>= 0.9)
+      sawyer (~> 0.8.0, >= 0.5.3)
+    openstudio-workflow (2.5.0)
+    openstudio_measure_tester (0.5.0)
+      git (~> 1.13.0)
+      minitest (~> 5.14.0)
+      minitest-reporters (~> 1.4.2)
+      parser (= 3.2.2.2)
+      rake (~> 13.0)
     oslg (0.4.0)
     osut (0.8.0)
       oslg (>= 0.4.0)
-    parallel (1.27.0)
-    parser (3.3.10.0)
+    parallel (1.19.2)
+    parser (3.2.2.2)
       ast (~> 2.4.1)
-      racc
-    prism (1.6.0)
-    public_suffix (6.0.2)
-    racc (1.8.1)
+    public_suffix (5.1.1)
     rainbow (3.1.1)
     rake (13.3.1)
-    regexp_parser (2.11.3)
+    rchardet (1.10.0)
+    regexp_parser (2.9.0)
+    rexml (3.2.5)
     rspec (3.13.2)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -45,54 +184,60 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.6)
-    rubocop (1.81.7)
+    rubocop (1.52.0)
       json (~> 2.3)
-      language_server-protocol (~> 3.17.0.2)
-      lint_roller (~> 1.1.0)
       parallel (~> 1.10)
-      parser (>= 3.3.0.2)
+      parser (>= 3.2.0.0)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 2.9.3, < 3.0)
-      rubocop-ast (>= 1.47.1, < 2.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.28.0, < 2.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.47.1)
-      parser (>= 3.3.7.2)
-      prism (~> 1.4)
-    rubocop-capybara (2.22.1)
-      lint_roller (~> 1.1)
-      rubocop (~> 1.72, >= 1.72.1)
-    rubocop-factory_bot (2.27.1)
-      lint_roller (~> 1.1)
-      rubocop (~> 1.72, >= 1.72.1)
-    rubocop-performance (1.26.1)
-      lint_roller (~> 1.1)
-      rubocop (>= 1.75.0, < 2.0)
-      rubocop-ast (>= 1.47.1, < 2.0)
-    rubocop-rspec (2.31.0)
-      rubocop (~> 1.40)
+      unicode-display_width (>= 2.4.0, < 3.0)
+    rubocop-ast (1.30.0)
+      parser (>= 3.2.1.0)
+    rubocop-capybara (2.21.0)
+      rubocop (~> 1.41)
+    rubocop-performance (1.20.2)
+      rubocop (>= 1.48.1, < 2.0)
+      rubocop-ast (>= 1.30.0, < 2.0)
+    rubocop-rspec (2.21.0)
+      rubocop (~> 1.33)
       rubocop-capybara (~> 2.17)
-      rubocop-factory_bot (~> 2.22)
-      rubocop-rspec_rails (~> 2.28)
-    rubocop-rspec_rails (2.29.1)
-      rubocop (~> 1.61)
+    ruby-ole (1.2.13.1)
     ruby-progressbar (1.13.0)
-    rubyzip (2.4.1)
+    ruby2_keywords (0.0.5)
+    rubyzip (2.3.2)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
+    spreadsheet (1.2.9)
+      ruby-ole
+    systemu (2.6.5)
     tbd (3.5.0)
       json-schema (~> 4)
       osut (~> 0.8.0)
       topolys (~> 0)
     topolys (0.6.2)
       matrix
-    unicode-display_width (3.2.0)
-      unicode-emoji (~> 4.1)
-    unicode-emoji (4.1.0)
+    unicode-display_width (2.6.0)
+    uuid (2.3.9)
+      macaddr (~> 1.0)
+    yamler (0.1.0)
+    zliby (0.0.5)
 
 PLATFORMS
   ruby
   x86_64-linux
 
 DEPENDENCIES
+  buildingsync!
+  openstudio-calibration!
+  openstudio-common-measures!
+  openstudio-ee!
+  openstudio-extension!
+  openstudio-load-flexibility-measures!
+  openstudio-model-articulation!
   openstudio-standards!
   rake (~> 13.0)
   rspec (~> 3.12)

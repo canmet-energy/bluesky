@@ -1,0 +1,225 @@
+{
+  "description": "Ground truth dataset for NECB critical tables",
+  "purpose": "Reference dataset to validate PDF parsing accuracy",
+  "created": "2025-11-07",
+  "tables": [
+    {
+      "id": "necb_2011_table_3.2.2.2_opaque",
+      "vintage": "2011",
+      "table_number": "Table 3.2.2.2.",
+      "name": "Above-Ground Opaque Building Assemblies",
+      "page": 51,
+      "expected_components": ["Walls", "Roofs", "Floors"],
+      "expected_climate_zones": ["Zone 4", "Zone 5", "Zone 6", "Zone 7A", "Zone 7B", "Zone 8"],
+      "min_rows": 5,
+      "max_rows": 10,
+      "notes": "Should have separate rows for Walls, Roofs, Floors with U-values for each zone"
+    },
+    {
+      "id": "necb_2011_table_3.2.2.2_fdwr",
+      "vintage": "2011",
+      "table_number": "Table 3.2.2.2.",
+      "name": "Maximum FDWR",
+      "page": 207,
+      "expected_components": ["HDD", "FDWR", "< 4000", "> 7000"],
+      "expected_hdd_ranges": ["< 4000", "4000", "4250", "4500", "4750", "5000", "5250", "5500", "5750", "6000", "6250", "6500", "6750", "7000", "> 7000"],
+      "min_rows": 15,
+      "max_rows": 20,
+      "notes": "Should have one row per HDD range with corresponding FDWR value"
+    },
+    {
+      "id": "necb_2015_table_3.2.2.2_opaque",
+      "vintage": "2015",
+      "table_number": "Table 3.2.2.2.",
+      "name": "Above-Ground Opaque Building Assemblies",
+      "page": 73,
+      "expected_components": ["Walls", "Roofs", "Floors"],
+      "expected_climate_zones": ["Zone 4", "Zone 5", "Zone 6", "Zone 7A", "Zone 7B", "Zone 8"],
+      "min_rows": 3,
+      "max_rows": 10,
+      "notes": "May have combined rows with newlines (Walls\\nRoofs\\nFloors)"
+    },
+    {
+      "id": "necb_2017_table_3.2.2.2_opaque",
+      "vintage": "2017",
+      "table_number": "Table 3.2.2.2.",
+      "name": "Above-Ground Opaque Building Assemblies",
+      "page": 75,
+      "expected_components": ["Walls", "Roofs", "Floors"],
+      "expected_climate_zones": ["Zone 4", "Zone 5", "Zone 6", "Zone 7A", "Zone 7B", "Zone 8"],
+      "min_rows": 10,
+      "max_rows": 20,
+      "notes": "CRITICAL: pdfplumber fails here. Must use camelot (stream). Actual rows: 14",
+      "known_issue": "Multi-page table not merged by pdfplumber"
+    },
+    {
+      "id": "necb_2020_table_3.2.2.2_opaque",
+      "vintage": "2020",
+      "table_number": "Table 3.2.2.2.",
+      "name": "Above-Ground Opaque Building Assemblies",
+      "page": 73,
+      "expected_components": ["Walls", "Roofs", "Floors"],
+      "expected_climate_zones": ["Zone 4", "Zone 5", "Zone 6", "Zone 7A", "Zone 7B", "Zone 8"],
+      "min_rows": 3,
+      "max_rows": 10,
+      "notes": "May have combined rows with newlines"
+    },
+    {
+      "id": "necb_2020_table_3.2.2.2_fdwr",
+      "vintage": "2020",
+      "table_number": "Table 3.2.2.2.",
+      "name": "Maximum FDWR",
+      "page": 84,
+      "expected_components": ["HDD", "FDWR"],
+      "expected_hdd_ranges": ["< 4000", "4000", "4250", "4500", "4750", "5000", "5250", "5500", "5750", "6000", "6250", "6500", "6750", "7000", "> 7000"],
+      "min_rows": 15,
+      "max_rows": 20,
+      "notes": "Should have complete HDD range",
+      "known_issue": "Database currently has partial data (6250-7000 only)"
+    },
+    {
+      "id": "necb_2011_table_3.2.2.3",
+      "vintage": "2011",
+      "table_number": "Table 3.2.2.3.",
+      "name": "Fenestration Thermal Characteristics",
+      "page": 52,
+      "expected_components": ["fenestration", "Zone"],
+      "min_rows": 2,
+      "max_rows": 10,
+      "notes": "Fenestration U-values by climate zone"
+    },
+    {
+      "id": "necb_2015_table_3.2.2.3",
+      "vintage": "2015",
+      "table_number": "Table 3.2.2.3.",
+      "name": "Fenestration Thermal Characteristics",
+      "page": 74,
+      "expected_components": ["fenestration", "Zone"],
+      "min_rows": 2,
+      "max_rows": 10,
+      "notes": "Fenestration U-values by climate zone"
+    },
+    {
+      "id": "necb_2020_table_3.2.2.3",
+      "vintage": "2020",
+      "table_number": "Table 3.2.2.3.",
+      "name": "Fenestration Thermal Characteristics",
+      "page": 74,
+      "expected_components": ["fenestration", "Zone"],
+      "min_rows": 2,
+      "max_rows": 10,
+      "notes": "Fenestration U-values by climate zone"
+    },
+    {
+      "id": "necb_2011_table_3.2.3.1",
+      "vintage": "2011",
+      "table_number": "Table 3.2.3.1.",
+      "name": "Below-Grade Building Assemblies",
+      "page": 53,
+      "expected_components": ["Walls", "Roofs", "Floors"],
+      "min_rows": 3,
+      "max_rows": 10,
+      "notes": "Below-grade thermal transmittance"
+    },
+    {
+      "id": "necb_2017_table_3.2.3.1",
+      "vintage": "2017",
+      "table_number": "Table 3.2.3.1.",
+      "name": "Below-Grade Building Assemblies",
+      "page": 77,
+      "expected_components": ["Walls", "Roofs", "Floors"],
+      "min_rows": 3,
+      "max_rows": 10,
+      "notes": "Below-grade thermal transmittance"
+    },
+    {
+      "id": "necb_2020_table_3.2.3.1",
+      "vintage": "2020",
+      "table_number": "Table 3.2.3.1.",
+      "name": "Below-Grade Building Assemblies",
+      "page": 75,
+      "expected_components": ["Walls", "Roofs", "Floors"],
+      "min_rows": 3,
+      "max_rows": 10,
+      "notes": "Below-grade thermal transmittance"
+    },
+    {
+      "id": "necb_2011_table_5.2.12.1",
+      "vintage": "2011",
+      "table_number": "Table 5.2.12.1.",
+      "name": "HVAC Equipment Performance",
+      "page": 107,
+      "expected_components": ["equipment", "performance", "COP", "EER"],
+      "min_rows": 20,
+      "max_rows": 150,
+      "notes": "Large multi-page table with equipment performance requirements"
+    },
+    {
+      "id": "necb_2015_table_5.2.12.1",
+      "vintage": "2015",
+      "table_number": "Table 5.2.12.1.",
+      "name": "HVAC Equipment Performance",
+      "page": 152,
+      "expected_components": ["equipment", "performance"],
+      "min_rows": 20,
+      "max_rows": 150,
+      "notes": "Large multi-page table"
+    },
+    {
+      "id": "necb_2017_table_5.2.12.1",
+      "vintage": "2017",
+      "table_number": "Table 5.2.12.1.",
+      "name": "HVAC Equipment Performance",
+      "page": 158,
+      "expected_components": ["equipment", "performance"],
+      "min_rows": 20,
+      "max_rows": 150,
+      "notes": "Large multi-page table"
+    },
+    {
+      "id": "necb_2020_table_5.2.12.1",
+      "vintage": "2020",
+      "table_number": "Table 5.2.12.1.",
+      "name": "HVAC Equipment Performance",
+      "page": 152,
+      "expected_components": ["equipment", "performance"],
+      "min_rows": 20,
+      "max_rows": 200,
+      "notes": "Large multi-page table, more entries than previous vintages"
+    },
+    {
+      "id": "necb_2011_table_4.2.1.6",
+      "vintage": "2011",
+      "table_number": "Table 4.2.1.6.",
+      "name": "Lighting Power Densities by Space Type",
+      "page": 69,
+      "expected_components": ["space type", "LPD", "W/m"],
+      "min_rows": 30,
+      "max_rows": 60,
+      "notes": "Multi-page table with space type lighting requirements"
+    },
+    {
+      "id": "necb_2020_table_4.2.1.6",
+      "vintage": "2020",
+      "table_number": "Table 4.2.1.6.",
+      "name": "Lighting Power Densities by Space Type",
+      "page": 93,
+      "expected_components": ["space type", "LPD"],
+      "min_rows": 3,
+      "max_rows": 60,
+      "notes": "Structure may differ significantly from 2011"
+    }
+  ],
+  "validation_criteria": {
+    "row_count_tolerance": 0.2,
+    "required_component_match": "all",
+    "fill_ratio_minimum": 0.5,
+    "notes": "Tables with row count variance > 20% from ground truth should trigger warning"
+  },
+  "testing_strategy": {
+    "unit_tests": "Test each table individually against ground truth",
+    "integration_tests": "Compare full parsing run against all ground truth entries",
+    "regression_tests": "Ensure NECB 2017 Table 3.2.2.2 always has 14 rows with Walls/Roofs/Floors",
+    "performance_tests": "Parse time should be < 10s per vintage"
+  }
+}

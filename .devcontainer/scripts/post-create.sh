@@ -276,10 +276,16 @@ EOF
     echo "ℹ️ OpenStudio not detected; skipping openstudio-standards gem."
   fi
 
-  echo "📦 Running bundle install (may update lock)..."
+  echo "📦 Configuring bundler to use vendor/bundle..."
   if command -v bundle >/dev/null 2>&1; then
+    # Configure bundler to install gems to vendor/bundle
+    (cd "$PROJECT_ROOT" && bundle config set --local path 'vendor/bundle')
+    echo "✅ Bundler configured to install to vendor/bundle"
+
+    echo "📦 Running bundle install (may update lock)..."
     if (cd "$PROJECT_ROOT" && bundle install); then
       echo "✅ bundle install complete"
+      echo "   Gems installed to: $PROJECT_ROOT/vendor/bundle"
     else
       echo "⚠️ bundle install failed (network or gem resolution issue)" >&2
     fi

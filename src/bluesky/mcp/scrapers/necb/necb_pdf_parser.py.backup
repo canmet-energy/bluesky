@@ -1,0 +1,324 @@
+"""
+NECB PDF Parser
+
+Extracts structured data from NECB PDFs including:
+- Table of contents and sections
+- Tables (requirements, climate zones, U-values, etc.)
+- Key requirements text
+"""
+
+import re
+from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Optional, Dict
+
+import pdfplumber
+from rich.console import Console
+from rich.progress import track
+
+console = Console()
+
+
+@dataclass
+class NECBSection:
+    """Represents a section in NECB"""
+    vintage: str
+    section_number: str
+    title: str
+    content: str
+    page_number: int
+
+
+@dataclass
+class NECBTable:
+    """Represents a table in NECB"""
+    vintage: str
+    table_number: str
+    title: str
+    headers: List[str]
+    rows: List[List[str]]
+    page_number: int
+
+
+@dataclass
+class NECBRequirement:
+    """Represents a specific requirement"""
+    vintage: str
+    section: str
+    requirement_type: str  # e.g., "envelope", "hvac", "lighting", "climate_zone"
+    description: str
+    value: Optional[str]
+    unit: Optional[str]
+
+
+class NECBPDFParser:
+    """Parser for NECB PDF documents"""
+
+    def __init__(self, pdf_path: Path, vintage: str):
+        self.pdf_path = pdf_path
+        self.vintage = vintage
+        self.sections: List[NECBSection] = []
+        self.tables: List[NECBTable] = []
+        self.requirements: List[NECBRequirement] = []
+
+    def parse(self) -> Dict:
+        """
+        Parse the NECB PDF and extract all data
+
+        Returns:
+            Dictionary with sections, tables, and requirements
+        """
+        console.print(f"[cyan]Parsing NECB {self.vintage} ({self.pdf_path.name})...[/cyan]")
+
+        with pdfplumber.open(self.pdf_path) as pdf:
+            total_pages = len(pdf.pages)
+            console.print(f"  Total pages: {total_pages}")
+
+            # Parse each page
+            for page_num in track(range(total_pages), description=f"NECB {self.vintage}"):
+                page = pdf.pages[page_num]
+
+                # Extract tables
+                self._extract_tables_from_page(page, page_num + 1)
+
+                # Extract text sections
+                self._extract_sections_from_page(page, page_num + 1)
+
+        # Extract specific requirements from parsed data
+        self._extract_requirements()
+
+        console.print(f"[green]  Extracted: {len(self.sections)} sections, {len(self.tables)} tables, {len(self.requirements)} requirements[/green]")
+
+        return {
+            "vintage": self.vintage,
+            "sections": self.sections,
+            "tables": self.tables,
+            "requirements": self.requirements,
+        }
+
+    def _extract_tables_from_page(self, page, page_number: int):
+        """Extract tables from a page"""
+        tables = page.extract_tables()
+
+        # Get page text for extracting table metadata
+        page_text = page.extract_text() or ""
+
+        for table_idx, table in enumerate(tables):
+            if not table or len(table) < 2:
+                continue
+
+            # First row is usually headers
+            headers = table[0]
+            rows = table[1:]
+
+            # Extract table number and title from page text
+            table_number, title = self._extract_table_metadata(page_text, page_number, table_idx)
+
+            # Clean up headers and rows
+            headers = [str(h).strip() if h else "" for h in headers]
+            rows = [[str(cell).strip() if cell else "" for cell in row] for row in rows]
+
+            self.tables.append(NECBTable(
+                vintage=self.vintage,
+                table_number=table_number,
+                title=title,
+                headers=headers,
+                rows=rows,
+                page_number=page_number,
+            ))
+
+    def _extract_table_metadata(self, page_text: str, page_number: int, table_idx: int) -> tuple[str, str]:
+        """
+        Extract table number and title from page text.
+
+        NECB tables follow the pattern:
+            Table X.X.X.X.
+            Title Text Here
+            (optional: Forming Part of ...)
+
+        Args:
+            page_text: Full text of the page
+            page_number: Current page number
+            table_idx: Index of this table on the page
+
+        Returns:
+            Tuple of (table_number, title)
+        """
+        # Default fallback values
+        default_number = f"Table-{page_number}-{table_idx}"
+        default_title = "Untitled Table"
+
+        # Look for NECB table number pattern: "Table X.X.X.X." or "Table X.X.X.X.X."
+        # Examples: "Table 3.2.2.2.", "Table 4.2.1.5.A."
+        table_pattern = r'Table\s+(\d+(?:\.\d+)*(?:\.[A-Z])?\.)'
+
+        matches = list(re.finditer(table_pattern, page_text))
+
+        # If we found table numbers, try to extract the corresponding title
+        if table_idx < len(matches):
+            match = matches[table_idx]
+            table_number = f"Table {match.group(1)}"
+
+            # Extract title - typically on lines following the table number
+            # Look for text between table number and "Forming Part" or next table/section
+            start_pos = match.end()
+
+            # Find the end of the title (usually before "Forming Part" or next major element)
+            end_markers = [
+                r'\nForming Part',
+                r'\nNotes to Table',
+                r'\n\d+\.\d+',  # Next section number
+                r'\nTable \d+',  # Next table
+            ]
+
+            end_pos = len(page_text)
+            for marker in end_markers:
+                marker_match = re.search(marker, page_text[start_pos:])
+                if marker_match:
+                    end_pos = min(end_pos, start_pos + marker_match.start())
+
+            # Extract and clean title
+            title_text = page_text[start_pos:end_pos].strip()
+            # Take first few lines as title (usually 1-3 lines)
+            title_lines = [line.strip() for line in title_text.split('\n')[:3] if line.strip()]
+            title = ' '.join(title_lines) if title_lines else default_title
+
+            # Remove extra whitespace and limit length
+            title = re.sub(r'\s+', ' ', title)
+            if len(title) > 200:
+                title = title[:197] + "..."
+
+            return table_number, title
+
+        return default_number, default_title
+
+    def _extract_sections_from_page(self, page, page_number: int):
+        """Extract sections from a page"""
+        text = page.extract_text()
+        if not text:
+            return
+
+        # Look for section patterns like "3.2.1.1." or "Part 3"
+        section_pattern = r'^(\d+(?:\.\d+)*\.?)\s+(.+)$'
+
+        lines = text.split('\n')
+        current_section = None
+        current_content = []
+
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+
+            # Check if this is a section header
+            match = re.match(section_pattern, line)
+            if match:
+                # Save previous section
+                if current_section:
+                    self.sections.append(NECBSection(
+                        vintage=self.vintage,
+                        section_number=current_section[0],
+                        title=current_section[1],
+                        content='\n'.join(current_content),
+                        page_number=page_number,
+                    ))
+
+                # Start new section
+                current_section = (match.group(1), match.group(2))
+                current_content = []
+            elif current_section:
+                current_content.append(line)
+
+        # Save last section
+        if current_section:
+            self.sections.append(NECBSection(
+                vintage=self.vintage,
+                section_number=current_section[0],
+                title=current_section[1],
+                content='\n'.join(current_content),
+                page_number=page_number,
+            ))
+
+    def _extract_requirements(self):
+        """Extract specific requirements from parsed data"""
+
+        # Climate zones (look for climate zone table)
+        for table in self.tables:
+            if any("climate" in h.lower() and "zone" in h.lower() for h in table.headers):
+                for row in table.rows:
+                    if len(row) >= 2:
+                        self.requirements.append(NECBRequirement(
+                            vintage=self.vintage,
+                            section="climate_zones",
+                            requirement_type="climate_zone",
+                            description=f"Climate Zone: {row[0]}",
+                            value=row[1] if len(row) > 1 else None,
+                            unit=None,
+                        ))
+
+        # U-value requirements (look for tables with U-value or RSI)
+        for table in self.tables:
+            if any("u-value" in h.lower() or "rsi" in h.lower() or "thermal" in h.lower() for h in table.headers):
+                for row in table.rows:
+                    if len(row) >= 2 and row[0]:
+                        self.requirements.append(NECBRequirement(
+                            vintage=self.vintage,
+                            section="envelope",
+                            requirement_type="u_value",
+                            description=row[0],
+                            value=row[1] if len(row) > 1 else None,
+                            unit="W/m²·K" if "u-value" in str(table.headers).lower() else "m²·K/W",
+                        ))
+
+        # Lighting power density (look for LPD tables)
+        for table in self.tables:
+            if any("lighting" in h.lower() or "lpd" in h.lower() for h in table.headers):
+                for row in table.rows:
+                    if len(row) >= 2 and row[0]:
+                        self.requirements.append(NECBRequirement(
+                            vintage=self.vintage,
+                            section="lighting",
+                            requirement_type="lighting_power_density",
+                            description=row[0],
+                            value=row[1] if len(row) > 1 else None,
+                            unit="W/m²",
+                        ))
+
+
+def parse_all_necb_pdfs(pdf_dir: Path) -> Dict[str, Dict]:
+    """
+    Parse all NECB PDFs in a directory
+
+    Args:
+        pdf_dir: Directory containing NECB PDFs
+
+    Returns:
+        Dictionary mapping vintage to parsed data
+    """
+    results = {}
+
+    vintages = ["2011", "2015", "2017", "2020"]
+
+    for vintage in vintages:
+        pdf_path = pdf_dir / f"NECB-{vintage}.pdf"
+
+        if not pdf_path.exists():
+            console.print(f"[yellow]Warning: {pdf_path.name} not found[/yellow]")
+            continue
+
+        parser = NECBPDFParser(pdf_path, vintage)
+        results[vintage] = parser.parse()
+
+    return results
+
+
+if __name__ == "__main__":
+    pdf_dir = Path(__file__).parent / "pdfs"
+    results = parse_all_necb_pdfs(pdf_dir)
+
+    console.print("\n[bold cyan]NECB Parsing Summary:[/bold cyan]")
+    for vintage, data in results.items():
+        console.print(f"\n[bold]NECB {vintage}:[/bold]")
+        console.print(f"  Sections: {len(data['sections'])}")
+        console.print(f"  Tables: {len(data['tables'])}")
+        console.print(f"  Requirements: {len(data['requirements'])}")

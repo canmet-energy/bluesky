@@ -15,9 +15,42 @@
       "Bash(shellcheck:*)",
       "Bash(tee:*)",
       "Bash(.devcontainer/scripts/security-scan.sh:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(for gem in openstudio-common-measures-gem-7395eb57c549 openstudio-model-articulation-gem-2054fbe18996 openstudio-calibration-gem-e433d56fb257 openstudio-ee-gem-80a7db164146 openstudio-load-flexibility-measures-gem-0a57ebcaabe6)",
+      "Bash(done)",
+      "WebFetch(domain:code.claude.com)",
+      "Bash(tree:*)",
+      "Bash(gem list:*)",
+      "Bash(gem environment:*)",
+      "WebFetch(domain:s3.amazonaws.com)",
+      "Bash(time curl:*)",
+      "Bash(/workspaces/bluesky/src/bluesky/mcp/data/.gitignore)",
+      "Bash(pip install:*)",
+      "Bash(python -m bluesky.mcp.scrapers:*)",
+      "Bash(curl:*)",
+      "Bash(python -m bluesky.mcp.openstudio_server:*)",
+      "Bash(python:*)",
+      "Bash(timeout 5 python:*)",
+      "Bash(exit 0)",
+      "Bash(timeout 3 uv:*)",
+      "mcp__openstudio__query_necb_requirements",
+      "mcp__openstudio__search_necb",
+      "mcp__openstudio__query_necb_sections",
+      "mcp__openstudio__get_necb_table",
+      "mcp__openstudio__search_ruby_gem_code",
+      "mcp__openstudio__get_ruby_gem_structure",
+      "mcp__openstudio__read_ruby_source_file",
+      "Bash(sqlite3:*)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "openstudio"
+  ]
 }

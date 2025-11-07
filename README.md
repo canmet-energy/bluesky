@@ -1,15 +1,22 @@
 # Bluesky
 
-**A quick-start template for building energy simulation research and development.**
+**A comprehensive starting point for building simulation application development and analysis.**
 
-This repository provides researchers with a ready-to-use development environment for building energy simulation work. It's designed for researchers who need to focus on their R&D rather than configuration management. Use this as a starting point for your bluesky ideas. Future work will include access to MCP servers to support weather, simulation workflow, and building model development with Python and Ruby.  
+This repository provides developers with a ready-to-use environment for building energy simulation applications, supporting development in **Python**, **Ruby**, and **Hot2000**, with full interoperability between languages. It's designed for researchers and developers who need to leverage the best tools from each ecosystem while focusing on their work rather than configuration management.
 
 ## What's Included
 
 ### Pre-installed Core Tools
 - **Python** (3.12+) - Modern Python environment with UV package manager
+  - `openstudio` (3.9.0) - OpenStudio Python bindings
+  - `h2k-hpxml` - Hot2000 to HPXML translation library
+  - `pandas`, `numpy` - Data analysis and scientific computing
+- **Ruby** (3.2.2) - Native OpenStudio scripting language
+  - `openstudio` gem - OpenStudio Ruby SDK
+  - `openstudio-standards` (v0.8.4) - NECB, ASHRAE 90.1, DOE prototypes
 - **OpenStudio** (3.9.0) - Energy modeling and simulation platform
 - **EnergyPlus** - Building energy simulation engine (included with OpenStudio)
+- **Hot2000** - Canadian residential building simulation (via Wine)
 
 ### DevContainer Environment
 - Full VS Code DevContainer support with reproducible builds
@@ -24,6 +31,23 @@ Additional tools available via optional install scripts:
 - Node.js development stack
 - GPU/AI development tools
 - Custom development frameworks
+
+### Proof-of-Concept Examples
+
+**3 focused examples** demonstrating key capabilities:
+
+1. **Python Hot2000 Workflow** - Translate Canadian residential buildings to EnergyPlus
+   - Uses h2k-hpxml library for H2K → HPXML → EnergyPlus pipeline
+
+2. **Ruby NECB Compliance** - Create Canadian code-compliant building models
+   - Leverages openstudio-standards gem (Ruby-exclusive NECB library)
+
+3. **Python-Ruby Interop** - Combine both ecosystems in one workflow
+   - Ruby for standards-based models, Python for data analysis
+
+Each example includes detailed README with concepts, usage, and extension ideas.
+
+**See `examples/README.md` for full documentation and decision guide.**
 
 ## Getting Started
 
@@ -72,13 +96,37 @@ git checkout -b my-research-project
 ### Step 3: Verify Installation
 
 ```bash
-# Check that core tools are available
-python -c "import openstudio; import h2k_hpxml; print('✓ Energy simulation tools ready')"
+# Check Python tools
+python -c "import openstudio; import h2k_hpxml; print('✓ Python: OpenStudio + h2k-hpxml ready')"
 
-# Start developing your research project!
+# Check Ruby tools
+ruby -e "require 'openstudio'; require 'openstudio-standards'; puts '✓ Ruby: OpenStudio + standards ready'"
+
+# Check Hot2000
+hot2000 --help | head -n 1
 ```
 
-### Step 4: Optional Installations
+### Step 4: Run Example Scripts
+
+**Choose your starting point:**
+
+```bash
+# Example 01: Python Hot2000 Workflow
+# Translate Canadian residential .h2k files to EnergyPlus
+python examples/01_python_hot2000_workflow/h2k_to_energyplus.py
+
+# Example 02: Ruby NECB Compliance
+# Create Canadian code-compliant building model
+ruby examples/02_ruby_necb_compliance/create_necb_model.rb
+
+# Example 03: Python-Ruby Interop
+# Combine Ruby standards with Python analysis
+python examples/03_python_ruby_interop/runner.py
+```
+
+**See `examples/README.md` for detailed documentation, prerequisites, and customization options.**
+
+### Step 5: Optional Installations
 
 The template includes optional install scripts in `.devcontainer/scripts/`. Run these as needed:
 
