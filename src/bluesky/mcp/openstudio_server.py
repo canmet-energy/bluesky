@@ -5,6 +5,7 @@ Provides dynamic access to OpenStudio SDK documentation and Ruby gem source code
 """
 
 import json
+import re
 import sqlite3
 from pathlib import Path
 from typing import Optional
@@ -696,7 +697,11 @@ def get_necb_table(
 
     Args:
         vintage: NECB vintage ("2011", "2015", "2017", "2020")
-        table_number: Table number (e.g., "Table 3.2.2.2." or "Table-51-6" for legacy IDs)
+        table_number: Table number - accepts multiple formats:
+            - "3.2.2.2" → normalized to "Table 3.2.2.2."
+            - "Table 3.2.2.2" → normalized to "Table 3.2.2.2."
+            - "Table 3.2.2.2." → used as-is
+            - "Table-51-6" → legacy fallback ID (used as-is)
 
     Returns:
         Table details with headers and rows, or None if not found
@@ -704,17 +709,34 @@ def get_necb_table(
     conn = get_necb_database_connection()
     cursor = conn.cursor()
 
-    # Get table metadata - support both NECB numbers and legacy IDs
-    # Try exact match first, prioritizing lower page numbers (main text over appendices)
+    # Normalize table number to standard format
+    # Support: "3.2.2.2", "Table 3.2.2.2", "Table 3.2.2.2.", "Table-51-6"
+    normalized_table_number = table_number.strip()
+
+    # If it's a fallback ID (Table-XX-X), use as-is
+    if not re.match(r'^Table-\d+-\d+$', normalized_table_number):
+        # If doesn't start with "Table ", add it
+        if not normalized_table_number.startswith("Table "):
+            normalized_table_number = f"Table {normalized_table_number}"
+
+        # If doesn't end with ".", add it (unless it's already "Table-XX-X" format)
+        if not normalized_table_number.endswith(".") and not re.match(r'^Table-\d+-\d+$', normalized_table_number):
+            normalized_table_number = f"{normalized_table_number}."
+
+    # Get table metadata - try exact match first, then pattern match
+    # Prioritize lower page numbers (main text over appendices)
     cursor.execute(
         """
         SELECT id, table_number, title, headers, page_number
         FROM necb_tables
-        WHERE vintage = ? AND table_number = ?
+        WHERE vintage = ? AND (
+            table_number = ? OR
+            table_number LIKE ?
+        )
         ORDER BY page_number ASC
         LIMIT 1
     """,
-        (vintage, table_number),
+        (vintage, normalized_table_number, f"%{table_number}%"),
     )
 
     table_row = cursor.fetchone()
@@ -934,6 +956,136 @@ def compare_necb_vintages(
         "requirement_type": requirement_type,
         "vintages": comparison,
     }
+
+
+@mcp.tool()
+def semantic_search_necb(
+    query: str,
+    vintage: str = "2020",
+    top_k: int = 5,
+    use_query_understanding: bool = True,
+) -> list[dict]:
+    """
+    Natural language semantic search for NECB requirements.
+
+    Combines entity extraction, query expansion, and hybrid keyword+semantic search
+    to find relevant NECB content from natural language queries.
+
+    Examples:
+        "What's the max window area for a 3-story office in Calgary?"
+        "Thermal transmittance requirements for walls in cold climate"
+        "Lighting power density for school classrooms in Toronto"
+        "R-value for roofs in Vancouver NECB 2020"
+
+    Args:
+        query: Natural language query about NECB requirements
+        vintage: NECB vintage (2011, 2015, 2017, 2020) - default: 2020
+        top_k: Number of results to return (default: 5)
+        use_query_understanding: Enable entity extraction and query expansion (default: True)
+
+    Returns:
+        List of search results with:
+        - content: Full text of section/table
+        - vintage: NECB vintage
+        - type: "section" or "table"
+        - title: Section/table title
+        - page_number: Page in PDF
+        - section_number/table_number: Reference number
+        - rrf_score: Relevance score
+        - extracted_entities: Detected location, building type, concepts (if query understanding enabled)
+    """
+    from bluesky.mcp.tools.hybrid_search import NECBHybridSearchEngine
+    from bluesky.mcp.tools.query_understanding import NECBQueryUnderstanding
+
+    # Initialize ChromaDB path
+    chroma_path = Path(__file__).parent / "data" / "chroma"
+
+    # Check if semantic search is available
+    if not chroma_path.exists():
+        return [{
+            "error": "Semantic search not initialized",
+            "message": "Run: python -m bluesky.mcp.tools.vector_indexer to build the vector index",
+            "fallback": "Use search_necb() for keyword-only search"
+        }]
+
+    # Initialize search engine
+    search_engine = NECBHybridSearchEngine(
+        db_path=NECB_DB_PATH,
+        chroma_path=chroma_path
+    )
+
+    # Query understanding (optional)
+    entities = None
+    search_query = query  # Use original query for semantic search
+
+    if use_query_understanding:
+        query_engine = NECBQueryUnderstanding()
+        entities = query_engine.understand_query(query)
+
+        # For semantic search, use focused concept-based query
+        # Avoid diluting with too many terms
+        if entities.concepts:
+            # Use the main concept with NECB synonyms
+            main_concept = entities.concepts[0]
+            necb_terms = query_engine.concept_synonyms.get(main_concept, [])
+
+            # Build focused query: main concept + 1-2 NECB synonyms
+            search_terms = [main_concept]
+            if necb_terms:
+                search_terms.extend(necb_terms[:2])  # Add top 2 synonyms
+
+            search_query = " ".join(search_terms)
+        else:
+            # No concepts extracted, use original query
+            search_query = query
+
+    # Perform hybrid search
+    results = search_engine.search(
+        query=search_query,
+        vintage=vintage,
+        top_k=top_k
+    )
+
+    # Format results
+    formatted_results = []
+    for result in results:
+        formatted = {
+            "content": result.content[:500] + "..." if len(result.content) > 500 else result.content,
+            "vintage": result.vintage,
+            "type": result.content_type,
+            "title": result.title,
+            "page_number": result.page_number,
+            "rrf_score": result.rrf_score,
+        }
+
+        # Add section/table number
+        if result.section_number:
+            formatted["section_number"] = result.section_number
+        if result.table_number:
+            formatted["table_number"] = result.table_number
+
+        # Add ranking info
+        if result.fts_rank:
+            formatted["keyword_rank"] = result.fts_rank
+        if result.semantic_rank:
+            formatted["semantic_rank"] = result.semantic_rank
+            formatted["semantic_distance"] = result.semantic_distance
+
+        # Add extracted entities (if query understanding was used)
+        if entities:
+            formatted["extracted_entities"] = {
+                "location": entities.location,
+                "climate_zone": entities.climate_zone,
+                "hdd": entities.hdd,
+                "building_type": entities.building_type,
+                "concepts": entities.concepts,
+                "vintage": entities.vintage,
+                "confidence": entities.confidence,
+            }
+
+        formatted_results.append(formatted)
+
+    return formatted_results
 
 
 if __name__ == "__main__":
