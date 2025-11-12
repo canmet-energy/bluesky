@@ -355,7 +355,7 @@ result = converter(str(pdf_path))
 - Accuracy: Unknown - testing now with correct API
 
 **CURRENT STATUS**: ⏳ Running test with correct configuration
-- Test file: `/workspaces/bluesky/test_marker_table_converter.py`
+- Test file: `tests/integration/parser_v2/test_marker_table_converter.py`
 - Using: TableConverter + use_llm=True + llama3.2-vision
 - Cache: Pickle format for instant re-analysis
 
