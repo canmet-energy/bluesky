@@ -1,0 +1,4 @@
+model_name,simulation_engine,annual_heating_kwh,annual_cooling_kwh,annual_electricity_kwh,annual_gas_gj,total_site_energy_gj,eui_kwh_m2
+simple_house,Hot2000,15000,0,5000,65.5,83.5,180
+simple_house,EnergyPlus,14800,0,5200,64.2,82.9,178
+small_office,EnergyPlus,45000,35000,25000,45.0,333.0,165

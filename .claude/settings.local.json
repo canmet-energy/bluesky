@@ -44,7 +44,17 @@
       "mcp__openstudio__get_ruby_gem_structure",
       "mcp__openstudio__read_ruby_source_file",
       "Bash(sqlite3:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "mcp__openstudio__compare_necb_vintages",
+      "mcp__openstudio__semantic_search_necb",
+      "Bash(pytest:*)",
+      "Bash(xargs:*)",
+      "Bash(timeout 7200 pytest:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(ollama list:*)",
+      "Bash(ollama pull:*)",
+      "Bash(timeout 7200 python test_marker_table_converter.py:*)",
+      "Bash(pdffonts:*)"
     ],
     "deny": [],
     "ask": []

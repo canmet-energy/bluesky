@@ -1,0 +1,19 @@
+{
+    "package_file": "wine_hot2000_prefix.tar.gz",
+    "created_date": "2025-08-18T17:09:57Z",
+    "wine_arch": "win32",
+    "wine_prefix": "/home/vscode/.wine_hot2000",
+    "hot2000_path": "drive_c/h2kcli/HOT2000.exe",
+    "package_size_bytes": 576719082,
+    "chunked": true,
+    "chunk_count": 7,
+    "chunk_size": "90M",
+    "chunk_pattern": "wine_hot2000_prefix.tar.gz.part*",
+    "creator": "setup_hot2000.sh",
+    "wine_version": "wine-10.0",
+    "system_info": {
+        "os": "Linux",
+        "arch": "x86_64",
+        "kernel": "6.6.87.2-microsoft-standard-WSL2"
+    }
+}

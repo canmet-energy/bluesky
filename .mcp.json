@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "openstudio": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/workspaces/bluesky",
+        "run",
+        "python",
+        "-m",
+        "bluesky.mcp.openstudio_server"
+      ],
+      "env": {
+        "OPENSTUDIO_GEM_PATH": "/workspaces/bluesky/vendor/bundle/ruby/3.2.0/bundler/gems"
+      }
+    }
+  }
+}
