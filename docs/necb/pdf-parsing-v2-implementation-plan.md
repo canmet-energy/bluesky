@@ -1,7 +1,9 @@
 # NECB PDF Parsing v2: Hybrid Architecture Implementation Plan
 
-**Status**: Planning Phase
+**Status**: 🚧 In Progress - Phases 1-2 Complete, Phase 3 Decision Required
 **Created**: 2025-11-10
+**Last Updated**: 2025-11-12
+**Branch**: `mcp` (pushed to origin/mcp)
 **Objective**: Replace Camelot-only parsing with a robust hybrid stack for accurate NECB table extraction
 
 ---
@@ -1553,4 +1555,210 @@ FAILED - AssertionError: Should extract at least one table
 
 ---
 
-*Last updated: 2025-11-10*
+### 2025-11-12 - Branch Created, V1 Deleted, Ready for Continuation
+
+**IMPORTANT: Work is on `mcp` branch, NOT `main`**
+
+All parser v2 work has been committed to the `mcp` branch and pushed to `origin/mcp`:
+- Commit: `7dd006c` - "Move Marker test to proper location in tests directory"
+- Previous: `e17b4e6` - "Add NECB Parser V2 and Semantic Search infrastructure"
+- Branch tracking: `mcp` → `origin/mcp`
+
+**V1 Parser DELETED** ❌ (Camelot-based parser did not work):
+- Deleted files:
+  - `src/bluesky/mcp/scrapers/necb/necb_pdf_parser.py` (Camelot stream/lattice)
+  - `src/bluesky/mcp/scrapers/necb/necb_db_builder.py` (V1 database builder)
+  - `src/bluesky/mcp/scrapers/necb/REGENERATE_DB.md` (V1 docs)
+  - `src/bluesky/mcp/scrapers/necb/page_number_extractor.py` (V1 utility)
+  - `docs/necb/README.md` (V1 status documentation)
+- Reason: V1 Camelot parser failed on complex tables, especially NECB 2020
+
+**Development Artifacts CLEANED** 🧹:
+- Deleted 13 undocumented test/debug scripts (57KB) from project root
+- Moved `test_marker_table_converter.py` to `tests/integration/parser_v2/`
+- Root directory now clean - only production code remains
+
+**Current Implementation Status** (as of 2025-11-12):
+
+```
+Phase 1: Setup & Dependencies               ✅ COMPLETE (2025-11-10)
+  - Dependencies: pymupdf4llm, marker-pdf, ollama, pydantic, chromadb
+  - Tests: tests/unit/parser_v2/test_dependencies.py (5 passed)
+  - Ollama: llama3.1:8b installed (4.7GB)
+  - Status: All dependencies validated
+
+Phase 2: PyMuPDF Baseline Extractor         ✅ COMPLETE (2025-11-10)
+  - Code: parser_v2/pymupdf_extractor.py (300 lines)
+  - Schemas: parser_v2/schemas.py (157 lines) - 6 NECB table types
+  - Tests: tests/unit/parser_v2/test_schemas.py (12 passed)
+         tests/integration/parser_v2/test_pymupdf_necb.py (3 passed)
+  - Results: NECB 2011 & 2020 extraction working (confidence 1.00)
+  - Status: Production-ready for simple-to-medium complexity tables
+
+Phase 3: Marker Advanced Extractor          ⚠️ DECISION REQUIRED
+  - Code: parser_v2/marker_extractor.py (355 lines) - uses PdfConverter (WRONG API)
+  - Discovered correct API: TableConverter + OllamaService + use_llm=True
+  - Test: tests/integration/parser_v2/test_marker_table_converter.py (correct API)
+  - Status: Code exists but uses wrong API, correct API discovered but NOT TESTED
+  - ❌ First attempt: 79 minutes, 0 tables extracted (wrong API)
+  - ⏳ Second attempt: Ready to test with TableConverter + llama3.2-vision (7.8GB)
+
+  **CRITICAL DECISION FOR CONTINUATION:**
+  Option A: Test Marker with correct TableConverter API
+    - Requires: Download llama3.2-vision model (7.8GB)
+    - Runtime: 60-90 minutes first run (cacheable)
+    - Benefit: May handle complex merged cells better
+    - Risk: May still fail, time investment
+
+  Option B: Skip Marker, proceed with PyMuPDF + LLM only
+    - Faster development path
+    - PyMuPDF already 80-90% success rate
+    - LLM repair can normalize PyMuPDF output
+    - Simpler architecture
+
+  **Recommendation**: Try Option B first (PyMuPDF + LLM), revisit Marker only if accuracy <95%
+
+Phase 4: LLM Repair & Normalization         🚧 PARTIALLY IMPLEMENTED
+  - Code: parser_v2/llm_repair.py (369 lines)
+  - Status: Basic structure implemented, needs completion:
+    - ✅ LLMTableRepairer class with Ollama client
+    - ✅ Schema registry integration
+    - ⚠️ repair_and_normalize() method exists but needs testing
+    - ⚠️ Prompt generation needs refinement
+    - ❌ No tests yet
+  - Next: Complete implementation and add tests
+
+Phase 5: Integration & Orchestration        ❌ NOT STARTED
+  - Planned: parser_v2/hybrid_parser.py (~400 lines)
+  - Purpose: Orchestrate PyMuPDF → (Marker?) → LLM pipeline
+  - Depends on: Phase 4 complete, Phase 3 decision made
+  - Tests: tests/integration/parser_v2/test_hybrid_parser_*.py
+
+Phase 6: Database Migration & Validation    ❌ NOT STARTED
+  - Planned: New database builder for v2 parser output
+  - Migration: necb.db (v1) → necb_v2.db (parallel build)
+  - Validation: Comprehensive quality tests (v1 vs v2 comparison)
+  - Depends on: Phases 4-5 complete
+```
+
+**Semantic Search Status** ✅ PRODUCTION READY:
+- Tool #17 in MCP server (semantic_search_necb)
+- ChromaDB vector index with Ollama nomic-embed-text
+- Hybrid keyword + semantic search with RRF
+- Query understanding with entity extraction
+- Documented in src/bluesky/mcp/README.md
+
+**File Structure** (as of 2025-11-12):
+```
+src/bluesky/mcp/
+├── scrapers/necb/
+│   ├── necb_pdf_downloader.py       # V1 (kept - downloads PDFs)
+│   └── parser_v2/                   # V2 implementation (7 files, 1,302 lines)
+│       ├── __init__.py
+│       ├── config.py
+│       ├── models.py
+│       ├── schemas.py               # ✅ Complete - 6 table types
+│       ├── pymupdf_extractor.py     # ✅ Complete - fast baseline
+│       ├── marker_extractor.py      # ⚠️ Uses wrong API, needs fix
+│       └── llm_repair.py            # 🚧 Partial - needs completion
+├── tools/                           # Semantic search (4 files)
+│   ├── vector_indexer.py
+│   ├── hybrid_search.py
+│   ├── query_understanding.py
+│   └── model_config.py
+└── README.md                        # ✅ Updated - documents all 17 tools
+
+tests/
+├── unit/parser_v2/
+│   ├── test_dependencies.py         # ✅ 5 tests passed
+│   └── test_schemas.py              # ✅ 12 tests passed
+└── integration/parser_v2/
+    ├── test_pymupdf_necb.py         # ✅ 3 tests passed
+    ├── test_marker_necb.py          # ⚠️ Uses wrong Marker API
+    └── test_marker_table_converter.py  # ⏳ Ready for correct API test
+
+docs/necb/
+├── pdf-parsing-v2-implementation-plan.md  # This file (1,557 lines)
+├── necb-guide.md                    # NECB code reference
+├── database-validation-report.md   # Quality metrics
+└── semantic-search.md               # Semantic search guide
+```
+
+**Test Status**:
+- ✅ 20 tests passing (dependencies, schemas, PyMuPDF extraction)
+- ⚠️ 2 tests need updates (Marker tests using wrong API)
+- ❌ 0 tests for LLM repair (Phase 4)
+- ❌ 0 tests for hybrid parser (Phase 5)
+
+**Dependencies Added** (in pyproject.toml):
+```toml
+dependencies = [
+    "pymupdf4llm>=0.0.17",     # Fast PDF→Markdown conversion
+    "marker-pdf>=0.2.17",      # Model-powered table extraction
+    "ollama>=0.3.0",           # Local LLM client
+    "pydantic>=2.0.0",         # Schema validation
+    "chromadb>=0.4.0",         # Vector database for semantic search
+    # ... existing dependencies
+]
+```
+
+**Next Steps for Continuation** (Priority Order):
+
+1. **DECIDE on Marker** (Phase 3):
+   - If testing Marker: Update `marker_extractor.py` to use `TableConverter` + `OllamaService`
+   - If skipping Marker: Delete `marker_extractor.py` and related tests
+   - Update implementation plan with decision
+
+2. **Complete LLM Repair** (Phase 4):
+   - Finish `llm_repair.py` implementation
+   - Test prompt generation and schema validation
+   - Add comprehensive tests
+   - Verify deterministic output (temperature=0)
+
+3. **Build Integration Layer** (Phase 5):
+   - Create `hybrid_parser.py` orchestrator
+   - Implement PyMuPDF → LLM pipeline (or PyMuPDF → Marker → LLM)
+   - Add end-to-end integration tests
+   - Performance profiling
+
+4. **Database Builder** (Phase 6):
+   - Create new database builder using v2 parser
+   - Parallel build strategy (necb_v2.db)
+   - Validation against v1 database (regression tests)
+   - Cutover plan
+
+5. **Production Deployment**:
+   - Full NECB rebuild (all 4 vintages)
+   - Quality validation (≥95% success rate target)
+   - Update MCP server to use v2 database
+   - Documentation updates
+
+**Known Issues**:
+- `marker_extractor.py` uses `PdfConverter` instead of `TableConverter` (line 13)
+- No LLM enhancement enabled (`use_llm=True` not configured)
+- No Ollama service integration for Marker
+- LLM repair layer incomplete (needs testing and validation)
+- No end-to-end pipeline tests
+
+**Performance Expectations** (once complete):
+- PyMuPDF: <1s per page, 80-90% success
+- LLM repair: 2-5s per table (CPU), 0.5s (GPU)
+- Full document: 10-30s (with GPU + caching)
+- Database rebuild: 5-10 minutes (parallel + GPU)
+
+**Branch Information**:
+- Current work: `mcp` branch (commits e17b4e6, df28cf9, 7dd006c)
+- Main branch: Unmodified (e4aa84e)
+- Remote: `origin/mcp` pushed and up-to-date
+- PR: Can be created at https://github.com/canmet-energy/bluesky/pull/new/mcp
+
+**IMPORTANT FOR NEXT SESSION**:
+1. You are on the `mcp` branch, not `main`
+2. V1 parser is completely deleted - do not attempt to use it
+3. Phase 3 decision (Marker yes/no) is critical blocker for Phases 4-5
+4. Semantic search is production-ready and working
+5. All work backed up to GitHub at `origin/mcp`
+
+---
+
+*Last updated: 2025-11-12*
