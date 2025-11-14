@@ -2,11 +2,11 @@
 set -e
 
 # Install GitHub CLI
-echo "ðŸ™ Installing GitHub CLI..."
+echo "🐙 Installing GitHub CLI..."
 
 # Check for root/sudo privileges
 if [ "$EUID" -ne 0 ]; then
-    echo "âŒ Error: This script requires root privileges"
+    echo "❌ Error: This script requires root privileges"
     echo "   Please run with sudo: sudo $0 $@"
     exit 1
 fi
@@ -25,5 +25,5 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githu
 apt-get update
 apt-get install -y gh
 
-echo "âœ… GitHub CLI installed successfully"
+echo "✅ GitHub CLI installed successfully"
 gh --version

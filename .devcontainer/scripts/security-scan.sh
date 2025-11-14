@@ -61,25 +61,25 @@ TRIVY_VERSION="v0.50.0"
 ################################################################################
 
 print_header() {
-    echo -e "${CYAN}â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”${NC}"
+    echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo -e "${CYAN}  $1${NC}"
-    echo -e "${CYAN}â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”${NC}"
+    echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 }
 
 print_section() {
-    echo -e "\n${BLUE}â–¶ $1${NC}"
+    echo -e "\n${BLUE}▶ $1${NC}"
 }
 
 print_success() {
-    echo -e "${GREEN}âœ“ $1${NC}"
+    echo -e "${GREEN}✓ $1${NC}"
 }
 
 print_warning() {
-    echo -e "${YELLOW}âš  $1${NC}"
+    echo -e "${YELLOW}⚠ $1${NC}"
 }
 
 print_error() {
-    echo -e "${RED}âœ— $1${NC}"
+    echo -e "${RED}✗ $1${NC}"
 }
 
 show_help() {
@@ -577,10 +577,10 @@ generate_summary() {
     fi
 
     if [ "$has_critical" = true ]; then
-        echo -e "\n${RED}âš  CRITICAL ISSUES FOUND - Review report immediately${NC}\n"
+        echo -e "\n${RED}⚠ CRITICAL ISSUES FOUND - Review report immediately${NC}\n"
         return 1
     else
-        echo -e "\n${GREEN}âœ“ No critical issues found${NC}\n"
+        echo -e "\n${GREEN}✓ No critical issues found${NC}\n"
         return 0
     fi
 }

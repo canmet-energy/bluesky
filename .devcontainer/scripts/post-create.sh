@@ -4,15 +4,15 @@
 
 set -e  # Exit on error
 
-echo "ðŸš€ Starting post-create setup..."
+echo "🚀 Starting post-create setup..."
 
 # Refresh certificate status and enable terminal banner (non-blocking)
 if command -v certctl >/dev/null 2>&1; then
-    echo "ðŸ” Checking certificate status..."
+    echo "🔐 Checking certificate status..."
     certctl banner || true
 
     # Enable certificate status banner in new terminals
-    echo "ðŸ” Enabling certificate status banner for new terminals..."
+    echo "🔐 Enabling certificate status banner for new terminals..."
     sudo sed -i 's/^    # certctl_banner 2>\/dev\/null || true$/    certctl_banner 2>\/dev\/null || true/' /etc/profile.d/certctl-env.sh || true
 fi
 
@@ -29,7 +29,7 @@ EPPY_VERSION="${DEVCONTAINER_EPPY_VERSION:-0.5.63}"
 H2K_HPXML_BRANCH="${DEVCONTAINER_H2K_HPXML_BRANCH:-main}"
 OPENSTUDIO_VERSION="${DEVCONTAINER_OPENSTUDIO_VERSION:-3.9.0}"
 
-echo "ðŸ§ª Preparing dependency spec (pyproject.toml)"
+echo "🧪 Preparing dependency spec (pyproject.toml)"
 if [ -f "$PYPROJECT_TOML" ]; then
   python3 - "$PYPROJECT_TOML" "$EPPY_VERSION" "$H2K_HPXML_BRANCH" "$OPENSTUDIO_VERSION" <<'PYEOF'
 import sys
@@ -52,12 +52,12 @@ required_deps = {
 missing = []
 for name, spec in required_deps.items():
   found = any((name in line) and ("=" in line or "@ git+" in line) for line in lines)
-  print(("âœ“ Found" if found else "âš  Missing") + f": {spec}")
+  print(("✓ Found" if found else "⚠ Missing") + f": {spec}")
   if not found:
     missing.append(spec)
 
 if not missing:
-  print("âœ… pyproject.toml already contains required dependencies")
+  print("✅ pyproject.toml already contains required dependencies")
   sys.exit(0)
 
 # Locate dependencies block
@@ -71,7 +71,7 @@ for i,l in enumerate(lines):
     break
 
 if deps_start is None or deps_end is None:
-  print("âŒ Could not find dependencies section", file=sys.stderr)
+  print("❌ Could not find dependencies section", file=sys.stderr)
   sys.exit(1)
 
 # Ensure last existing dep ends with comma if there is at least one dependency line
@@ -87,40 +87,40 @@ for spec in missing:
   insert_at += 1
 
 pyproject_path.write_text("\n".join(lines) + "\n")
-print(f"ðŸ“ Added {len(missing)} dependencies to pyproject.toml")
+print(f"📝 Added {len(missing)} dependencies to pyproject.toml")
 sys.exit(2)
 PYEOF
   case $? in
-  0) echo "âœ… pyproject.toml ok (no changes)" ;;
-  1) echo "âŒ Failed to update pyproject.toml (dependencies block not found)" ;;
-  2) echo "âœ… pyproject.toml updated with missing dependencies" ;;
+  0) echo "✅ pyproject.toml ok (no changes)" ;;
+  1) echo "❌ Failed to update pyproject.toml (dependencies block not found)" ;;
+  2) echo "✅ pyproject.toml updated with missing dependencies" ;;
   esac
 else
-  echo "âš ï¸ pyproject.toml not found at $PYPROJECT_TOML (skipping Python dependency sync)"
+  echo "⚠️ pyproject.toml not found at $PYPROJECT_TOML (skipping Python dependency sync)"
 fi
 
 # Detect Docker socket mount (host Docker access).
-echo "ðŸ³ Checking Docker support..."
+echo "🐳 Checking Docker support..."
 if [ -S /var/run/docker.sock ]; then
-  echo "âœ… Docker support active (host socket mounted)."
+  echo "✅ Docker support active (host socket mounted)."
   # Attempt to set group for convenience; ignore failure if group doesn't exist
   if getent group docker >/dev/null 2>&1; then
-    sudo chgrp docker /var/run/docker.sock 2>/dev/null || echo "â„¹ï¸ Could not change group to 'docker' (non-critical)."
+    sudo chgrp docker /var/run/docker.sock 2>/dev/null || echo "ℹ️ Could not change group to 'docker' (non-critical)."
   fi
   echo "   Security notice: Mounting /var/run/docker.sock grants this container broad control over the host Docker daemon (effectively root-level via container creation, volume mounts, image pulls)."
   echo "   Use ONLY in trusted development environments; avoid in production or with untrusted code."
 else
-  echo "â„¹ï¸ Docker-in-Docker support not activated (socket not mounted)."
+  echo "ℹ️ Docker-in-Docker support not activated (socket not mounted)."
 fi
 
-echo "ðŸ Creating / refreshing Python virtual environment..."
+echo "🐍 Creating / refreshing Python virtual environment..."
 
 # Allow Python version override via DEVCONTAINER_PYTHON_VERSION (preferred) or PYTHON_VERSION
 _PY_REQ="${DEVCONTAINER_PYTHON_VERSION:-${PYTHON_VERSION:-3.12}}"
 if [[ "$_PY_REQ" =~ ^3\.[0-9]+$ || "$_PY_REQ" =~ ^[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
-  echo "â„¹ï¸ Using Python version request: $_PY_REQ"
+  echo "ℹ️ Using Python version request: $_PY_REQ"
 else
-  echo "âš ï¸ Invalid Python version '$_PY_REQ' â€“ falling back to 3.12" >&2
+  echo "⚠️ Invalid Python version '$_PY_REQ' – falling back to 3.12" >&2
   _PY_REQ=3.12
 fi
 
@@ -129,21 +129,21 @@ uv venv --python "$_PY_REQ" --clear
 uv pip install -e '.[dev]'
 
 # Install OpenStudio and EnergyPlus binaries via os-setup
-echo "ðŸ—ï¸ Installing OpenStudio and EnergyPlus via os-setup..."
-echo "â„¹ï¸  This may take several minutes on first run..."
+echo "🏗️ Installing OpenStudio and EnergyPlus via os-setup..."
+echo "ℹ️  This may take several minutes on first run..."
 uv run os-setup --install-quiet
-echo "âœ… OpenStudio and EnergyPlus installation complete"
+echo "✅ OpenStudio and EnergyPlus installation complete"
 
 # Optional: GPU AI/LLM stack (PyTorch w/ CUDA) if host provides NVIDIA runtime
 # Installation delegated to modular script for maintainability
 bash "$(dirname "$0")/install-user-gpu-ai.sh" || true
 
 # Configure Git (personalize as needed, edit as needed. Uncomment and set your details but avoid committing them)
-echo "ðŸ“ Configuring Git..."
+echo "📝 Configuring Git..."
 # git config --global user.email 'phylroy.lopez@nrcan.gc.ca' && git config --global user.name 'Phylroy Lopez'
 
 # Configure bash environment for auto-activation of virtual environment (venv)
-echo "âš™ï¸ Configuring shell environment..."
+echo "⚙️ Configuring shell environment..."
 
 # Add virtual environment auto-activation to bashrc
 if ! grep -q 'Auto-activate project venv' ~/.bashrc 2>/dev/null; then
@@ -153,7 +153,7 @@ if ! grep -q 'Auto-activate project venv' ~/.bashrc 2>/dev/null; then
 for CANDIDATE in /workspaces/bluesky /workspaces/*; do
   if [ -f "${CANDIDATE}/.venv/bin/activate" ] && [ -z "$VIRTUAL_ENV" ]; then
     . "${CANDIDATE}/.venv/bin/activate"
-    echo "ðŸ Virtual environment activated: $(python --version)"
+    echo "🐍 Virtual environment activated: $(python --version)"
     break
   fi
 done
@@ -169,8 +169,8 @@ if [ ! -f ~/.bash_profile ] || ! grep -q '.bashrc' ~/.bash_profile 2>/dev/null; 
     echo '[[ -f ~/.bashrc ]] && . ~/.bashrc' >> ~/.bash_profile
 fi
 
-echo "âœ… Core post-create setup complete (venv + certs + git shell)."
-echo "ðŸ“Œ Open a new terminal to ensure shell auto-activation applies."
+echo "✅ Core post-create setup complete (venv + certs + git shell)."
+echo "📌 Open a new terminal to ensure shell auto-activation applies."
 
 # -----------------------------
 # Gemfile management (moved from install-user-ruby.sh)
@@ -180,7 +180,7 @@ echo "ðŸ“Œ Open a new terminal to ensure shell auto-activation applies."
 #  - Optionally add simulation gems if OpenStudio installed
 # -----------------------------
 
-echo "ðŸ’Ž Managing Gemfile (post-create)..."
+echo "💎 Managing Gemfile (post-create)..."
 
 PROJECT_ROOT="$(pwd)"
 GEMFILE_PATH="$PROJECT_ROOT/Gemfile"
@@ -205,7 +205,7 @@ if [[ ! "$OS_STANDARDS_VERSION" =~ ^v ]]; then
 fi
 
 if ! $have_ruby; then
-  echo "â„¹ï¸ Ruby not installed yet; skipping Gemfile management. Run install-user-ruby.sh then re-run post-create if needed.";
+  echo "ℹ️ Ruby not installed yet; skipping Gemfile management. Run install-user-ruby.sh then re-run post-create if needed.";
 else
   create_base_gemfile() {
     cat > "$GEMFILE_PATH" <<'EOF'
@@ -232,7 +232,7 @@ EOF
   }
 
   if [ ! -f "$GEMFILE_PATH" ]; then
-    echo "ðŸ“ Creating new Gemfile..."
+    echo "📝 Creating new Gemfile..."
     create_base_gemfile
     gemfile_new=true
   else
@@ -260,7 +260,7 @@ EOF
   }
 
   if $have_openstudio; then
-    echo "ðŸ” OpenStudio detected; ensuring simulation gems & standards present."
+    echo "🔍 OpenStudio detected; ensuring simulation gems & standards present."
     ensure_gem_in_group simulation 'gem "rubyzip", "~> 2.3"'
     # Add openstudio-standards gem (git tag) if not already present
     if ! grep -q 'openstudio-standards' "$GEMFILE_PATH"; then
@@ -270,34 +270,34 @@ EOF
 gem "openstudio-standards", git: "https://github.com/NREL/openstudio-standards.git", tag: "$OS_STANDARDS_VERSION"
 EOF
     else
-      echo "âœ… openstudio-standards already in Gemfile"
+      echo "✅ openstudio-standards already in Gemfile"
     fi
   else
-    echo "â„¹ï¸ OpenStudio not detected; skipping openstudio-standards gem."
+    echo "ℹ️ OpenStudio not detected; skipping openstudio-standards gem."
   fi
 
-  echo "ðŸ“¦ Configuring bundler to use vendor/bundle..."
+  echo "📦 Configuring bundler to use vendor/bundle..."
   if command -v bundle >/dev/null 2>&1; then
     # Configure bundler to install gems to vendor/bundle
     (cd "$PROJECT_ROOT" && bundle config set --local path 'vendor/bundle')
-    echo "âœ… Bundler configured to install to vendor/bundle"
+    echo "✅ Bundler configured to install to vendor/bundle"
 
-    echo "ðŸ“¦ Running bundle install (may update lock)..."
+    echo "📦 Running bundle install (may update lock)..."
     if (cd "$PROJECT_ROOT" && bundle install); then
-      echo "âœ… bundle install complete"
+      echo "✅ bundle install complete"
       echo "   Gems installed to: $PROJECT_ROOT/vendor/bundle"
     else
-      echo "âš ï¸ bundle install failed (network or gem resolution issue)" >&2
+      echo "⚠️ bundle install failed (network or gem resolution issue)" >&2
     fi
   else
-    echo "âš ï¸ bundler not found; run 'gem install bundler' then 'bundle install' manually." >&2
+    echo "⚠️ bundler not found; run 'gem install bundler' then 'bundle install' manually." >&2
   fi
 
   if $gemfile_new; then
-    echo "âœ… Gemfile created at $GEMFILE_PATH"
+    echo "✅ Gemfile created at $GEMFILE_PATH"
   else
-    echo "âœ… Gemfile updated at $GEMFILE_PATH"
+    echo "✅ Gemfile updated at $GEMFILE_PATH"
   fi
 fi
 
-echo "ðŸ”š Post-create Gemfile management complete."
+echo "🔚 Post-create Gemfile management complete."

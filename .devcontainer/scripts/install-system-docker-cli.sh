@@ -2,11 +2,11 @@
 set -e
 
 # Install Docker CLI
-echo "ðŸ³ Installing Docker CLI..."
+echo "🐳 Installing Docker CLI..."
 
 # Check for root/sudo privileges
 if [ "$EUID" -ne 0 ]; then
-    echo "âŒ Error: This script requires root privileges"
+    echo "❌ Error: This script requires root privileges"
     echo "   Please run with sudo: sudo $0 $@"
     exit 1
 fi
@@ -28,5 +28,5 @@ apt-get install -y docker-ce-cli docker-compose-plugin
 groupadd -f docker
 usermod -aG docker vscode
 
-echo "âœ… Docker CLI installed successfully"
+echo "✅ Docker CLI installed successfully"
 docker --version

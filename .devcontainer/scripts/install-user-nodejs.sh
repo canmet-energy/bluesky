@@ -2,7 +2,7 @@
 set -e
 
 # Install Node.js for user (no sudo required)
-echo "ðŸŸ¢ Installing Node.js for user $(whoami)..."
+echo "🟢 Installing Node.js for user $(whoami)..."
 
 # Certificate environment now handled system-wide by certctl
 # Get appropriate curl flags from environment (set by certctl if available)
@@ -12,11 +12,11 @@ CURL_FLAGS="${CURL_FLAGS:--fsSL}"
 # Fallback default remains 22.11.0 if neither provided.
 NODE_VERSION_INPUT="${DEVCONTAINER_NODE_VERSION:-${NODE_VERSION:-22.11.0}}"
 
-# Basic semantic version validation (major.minor.patch) â€“ tolerate a leading 'v'.
+# Basic semantic version validation (major.minor.patch) – tolerate a leading 'v'.
 if [[ "$NODE_VERSION_INPUT" =~ ^v?[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     NODE_VERSION="${NODE_VERSION_INPUT#v}" # strip leading v if present
 else
-    echo "âŒ Invalid Node version format: '$NODE_VERSION_INPUT' (expected MAJOR.MINOR.PATCH)" >&2
+    echo "❌ Invalid Node version format: '$NODE_VERSION_INPUT' (expected MAJOR.MINOR.PATCH)" >&2
     exit 2
 fi
 
@@ -28,7 +28,7 @@ elif [ -n "${NODE_VERSION:-}" ]; then
 else
     _node_version_source="default (22.11.0)"
 fi
-echo "â„¹ï¸ Using Node.js version ${NODE_VERSION} (source: ${_node_version_source})"
+echo "ℹ️ Using Node.js version ${NODE_VERSION} (source: ${_node_version_source})"
 
 # Set up installation directory in user's home
 INSTALL_DIR="$HOME/.local"
@@ -36,23 +36,23 @@ mkdir -p "$INSTALL_DIR"
 
 # Download and install Node.js
 DOWNLOAD_URL="https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz"
-echo "ðŸ“¥ Downloading Node.js v${NODE_VERSION}..."
+echo "📥 Downloading Node.js v${NODE_VERSION}..."
 if ! curl ${CURL_FLAGS} --connect-timeout 30 "$DOWNLOAD_URL" -o /tmp/node.tar.xz; then
-    echo "âŒ Node.js download failed. Check network connectivity" >&2
+    echo "❌ Node.js download failed. Check network connectivity" >&2
     exit 1
 fi
 
-echo "ðŸ“¦ Extracting Node.js..."
+echo "📦 Extracting Node.js..."
 cd /tmp
 tar -xJf node.tar.xz
 
 # Install to user's .local directory
-echo "ðŸ“‚ Installing to $INSTALL_DIR..."
+echo "📂 Installing to $INSTALL_DIR..."
 cp -r node-v${NODE_VERSION}-linux-x64/* "$INSTALL_DIR/"
 rm -rf /tmp/node*
 
 # Update PATH in user's shell configuration
-echo "ðŸ”§ Configuring PATH..."
+echo "🔧 Configuring PATH..."
 if ! grep -q "$INSTALL_DIR/bin" ~/.bashrc 2>/dev/null; then
     echo "export PATH=\"$INSTALL_DIR/bin:\$PATH\"" >> ~/.bashrc
 fi
@@ -66,7 +66,7 @@ export PATH="$INSTALL_DIR/bin:$PATH"
 
 # Configure npm for certificate handling if needed
 if [ "${CERT_INSECURE:-}" = "1" ]; then
-    echo "âš ï¸  Insecure certificate mode detected - relaxing npm SSL settings"
+    echo "⚠️  Insecure certificate mode detected - relaxing npm SSL settings"
     npm config set ca ""
     npm config set strict-ssl false
 else
@@ -76,10 +76,10 @@ else
 fi
 npm config set registry https://registry.npmjs.org/
 
-echo "âœ… Node.js installed successfully for user $(whoami)"
+echo "✅ Node.js installed successfully for user $(whoami)"
 echo "   Node.js: $(node --version)"
 echo "   npm: $(npm --version)"
 echo "   Installation directory: $INSTALL_DIR"
 echo ""
-echo "ðŸ’¡ npm global packages will be installed to: $(npm config get prefix)"
+echo "💡 npm global packages will be installed to: $(npm config get prefix)"
 echo "   No sudo required for: npm install -g <package>"
