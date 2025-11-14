@@ -18,7 +18,7 @@
 case $- in *i*) : ;; *) return 0 2>/dev/null || exit 0 ;; esac
 
 ## ---------------------------------------------------------------------------
-## One‑time bootstrap guard
+## Oneâ€‘time bootstrap guard
 ##   - We only create/activate the venv on the first load
 ##   - Functions & prompt logic ALWAYS refresh so edits take effect immediately
 ## ---------------------------------------------------------------------------
@@ -90,8 +90,8 @@ _dev_venv_segment() {  # Active virtualenv name (if any)
   printf '%s(%s)%s ' "$C_CYAN" "$name" "$C_RESET"
 }
 
-_dev_exit_segment() {  # Red ✘ when previous command failed
-  [ "$1" -ne 0 ] && printf '%s✘%s ' "$C_RED" "$C_RESET"
+_dev_exit_segment() {  # Red âœ˜ when previous command failed
+  [ "$1" -ne 0 ] && printf '%sâœ˜%s ' "$C_RED" "$C_RESET"
 }
 
 _dev_user_segment() {  # Username only (keeps prompt compact)
@@ -105,7 +105,7 @@ _dev_gpu_segment() {  # Show GPU icon if NVIDIA runtime present (cached)
   fi
   if command -v nvidia-smi >/dev/null 2>&1; then
     # Simple assumption: if nvidia-smi exists, GPU accessible; choose universal icon
-    DEV_GPU_ICON_CACHED='⚡'
+    DEV_GPU_ICON_CACHED='âš¡'
     printf '%s' "$DEV_GPU_ICON_CACHED"
   else
     DEV_GPU_ICON_CACHED=''
@@ -113,7 +113,7 @@ _dev_gpu_segment() {  # Show GPU icon if NVIDIA runtime present (cached)
 }
 
 _dev_build_ps1() {     # Classic multi-line prompt only
-  local ec=$? arrow="${C_DIM}➜${C_RESET}" git path venv user exitc gpu
+  local ec=$? arrow="${C_DIM}âžœ${C_RESET}" git path venv user exitc gpu
   exitc=$(_dev_exit_segment $ec)
   venv=$(_dev_venv_segment)
   user=$(_dev_user_segment)

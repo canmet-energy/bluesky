@@ -7,7 +7,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04
 
 # Install certificate management (single script)
 COPY .devcontainer/certs* /tmp/certs/
-COPY .devcontainer/scripts/certctl-safe.sh /tmp/
+COPY .devcontainer/scripts/certctl-safe.sh /tmp/certctl-safe.sh
 RUN chmod +x /tmp/certctl-safe.sh && \
     /tmp/certctl-safe.sh install && \
     /tmp/certctl-safe.sh certs-refresh && \

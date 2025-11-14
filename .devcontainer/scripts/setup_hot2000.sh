@@ -90,7 +90,7 @@ export DISPLAY=:0
 
 # Function to uninstall HOT2000 and clean environment
 uninstall_hot2000() {
-    echo "🗑️  Uninstalling HOT2000 and cleaning Wine environment..."
+    echo "ðŸ—‘ï¸  Uninstalling HOT2000 and cleaning Wine environment..."
     
     # Ask for confirmation
     echo ""
@@ -126,30 +126,30 @@ uninstall_hot2000() {
     if [ -d "$WINE_PREFIX" ]; then
         echo "Removing Wine prefix: $WINE_PREFIX"
         rm -rf "$WINE_PREFIX"
-        echo "✅ Wine prefix removed"
+        echo "âœ… Wine prefix removed"
     else
-        echo "ℹ️  Wine prefix not found (already clean)"
+        echo "â„¹ï¸  Wine prefix not found (already clean)"
     fi
     
     # Remove hot2000 wrapper command
     if [ -f "$HOME/.local/bin/hot2000" ]; then
         echo "Removing hot2000 command wrapper..."
         rm -f "$HOME/.local/bin/hot2000"
-        echo "✅ hot2000 command removed"
+        echo "âœ… hot2000 command removed"
     else
-        echo "ℹ️  hot2000 command not found (already clean)"
+        echo "â„¹ï¸  hot2000 command not found (already clean)"
     fi
     
     # Keep pre-package files for testing
     if [ -f "$PACKAGE_FILE" ]; then
-        echo "ℹ️  Keeping pre-package for testing: $PACKAGE_FILE"
+        echo "â„¹ï¸  Keeping pre-package for testing: $PACKAGE_FILE"
     elif [ -f "$PACKAGE_FILE.partaa" ]; then
         local chunk_count=$(ls "$PACKAGE_FILE".part* 2>/dev/null | wc -l)
-        echo "ℹ️  Keeping chunked pre-package for testing: $chunk_count chunks"
+        echo "â„¹ï¸  Keeping chunked pre-package for testing: $chunk_count chunks"
     fi
     
     if [ -f "$PACKAGE_METADATA" ]; then
-        echo "ℹ️  Keeping package metadata for testing: $PACKAGE_METADATA"
+        echo "â„¹ï¸  Keeping package metadata for testing: $PACKAGE_METADATA"
     fi
     
     # Clean up any HOT2000 log files in the project
@@ -160,7 +160,7 @@ uninstall_hot2000() {
     pkill -f "Xvfb :99" 2>/dev/null || true
     
     echo ""
-    echo "✅ HOT2000 uninstall completed successfully!"
+    echo "âœ… HOT2000 uninstall completed successfully!"
     echo ""
     echo "Your system is now clean and ready for a fresh installation."
     echo "To reinstall, run: $0 --force-build"
@@ -267,23 +267,23 @@ download_prepackage_from_github() {
     local use_gh_cli=false
     local github_token=""
 
-    echo "🌐 Attempting to download pre-package from GitHub..."
+    echo "ðŸŒ Attempting to download pre-package from GitHub..."
     echo "Repository: $github_repo"
 
     # Determine authentication method
     if command -v gh &> /dev/null && gh auth status &> /dev/null; then
-        echo "✅ Using GitHub CLI authentication"
+        echo "âœ… Using GitHub CLI authentication"
         use_gh_cli=true
     else
         # Try git credential helper (VS Code authentication)
-        echo "ℹ️  GitHub CLI not available, trying VS Code authentication..."
+        echo "â„¹ï¸  GitHub CLI not available, trying VS Code authentication..."
         github_token=$(get_github_token_from_git)
 
         if [ -n "$github_token" ]; then
-            echo "✅ Using VS Code git credential authentication"
+            echo "âœ… Using VS Code git credential authentication"
             use_gh_cli=false
         else
-            echo "❌ No GitHub authentication found"
+            echo "âŒ No GitHub authentication found"
             echo "Solutions:"
             echo "  1. Run: gh auth login  (for GitHub CLI)"
             echo "  2. Or authenticate VS Code with GitHub"
@@ -311,7 +311,7 @@ download_prepackage_from_github() {
     fi
 
     if [ "$metadata_success" = false ]; then
-        echo "⚠️  Could not download package metadata (package_info.json not found)"
+        echo "âš ï¸  Could not download package metadata (package_info.json not found)"
         echo "Trying to download chunks directly..."
 
         # Try downloading first chunk to see if chunked files exist
@@ -330,7 +330,7 @@ download_prepackage_from_github() {
         fi
 
         if [ "$first_chunk_success" = true ]; then
-            echo "✅ Found chunked package, downloading remaining chunks..."
+            echo "âœ… Found chunked package, downloading remaining chunks..."
 
             # Download remaining chunks (partab, partac, etc.)
             local suffix
@@ -359,7 +359,7 @@ download_prepackage_from_github() {
                 fi
             done
 
-            echo "✅ Pre-package chunks downloaded successfully from GitHub"
+            echo "âœ… Pre-package chunks downloaded successfully from GitHub"
             return 0
         else
             # Try single file
@@ -379,10 +379,10 @@ download_prepackage_from_github() {
             fi
 
             if [ "$single_file_success" = true ]; then
-                echo "✅ Pre-package downloaded successfully from GitHub"
+                echo "âœ… Pre-package downloaded successfully from GitHub"
                 return 0
             else
-                echo "❌ Could not find pre-package on GitHub"
+                echo "âŒ Could not find pre-package on GitHub"
                 return 1
             fi
         fi
@@ -420,14 +420,14 @@ download_prepackage_from_github() {
             fi
 
             if [ "$chunk_dl_success" = false ]; then
-                echo "❌ Failed to download chunk part$suffix"
+                echo "âŒ Failed to download chunk part$suffix"
                 return 1
             fi
 
             chunk_num=$((chunk_num + 1))
         done
 
-        echo "✅ All $chunk_count chunks downloaded successfully"
+        echo "âœ… All $chunk_count chunks downloaded successfully"
     else
         # Download single file
         echo "Downloading single package file..."
@@ -446,14 +446,14 @@ download_prepackage_from_github() {
         fi
 
         if [ "$single_dl_success" = false ]; then
-            echo "❌ Failed to download package file"
+            echo "âŒ Failed to download package file"
             return 1
         fi
 
-        echo "✅ Package downloaded successfully"
+        echo "âœ… Package downloaded successfully"
     fi
 
-    echo "✅ Pre-package downloaded successfully from GitHub"
+    echo "âœ… Pre-package downloaded successfully from GitHub"
     return 0
 }
 
@@ -591,7 +591,7 @@ create_prepackage() {
         create_package_metadata "$package_file" "$metadata_file"
     fi
     
-    echo "✅ Pre-package created successfully!"
+    echo "âœ… Pre-package created successfully!"
     if [ -f "$package_file" ]; then
         echo "Package: $package_file"
         echo "Size: $(du -h "$package_file" | cut -f1)"
@@ -693,15 +693,15 @@ main() {
         echo "Pre-package found, using it for faster setup..."
         if use_prepackage "$PACKAGE_FILE" "$PACKAGE_METADATA"; then
             create_hot2000_wrapper
-            echo "✅ HOT2000 setup complete using pre-package!"
+            echo "âœ… HOT2000 setup complete using pre-package!"
         else
-            echo "❌ Failed to use pre-package, falling back to full installation..."
+            echo "âŒ Failed to use pre-package, falling back to full installation..."
             perform_full_installation
             if [ $? -eq 0 ]; then
                 create_hot2000_wrapper
-                echo "✅ HOT2000 setup complete via full installation!"
+                echo "âœ… HOT2000 setup complete via full installation!"
             else
-                echo "❌ HOT2000 installation failed"
+                echo "âŒ HOT2000 installation failed"
                 exit 1
             fi
         fi
@@ -717,10 +717,10 @@ main() {
                 echo "GitHub download successful, using downloaded pre-package..."
                 if use_prepackage "$PACKAGE_FILE" "$PACKAGE_METADATA"; then
                     create_hot2000_wrapper
-                    echo "✅ HOT2000 setup complete using GitHub pre-package!"
+                    echo "âœ… HOT2000 setup complete using GitHub pre-package!"
                     exit 0
                 else
-                    echo "❌ Failed to use downloaded pre-package, falling back to full installation..."
+                    echo "âŒ Failed to use downloaded pre-package, falling back to full installation..."
                 fi
             else
                 echo "GitHub download failed or unavailable, falling back to full installation..."
@@ -732,8 +732,8 @@ main() {
 
         # Check if we're in Docker build without display capability
         if [ -n "$HOT2000_PACKAGE_DIR" ] && [ -z "$DISPLAY" ] && ! xset q &>/dev/null; then
-            echo "❌ Running in Docker build environment without display capability."
-            echo "❌ Full Hot2000 installation requires GUI for Wine initialization."
+            echo "âŒ Running in Docker build environment without display capability."
+            echo "âŒ Full Hot2000 installation requires GUI for Wine initialization."
             echo ""
             echo "Solutions:"
             echo "  1. Pre-package available on GitHub will be downloaded automatically"
@@ -750,14 +750,14 @@ main() {
         perform_full_installation
         if [ $? -eq 0 ]; then
             create_hot2000_wrapper
-            echo "✅ HOT2000 setup complete!"
+            echo "âœ… HOT2000 setup complete!"
 
             # Offer to create pre-package
             echo ""
-            echo "💡 Tip: You can create a pre-package for faster future builds:"
+            echo "ðŸ’¡ Tip: You can create a pre-package for faster future builds:"
             echo "   $0 --create-package"
         else
-            echo "❌ HOT2000 installation failed"
+            echo "âŒ HOT2000 installation failed"
             exit 1
         fi
     fi

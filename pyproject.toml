@@ -51,7 +51,8 @@ dependencies = [
     "lxml>=5.0.0",
     "pdfplumber>=0.10.0",
     "camelot-py[cv]>=1.0.9",  # PDF table extraction (primary)
-    "opencv-python-headless>=4.11.0",  # Required by camelot-py
+    "opencv-python-headless>=4.11.0",  # Required by camelot-py,
+    "eppy==0.5.63",
 ]
 
 [project.optional-dependencies]

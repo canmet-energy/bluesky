@@ -136,10 +136,10 @@ certctl_probe() {
         for url in "${targets[@]}"; do
             if timeout '"$PROBE_TIMEOUT"' curl -sSf --connect-timeout 10 "$url" >/dev/null 2>&1; then
                 success=$((success + 1))
-                [ "'$DEBUG'" = "1" ] && echo "[probe] ✓ $url" >&2
+                [ "'$DEBUG'" = "1" ] && echo "[probe] Ã¢Å“â€œ $url" >&2
             else
                 fail=$((fail + 1))
-                [ "'$DEBUG'" = "1" ] && echo "[probe] ✗ $url" >&2
+                [ "'$DEBUG'" = "1" ] && echo "[probe] Ã¢Å“â€” $url" >&2
             fi
         done
 
@@ -275,16 +275,16 @@ certctl_load() {
 certctl_banner() {
     case "${CERT_STATUS:-UNKNOWN}" in
         SECURE)
-            echo "✅ Certificates: Secure validation OK"
+            echo "Ã¢Å“â€¦ Certificates: Secure validation OK"
             ;;
         SECURE_CUSTOM)
-            echo "✅ Certificates: Secure validation OK (with custom certificates)"
+            echo "Ã¢Å“â€¦ Certificates: Secure validation OK (with custom certificates)"
             ;;
         INSECURE)
-            echo "⚠️  Certificates: Insecure mode (SSL verification disabled) Please check your custom certificates. This could be in violation of your corporate policies. If this is a devcontainer, place valid certs provided by your organization in .devcontainer/certs/ and rebuild. You may continue to use this to debug your cert issues, but it is not recommended for development or production use."
+            echo "Ã¢Å¡Â Ã¯Â¸Â  Certificates: Insecure mode (SSL verification disabled) Please check your custom certificates. This could be in violation of your corporate policies. If this is a devcontainer, place valid certs provided by your organization in .devcontainer/certs/ and rebuild. You may continue to use this to debug your cert issues, but it is not recommended for development or production use."
             ;;
         *)
-            echo "❓ Certificates: Unknown status"
+            echo "Ã¢Ââ€œ Certificates: Unknown status"
             ;;
     esac
 
@@ -762,7 +762,7 @@ EOF
 
     chmod 644 /etc/profile.d/certctl-env.sh
 
-    echo "✅ Installation complete!"
+    echo "Ã¢Å“â€¦ Installation complete!"
     echo ""
     echo "To test: certctl status"
     echo "For new shells: source /etc/profile.d/certctl-env.sh"
