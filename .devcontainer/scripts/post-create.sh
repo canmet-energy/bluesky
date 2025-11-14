@@ -25,26 +25,25 @@ PROJECT_ROOT="$(pwd)"
 PYPROJECT_TOML="$PROJECT_ROOT/pyproject.toml"
 
 # Read version configuration (with defaults) for Python deps
-EPPY_VERSION="${DEVCONTAINER_EPPY_VERSION:-0.5.63}"
+# EPPY_VERSION="${DEVCONTAINER_EPPY_VERSION:-0.5.63}"  # Removed: eppy is a transitive dependency
 H2K_HPXML_BRANCH="${DEVCONTAINER_H2K_HPXML_BRANCH:-main}"
 OPENSTUDIO_VERSION="${DEVCONTAINER_OPENSTUDIO_VERSION:-3.9.0}"
 
 echo "🧪 Preparing dependency spec (pyproject.toml)"
 if [ -f "$PYPROJECT_TOML" ]; then
-  python3 - "$PYPROJECT_TOML" "$EPPY_VERSION" "$H2K_HPXML_BRANCH" "$OPENSTUDIO_VERSION" <<'PYEOF'
+  python3 - "$PYPROJECT_TOML" "$H2K_HPXML_BRANCH" "$OPENSTUDIO_VERSION" <<'PYEOF'
 import sys
 from pathlib import Path
 
 pyproject_path = Path(sys.argv[1])
-eppy_version = sys.argv[2]
-h2k_hpxml_branch = sys.argv[3]
-openstudio_version = sys.argv[4]
+h2k_hpxml_branch = sys.argv[2]
+openstudio_version = sys.argv[3]
 
 content = pyproject_path.read_text()
 lines = content.splitlines()
 
 required_deps = {
-  "eppy": f"eppy=={eppy_version}",
+  # "eppy": f"eppy=={eppy_version}",  # Removed: transitive dependency causes conflicts
   "h2k-hpxml": f"h2k-hpxml @ git+https://github.com/canmet-energy/h2k-hpxml.git@{h2k_hpxml_branch}",
   "openstudio": f"openstudio=={openstudio_version}",
 }
