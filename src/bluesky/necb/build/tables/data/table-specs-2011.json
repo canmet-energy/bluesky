@@ -1,0 +1,1881 @@
+{
+  "2011": {
+    "total_found": 92,
+    "tables": {
+      "1.3.1.2": {
+        "table_number": "1.3.1.2",
+        "page_num": 39,
+        "page_display": 40,
+        "page_start": 39,
+        "page_end": 42,
+        "all_pages": [
+          39,
+          40,
+          41,
+          42
+        ],
+        "page_count": 4,
+        "title_text": "Table 1.3.1.2.",
+        "table_description": "Documents Referenced in the National Energy Code of Canada for Buildings 2011",
+        "references": "Forming Part of Sentence 1.3.1.2.(1)",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 5,
+        "estimated_cols": 4,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "3.2.2.2": {
+        "table_number": "3.2.2.2",
+        "page_num": 50,
+        "page_display": 51,
+        "page_start": 50,
+        "page_end": 50,
+        "all_pages": [
+          50
+        ],
+        "page_count": 1,
+        "title_text": "Table 3.2.2.2.",
+        "table_description": "Overall Thermal Transmittance of Above-ground Opaque Building Assemblies",
+        "references": "Forming Part of Sentences 3.2.2.2.(1) and (2)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 7,
+        "estimated_cols": 7,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "3.2.2.3": {
+        "table_number": "3.2.2.3",
+        "page_num": 51,
+        "page_display": 52,
+        "page_start": 51,
+        "page_end": 51,
+        "all_pages": [
+          51
+        ],
+        "page_count": 1,
+        "title_text": "Table 3.2.2.3.",
+        "table_description": "Overall Thermal Transmittance of Fenestration",
+        "references": "Forming Part of Sentences 3.2.2.3.(2) and (3)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 5,
+        "estimated_cols": 7,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "3.2.2.4": {
+        "table_number": "3.2.2.4",
+        "page_num": 51,
+        "page_display": 52,
+        "page_start": 51,
+        "page_end": 51,
+        "all_pages": [
+          51
+        ],
+        "page_count": 1,
+        "title_text": "Table 3.2.2.4.",
+        "table_description": "Overall Thermal Transmittance of Doors",
+        "references": "Forming Part of Sentence 3.2.2.4.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 5,
+        "estimated_cols": 7,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "3.2.3.1": {
+        "table_number": "3.2.3.1",
+        "page_num": 52,
+        "page_display": 53,
+        "page_start": 52,
+        "page_end": 52,
+        "all_pages": [
+          52
+        ],
+        "page_count": 1,
+        "title_text": "Table 3.2.3.1.",
+        "table_description": "Overall Thermal Transmittance of Building Assemblies in Contact with the Ground",
+        "references": "Forming Part of Sentences 3.2.3.1.(1), 3.2.3.2.(1) and 3.2.3.3.(1) to (3)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 7,
+        "estimated_cols": 7,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "3.5.1.1": {
+        "table_number": "3.5.1.1",
+        "page_num": 60,
+        "page_display": 61,
+        "page_start": 60,
+        "page_end": 62,
+        "all_pages": [
+          60,
+          61,
+          62
+        ],
+        "page_count": 3,
+        "title_text": "Table 3.5.1.1.",
+        "table_description": "Objectives and Functional Statements Attributed to the",
+        "references": "Acceptable Solutions in Part 3",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 14,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "4.2.1.5": {
+        "table_number": "4.2.1.5",
+        "page_num": 67,
+        "page_display": 68,
+        "page_start": 67,
+        "page_end": 67,
+        "all_pages": [
+          67
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.2.1.5.",
+        "table_description": "Lighting Power Density by Building Type for Use with the Building Area Method",
+        "references": "Forming Part of Sentences 4.2.1.5.(1), (4) and (5)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 32,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.2.1.6": {
+        "table_number": "4.2.1.6",
+        "page_num": 68,
+        "page_display": 69,
+        "page_start": 68,
+        "page_end": 70,
+        "all_pages": [
+          68,
+          69,
+          70
+        ],
+        "page_count": 3,
+        "title_text": "Table 4.2.1.6.",
+        "table_description": "Lighting Power Density Using the Space-by-Space Method",
+        "references": "Forming Part of Sentences 4.2.1.6.(1) and 4.3.3.2.(1)",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 26,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "4.2.3.1.A": {
+        "table_number": "4.2.3.1.A",
+        "page_num": 74,
+        "page_display": 75,
+        "page_start": 74,
+        "page_end": 74,
+        "all_pages": [
+          74
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.2.3.1.A.",
+        "table_description": "Lighting Zones Used to Determine Exterior Lighting Allowances",
+        "references": "Forming Part of Sentence 4.2.3.1.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 7,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.2.3.1.B": {
+        "table_number": "4.2.3.1.B",
+        "page_num": 75,
+        "page_display": 76,
+        "page_start": 75,
+        "page_end": 75,
+        "all_pages": [
+          75
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.2.3.1.B.",
+        "table_description": "Basic Site Allowances for Exterior Lighting",
+        "references": "Forming Part of Sentences 4.2.3.1.(2) and (3)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 4,
+        "estimated_cols": 5,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.2.3.1.C": {
+        "table_number": "4.2.3.1.C",
+        "page_num": 75,
+        "page_display": 76,
+        "page_start": 75,
+        "page_end": 75,
+        "all_pages": [
+          75
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.2.3.1.C.",
+        "table_description": "Lighting Power Allowances for Specific Building Exterior Applications",
+        "references": "Forming Part of Sentences 4.2.3.1.(3) and (4)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 4,
+        "estimated_cols": 5,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.2.3.1.D": {
+        "table_number": "4.2.3.1.D",
+        "page_num": 76,
+        "page_display": 77,
+        "page_start": 76,
+        "page_end": 76,
+        "all_pages": [
+          76
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.2.3.1.D.",
+        "table_description": "Lighting Power Allowances for General Building Exterior Applications",
+        "references": "Forming Part of Sentence 4.2.3.1.(4)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 15,
+        "estimated_cols": 6,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.3.2.10.A": {
+        "table_number": "4.3.2.10.A",
+        "page_num": 85,
+        "page_display": 86,
+        "page_start": 85,
+        "page_end": 88,
+        "all_pages": [
+          85,
+          86,
+          87,
+          88
+        ],
+        "page_count": 4,
+        "title_text": "Table 4.3.2.10.A.",
+        "table_description": "Factors for Relative Absence of Occupants and Personal Control According to Space Type",
+        "references": "Forming Part of Sentences 4.3.2.10.(1) and (2) and 4.3.3.10.(1)",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 13,
+        "estimated_cols": 3,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "4.3.2.10.B": {
+        "table_number": "4.3.2.10.B",
+        "page_num": 88,
+        "page_display": 89,
+        "page_start": 88,
+        "page_end": 88,
+        "all_pages": [
+          88
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.3.2.10.B.",
+        "table_description": "Factor to Account for Occupancy-Sensing Mechanism, Cocc,ctrl,i",
+        "references": "Forming Part of Sentences 4.3.2.10.(1) and 4.3.3.10.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 8,
+        "estimated_cols": 3,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.3.2.7.A": {
+        "table_number": "4.3.2.7.A",
+        "page_num": 82,
+        "page_display": 83,
+        "page_start": 82,
+        "page_end": 82,
+        "all_pages": [
+          82
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.3.2.7.A.",
+        "table_description": "Daylight System Control Factor, CDL,ctrl,i",
+        "references": "Forming Part of Sentences 4.3.2.7.(5) and 4.3.3.7.(5)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 4,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.3.2.7.B": {
+        "table_number": "4.3.2.7.B",
+        "page_num": 82,
+        "page_display": 83,
+        "page_start": 82,
+        "page_end": 82,
+        "all_pages": [
+          82
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.3.2.7.B.",
+        "table_description": "Daylight-Dependent Control Factor for Electric Lighting, CEL,ctrl,i",
+        "references": "Forming Part of Sentences 4.3.2.7.(6) and 4.3.3.7.(6)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 4,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.3.2.8": {
+        "table_number": "4.3.2.8",
+        "page_num": 83,
+        "page_display": 84,
+        "page_start": 83,
+        "page_end": 83,
+        "all_pages": [
+          83
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.3.2.8.",
+        "table_description": "Raw Daylight Supply Factors for Rough Opening, CDL,sup,raw,i",
+        "references": "Forming Part of Sentence 4.3.2.8.(3)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 8,
+        "estimated_cols": 5,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.3.2.9.A": {
+        "table_number": "4.3.2.9.A",
+        "page_num": 84,
+        "page_display": 85,
+        "page_start": 84,
+        "page_end": 84,
+        "all_pages": [
+          84
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.3.2.9.A.",
+        "table_description": "Daylight Supply Factors for Toplighting, CDL,sup,i",
+        "references": "Forming Part of Sentence 4.3.2.9.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 8,
+        "estimated_cols": 4,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.3.2.9.B": {
+        "table_number": "4.3.2.9.B",
+        "page_num": 84,
+        "page_display": 85,
+        "page_start": 84,
+        "page_end": 84,
+        "all_pages": [
+          84
+        ],
+        "page_count": 1,
+        "title_text": "Table 4.3.2.9.B.",
+        "table_description": "Utilization Factor, \u03b7R,i, as a Function of Room Cavity Ratio, RCR",
+        "references": "Forming Part of Sentence 4.3.2.9.(2)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 8,
+        "estimated_cols": 4,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "4.5.1.1": {
+        "table_number": "4.5.1.1",
+        "page_num": 91,
+        "page_display": 92,
+        "page_start": 91,
+        "page_end": 93,
+        "all_pages": [
+          91,
+          92,
+          93
+        ],
+        "page_count": 3,
+        "title_text": "Table 4.5.1.1.",
+        "table_description": "Objectives and Functional Statements Attributed to the",
+        "references": "Acceptable Solutions in Part 4",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 7,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "5.2.10.4": {
+        "table_number": "5.2.10.4",
+        "page_num": 104,
+        "page_display": 105,
+        "page_start": 104,
+        "page_end": 104,
+        "all_pages": [
+          104
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.2.10.4.",
+        "table_description": "Performance of Heat-recovery Ventilators",
+        "references": "Forming Part of Sentence 5.2.10.4.(2)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 3,
+        "estimated_cols": 3,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.2.12.1": {
+        "table_number": "5.2.12.1",
+        "page_num": 106,
+        "page_display": 107,
+        "page_start": 106,
+        "page_end": 111,
+        "all_pages": [
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "page_count": 6,
+        "title_text": "Table 5.2.12.1.",
+        "table_description": "Unitary and Packaged HVAC Equipment Performance Requirements",
+        "references": "Forming Part of Sentences 5.2.12.1.(1), 6.2.2.4.(2), 6.2.2.5.(1) and 8.4.4.19.(6)",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 23,
+        "estimated_cols": 5,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "5.2.2.3": {
+        "table_number": "5.2.2.3",
+        "page_num": 95,
+        "page_display": 96,
+        "page_start": 95,
+        "page_end": 95,
+        "all_pages": [
+          95
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.2.2.3.",
+        "table_description": "Sealing of Ducts",
+        "references": "Forming Part of Sentence 5.2.2.3.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 3,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.2.2.4": {
+        "table_number": "5.2.2.4",
+        "page_num": 96,
+        "page_display": 97,
+        "page_start": 96,
+        "page_end": 96,
+        "all_pages": [
+          96
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.2.2.4.",
+        "table_description": "Leakage Classes, CL",
+        "references": "Forming Part of Sentence 5.2.2.4.(2)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 5,
+        "estimated_cols": 4,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.2.2.5": {
+        "table_number": "5.2.2.5",
+        "page_num": 96,
+        "page_display": 97,
+        "page_start": 96,
+        "page_end": 96,
+        "all_pages": [
+          96
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.2.2.5.",
+        "table_description": "Insulation of Ducts",
+        "references": "Forming Part of Sentence 5.2.2.5.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 5,
+        "estimated_cols": 4,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.2.5.3": {
+        "table_number": "5.2.5.3",
+        "page_num": 100,
+        "page_display": 101,
+        "page_start": 100,
+        "page_end": 100,
+        "all_pages": [
+          100
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.2.5.3.",
+        "table_description": "Minimum Thickness of Piping Insulation",
+        "references": "Forming Part of Sentences 5.2.5.3.(1) and (3) to (6)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 5,
+        "estimated_cols": 9,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.1.1": {
+        "table_number": "5.3.1.1",
+        "page_num": 113,
+        "page_display": 114,
+        "page_start": 113,
+        "page_end": 113,
+        "all_pages": [
+          113
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.1.1.",
+        "table_description": "Types of HVAC Systems",
+        "references": "Forming Part of Sentence 5.3.1.1.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 28,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.2": {
+        "table_number": "5.3.2.2",
+        "page_num": 115,
+        "page_display": 116,
+        "page_start": 115,
+        "page_end": 115,
+        "all_pages": [
+          115
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.2.",
+        "table_description": "Component Factors, \u03b3i, for Trade-off Calculations",
+        "references": "Forming Part of Sentences 5.3.1.1.(1) and 5.3.2.2.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 36,
+        "estimated_cols": 28,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.3": {
+        "table_number": "5.3.2.3",
+        "page_num": 116,
+        "page_display": 117,
+        "page_start": 116,
+        "page_end": 116,
+        "all_pages": [
+          116
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.3.",
+        "table_description": "Component Trade-off Values, ToVi, for the Proposed Building",
+        "references": "Forming Part of Sentences 5.3.1.1.(1) and 5.3.2.3.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 33,
+        "estimated_cols": 4,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.7": {
+        "table_number": "5.3.2.7",
+        "page_num": 120,
+        "page_display": 121,
+        "page_start": 119,
+        "page_end": 120,
+        "all_pages": [
+          119,
+          120
+        ],
+        "page_count": 2,
+        "title_text": "Notes to Table 5.3.2.7.:",
+        "table_description": "(1)",
+        "references": "See Table 5.3.1.1. for a description of each system.",
+        "has_forming_part": false,
+        "has_continuation": true,
+        "estimated_rows": 28,
+        "estimated_cols": 26,
+        "confidence": 1.0,
+        "score": 100
+      },
+      "5.3.2.8.A": {
+        "table_number": "5.3.2.8.A",
+        "page_num": 121,
+        "page_display": 122,
+        "page_start": 121,
+        "page_end": 121,
+        "all_pages": [
+          121
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.A.",
+        "table_description": "Coefficient Values for System Type HVAC-1 (Built-up Variable-Volume)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.AA": {
+        "table_number": "5.3.2.8.AA",
+        "page_num": 147,
+        "page_display": 148,
+        "page_start": 147,
+        "page_end": 147,
+        "all_pages": [
+          147
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.AA.",
+        "table_description": "Coefficient Values for System Type HVAC-27 (Radiation with Optional Make-up Air Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.B": {
+        "table_number": "5.3.2.8.B",
+        "page_num": 122,
+        "page_display": 123,
+        "page_start": 122,
+        "page_end": 122,
+        "all_pages": [
+          122
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.B.",
+        "table_description": "Coefficient Values for System Type HVAC-2 (Constant-Volume Reheat)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.C": {
+        "table_number": "5.3.2.8.C",
+        "page_num": 123,
+        "page_display": 124,
+        "page_start": 123,
+        "page_end": 123,
+        "all_pages": [
+          123
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.C.",
+        "table_description": "Coefficient Values for System Type HVAC-3 (Packaged Single Duct \u2013 Single Zone)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.D": {
+        "table_number": "5.3.2.8.D",
+        "page_num": 124,
+        "page_display": 125,
+        "page_start": 124,
+        "page_end": 124,
+        "all_pages": [
+          124
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.D.",
+        "table_description": "Coefficient Values for System Type HVAC-4 (Built-up Single Duct \u2013 Single Zone)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.E": {
+        "table_number": "5.3.2.8.E",
+        "page_num": 125,
+        "page_display": 126,
+        "page_start": 125,
+        "page_end": 125,
+        "all_pages": [
+          125
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.E.",
+        "table_description": "Coefficient Values for System Type HVAC-5 (Packaged Variable-Volume)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.F": {
+        "table_number": "5.3.2.8.F",
+        "page_num": 126,
+        "page_display": 127,
+        "page_start": 126,
+        "page_end": 126,
+        "all_pages": [
+          126
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.F.",
+        "table_description": "Coefficient Values for System Type HVAC-6 (Packaged Constant-Volume with Reheat)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.G": {
+        "table_number": "5.3.2.8.G",
+        "page_num": 127,
+        "page_display": 128,
+        "page_start": 127,
+        "page_end": 127,
+        "all_pages": [
+          127
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.G.",
+        "table_description": "Coefficient Values for System Type HVAC-7 (Built-up Ceiling Bypass VAV)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.H": {
+        "table_number": "5.3.2.8.H",
+        "page_num": 128,
+        "page_display": 129,
+        "page_start": 128,
+        "page_end": 128,
+        "all_pages": [
+          128
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.H.",
+        "table_description": "Coefficient Values for System Type HVAC-8 (Packaged Ceiling Bypass VAV)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.I": {
+        "table_number": "5.3.2.8.I",
+        "page_num": 129,
+        "page_display": 130,
+        "page_start": 129,
+        "page_end": 129,
+        "all_pages": [
+          129
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.I.",
+        "table_description": "Coefficient Values for System Type HVAC-9 (Powered Induction Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.J": {
+        "table_number": "5.3.2.8.J",
+        "page_num": 130,
+        "page_display": 131,
+        "page_start": 130,
+        "page_end": 130,
+        "all_pages": [
+          130
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.J.",
+        "table_description": "Coefficient Values for System Type HVAC-10 (Built-up Multi-zone System)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.K": {
+        "table_number": "5.3.2.8.K",
+        "page_num": 131,
+        "page_display": 132,
+        "page_start": 131,
+        "page_end": 131,
+        "all_pages": [
+          131
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.K.",
+        "table_description": "Coefficient Values for System Type HVAC-11 (Packaged Multi-zone System)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.L": {
+        "table_number": "5.3.2.8.L",
+        "page_num": 132,
+        "page_display": 133,
+        "page_start": 132,
+        "page_end": 132,
+        "all_pages": [
+          132
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.L.",
+        "table_description": "Coefficient Values for System Type HVAC-12 (Constant-Volume Dual-Duct System)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.M": {
+        "table_number": "5.3.2.8.M",
+        "page_num": 133,
+        "page_display": 134,
+        "page_start": 133,
+        "page_end": 133,
+        "all_pages": [
+          133
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.M.",
+        "table_description": "Coefficient Values for System Type HVAC-13 (Variable-Volume Dual-Duct System)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.N": {
+        "table_number": "5.3.2.8.N",
+        "page_num": 134,
+        "page_display": 135,
+        "page_start": 134,
+        "page_end": 134,
+        "all_pages": [
+          134
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.N.",
+        "table_description": "Coefficient Values for System Type HVAC-14 (Two-Pipe Fan Coil with Optional Make-up Air Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.O": {
+        "table_number": "5.3.2.8.O",
+        "page_num": 135,
+        "page_display": 136,
+        "page_start": 135,
+        "page_end": 135,
+        "all_pages": [
+          135
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.O.",
+        "table_description": "Coefficient Values for System Type HVAC-15 (Four-Pipe Fan Coil with Optional Make-up Air Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.P": {
+        "table_number": "5.3.2.8.P",
+        "page_num": 136,
+        "page_display": 137,
+        "page_start": 136,
+        "page_end": 136,
+        "all_pages": [
+          136
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.P.",
+        "table_description": "Coefficient Values for System Type HVAC-16 (Three-Pipe Fan Coil with Optional Make-up Air Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.Q": {
+        "table_number": "5.3.2.8.Q",
+        "page_num": 137,
+        "page_display": 138,
+        "page_start": 137,
+        "page_end": 137,
+        "all_pages": [
+          137
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.Q.",
+        "table_description": "Coefficient Values for System Type HVAC-17 (Water-Loop Heat Pump with Optional Make-up Air Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.R": {
+        "table_number": "5.3.2.8.R",
+        "page_num": 138,
+        "page_display": 139,
+        "page_start": 138,
+        "page_end": 138,
+        "all_pages": [
+          138
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.R.",
+        "table_description": "Coefficient Values for System Type HVAC-18 (Ground-Source Heat Pump with Optional Make-up Air Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.S": {
+        "table_number": "5.3.2.8.S",
+        "page_num": 139,
+        "page_display": 140,
+        "page_start": 139,
+        "page_end": 139,
+        "all_pages": [
+          139
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.S.",
+        "table_description": "Coefficient Values for System Type HVAC-19 (Induction Unit \u2013 Two-Pipe)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.T": {
+        "table_number": "5.3.2.8.T",
+        "page_num": 140,
+        "page_display": 141,
+        "page_start": 140,
+        "page_end": 140,
+        "all_pages": [
+          140
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.T.",
+        "table_description": "Coefficient Values for System Type HVAC-20 (Induction Unit \u2013 Four-Pipe)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.U": {
+        "table_number": "5.3.2.8.U",
+        "page_num": 141,
+        "page_display": 142,
+        "page_start": 141,
+        "page_end": 141,
+        "all_pages": [
+          141
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.U.",
+        "table_description": "Coefficient Values for System Type HVAC-21 (Induction Unit \u2013 Three-Pipe)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.V": {
+        "table_number": "5.3.2.8.V",
+        "page_num": 142,
+        "page_display": 143,
+        "page_start": 142,
+        "page_end": 142,
+        "all_pages": [
+          142
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.V.",
+        "table_description": "Coefficient Values for System Type HVAC-22 (Packaged Terminal AC \u2013 Split)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.W": {
+        "table_number": "5.3.2.8.W",
+        "page_num": 143,
+        "page_display": 144,
+        "page_start": 143,
+        "page_end": 143,
+        "all_pages": [
+          143
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.W.",
+        "table_description": "Coefficient Values for System Type HVAC-23 (Radiant (In-floor, Ceiling) with Optional Make-up Air Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.X": {
+        "table_number": "5.3.2.8.X",
+        "page_num": 144,
+        "page_display": 145,
+        "page_start": 144,
+        "page_end": 144,
+        "all_pages": [
+          144
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.X.",
+        "table_description": "Coefficient Values for System Type HVAC-24 (Active Chilled Beams with Optional Make-up Air Unit)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.Y": {
+        "table_number": "5.3.2.8.Y",
+        "page_num": 145,
+        "page_display": 146,
+        "page_start": 145,
+        "page_end": 145,
+        "all_pages": [
+          145
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.Y.",
+        "table_description": "Coefficient Values for System Type HVAC-25 (Unit Heater)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.3.2.8.Z": {
+        "table_number": "5.3.2.8.Z",
+        "page_num": 146,
+        "page_display": 147,
+        "page_start": 146,
+        "page_end": 146,
+        "all_pages": [
+          146
+        ],
+        "page_count": 1,
+        "title_text": "Table 5.3.2.8.Z.",
+        "table_description": "Coefficient Values for System Type HVAC-26 (Unit Ventilator)",
+        "references": "Forming Part of Sentences 5.3.2.6.(1) and 5.3.2.8.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 34,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "5.5.1.1": {
+        "table_number": "5.5.1.1",
+        "page_num": 148,
+        "page_display": 149,
+        "page_start": 148,
+        "page_end": 150,
+        "all_pages": [
+          148,
+          149,
+          150
+        ],
+        "page_count": 3,
+        "title_text": "Table 5.5.1.1.",
+        "table_description": "Objectives and Functional Statements Attributed to the",
+        "references": "Acceptable Solutions in Part 5",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 28,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "6.2.2.1": {
+        "table_number": "6.2.2.1",
+        "page_num": 153,
+        "page_display": 154,
+        "page_start": 153,
+        "page_end": 154,
+        "all_pages": [
+          153,
+          154
+        ],
+        "page_count": 2,
+        "title_text": "Table 6.2.2.1.",
+        "table_description": "Service Water Heating Equipment Performance Standards",
+        "references": "Forming Part of Sentences 5.2.12.3.(1), 6.2.2.1.(1), 6.2.2.4.(2), 6.2.2.5.(1), 6.3.2.5.(1) and 6.3.2.6.(1)",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 23,
+        "estimated_cols": 8,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "6.2.3.1": {
+        "table_number": "6.2.3.1",
+        "page_num": 155,
+        "page_display": 156,
+        "page_start": 155,
+        "page_end": 155,
+        "all_pages": [
+          155
+        ],
+        "page_count": 1,
+        "title_text": "Table 6.2.3.1.",
+        "table_description": "Minimum Thickness of Piping Insulation for Service Water Heating Systems",
+        "references": "Forming Part of Sentences 6.2.3.1.(1), (2), (3) and (5)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 13,
+        "estimated_cols": 5,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "6.3.1.1": {
+        "table_number": "6.3.1.1",
+        "page_num": 157,
+        "page_display": 158,
+        "page_start": 157,
+        "page_end": 157,
+        "all_pages": [
+          157
+        ],
+        "page_count": 1,
+        "title_text": "Table 6.3.1.1.",
+        "table_description": "Types of SWH System",
+        "references": "Forming Part of Sentence 6.3.1.1.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 4,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "6.3.2.5": {
+        "table_number": "6.3.2.5",
+        "page_num": 159,
+        "page_display": 160,
+        "page_start": 159,
+        "page_end": 159,
+        "all_pages": [
+          159
+        ],
+        "page_count": 1,
+        "title_text": "Table 6.3.2.5.",
+        "table_description": "Component Trade-off Values, ToVi",
+        "references": "Forming Part of Sentence 6.3.2.5.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 11,
+        "estimated_cols": 4,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "6.5.1.1": {
+        "table_number": "6.5.1.1",
+        "page_num": 160,
+        "page_display": 161,
+        "page_start": 160,
+        "page_end": 161,
+        "all_pages": [
+          160,
+          161
+        ],
+        "page_count": 2,
+        "title_text": "Table 6.5.1.1.",
+        "table_description": "Objectives and Functional Statements Attributed to the",
+        "references": "Acceptable Solutions in Part 6",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 16,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "7.5.1.1": {
+        "table_number": "7.5.1.1",
+        "page_num": 163,
+        "page_display": 164,
+        "page_start": 163,
+        "page_end": 164,
+        "all_pages": [
+          163,
+          164
+        ],
+        "page_count": 2,
+        "title_text": "Table 7.5.1.1.",
+        "table_description": "Objectives and Functional Statements Attributed to the",
+        "references": "Acceptable Solutions in Part 7",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 4,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "8.4.4.13": {
+        "table_number": "8.4.4.13",
+        "page_num": 179,
+        "page_display": 180,
+        "page_start": 179,
+        "page_end": 179,
+        "all_pages": [
+          179
+        ],
+        "page_count": 1,
+        "title_text": "Table 8.4.4.13.",
+        "table_description": "Applicable Requirements for Cooling with Outside Air According to Type of HVAC System",
+        "references": "Forming Part of Sentence 8.4.4.13.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 4,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "8.4.4.14": {
+        "table_number": "8.4.4.14",
+        "page_num": 180,
+        "page_display": 181,
+        "page_start": 180,
+        "page_end": 180,
+        "all_pages": [
+          180
+        ],
+        "page_count": 1,
+        "title_text": "Table 8.4.4.14.",
+        "table_description": "Heat Pump System Description",
+        "references": "Forming Part of Sentences 8.4.4.14.(2) and 8.4.4.19.(6)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 5,
+        "estimated_cols": 4,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "8.4.4.15": {
+        "table_number": "8.4.4.15",
+        "page_num": 181,
+        "page_display": 182,
+        "page_start": 181,
+        "page_end": 181,
+        "all_pages": [
+          181
+        ],
+        "page_count": 1,
+        "title_text": "Table 8.4.4.15.",
+        "table_description": "Coefficients Used in Calculating Pump Power versus Flow Rate",
+        "references": "Forming Part of Sentence 8.4.4.15.(4)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 8,
+        "estimated_cols": 3,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "8.4.4.18": {
+        "table_number": "8.4.4.18",
+        "page_num": 182,
+        "page_display": 183,
+        "page_start": 182,
+        "page_end": 182,
+        "all_pages": [
+          182
+        ],
+        "page_count": 1,
+        "title_text": "Table 8.4.4.18.",
+        "table_description": "Coefficients Used in Calculating Fan Power versus Flow Rate",
+        "references": "Forming Part of Sentence 8.4.4.18.(2)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 6,
+        "estimated_cols": 6,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "8.4.4.22.A": {
+        "table_number": "8.4.4.22.A",
+        "page_num": 185,
+        "page_display": 186,
+        "page_start": 184,
+        "page_end": 185,
+        "all_pages": [
+          184,
+          185
+        ],
+        "page_count": 2,
+        "title_text": "Table 8.4.4.22.A. (Continued)",
+        "table_description": null,
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": true,
+        "estimated_rows": 2,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 120
+      },
+      "8.4.4.22.B": {
+        "table_number": "8.4.4.22.B",
+        "page_num": 186,
+        "page_display": 187,
+        "page_start": 186,
+        "page_end": 187,
+        "all_pages": [
+          186,
+          187
+        ],
+        "page_count": 2,
+        "title_text": "Table 8.4.4.22.B.",
+        "table_description": "Direct-Expansion Cooling Equipment Part-Load Performance Characteristics",
+        "references": "Forming Part of Sentence 8.4.4.22.(1)",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 3,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "8.4.4.22.C": {
+        "table_number": "8.4.4.22.C",
+        "page_num": 187,
+        "page_display": 188,
+        "page_start": 187,
+        "page_end": 188,
+        "all_pages": [
+          187,
+          188
+        ],
+        "page_count": 2,
+        "title_text": "Table 8.4.4.22.C.",
+        "table_description": "Electric Chiller Cooling Equipment Part-Load Performance Characteristics",
+        "references": "Forming Part of Sentences 8.4.4.11.(5) and 8.4.4.22.(1)",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 13,
+        "estimated_cols": 9,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "8.4.4.22.E": {
+        "table_number": "8.4.4.22.E",
+        "page_num": 190,
+        "page_display": 191,
+        "page_start": 190,
+        "page_end": 190,
+        "all_pages": [
+          190
+        ],
+        "page_count": 1,
+        "title_text": "Table 8.4.4.22.E.",
+        "table_description": "Electric Air-Source Heat Pump Equipment Part-Load Performance Characteristics",
+        "references": "Forming Part of Sentences 8.4.4.11.(5), 8.4.4.14.(2) and 8.4.4.22.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 3,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "8.4.4.22.F": {
+        "table_number": "8.4.4.22.F",
+        "page_num": 191,
+        "page_display": 192,
+        "page_start": 191,
+        "page_end": 192,
+        "all_pages": [
+          191,
+          192
+        ],
+        "page_count": 2,
+        "title_text": "Table 8.4.4.22.F.",
+        "table_description": "Absorption Chiller Cooling Equipment Part-Load Performance Characteristics",
+        "references": "Forming Part of Sentences 8.4.4.11.(5) and 8.4.4.22.(1)",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 6,
+        "estimated_cols": 7,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "8.4.4.22.G": {
+        "table_number": "8.4.4.22.G",
+        "page_num": 193,
+        "page_display": 194,
+        "page_start": 193,
+        "page_end": 193,
+        "all_pages": [
+          193
+        ],
+        "page_count": 1,
+        "title_text": "Table 8.4.4.22.G.",
+        "table_description": "Fuel-Fired Service Water Heater Part-Load Performance Characteristics",
+        "references": "Forming Part of Sentences 8.4.4.21.(5) and 8.4.4.22.(1)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 12,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "8.4.4.8.A": {
+        "table_number": "8.4.4.8.A",
+        "page_num": 175,
+        "page_display": 176,
+        "page_start": 175,
+        "page_end": 175,
+        "all_pages": [
+          175
+        ],
+        "page_count": 1,
+        "title_text": "Table 8.4.4.8.A.",
+        "table_description": "HVAC System Selection for the Reference Building",
+        "references": "Forming Part of Sentences 8.4.4.8.(1), 8.4.4.11.(1) and (7), 8.4.4.14.(1) and 8.4.4.19.(6)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 17,
+        "estimated_cols": 3,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "8.4.4.8.B": {
+        "table_number": "8.4.4.8.B",
+        "page_num": 176,
+        "page_display": 177,
+        "page_start": 176,
+        "page_end": 176,
+        "all_pages": [
+          176
+        ],
+        "page_count": 1,
+        "title_text": "Table 8.4.4.8.B.",
+        "table_description": "Descriptions of HVAC Systems 1 - 7",
+        "references": "Forming Part of Sentences 8.4.4.8.(1) and 8.4.4.19.(3) and (4)",
+        "has_forming_part": true,
+        "has_continuation": false,
+        "estimated_rows": 9,
+        "estimated_cols": 5,
+        "confidence": 1.0,
+        "score": 200
+      },
+      "8.5.1.1": {
+        "table_number": "8.5.1.1",
+        "page_num": 193,
+        "page_display": 194,
+        "page_start": 193,
+        "page_end": 196,
+        "all_pages": [
+          193,
+          194,
+          195,
+          196
+        ],
+        "page_count": 4,
+        "title_text": "Table 8.5.1.1.",
+        "table_description": "Objectives and Functional Statements Attributed to the",
+        "references": "Acceptable Solutions in Part 8",
+        "has_forming_part": true,
+        "has_continuation": true,
+        "estimated_rows": 12,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 170
+      },
+      "A-1.3.1.2.(1)": {
+        "table_number": "A-1.3.1.2.(1)",
+        "page_num": 200,
+        "page_display": 201,
+        "page_start": 200,
+        "page_end": 201,
+        "all_pages": [
+          200,
+          201
+        ],
+        "page_count": 2,
+        "title_text": "Table A-1.3.1.2.(1)",
+        "table_description": "Documents Referenced in the Appendices of the National Energy Code of Canada for Buildings 2011",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": true,
+        "estimated_rows": 2,
+        "estimated_cols": 3,
+        "confidence": 1.0,
+        "score": 120
+      },
+      "A-3.2.1.4.(1)": {
+        "table_number": "A-3.2.1.4.(1)",
+        "page_num": 206,
+        "page_display": 207,
+        "page_start": 206,
+        "page_end": 206,
+        "all_pages": [
+          206
+        ],
+        "page_count": 1,
+        "title_text": "Table A-3.2.1.4.(1)",
+        "table_description": "Maximum Allowable FDWR for Various HDD",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 16,
+        "estimated_cols": 2,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-5.2.2.3.(1)": {
+        "table_number": "A-5.2.2.3.(1)",
+        "page_num": 220,
+        "page_display": 221,
+        "page_start": 220,
+        "page_end": 220,
+        "all_pages": [
+          220
+        ],
+        "page_count": 1,
+        "title_text": "Table A-5.2.2.3.(1)",
+        "table_description": "SMACNA Duct Sealing Classification",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 2,
+        "estimated_cols": 3,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-5.2.2.8.(1)": {
+        "table_number": "A-5.2.2.8.(1)",
+        "page_num": 220,
+        "page_display": 221,
+        "page_start": 220,
+        "page_end": 220,
+        "all_pages": [
+          220
+        ],
+        "page_count": 1,
+        "title_text": "Table A-5.2.2.8.(1)",
+        "table_description": "High-Limit Shut-off (HLSO) Control Settings for Air Economizers",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 2,
+        "estimated_cols": 3,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)A": {
+        "table_number": "A-8.4.3.2.(1)A",
+        "page_num": 229,
+        "page_display": 230,
+        "page_start": 229,
+        "page_end": 229,
+        "all_pages": [
+          229
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)A.",
+        "table_description": "Operating Schedule A",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)B": {
+        "table_number": "A-8.4.3.2.(1)B",
+        "page_num": 230,
+        "page_display": 231,
+        "page_start": 230,
+        "page_end": 230,
+        "all_pages": [
+          230
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)B.",
+        "table_description": "Operating Schedule B",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)C": {
+        "table_number": "A-8.4.3.2.(1)C",
+        "page_num": 231,
+        "page_display": 232,
+        "page_start": 231,
+        "page_end": 231,
+        "all_pages": [
+          231
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)C.",
+        "table_description": "Operating Schedule C",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)D": {
+        "table_number": "A-8.4.3.2.(1)D",
+        "page_num": 232,
+        "page_display": 233,
+        "page_start": 232,
+        "page_end": 232,
+        "all_pages": [
+          232
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)D.",
+        "table_description": "Operating Schedule D",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)E": {
+        "table_number": "A-8.4.3.2.(1)E",
+        "page_num": 233,
+        "page_display": 234,
+        "page_start": 233,
+        "page_end": 233,
+        "all_pages": [
+          233
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)E.",
+        "table_description": "Operating Schedule E",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)F": {
+        "table_number": "A-8.4.3.2.(1)F",
+        "page_num": 234,
+        "page_display": 235,
+        "page_start": 234,
+        "page_end": 234,
+        "all_pages": [
+          234
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)F.",
+        "table_description": "Operating Schedule F",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)G": {
+        "table_number": "A-8.4.3.2.(1)G",
+        "page_num": 235,
+        "page_display": 236,
+        "page_start": 235,
+        "page_end": 235,
+        "all_pages": [
+          235
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)G.",
+        "table_description": "Operating Schedule G",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)H": {
+        "table_number": "A-8.4.3.2.(1)H",
+        "page_num": 236,
+        "page_display": 237,
+        "page_start": 236,
+        "page_end": 236,
+        "all_pages": [
+          236
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)H.",
+        "table_description": "Operating Schedule H",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.2.(1)I": {
+        "table_number": "A-8.4.3.2.(1)I",
+        "page_num": 237,
+        "page_display": 238,
+        "page_start": 237,
+        "page_end": 237,
+        "all_pages": [
+          237
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.2.(1)I.",
+        "table_description": "Operating Schedule I",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 31,
+        "estimated_cols": 25,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.3.(1)A": {
+        "table_number": "A-8.4.3.3.(1)A",
+        "page_num": 238,
+        "page_display": 239,
+        "page_start": 238,
+        "page_end": 238,
+        "all_pages": [
+          238
+        ],
+        "page_count": 1,
+        "title_text": "Table A-8.4.3.3.(1)A.",
+        "table_description": "Default Loads and Operating Schedules by Building Type",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": false,
+        "estimated_rows": 32,
+        "estimated_cols": 5,
+        "confidence": 1.0,
+        "score": 150
+      },
+      "A-8.4.3.3.(1)B": {
+        "table_number": "A-8.4.3.3.(1)B",
+        "page_num": 239,
+        "page_display": 240,
+        "page_start": 239,
+        "page_end": 242,
+        "all_pages": [
+          239,
+          240,
+          241,
+          242
+        ],
+        "page_count": 4,
+        "title_text": "Table A-8.4.3.3.(1)B.",
+        "table_description": "Default Loads and Operating Schedules by Space Type",
+        "references": null,
+        "has_forming_part": false,
+        "has_continuation": true,
+        "estimated_rows": 21,
+        "estimated_cols": 5,
+        "confidence": 1.0,
+        "score": 120
+      }
+    }
+  }
+}

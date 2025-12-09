@@ -14,6 +14,7 @@ __pycache__/
 *.pyd
 .Python
 build/
+!src/bluesky/necb/build/
 develop-eggs/
 dist/
 downloads/
@@ -114,3 +115,6 @@ config/config.test.ini
 !config/templates/
 !config/defaults/
 !config/**/*.template.ini
+# NECB MCP Build artifacts
+tmp/
+2020/

@@ -16,11 +16,15 @@ Bluesky is a comprehensive template for building energy simulation application d
   - `examples/data/`: Shared test models and reference data
 - `.devcontainer/`: DevContainer infrastructure with robust certificate management via `certctl-safe.sh`
 
-**MCP Integration:**
-The project includes MCP (Model Context Protocol) server configuration in `.mcp.json`:
-- `aws-api-mcp-server`: AWS CLI command execution via uv tool
-- `aws-knowledge-mcp-server`: AWS documentation and knowledge access
-- Default region: `ca-central-1`
+**MCP Server:**
+The project includes a NECB MCP server (`src/bluesky/necb/server.py`) providing 6 tools for:
+- NECB documentation search including semantic search (6 tools)
+- Table queries with normalized table number handling
+- Section queries by vintage and pattern
+- Full-text search across all NECB content
+- Vintage comparison for requirements
+
+Configuration in `.mcp.json` runs via: `uv run python -m bluesky.necb.server`
 
 **DevContainer Features:**
 - Python 3.12 with UV package manager (configurable via `DEVCONTAINER_UV_VERSION`, `DEVCONTAINER_PYTHON_VERSION`)
@@ -42,52 +46,14 @@ The project includes MCP (Model Context Protocol) server configuration in `.mcp.
 - Runs via Wine with headless-first optimization
 - h2k-hpxml Python library for H2K → HPXML → EnergyPlus workflows
 
-## Examples and Workflows
-
-The repository includes **3 proof-of-concept examples** demonstrating key capabilities enabled by the Python-Ruby-Hot2000 environment.
-
-**Example Structure:**
-```
-examples/
-├── README.md                           # Complete guide and decision matrix
-├── 01_python_hot2000_workflow/
-│   ├── README.md                       # Detailed documentation
-│   └── h2k_to_energyplus.py           # H2K → HPXML → EnergyPlus
-├── 02_ruby_necb_compliance/
-│   ├── README.md                       # NECB guide
-│   └── create_necb_model.rb           # NECB-compliant model generation
-├── 03_python_ruby_interop/
-│   ├── README.md                       # Interop patterns
-│   ├── create_model.rb                # Ruby: NECB model
-│   └── runner.py                       # Python: orchestrator + analysis
-└── data/                               # Test models and reference data
-    ├── models/
-    └── reference/
-```
-
-**The Three Examples:**
-
-1. **Python Hot2000 Workflow** (`01_python_hot2000_workflow/`)
-   - Demonstrates H2K → HPXML → EnergyPlus translation
-   - Uses h2k-hpxml library (Python-exclusive)
-   - Canadian residential building simulation
-
-2. **Ruby NECB Compliance** (`02_ruby_necb_compliance/`)
-   - Creates National Energy Code of Canada compliant models
-   - Uses openstudio-standards gem (Ruby-exclusive)
-   - Canadian commercial building code compliance
-
-3. **Python-Ruby Interop** (`03_python_ruby_interop/`)
-   - Ruby creates standards-based model, Python analyzes
-   - Demonstrates subprocess communication via JSON
-   - Uses `bluesky.core.interop` utilities
+## Language Selection Guide
 
 **When to Use Each Language:**
-- **Python:** Hot2000 workflows (h2k-hpxml), data analysis (pandas/numpy), parametric orchestration
+- **Python:** Hot2000 workflows (h2k-hpxml), data analysis (pandas/numpy), MCP tools, semantic search
 - **Ruby:** NECB/ASHRAE compliance (openstudio-standards - no Python equivalent), native OpenStudio SDK
 - **Interop:** Leverage both - Ruby for standards, Python for analysis
 
-See `examples/README.md` for detailed documentation, decision guide, and extension ideas.
+See `examples/README.md` for 3 proof-of-concept examples demonstrating Python-Ruby-Hot2000 interoperability.
 
 ## Python-Ruby Interoperability
 
@@ -165,6 +131,9 @@ pytest -m "not slow"    # Skip slow tests
 
 # Run single test file
 pytest tests/unit/test_main.py
+
+# Run MCP/parser tests
+pytest tests/integration/table_parser/
 
 # Parallel execution (faster)
 pytest -n auto
@@ -306,15 +275,160 @@ Key environment variables in `.devcontainer/devcontainer.json`:
 - `ENABLE_GPU_AI`: Enable GPU AI stack installation ("0" to disable, "1" to enable)
 - `UV_PROJECT_ENVIRONMENT`: Path to project venv (default: `${containerWorkspaceFolder}/.venv`)
 
-### Working with AWS MCP Servers
-The project includes two AWS MCP servers configured in `.mcp.json`:
-1. **aws-api-mcp-server**: Execute AWS CLI commands programmatically
-   - Run via: `uv tool run awslabs.aws-api-mcp-server@latest`
-   - Default region: `ca-central-1`
-2. **aws-knowledge-mcp-server**: Access AWS documentation
-   - Run via: `uv tool run fastmcp run https://knowledge-mcp.global.api.aws`
+### Working with MCP Server
 
-AWS credentials and SSO configuration handled by `.devcontainer/scripts/install-user-aws.sh`
+**Starting the MCP server:**
+```bash
+uv run python -m bluesky.necb.server
+```
+
+**Adding a new MCP tool:**
+1. Open `src/bluesky/necb/server.py`
+2. Add a function decorated with `@mcp.tool()`:
+```python
+@mcp.tool()
+def my_new_tool(param1: str, param2: Optional[int] = None) -> dict:
+    """
+    Tool description shown to LLMs.
+
+    Args:
+        param1: Description of param1
+        param2: Description of param2 (optional)
+
+    Returns:
+        Dictionary with results
+    """
+    # Implementation
+    return {"result": "..."}
+```
+
+**NECB package structure:**
+```
+src/bluesky/necb/
+├── __init__.py        # Package paths: DB_PATH, CHROMA_PATH, PDF_DIR, FIGURES_DIR
+├── server.py          # FastMCP server with NECB query tools
+├── data/              # Runtime databases (shipped with package)
+│   ├── necb_production.db    # SQLite: tables, sections, figures
+│   └── chroma/               # ChromaDB vector index for semantic search
+├── build/             # Build-time tools (parse PDFs → databases)
+│   ├── __main__.py           # CLI: python -m bluesky.necb.build
+│   ├── tables/               # Table extraction parser
+│   ├── sections/             # Section/article extraction parser
+│   └── figures/              # Figure extraction and AI enrichment
+└── tools/             # Shared search utilities
+    ├── hybrid_search.py      # FTS5 + ChromaDB combined search
+    ├── vector_indexer.py     # ChromaDB index builder
+    └── query_understanding.py # Natural language query parsing
+```
+
+**Source data (build-time only, not shipped):**
+```
+data/necb/
+├── pdfs/              # NECB-2011.pdf, NECB-2015.pdf, etc.
+└── figures/           # Extracted/cropped figure images
+    └── {vintage}/     # 2011/, 2015/, 2017/, 2020/
+```
+
+**Rebuilding NECB semantic search index:**
+```bash
+python -m bluesky.necb.tools.vector_indexer
+```
+
+## NECB Parsing Architecture (MCP Branch)
+
+**Note:** This section documents advanced NECB parsing infrastructure on the `mcp` branch. For detailed documentation, see parser-specific READMEs.
+
+### Overview
+
+The NECB parsing system extracts structured data from Canadian building code (NECB) PDF documents across 4 vintages (2011-2020). Architecture consists of **three specialized parsers** feeding a unified production database:
+
+1. **Table Parser** - Hybrid pipeline: PyMuPDF → (Marker fallback) → LLM repair → Pydantic validation
+2. **Section Parser** - Hierarchical text extraction: Part → Section → Article → Clause
+3. **Figure Parser** - Spatial relationship detection: Label + Image/Vector + Caption
+
+**Key Design Principle:** Raw PDF extraction is cached, enabling schema iteration without re-parsing PDFs.
+
+### Parser Documentation
+
+Each parser has comprehensive README documentation:
+
+- **Table Parser:** `src/bluesky/necb/build/tables/README.md`
+  - 3-stage hybrid architecture (PyMuPDF, Marker, LLM repair)
+  - Pydantic schema system for validation
+  - Dual LLM backends (Ollama local, Claude API)
+
+- **Section Parser:** `src/bluesky/necb/build/sections/README.md`
+  - Hierarchical article structure extraction
+  - Header/footer cleaning pipeline
+
+- **Figure Parser:** `src/bluesky/necb/build/figures/README.md`
+  - Spatial clustering for label-image association
+  - Bitmap and vector graphics extraction
+
+### Production Database
+
+**Location:** `src/bluesky/necb/data/necb_production.db`
+
+**Access via MCP Server:**
+```python
+from bluesky.necb.server import get_necb_table
+
+table = get_necb_table(vintage="2020", table_number="3.2.2.2")
+```
+
+**Schema:** Tables (`necb_tables`, `necb_table_rows`), Sections, Figures, and parser metadata tracking extraction method, LLM usage, and timing.
+
+### Critical Design Decisions
+
+**Table Parser (41.7% success rate, per `docs/necb-parsing-improvement-plan.md`):**
+- **Schema bottleneck:** 84.3% of failures due to missing Pydantic schemas (only 9 defined for 89 tables)
+- **Extraction quality is good:** 74% of extractions adequate, infrastructure is sound
+- **Marker disabled:** Upstream surya-ocr bug (Issue #465), using PyMuPDF-only currently
+- **NECB 2011 normalization:** Auto-converts "5.3.2.8.A" → "5.3.2.8.-A" to match schema patterns
+- **Cached extractions:** LLM repair can iterate on schemas without re-parsing PDFs
+
+**LLM Configuration:**
+```python
+from bluesky.necb.build.tables.config import ParserConfig
+
+config = ParserConfig(
+    llm_backend="ollama",              # "ollama" (local) or "claude" (API)
+    llm_model="qwen2.5:14b-instruct",  # Ollama: qwen2.5, llama3.1; Claude: sonnet/haiku
+    llm_temperature=0.0,
+    cache_extractions=True,            # Critical: enables schema iteration
+)
+```
+
+### Testing
+
+**Structure:** `tests/integration/table_parser/` contains end-to-end tests, extraction tests, LLM repair tests, and cross-vintage validation.
+
+**Run tests:**
+```bash
+pytest tests/integration/table_parser/                    # All tests
+pytest tests/integration/table_parser/test_hybrid_parser.py::test_hybrid_parser_single_table -v
+```
+
+### Common Workflows
+
+**Add new table schema:**
+1. Define Pydantic schema in `schemas.py`
+2. Register in `SCHEMA_REGISTRY`
+3. Test with `HybridNECBParser.parse_table()`
+4. Add integration test
+
+**Debug LLM failures:**
+```python
+result = parser.parse_table(...)
+print("Raw:", result.raw_markdown)      # Cached extraction
+print("Repaired:", result.repaired_markdown)
+# Iterate on schema without re-parsing PDF
+```
+
+**Rebuild semantic search index:**
+```bash
+python -m bluesky.necb.tools.vector_indexer  # Extracts from necb_production.db → ChromaDB
+```
 
 ## Error Debugging Protocol
 
@@ -513,17 +627,25 @@ This consistent format allows quick lookup and copy-paste solutions.
 
 ## Important Files
 
+**Core Application:**
 - `src/bluesky/cli/main.py` - CLI entry point (currently single-command, ready for group refactor)
+- `pyproject.toml` - All configuration: dependencies, tool settings, version pins
+
+**MCP Server:**
+- `src/bluesky/mcp/openstudio_server.py` - FastMCP server with 17+ tools
+- `src/bluesky/mcp/data/openstudio-3.9.0.db` - OpenStudio SDK documentation database
+- `src/bluesky/mcp/data/necb.db` - NECB documentation database (4 vintages)
+- `.mcp.json` - MCP server configuration
+
+**DevContainer:**
 - `.devcontainer/scripts/certctl-safe.sh` - Certificate management script (sourced by install scripts)
 - `.devcontainer/scripts/dev-env-init.sh` - Unified shell initialization script for venv activation and prompt
 - `.devcontainer/scripts/post-create.sh` - DevContainer lifecycle hook
-- `.devcontainer/scripts/install-user-aws.sh` - AWS CLI and SSO configuration installer
-- `.devcontainer/scripts/install-user-uv.sh` - UV package manager installer
-- `.devcontainer/scripts/install-user-nodejs.sh` - Node.js installer
 - `.devcontainer/devcontainer.json` - DevContainer configuration with environment variables
-- `.mcp.json` - MCP server configuration for AWS tools
-- `pyproject.toml` - All configuration: dependencies, tool settings, version pins
+
+**Tests:**
 - `tests/unit/test_main.py` - CLI test examples
+- `tests/integration/table_parser/` - MCP/NECB parsing tests
 
 ## Version Management
 
@@ -536,11 +658,22 @@ Update both simultaneously when bumping versions.
 ## Package Dependencies
 
 Notable dependencies with specific roles:
+
+**Energy Simulation:**
 - `h2k-hpxml` - NRCan's H2K to HPXML library (includes OpenStudio and EnergyPlus installation)
-- `openstudio==3.9.0` - Energy modeling library (installed via h2k-hpxml)
+- `openstudio==3.9.0` - Energy modeling library
+
+**MCP Server & PDF Parsing:**
+- `fastmcp>=2.13.0` - MCP server framework
+- `chromadb>=0.4.22` - Vector database for semantic search
+- `sentence-transformers>=2.3.0` - Embedding models
+- `pdfplumber>=0.10.0`, `camelot-py[cv]>=1.0.9` - PDF table extraction
+- `marker-pdf==1.10.1` - Advanced table extraction with merged cell handling
+- `ollama>=0.3.0` - Local LLM backend for table repair
+
+**CLI & Data:**
 - `click` - CLI framework
 - `rich` - Terminal formatting and output
-- `pyfiglet` - ASCII art generation
 - `pandas`, `numpy` - Data processing
 - `requests>=2.32.4` - HTTP client (respects `REQUESTS_CA_BUNDLE`, CVE-2024-47081 fixed)
 

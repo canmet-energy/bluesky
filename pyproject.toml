@@ -58,8 +58,10 @@ dependencies = [
     "torch>=2.1.0",  # PyTorch for GPU acceleration
     # PDF Parser v2 dependencies
     "pymupdf4llm>=0.0.17",  # Fast baseline PDF extraction
-    "marker-pdf>=0.2.17",  # Advanced table extraction with merged cell handling
-    "ollama>=0.3.0",  # Local LLM for table repair and normalization
+    "PyMuPDF-layout>=1.0.0",  # Enhanced layout analysis for PyMuPDF (better table detection)
+    # "marker-pdf==1.10.1",  # DISABLED: Upstream surya-ocr bug (Issue #465), using PyMuPDF-only
+    "ollama>=0.3.0",  # Local LLM backend (Qwen, Llama, etc.)
+    "anthropic>=0.39.0",  # Claude API backend (optional - requires API key)
     "pydantic>=2.0.0",  # Schema validation
 ]
 
