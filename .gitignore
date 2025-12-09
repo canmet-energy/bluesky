@@ -117,4 +117,4 @@ config/config.test.ini
 !config/**/*.template.ini
 # NECB MCP Build artifacts
 tmp/
-2020/
+
