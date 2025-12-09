@@ -19,7 +19,7 @@ PROJECT_ROOT = PACKAGE_DIR.parent.parent.parent
 BUILD_DATA_DIR = PROJECT_ROOT / "data" / "necb"
 PDF_DIR = BUILD_DATA_DIR / "pdfs"
 FIGURES_DIR = BUILD_DATA_DIR / "figures"
-LLM_CACHE_DIR = BUILD_DATA_DIR / "cache"
+LLM_CACHE_DIR = BUILD_DATA_DIR / "cache" / "tables"
 
 __all__ = [
     "PACKAGE_DIR",

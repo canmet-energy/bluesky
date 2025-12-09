@@ -50,7 +50,7 @@ class TableCacheManager:
     SCHEMA_VERSION = "1.0.0"  # Bump when cache format changes
 
     def __init__(self, cache_dir: Path | str, verbose: bool = False):
-        self.cache_dir = Path(cache_dir) / "tables"
+        self.cache_dir = Path(cache_dir)
         self.verbose = verbose
 
     def _normalize_table_number(self, table_number: str) -> str:
