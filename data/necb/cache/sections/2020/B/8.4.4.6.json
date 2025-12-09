@@ -1,0 +1,85 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.6",
+  "title": "Purchased Energy",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.6 Purchased Energy\nPurchased Energy\n1) Where a primary heating system of the proposed building uses purchased\nenergy, the reference building's corresponding system shall be modeled in accordance\nwith the requirements of Article 8.4.4.9. adjusted as follows:\n  a) one gas-fired modulating boiler complying with Section 5.2. shall be used to\nrepresent the purchased energy equipment, and\n  b) the total capacity of the boiler, relative to the reference building's total heating\ncapacity, shall correspond to the ratio of the proposed building's purchased\nenergy capacity divided by its total heating capacity.\n2) Where a primary cooling system of the proposed building uses purchased\nenergy, the reference building's corresponding system shall be modeled in accordance\nwith the requirements of Article 8.4.4.10. adjusted as follows:\n  a) one air-cooled electric chiller complying with Table 8.4.3.5. shall be used to\nrepresent the purchased energy equipment, and\n  b) the total capacity of the chiller, relative to the reference building's total\ncooling capacity, shall correspond to the ratio of the proposed building's\npurchased energy capacity divided by its total cooling capacity.\n3) Where a primary service water heating system of the proposed building uses\npurchased energy, the reference building's corresponding system shall be modeled in\naccordance with the requirements of Article 8.4.4.20. adjusted as follows:\n  a) one gas-fired service water heater shall be used to represent the purchased\nenergy equipment,\n  b) where the proposed building's purchased energy system is used to heat\nservice water in a heater with a storage tank, the service water heater shall\nhave the same storage capacity, and\n  c) the total heating capacity of the service water heaters, relative to the reference\nbuilding's total service water heating capacity, shall correspond to the ratio\nof the proposed building's purchased energy capacity divided by its total\nheating capacity.\n4) The operating schedule, priority of use and other operational characteristics\nof the proposed building's use of purchased energy shall apply to the equipment\nrepresenting the purchased energy in Sentences (1) to (3).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.6.(1)",
+      "text": "Where a primary heating system of the proposed building uses purchased energy, the reference building's corresponding system shall be modeled in accordance with the requirements of Article 8.4.4.9. adjusted as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.6.(1)(a)",
+          "text": "one gas-fired modulating boiler complying with Section 5.2. shall be used to represent the purchased energy equipment, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.6.(1)(b)",
+          "text": "the total capacity of the boiler, relative to the reference building's total heating capacity, shall correspond to the ratio of the proposed building's purchased energy capacity divided by its total heating capacity.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.6.(2)",
+      "text": "Where a primary cooling system of the proposed building uses purchased energy, the reference building's corresponding system shall be modeled in accordance with the requirements of Article 8.4.4.10. adjusted as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.6.(2)(a)",
+          "text": "one air-cooled electric chiller complying with Table 8.4.3.5. shall be used to represent the purchased energy equipment, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.6.(2)(b)",
+          "text": "the total capacity of the chiller, relative to the reference building's total cooling capacity, shall correspond to the ratio of the proposed building's purchased energy capacity divided by its total cooling capacity.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.6.(3)",
+      "text": "Where a primary service water heating system of the proposed building uses purchased energy, the reference building's corresponding system shall be modeled in accordance with the requirements of Article 8.4.4.20. adjusted as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.6.(3)(a)",
+          "text": "one gas-fired service water heater shall be used to represent the purchased energy equipment,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.6.(3)(b)",
+          "text": "where the proposed building's purchased energy system is used to heat service water in a heater with a storage tank, the service water heater shall have the same storage capacity, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.6.(3)(c)",
+          "text": "the total heating capacity of the service water heaters, relative to the reference building's total service water heating capacity, shall correspond to the ratio of the proposed building's purchased energy capacity divided by its total heating capacity.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.6.(4)",
+      "text": "The operating schedule, priority of use and other operational characteristics of the proposed building's use of purchased energy shall apply to the equipment representing the purchased energy in Sentences (1) to (3).",
+      "clauses": []
+    }
+  ],
+  "page_start": 212,
+  "page_end": 212,
+  "timestamp": "2025-12-06T22:08:44.131603+00:00",
+  "success": true,
+  "equation_count": 0
+}

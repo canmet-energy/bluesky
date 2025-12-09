@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.17",
+  "title": "Fans",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.17 Fans\nFans\n1) Where the HVAC system of a thermal block of the proposed building includes a fan that exhausts air directly to the outside and complies with Sentences 5.2.3.1.(2) and 5.2.10.1.(3), its flow rate, power demand, operating schedule and part-load performance shall be modeled identically in the reference building. (See Note A-8.4.4.17.(1).)\n2) Fan power, P, versus flow rate, F, shall be calculated using one of the following equations:  [Equation: \\begin{cases}\nP_{\\text{partload}} = P_{\\text{rated}} \\times E & \\text{if } \\frac{V_{\\text{partload}}}{V_{\\text{rated}}} < D \\\\\nP_{\\text{partload}} = P_{\\text{rated}} \\times \\left[A + B \\times \\left(\\frac{V_{\\text{partload}}}{V_{\\text{rated}}}\\right) + C \\times \\left(\\frac{V_{\\text{partload}}}{V_{\\text{rated}}}\\right)^{2}\\right] & \\text{if } \\frac{V_{\\text{partload}}}{V_{\\text{rated}}} \\geq D\n\\end{cases}] where Fpartload = flow rate at part-load conditions, in L/s, Frated = flow rate at rated conditions, in L/s, Ppartload = power draw at part-load conditions, in kW, Prated = power draw at rated conditions, in kW, and A, B, C, D, E = coefficients defined in Table 8.4.4.17. (See Note A-8.4.4.17.(2).) Table 8.4.4.17. Coefficients Used in Calculating Fan Power versus Flow Rate Forming Part of Sentence 8.4.4.17.(2) Type of Fan Coefficients Airfoil or backward inclined riding fan curve Airfoil or backward inclined with inlet vanes Forward curved with inlet vanes Variable speed drive 0.227143 0.584345 0.339619 0.00153028 1.178929 –0.57917 –0.84814 0.00520806 –0.41071 0.970238 1.495671 1.0086242 0.47 0.35 0.25 0.20 0.68 0.50 0.22 0.04\n3) Except as provided in Sentences (4) and (5), individual fans shall be modeled as airfoil or backward inclined riding fan curve.\n4) Where variable-air-volume fans are used, individual fans having a fan power greater than 7.5 kW and less than 25 kW shall be modeled as airfoil or backward inclined with inlet vanes.\n5) Where variable-air-volume fans are used, individual fans having a fan power greater than or equal to 25 kW shall be modeled as forward curved with inlet vanes.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.17.(1)",
+      "text": "Where the HVAC system of a thermal block of the proposed building includes a fan that exhausts air directly to the outside and complies with Sentences 5.2.3.1.(2) and 5.2.10.1.(3), its flow rate, power demand, operating schedule and part-load performance shall be modeled identically in the reference building. (See Note A-8.4.4.17.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.17.(2)",
+      "text": "Fan power, P, versus flow rate, F, shall be calculated using one of the following equations:  [Equation: \\begin{cases}\nP_{\\text{partload}} = P_{\\text{rated}} \\times E & \\text{if } \\frac{V_{\\text{partload}}}{V_{\\text{rated}}} < D \\\\\nP_{\\text{partload}} = P_{\\text{rated}} \\times \\left[A + B \\times \\left(\\frac{V_{\\text{partload}}}{V_{\\text{rated}}}\\right) + C \\times \\left(\\frac{V_{\\text{partload}}}{V_{\\text{rated}}}\\right)^{2}\\right] & \\text{if } \\frac{V_{\\text{partload}}}{V_{\\text{rated}}} \\geq D\n\\end{cases}] where Fpartload = flow rate at part-load conditions, in L/s, Frated = flow rate at rated conditions, in L/s, Ppartload = power draw at part-load conditions, in kW, Prated = power draw at rated conditions, in kW, and A, B, C, D, E = coefficients defined in Table 8.4.4.17. (See Note A-8.4.4.17.(2).) Table 8.4.4.17. Coefficients Used in Calculating Fan Power versus Flow Rate Forming Part of Sentence 8.4.4.17.(2) Type of Fan Coefficients Airfoil or backward inclined riding fan curve Airfoil or backward inclined with inlet vanes Forward curved with inlet vanes Variable speed drive 0.227143 0.584345 0.339619 0.00153028 1.178929 –0.57917 –0.84814 0.00520806 –0.41071 0.970238 1.495671 1.0086242 0.47 0.35 0.25 0.20 0.68 0.50 0.22 0.04",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.17.(3)",
+      "text": "Except as provided in Sentences (4) and (5), individual fans shall be modeled as airfoil or backward inclined riding fan curve.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.17.(4)",
+      "text": "Where variable-air-volume fans are used, individual fans having a fan power greater than 7.5 kW and less than 25 kW shall be modeled as airfoil or backward inclined with inlet vanes.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.17.(5)",
+      "text": "Where variable-air-volume fans are used, individual fans having a fan power greater than or equal to 25 kW shall be modeled as forward curved with inlet vanes.",
+      "clauses": []
+    }
+  ],
+  "page_start": 220,
+  "page_end": 220,
+  "timestamp": "2025-12-07T03:02:31.632164+00:00",
+  "success": true,
+  "equation_count": 1
+}

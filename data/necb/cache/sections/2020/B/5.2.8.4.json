@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.8.4",
+  "title": "Installation of Thermostats",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.8.4 Installation of Thermostats\nInstallation of Thermostats\n1) Except as otherwise stated in the manufacturer's instructions and as required\nin barrier-free installations and for stratified ventilation, sensors for wall-mounted\nthermostats shall be installed\n  a) between 1 400 mm and 1 500 mm above the floor,\n  b) on interior partitions or walls, or on exterior walls with a maximum overall\nthermal transmittance of 0.286 W/(m2×K),\n  c) away from direct exposure to sunlight and heat-producing sources, and\n  d) away from drafts and dead pockets of air.\n(See Note A-5.2.8.4.(1).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.8.4.(1)",
+      "text": "Except as otherwise stated in the manufacturer's instructions and as required in barrier-free installations and for stratified ventilation, sensors for wall-mounted thermostats shall be installed",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.8.4.(1)(a)",
+          "text": "between 1 400 mm and 1 500 mm above the floor,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.8.4.(1)(b)",
+          "text": "on interior partitions or walls, or on exterior walls with a maximum overall thermal transmittance of 0.286 W/(m2×K),",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "5.2.8.4.(1)(c)",
+          "text": "away from direct exposure to sunlight and heat-producing sources, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "5.2.8.4.(1)(d)",
+          "text": "away from drafts and dead pockets of air. (See Note A-5.2.8.4.(1).)",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 144,
+  "page_end": 145,
+  "timestamp": "2025-12-06T22:08:44.103310+00:00",
+  "success": true,
+  "equation_count": 0
+}

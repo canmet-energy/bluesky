@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.11.4",
+  "title": "Multiple Boilers",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.11.4 Multiple Boilers\nMultiple Boilers\n1) HVAC systems with multiple boilers shall incorporate a means for preventing\nheat loss through the boilers when they are not operating, such as a device that prevents\nthe flow of heat-carrying fluid through the boilers or dampers installed in the flues.\n2) Except as provided in Sentence (3), where the heating load exceeds 176 kW,\nthe boiler plant shall consist of\n  a) more than one boiler,\n  b) a two-stage single boiler, or\n  c) a multi-stage boiler.\n3) Where the heating load exceeds 352 kW, the boiler plant shall be fully\nmodulating.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.11.4.(1)",
+      "text": "HVAC systems with multiple boilers shall incorporate a means for preventing heat loss through the boilers when they are not operating, such as a device that prevents the flow of heat-carrying fluid through the boilers or dampers installed in the flues.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.11.4.(2)",
+      "text": "Except as provided in Sentence (3), where the heating load exceeds 176 kW, the boiler plant shall consist of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.11.4.(2)(a)",
+          "text": "more than one boiler,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.11.4.(2)(b)",
+          "text": "a two-stage single boiler, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "5.2.11.4.(2)(c)",
+          "text": "a multi-stage boiler.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.11.4.(3)",
+      "text": "Where the heating load exceeds 352 kW, the boiler plant shall be fully modulating.",
+      "clauses": []
+    }
+  ],
+  "page_start": 150,
+  "page_end": 150,
+  "timestamp": "2025-12-06T22:08:44.107760+00:00",
+  "success": true,
+  "equation_count": 0
+}

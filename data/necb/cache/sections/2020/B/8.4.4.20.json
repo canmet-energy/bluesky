@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.20",
+  "title": "Service Water Heating Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.20 Service Water Heating Systems\nService Water Heating Systems\n1) Except as provided in Sentences (2) to (4), the reference building's service water\nheating system shall be modeled as being identical to that of the proposed building\nas regards the following characteristics:\n  a) storage capacity,\n  b) power input, and\n  c) energy type.\n2) Where the energy type of the proposed building's service water heating system is\nan air-, water- or ground-source heat pump, the energy type of the reference building's\nservice water heating system shall be an air-source heat pump.\n3) Where the energy type of the proposed building's service water heating system is\nan immersion coil supplied by a boiler, the energy type of the reference building's service\nwater heating system shall be the same as that of the boiler.\n4) Where more than one energy type is used by the proposed building's service\nwater heating system,\n  a) the heating capacities of the reference building's service water heating\nequipment shall match the ratio of the proposed building's service water\nheating equipment capacity allocation (see Note A-8.4.4.20.(4)(a)), and\n  b) the operating schedule, priority of use and other operational characteristics\nof the proposed building's use of energy types shall apply.\n5) Service water heating equipment performance characteristics as a function of\npart-load shall be modeled in accordance with the part-load performance curves found\nin Subsection 8.4.5.\n6) The service water heating system's supply temperature shall be modeled as\nbeing identical to that of the proposed building. (See Note A-8.4.4.20.(6).)\n7) Where a storage tank is to be modeled, the service water heating system's storage\ntemperature shall be modeled as being identical to that of the proposed building. (See\nNote A-8.4.4.20.(7).)\n8) Where the proposed building's service water heating system comprises multiple\nwater heaters, the reference building's service water heating system shall be modeled\nwith the same number of water heaters.\n9) Where the proposed building's service water heating system is a recirculation\nsystem, the circulation pumps shall be modeled as a single pump with\n  a) constant speed operation, and\n  b) a total flow rate and pumping power, in W/(L/s), that are identical to that of\nthe proposed building's circulation pumps.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.20.(1)",
+      "text": "Except as provided in Sentences (2) to (4), the reference building's service water heating system shall be modeled as being identical to that of the proposed building as regards the following characteristics:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.20.(1)(a)",
+          "text": "storage capacity,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.20.(1)(b)",
+          "text": "power input, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.20.(1)(c)",
+          "text": "energy type.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.20.(2)",
+      "text": "Where the energy type of the proposed building's service water heating system is an air-, water- or ground-source heat pump, the energy type of the reference building's service water heating system shall be an air-source heat pump.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.20.(3)",
+      "text": "Where the energy type of the proposed building's service water heating system is an immersion coil supplied by a boiler, the energy type of the reference building's service water heating system shall be the same as that of the boiler.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.20.(4)",
+      "text": "Where more than one energy type is used by the proposed building's service water heating system,",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.20.(4)(a)",
+          "text": "the heating capacities of the reference building's service water heating equipment shall match the ratio of the proposed building's service water heating equipment capacity allocation (see Note A-8.4.4.20.(4)(a)), and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.20.(4)(b)",
+          "text": "the operating schedule, priority of use and other operational characteristics of the proposed building's use of energy types shall apply.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.20.(5)",
+      "text": "Service water heating equipment performance characteristics as a function of part-load shall be modeled in accordance with the part-load performance curves found in Subsection 8.4.5.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.4.20.(6)",
+      "text": "The service water heating system's supply temperature shall be modeled as being identical to that of the proposed building. (See Note A-8.4.4.20.(6).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.4.20.(7)",
+      "text": "Where a storage tank is to be modeled, the service water heating system's storage temperature shall be modeled as being identical to that of the proposed building. (See Note A-8.4.4.20.(7).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "8.4.4.20.(8)",
+      "text": "Where the proposed building's service water heating system comprises multiple water heaters, the reference building's service water heating system shall be modeled with the same number of water heaters.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "9",
+      "reference": "8.4.4.20.(9)",
+      "text": "Where the proposed building's service water heating system is a recirculation system, the circulation pumps shall be modeled as a single pump with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.20.(9)(a)",
+          "text": "constant speed operation, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.20.(9)(b)",
+          "text": "a total flow rate and pumping power, in W/(L/s), that are identical to that of the proposed building's circulation pumps.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 221,
+  "page_end": 222,
+  "timestamp": "2025-12-06T22:08:44.137328+00:00",
+  "success": true,
+  "equation_count": 0
+}

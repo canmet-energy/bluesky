@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.2.1.1",
+  "title": "Compliance with this Code",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.2.1.1 Compliance with this Code\nCompliance with this Code\n1) Compliance with this Code shall be achieved by\n  a) complying with the applicable acceptable solutions in Division B (see\nNote A-1.2.1.1.(1)(a)), or\n  b) using alternative solutions that will achieve at least the minimum level of\nperformance required by Division B in the areas defined by the objective\nand functional statements attributed to the applicable acceptable solutions\n(see Note A-1.2.1.1.(1)(b)).\n2) For the purposes of compliance with this Code as required in Clause (1)(b), the\nobjective and functional statements attributed to the acceptable solutions in Division\nB shall be the objective and functional statements referred to in Subsection 1.1.2. of\nDivision B.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.2.1.1.(1)",
+      "text": "Compliance with this Code shall be achieved by",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "1.2.1.1.(1)(a)",
+          "text": "complying with the applicable acceptable solutions in Division B (see Note A-1.2.1.1.(1)(a)), or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "1.2.1.1.(1)(b)",
+          "text": "using alternative solutions that will achieve at least the minimum level of performance required by Division B in the areas defined by the objective and functional statements attributed to the applicable acceptable solutions (see Note A-1.2.1.1.(1)(b)).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "1.2.1.1.(2)",
+      "text": "For the purposes of compliance with this Code as required in Clause (1)(b), the objective and functional statements attributed to the acceptable solutions in Division B shall be the objective and functional statements referred to in Subsection 1.1.2. of Division B.",
+      "clauses": []
+    }
+  ],
+  "page_start": 22,
+  "page_end": 23,
+  "timestamp": "2025-12-06T22:08:44.048875+00:00",
+  "success": true,
+  "equation_count": 0
+}

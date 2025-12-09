@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.3.9",
+  "title": "Ice Plants",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.3.9 Ice Plants\nIce Plants\n(See Note A-8.4.3.9.)\n1) Where the proposed building contains an ice plant that recovers heat but\nthe energy modeling software does not allow for modeling of the ice plant and/or\nof heat recovery from this ice plant, the plant shall be modeled as a water-cooled,\ndouble-bundle water chiller.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.3.9.(1)",
+      "text": "Where the proposed building contains an ice plant that recovers heat but the energy modeling software does not allow for modeling of the ice plant and/or of heat recovery from this ice plant, the plant shall be modeled as a water-cooled, double-bundle water chiller.",
+      "clauses": []
+    }
+  ],
+  "page_start": 209,
+  "page_end": 209,
+  "timestamp": "2025-12-06T22:08:44.129459+00:00",
+  "success": true,
+  "equation_count": 0
+}

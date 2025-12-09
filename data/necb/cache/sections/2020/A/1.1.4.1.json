@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.1.4.1",
+  "title": "Climatic Values",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "1.1.4.1 Climatic Values\nClimatic Values\n1) The climatic values required for the design of buildings under this Code shall be\nin conformance with the values established by the authority having jurisdiction or, in the\nabsence of such data, with the climatic values in Table C-1 for the location nearest to\nthe building site. (See Note A-1.1.4.1.(1).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.1.4.1.(1)",
+      "text": "The climatic values required for the design of buildings under this Code shall be in conformance with the values established by the authority having jurisdiction or, in the absence of such data, with the climatic values in Table C-1 for the location nearest to the building site. (See Note A-1.1.4.1.(1).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 52,
+  "page_end": 52,
+  "timestamp": "2025-12-06T22:08:44.057834+00:00",
+  "success": true,
+  "equation_count": 0
+}

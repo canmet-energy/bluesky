@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "10.1.1.2",
+  "title": "Application",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "10.1.1.2 Application\nApplication\n1) This Part applies only to buildings\n  a) whose occupancy is known, and\n  b) except as provided in Sentence (2), for which sufficient information is\nknown about their components, materials and assemblies that are covered\nby the scope of this Code.\n2) Where insufficient information is known about the building components,\nmaterials and assemblies, the applicable prescriptive requirements in\nSections 3.2., 4.2., 5.2., 6.2. and 7.2. shall apply.\n3) If, during construction, the design is found to be altered from the one used in\nthe original performance assessment, the building shall be reassessed for compliance\nwith this Part.\n4) Except as provided in Sentence (5), the procedures stated in this Part shall\nbe applied to a single building at a time.\n5) Where the structure is divided by firewalls into multiple buildings, the whole\nstructure is permitted to be treated as one building.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "10.1.1.2.(1)",
+      "text": "This Part applies only to buildings",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "10.1.1.2.(1)(a)",
+          "text": "whose occupancy is known, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "10.1.1.2.(1)(b)",
+          "text": "except as provided in Sentence (2), for which sufficient information is known about their components, materials and assemblies that are covered by the scope of this Code.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "10.1.1.2.(2)",
+      "text": "Where insufficient information is known about the building components, materials and assemblies, the applicable prescriptive requirements in Sections 3.2., 4.2., 5.2., 6.2. and 7.2. shall apply.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "10.1.1.2.(3)",
+      "text": "If, during construction, the design is found to be altered from the one used in the original performance assessment, the building shall be reassessed for compliance with this Part.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "10.1.1.2.(4)",
+      "text": "Except as provided in Sentence (5), the procedures stated in this Part shall be applied to a single building at a time.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "10.1.1.2.(5)",
+      "text": "Where the structure is divided by firewalls into multiple buildings, the whole structure is permitted to be treated as one building.",
+      "clauses": []
+    }
+  ],
+  "page_start": 264,
+  "page_end": 264,
+  "timestamp": "2025-12-06T22:08:44.141912+00:00",
+  "success": true,
+  "equation_count": 0
+}

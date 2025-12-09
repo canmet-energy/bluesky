@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.1.1",
+  "title": "Protection of Insulation Materials",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.1.1 Protection of Insulation Materials\nProtection of Insulation Materials\n1) Except as provided in Sentence (2), the building envelope shall be designed to\navoid increasing the overall thermal transmittance of the insulation material due to\n  a) air leakage or convection,\n  b) wetting, or\n  c) moisture bypassing the plane of thermal resistance.\n(See Note A-3.2.1.1.(1).)\n2) Where any of the conditions described in Clauses (1)(a) to (c) occur as a result\nof the designed building envelope system, their effect on the overall thermal transmittance\nof the insulation material shall be calculated in accordance with Article 3.1.1.5.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.1.1.(1)",
+      "text": "Except as provided in Sentence (2), the building envelope shall be designed to avoid increasing the overall thermal transmittance of the insulation material due to",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.2.1.1.(1)(a)",
+          "text": "air leakage or convection,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.2.1.1.(1)(b)",
+          "text": "wetting, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "3.2.1.1.(1)(c)",
+          "text": "moisture bypassing the plane of thermal resistance. (See Note A-3.2.1.1.(1).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.1.1.(2)",
+      "text": "Where any of the conditions described in Clauses (1)(a) to (c) occur as a result of the designed building envelope system, their effect on the overall thermal transmittance of the insulation material shall be calculated in accordance with Article 3.1.1.5.",
+      "clauses": []
+    }
+  ],
+  "page_start": 70,
+  "page_end": 70,
+  "timestamp": "2025-12-06T22:08:44.071294+00:00",
+  "success": true,
+  "equation_count": 0
+}

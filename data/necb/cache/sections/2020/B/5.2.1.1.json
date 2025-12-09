@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.1.1",
+  "title": "Load Calculations",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.1.1 Load Calculations\nLoad Calculations\n1) Heating, ventilating and air-conditioning systems shall be sized in\naccordance with good engineering practice such as that prescribed in the NBC. (See\nNote A-5.2.1.1.(1).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.1.1.(1)",
+      "text": "Heating, ventilating and air-conditioning systems shall be sized in accordance with good engineering practice such as that prescribed in the NBC. (See Note A-5.2.1.1.(1).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 136,
+  "page_end": 137,
+  "timestamp": "2025-12-06T22:08:44.094915+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.2.6",
+  "title": "Special Applications",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.2.6 Special Applications\nSpecial Applications\n1) The following lighting applications shall be controlled separately from the\ngeneral lighting in all spaces:\n  a) display or accent lighting,\n  b) lighting in display and merchandising cases,\n  c) lighting for non-visual applications, such as plant growth and food\nwarming, and\n  d) lighting equipment that is for sale or for demonstrations in lighting\neducation.\n2) Except for night lighting in bathrooms that does not exceed 2 W, all\nlighting and all switched receptacles used for lighting in guest rooms and suites in\ncommercial temporary lodgings shall be controlled so that their power supply turns\noff within 20 min of the space being unoccupied. (See Note A-4.2.2.6.(2).) (See also\nNote A-5.2.8.3.(1).)\n3) Where captive key systems are used to meet the requirements of Sentence (2),\nthey shall be located at the entrance to each guest room and suite.\n4) All supplemental task lighting, including permanently installed undershelf or\nundercabinet lighting, shall be controlled by a device that is\n  a) integral to the luminaires, or\n  b) wall-mounted in a readily accessible location from which the occupant can\nsee the controlled lighting.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.2.6.(1)",
+      "text": "The following lighting applications shall be controlled separately from the general lighting in all spaces:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.6.(1)(a)",
+          "text": "display or accent lighting,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.6.(1)(b)",
+          "text": "lighting in display and merchandising cases,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.6.(1)(c)",
+          "text": "lighting for non-visual applications, such as plant growth and food warming, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "4.2.2.6.(1)(d)",
+          "text": "lighting equipment that is for sale or for demonstrations in lighting education.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.2.6.(2)",
+      "text": "Except for night lighting in bathrooms that does not exceed 2 W, all lighting and all switched receptacles used for lighting in guest rooms and suites in commercial temporary lodgings shall be controlled so that their power supply turns off within 20 min of the space being unoccupied. (See Note A-4.2.2.6.(2).) (See also Note A-5.2.8.3.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.2.2.6.(3)",
+      "text": "Where captive key systems are used to meet the requirements of Sentence (2), they shall be located at the entrance to each guest room and suite.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.2.2.6.(4)",
+      "text": "All supplemental task lighting, including permanently installed undershelf or undercabinet lighting, shall be controlled by a device that is",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.6.(4)(a)",
+          "text": "integral to the luminaires, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.6.(4)(b)",
+          "text": "wall-mounted in a readily accessible location from which the occupant can see the controlled lighting.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 103,
+  "page_end": 103,
+  "timestamp": "2025-12-06T22:08:44.083317+00:00",
+  "success": true,
+  "equation_count": 0
+}

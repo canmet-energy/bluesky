@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.1.1",
+  "title": "General",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.1.1 General\nGeneral\n1) In establishing the building energy target, building components must be accounted\nfor in accordance with the prescriptive requirements of Sections 3.2., 4.2., 5.2., 6.2.\nand 7.2. for the climate zone under consideration.\n2) Where the construction techniques or building components used are more\nenergy-efficient than those prescribed by the prescriptive requirements, the\nperformance compliance calculations are permitted to take this increased performance\nlevel into account in the determination of the annual energy consumption, provided it\ncan be quantified and is not dependent on occupant behaviour.\n3) Exterior lighting is permitted to be excluded from the performance compliance\ncalculations, provided it complies with the prescriptive requirements of Part 4.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.1.1.(1)",
+      "text": "In establishing the building energy target, building components must be accounted for in accordance with the prescriptive requirements of Sections 3.2., 4.2., 5.2., 6.2. and 7.2. for the climate zone under consideration.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.1.1.(2)",
+      "text": "Where the construction techniques or building components used are more energy-efficient than those prescribed by the prescriptive requirements, the performance compliance calculations are permitted to take this increased performance level into account in the determination of the annual energy consumption, provided it can be quantified and is not dependent on occupant behaviour.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.1.1.(3)",
+      "text": "Exterior lighting is permitted to be excluded from the performance compliance calculations, provided it complies with the prescriptive requirements of Part 4.",
+      "clauses": []
+    }
+  ],
+  "page_start": 203,
+  "page_end": 203,
+  "timestamp": "2025-12-06T22:08:44.122498+00:00",
+  "success": true,
+  "equation_count": 0
+}

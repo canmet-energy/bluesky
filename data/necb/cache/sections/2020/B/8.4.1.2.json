@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.1.2",
+  "title": "Determination of Compliance",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.1.2 Determination of Compliance\nDetermination of Compliance\n1) Subject to the limitations stated in Article 8.4.1.3., compliance with this Part\nshall be determined based on Sentences (2) to (5).\n2) The annual energy consumption of the proposed building, as determined in\naccordance with this Part, shall not exceed the building energy target of the reference\nbuilding.\n3) The number of hours during which the heating loads for each thermal block are\nnot met shall not exceed 100 hours in a simulated year for both the proposed and\nreference buildings.\n4) The number of hours during which the cooling loads for each thermal block of\nthe proposed building are not met shall not differ by more than ±10% from the number\nof hours in a simulated year that the cooling loads of the reference building are not met.\n5) Where the requirements of Sentences (3) and (4) are not met, the capacities\nof the primary and secondary systems of the proposed or reference building shall be\nincrementally increased until those loads are met.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.1.2.(1)",
+      "text": "Subject to the limitations stated in Article 8.4.1.3., compliance with this Part shall be determined based on Sentences (2) to (5).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.1.2.(2)",
+      "text": "The annual energy consumption of the proposed building, as determined in accordance with this Part, shall not exceed the building energy target of the reference building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.1.2.(3)",
+      "text": "The number of hours during which the heating loads for each thermal block are not met shall not exceed 100 hours in a simulated year for both the proposed and reference buildings.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.1.2.(4)",
+      "text": "The number of hours during which the cooling loads for each thermal block of the proposed building are not met shall not differ by more than ±10% from the number of hours in a simulated year that the cooling loads of the reference building are not met.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.1.2.(5)",
+      "text": "Where the requirements of Sentences (3) and (4) are not met, the capacities of the primary and secondary systems of the proposed or reference building shall be incrementally increased until those loads are met.",
+      "clauses": []
+    }
+  ],
+  "page_start": 203,
+  "page_end": 203,
+  "timestamp": "2025-12-06T22:08:44.122822+00:00",
+  "success": true,
+  "equation_count": 0
+}

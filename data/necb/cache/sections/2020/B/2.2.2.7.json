@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.2.2.7",
+  "title": "Documentation on Electrical Power Systems and Motors",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.2.2.7 Documentation on Electrical Power Systems and Motors\nDocumentation on Electrical Power Systems and Motors\n1) The following documentation on the electrical power systems and motors\nshall be provided:\n  a) an as-built single-line diagram of the building's electrical distribution system\nindicating the locations of means to monitor energy consumption,\n  b) schematic diagrams of electrical control systems for systems other than\nheating, ventilating and air-conditioning, service water heating, and lighting,\nand\n  c) the manufacturers' operational manuals for all electrical equipment.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.2.2.7.(1)",
+      "text": "The following documentation on the electrical power systems and motors shall be provided:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.7.(1)(a)",
+          "text": "an as-built single-line diagram of the building's electrical distribution system indicating the locations of means to monitor energy consumption,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.7.(1)(b)",
+          "text": "schematic diagrams of electrical control systems for systems other than heating, ventilating and air-conditioning, service water heating, and lighting, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "2.2.2.7.(1)(c)",
+          "text": "the manufacturers' operational manuals for all electrical equipment.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 296,
+  "page_end": 296,
+  "timestamp": "2025-12-06T22:08:44.146283+00:00",
+  "success": true,
+  "equation_count": 0
+}

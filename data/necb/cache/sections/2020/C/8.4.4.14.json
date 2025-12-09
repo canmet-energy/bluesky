@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.14",
+  "title": "Variable refrigerant flow systems, 5.2.12.1.",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.14 Variable refrigerant flow systems, 5.2.12.1.\nVariable refrigerant flow systems, 5.2.12.1.\nVehicle maintenance areas, 4.2.1.6., 4.3.2.10.\nVentilating systems (see Heating, ventilating and\nair-conditioning (HVAC) systems)\nVerandas, 3.1.1.7.\nVestibules\ndoors, 3.2.2.1.\nfactors for occupancy control and personal control,\n4.3.2.10.\nlighting power density, 4.2.1.6.\noverall thermal transmittance, 3.1.1.7.\ntemperature controls, 5.2.8.6.\nWalls/wall assemblies\nabove-ground, 3.2.2.2.\ndocumentation, 2.2.2.3.[C]\nfoundations, 1.4.1.2.[A], 3.2.2.2., 3.2.3.3.\ngross area, 3.1.1.6.\nin contact with ground, 3.2.3.1.\ninsulation, 3.2.1.2., 3.2.3.1., 5.2.2.5.\noverall thermal transmittance, 3.1.1.7., 3.2.2.2.,\n3.2.3.1.\nperformance path calculations, 8.4.2.8.\nWarehouses\nfactors for occupancy control and personal control,\n4.3.2.10.\nHVAC system selection, 8.4.4.7.\nlighting power density, 4.2.1.5., 4.2.1.6.\nWashrooms (see Lavatories)\nWater economizer systems, 5.2.2.9.\nWater pressure booster systems (see Pressure booster\nsystems)\nWater (see Service water)\nWater tanks\ninsulation, 6.2.2.2.\noverall thermal transmittance, 6.2.2.2.\npressure booster systems, 6.2.8.1.\nWindows\n(see also Fenestration)\nair leakage, 3.2.4.3.\ndocumentation, 2.2.2.3.[C]\nWorkshops, 4.2.1.5., 4.2.1.6., 4.3.2.10.\nZones\nclimatic, 3.2.2., 3.2.3., 8.4.1.1.\nheat recovery, 5.2.10.4.\nHVAC, 5.2.2.3., 5.2.11.1., 5.2.11.2.\nperformance path, 8.4.4.7.\ntemperature, 1.4.1.2.[A], 5.2.8.6., 5.2.8.9.\nIndex\nConversions\nSI Units\nImperial Units\nTo convert SI units to imperial\nunits, multiply by\nTo convert imperial units to SI\nunits, multiply by\nTemperature\n1.8 and add 32\nsubtract 32 divide by 1.8\nLength\nin.\n0.03937\n25.4\nin.\n0.3937\n2.54\nft.\n3.281\n0.3048\nArea\nmm2\nin.2\n0.00155\n645.16\ncm2\nin.2\n0.155\n6.4516\nft.2\n10.76\n0.092903\nVolume\ncm3\nin.3\n0.061\n16.3871\nft.3\n35.31\n0.02832\ngal.\n(Imp)\n0.22\n4.55\ngal. (US)\n0.2642\n3.785\nFlow\nL/s\nft.3/min. (cfm)\n2.11889\n0.471947\nL/min.\nft.3/min. (cfm)\n0.0353\n28.329\nm3/h\nft.3/min. (cfm)\n0.5886\n1.699\nPower\nBtu/h\n3.413\n0.2930711\nHeat Flux\nW/m2\nBtu/h × ft.2\n0.317\n3.154591\nOverall Heat Transfer Coefficient (U-value)\nW/m2 × K\nBtu/h × ft.2 × °F\n0.17612\n5.678263\nW/m2 × °C\nBtu/h × ft.2 × °F\n0.17612\n5.678263\nThermal Resistance\nm2 × °C/W (RSI)\nft.2 × h × °F/Btu (R)\n5.678\n0.17611\nThermal Conductivity, k\nW/m × K\nBtu × in./h × ft.2 × °F\n6.93347\n0.1442279\nW/m2 × °C (per m thickness)\nBtu × ft./h × ft.2 × °F\n0.5777\n1.731\nW/m2 × °C (per m thickness)\nBtu × in./h × ft.2 × °F\n6.9444\n0.144\nPressure\nin. of water\n0.004014\n249\nkPa\npsi\n0.145\n6.895\nkPa\npsf\n20.88\n0.04788\nEnergy\nkWh\n0.278\n3.6\nBtu\n0.0009478\n1055.056",
+  "sentences": [],
+  "page_start": 312,
+  "page_end": 314,
+  "timestamp": "2025-12-06T22:08:44.153049+00:00",
+  "success": true,
+  "equation_count": 0
+}

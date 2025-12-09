@@ -1,0 +1,125 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.4.3",
+  "title": "Air Barrier Assemblies",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.4.3 Air Barrier Assemblies\nAir Barrier Assemblies\n1) Air barrier assemblies shall have an air leakage rate not greater than 0.2 L/(s×m2)\nat a pressure differential of 75 Pa. (See Note A-3.2.4.3.(1) and (2).)\n2) Air barrier assemblies\n  a) shall conform to CAN/ULC-S742, “Standard for Air Barrier Assemblies –\nSpecification,” or\n  b) shall\n  i) be designed, evaluated and constructed to provide the\nprincipal resistance to air leakage,\n    ii) be designed using the 1-in-50 hourly wind pressure for the\nbuilding location, and\n    iii) have at least one air barrier material intended to provide\nthe principal resistance to air leakage that conforms to\nCAN/ULC-S741, “Standard for Air Barrier Materials –\nSpecification.”\n(See Note A-3.2.4.3.(1) and (2).)\n3) Metal and glass curtain walls that act as environmental separators shall have an\nair leakage rate not greater than 0.2 L/(s×m2) when a specimen prepared in accordance\nwith AAMA 501.5, “Test Method for Thermal Cycling of Exterior Walls,” is tested\nin accordance with ASTM E283, “Standard Test Method for Determining Rate of\nAir Leakage Through Exterior Windows, Curtain Walls, and Doors Under Specified\nPressure Differences Across the Specimen,” at a pressure differential of 75 Pa.\n4) Fixed windows and skylights that act as environmental separators shall\nhave an air leakage rate not greater than 0.2 L/(s×m2) when tested in accordance\nwith AAMA/WDMA/CSA 101/I.S.2/A440, “North American Fenestration\nStandard/Specification for windows, doors, and skylights,” at a pressure differential\nof 75 Pa.\n5) Operable windows and skylights that act as environmental separators\nshall have an air leakage rate not greater than 0.5 L/(s×m2) when tested in\naccordance with AAMA/WDMA/CSA 101/I.S.2/A440, “North American Fenestration\nStandard/Specification for windows, doors, and skylights,” at a pressure differential\nof 75 Pa.\n6) Except as provided in Sentences (7) to (9), doors that act as environmental\nseparators shall have an air leakage rate not greater than 0.5 L/(s×m2) when tested\nin accordance with ASTM E283, “Standard Test Method for Determining Rate of\nAir Leakage Through Exterior Windows, Curtain Walls, and Doors Under Specified\nPressure Differences Across the Specimen,” at a pressure differential of 75 Pa.\n7) Revolving doors and automatic commercial sliding doors, including their\nrespective fixed sections, that act as environmental separators are permitted to have\nan air leakage rate not greater than 5.0 L/(s×m2) when tested as a complete assembly\nin accordance with ASTM E283, “Standard Test Method for Determining Rate of\nAir Leakage Through Exterior Windows, Curtain Walls, and Doors Under Specified\nPressure Differences Across the Specimen,” at a pressure differential of 75 Pa.\n8) Overhead doors that act as environmental separators are permitted to have an\nair leakage rate not greater than 2.0 L/(s×m2) when tested as a complete assembly at a\npressure differential of 75 Pa in accordance with\n  a) ANSI/DASMA 105, “Test Method for Thermal Transmittance and Air\nInfiltration of Garage Doors,” or\n  b) ASTM E283, “Standard Test Method for Determining Rate of Air Leakage\nThrough Exterior Windows, Curtain Walls, and Doors Under Specified\nPressure Differences Across the Specimen.”\n9) Main entry exterior doors that act as environmental separators are permitted\nto have an air leakage rate not greater than 5.0 L/(s×m²) when tested as a complete\nassembly in accordance with ASTM E283, “Standard Test Method for Determining\nRate of Air Leakage Through Exterior Windows, Curtain Walls, and Doors Under\nSpecified Pressure Differences Across the Specimen,” at a pressure differential of 75 Pa,\nprovided that the total area of such doors does not exceed 2% of the gross wall area\ncalculated in accordance with Article 3.1.1.6.\n10) Loading docks that interface with truck boxes shall have weather seals that\nseal the truck box to the building.\n11) Fireplaces shall be equipped with doors, enclosures or devices to restrict air\nmovement through the chimney when the fireplace is not in use.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.4.3.(1)",
+      "text": "Air barrier assemblies shall have an air leakage rate not greater than 0.2 L/(s×m2) at a pressure differential of 75 Pa. (See Note A-3.2.4.3.(1) and (2).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.4.3.(2)",
+      "text": "Air barrier assemblies",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.2.4.3.(2)(a)",
+          "text": "shall conform to CAN/ULC-S742, “Standard for Air Barrier Assemblies – Specification,” or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.2.4.3.(2)(b)",
+          "text": "shall",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "3.2.4.3.(2)(i)",
+          "text": "be designed, evaluated and constructed to provide the principal resistance to air leakage,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "3.2.4.3.(2)(i)(ii)",
+              "text": "be designed using the 1-in-50 hourly wind pressure for the building location, and"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "3.2.4.3.(2)(i)(iii)",
+              "text": "have at least one air barrier material intended to provide the principal resistance to air leakage that conforms to CAN/ULC-S741, “Standard for Air Barrier Materials – Specification.” (See Note A-3.2.4.3.(1) and (2).)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.2.4.3.(3)",
+      "text": "Metal and glass curtain walls that act as environmental separators shall have an air leakage rate not greater than 0.2 L/(s×m2) when a specimen prepared in accordance with AAMA 501.5, “Test Method for Thermal Cycling of Exterior Walls,” is tested in accordance with ASTM E283, “Standard Test Method for Determining Rate of Air Leakage Through Exterior Windows, Curtain Walls, and Doors Under Specified Pressure Differences Across the Specimen,” at a pressure differential of 75 Pa.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "3.2.4.3.(4)",
+      "text": "Fixed windows and skylights that act as environmental separators shall have an air leakage rate not greater than 0.2 L/(s×m2) when tested in accordance with AAMA/WDMA/CSA 101/I.S.2/A440, “North American Fenestration Standard/Specification for windows, doors, and skylights,” at a pressure differential of 75 Pa.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "3.2.4.3.(5)",
+      "text": "Operable windows and skylights that act as environmental separators shall have an air leakage rate not greater than 0.5 L/(s×m2) when tested in accordance with AAMA/WDMA/CSA 101/I.S.2/A440, “North American Fenestration Standard/Specification for windows, doors, and skylights,” at a pressure differential of 75 Pa.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "3.2.4.3.(6)",
+      "text": "Except as provided in Sentences (7) to (9), doors that act as environmental separators shall have an air leakage rate not greater than 0.5 L/(s×m2) when tested in accordance with ASTM E283, “Standard Test Method for Determining Rate of Air Leakage Through Exterior Windows, Curtain Walls, and Doors Under Specified Pressure Differences Across the Specimen,” at a pressure differential of 75 Pa.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "3.2.4.3.(7)",
+      "text": "Revolving doors and automatic commercial sliding doors, including their respective fixed sections, that act as environmental separators are permitted to have an air leakage rate not greater than 5.0 L/(s×m2) when tested as a complete assembly in accordance with ASTM E283, “Standard Test Method for Determining Rate of Air Leakage Through Exterior Windows, Curtain Walls, and Doors Under Specified Pressure Differences Across the Specimen,” at a pressure differential of 75 Pa.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "3.2.4.3.(8)",
+      "text": "Overhead doors that act as environmental separators are permitted to have an air leakage rate not greater than 2.0 L/(s×m2) when tested as a complete assembly at a pressure differential of 75 Pa in accordance with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.2.4.3.(8)(a)",
+          "text": "ANSI/DASMA 105, “Test Method for Thermal Transmittance and Air Infiltration of Garage Doors,” or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.2.4.3.(8)(b)",
+          "text": "ASTM E283, “Standard Test Method for Determining Rate of Air Leakage Through Exterior Windows, Curtain Walls, and Doors Under Specified Pressure Differences Across the Specimen.”",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "9",
+      "reference": "3.2.4.3.(9)",
+      "text": "Main entry exterior doors that act as environmental separators are permitted to have an air leakage rate not greater than 5.0 L/(s×m²) when tested as a complete assembly in accordance with ASTM E283, “Standard Test Method for Determining Rate of Air Leakage Through Exterior Windows, Curtain Walls, and Doors Under Specified Pressure Differences Across the Specimen,” at a pressure differential of 75 Pa, provided that the total area of such doors does not exceed 2% of the gross wall area calculated in accordance with Article 3.1.1.6.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "10",
+      "reference": "3.2.4.3.(10)",
+      "text": "Loading docks that interface with truck boxes shall have weather seals that seal the truck box to the building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "11",
+      "reference": "3.2.4.3.(11)",
+      "text": "Fireplaces shall be equipped with doors, enclosures or devices to restrict air movement through the chimney when the fireplace is not in use.",
+      "clauses": []
+    }
+  ],
+  "page_start": 75,
+  "page_end": 76,
+  "timestamp": "2025-12-06T22:08:44.075457+00:00",
+  "success": true,
+  "equation_count": 0
+}

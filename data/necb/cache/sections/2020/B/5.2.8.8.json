@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.8.8",
+  "title": "Control of Temperature of Air Leaving the Supply Air Handler",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.8.8 Control of Temperature of Air Leaving the Supply Air Handler\nControl of Temperature of Air Leaving the Supply Air Handler\n1) Except as provided in Sentences (2) and (3), a supply air handler shall be designed\nand equipped with controls to achieve the design supply air temperature without\n  a) heating previously cooled air,\n  b) cooling previously heated air, or\n  c) heating outdoor air, separately from the return air or mixed with it, in excess\nof the minimum required for ventilation.\n2) Reheating supply air for humidity control is permitted where specified\nhumidity levels are required. (See Note A-5.2.8.8.(2).)\n3) Reheating supply air is permitted where such reheating will not cause an\nincrease in energy consumption.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.8.8.(1)",
+      "text": "Except as provided in Sentences (2) and (3), a supply air handler shall be designed and equipped with controls to achieve the design supply air temperature without",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.8.8.(1)(a)",
+          "text": "heating previously cooled air,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.8.8.(1)(b)",
+          "text": "cooling previously heated air, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "5.2.8.8.(1)(c)",
+          "text": "heating outdoor air, separately from the return air or mixed with it, in excess of the minimum required for ventilation.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.8.8.(2)",
+      "text": "Reheating supply air for humidity control is permitted where specified humidity levels are required. (See Note A-5.2.8.8.(2).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.8.8.(3)",
+      "text": "Reheating supply air is permitted where such reheating will not cause an increase in energy consumption.",
+      "clauses": []
+    }
+  ],
+  "page_start": 145,
+  "page_end": 145,
+  "timestamp": "2025-12-06T22:08:44.104500+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.2.6",
+  "title": "Heat Transfer Between Thermal Blocks",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.2.6 Heat Transfer Between Thermal Blocks\nHeat Transfer Between Thermal Blocks\n1) Where the temperature difference between two adjacent thermal blocks is greater\nthan 10°C, the energy model calculations shall account for heat transfer between those\nthermal blocks.\n2) Where the adjacent thermal blocks referred to in Sentence (1) are not fully\nseparated by solid partitions or solid building elements, the energy model calculations\nshall use a heat transfer coefficient of 0.35 W/(m2×K).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.2.6.(1)",
+      "text": "Where the temperature difference between two adjacent thermal blocks is greater than 10°C, the energy model calculations shall account for heat transfer between those thermal blocks.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.2.6.(2)",
+      "text": "Where the adjacent thermal blocks referred to in Sentence (1) are not fully separated by solid partitions or solid building elements, the energy model calculations shall use a heat transfer coefficient of 0.35 W/(m2×K).",
+      "clauses": []
+    }
+  ],
+  "page_start": 205,
+  "page_end": 205,
+  "timestamp": "2025-12-06T22:08:44.125466+00:00",
+  "success": true,
+  "equation_count": 0
+}

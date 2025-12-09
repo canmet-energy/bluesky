@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.1.3",
+  "title": "Spaces Heated to Different Temperatures",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.1.3 Spaces Heated to Different Temperatures\nSpaces Heated to Different Temperatures\n1) The overall thermal transmittance, U1, of building assemblies separating conditioned\nspaces that are intended to be heated to temperatures that differ by more than 10°C\nshall not be greater than that obtained with the following equation:\n[Equation: U_{1} = \\left[\\frac{t_{2} - t_{0}}{t_{2} - 0.5 \\times t_{1} - 0.5 \\times t_{0}}\\right] \\times U] \\times U] \\times U]\nwhere\nt1 = indoor heating design temperature of the colder conditioned space, in °C,\nt2 = indoor heating design temperature of the warmer conditioned space, in °C,\nt0 = outdoor 2.5% January design temperature as specified in Article 1.1.4.1.,\nin °C, and\nU = overall thermal transmittance required in Sentences 3.2.2.2.(1), 3.2.2.3.(2)\nand 3.2.2.4.(1), in W/(m2×K).\n(See Note A-3.2.1.3.(1).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.1.3.(1)",
+      "text": "The overall thermal transmittance, U1, of building assemblies separating conditioned spaces that are intended to be heated to temperatures that differ by more than 10°C shall not be greater than that obtained with the following equation: [Equation: U_{1} = \\left[\\frac{t_{2} - t_{0}}{t_{2} - 0.5 \\times t_{1} - 0.5 \\times t_{0}}\\right] \\times U] where t1 = indoor heating design temperature of the colder conditioned space, in °C, t2 = indoor heating design temperature of the warmer conditioned space, in °C, t0 = outdoor 2.5% January design temperature as specified in Article 1.1.4.1., in °C, and U = overall thermal transmittance required in Sentences 3.2.2.2.(1), 3.2.2.3.(2) and 3.2.2.4.(1), in W/(m2×K). (See Note A-3.2.1.3.(1).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 71,
+  "page_end": 71,
+  "timestamp": "2025-12-06T22:08:44.071886+00:00",
+  "success": true,
+  "equation_count": 1
+}

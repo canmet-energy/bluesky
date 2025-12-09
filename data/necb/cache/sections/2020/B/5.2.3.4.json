@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.3.4",
+  "title": "Demand Control Ventilation Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.3.4 Demand Control Ventilation Systems\nDemand Control Ventilation Systems\n1) Enclosed semi-heated spaces or conditioned spaces where fuel-powered vehicles\nor mobile fuel-powered equipment or appliances are intermittently used shall be\nprovided with sensors and demand control ventilation systems capable of limiting the\nexpected air contaminants to acceptable levels by\n  a) staging the ventilation fans, or\n  b) modulating the outdoor airflow rates.\n(See Note A-5.2.3.4.(1).)\n2) Commercial kitchen ventilation systems whose design exhaust fan airflow rate\nmeets or exceeds the values shown in Table 5.2.3.4. for the applicable heating-degree\nday category shall be equipped with a demand control ventilation system, including\nnecessary sensors and controls, that is capable of reducing the design exhaust and\nmake-up airflow rates by at least 50% in response to appliance operation. (See\nNote A-5.2.3.4.(2).)\nTable 5.2.3.4.\nDemand Control Ventilation Threshold for Commercial Kitchen Ventilation Systems\nForming Part of Sentence 5.2.3.4.(2)\nHeating Degree-Days of Building Location,(1) in Celsius Degree-Days\nZone 4:(2) < 3000\nZone 5:(2) 3000 to 3999 Zone 6:(2) 4000 to 4999\nZone 7A:(2) 5000\nto 5999\nZone 7B:(2) 6000\nto 6999\nZone 8:(2) ≥ 7000\nDesign Exhaust Fan Airflow Rate, L/s\n≥ 2360\n≥ 2360\n≥ 1880\n≥ 1410\n≥ 1410\n≥ 1410\nNotes to Table 5.2.3.4.:\n(1) See Sentence 1.1.4.1.(1).\n(2) See Note A-Table 3.2.2.2.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.3.4.(1)",
+      "text": "Enclosed semi-heated spaces or conditioned spaces where fuel-powered vehicles or mobile fuel-powered equipment or appliances are intermittently used shall be provided with sensors and demand control ventilation systems capable of limiting the expected air contaminants to acceptable levels by",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.3.4.(1)(a)",
+          "text": "staging the ventilation fans, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.3.4.(1)(b)",
+          "text": "modulating the outdoor airflow rates. (See Note A-5.2.3.4.(1).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.3.4.(2)",
+      "text": "Commercial kitchen ventilation systems whose design exhaust fan airflow rate meets or exceeds the values shown in Table 5.2.3.4. for the applicable heating-degree day category shall be equipped with a demand control ventilation system, including necessary sensors and controls, that is capable of reducing the design exhaust and make-up airflow rates by at least 50% in response to appliance operation. (See Note A-5.2.3.4.(2).) Table 5.2.3.4. Demand Control Ventilation Threshold for Commercial Kitchen Ventilation Systems Forming Part of Sentence 5.2.3.4.(2) Heating Degree-Days of Building Location,(1) in Celsius Degree-Days Zone 4:(2) < 3000 Zone 5:(2) 3000 to 3999 Zone 6:(2) 4000 to 4999 Zone 7A:(2) 5000 to 5999 Zone 7B:(2) 6000 to 6999 Zone 8:(2) ≥ 7000 Design Exhaust Fan Airflow Rate, L/s ≥ 2360 ≥ 2360 ≥ 1880 ≥ 1410 ≥ 1410 ≥ 1410 Notes to Table 5.2.3.4.: (1) See Sentence 1.1.4.1.(1). (2) See Note A-Table 3.2.2.2.",
+      "clauses": []
+    }
+  ],
+  "page_start": 140,
+  "page_end": 141,
+  "timestamp": "2025-12-06T22:08:44.099210+00:00",
+  "success": true,
+  "equation_count": 0
+}

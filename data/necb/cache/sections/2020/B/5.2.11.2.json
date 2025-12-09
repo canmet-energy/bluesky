@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.11.2",
+  "title": "Airflow Control Areas",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.11.2 Airflow Control Areas\nAirflow Control Areas\n1) Except as provided in Sentences (2) and (8), each air distribution system\nserving multiple temperature-control zones having a combined floor surface area of\nconditioned space of more than 2 500 m2 shall be divided into airflow control areas so\nthat the supply and exhaust of air to individual airflow control areas can be reduced or\nstopped independently of other airflow control areas served by the system.\n2) Where it is impractical to control air distribution as described in Sentence (1),\nindividual air distribution systems shall serve airflow control areas no greater than\n2 500 m2.\n3) Each airflow control area required by Sentences (1) and (2) shall include\nonly temperature-control zones intended to be operated simultaneously. (See\nNote A-5.2.11.2.(3).)\n4) Each airflow control area required by Sentences (1) and (2) shall not span more\nthan one storey.\n5) Each airflow control area required by Sentence (1) shall be equipped with controls\nmeeting the requirements of Article 5.2.11.1.\n6) The air distribution system shall be designed such that a reduction in air\ndelivery of up to 50% of design flow results in at least a proportional reduction in\nfan power.\n7) Controls and devices such as direct digital control and variable-air-volume\nsystems shall be provided to allow stable operation of all fan systems and associated\nprimary systems for any length of time while they are serving a single airflow control area.\n8) Temperature-control zones in which outdoor air and exhaust requirements\nprevent the reduction or stopping of the air supply need not be incorporated into\nairflow control areas.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.11.2.(1)",
+      "text": "Except as provided in Sentences (2) and (8), each air distribution system serving multiple temperature-control zones having a combined floor surface area of conditioned space of more than 2 500 m2 shall be divided into airflow control areas so that the supply and exhaust of air to individual airflow control areas can be reduced or stopped independently of other airflow control areas served by the system.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.11.2.(2)",
+      "text": "Where it is impractical to control air distribution as described in Sentence (1), individual air distribution systems shall serve airflow control areas no greater than 2 500 m2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.11.2.(3)",
+      "text": "Each airflow control area required by Sentences (1) and (2) shall include only temperature-control zones intended to be operated simultaneously. (See Note A-5.2.11.2.(3).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.11.2.(4)",
+      "text": "Each airflow control area required by Sentences (1) and (2) shall not span more than one storey.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "5.2.11.2.(5)",
+      "text": "Each airflow control area required by Sentence (1) shall be equipped with controls meeting the requirements of Article 5.2.11.1.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "5.2.11.2.(6)",
+      "text": "The air distribution system shall be designed such that a reduction in air delivery of up to 50% of design flow results in at least a proportional reduction in fan power.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "5.2.11.2.(7)",
+      "text": "Controls and devices such as direct digital control and variable-air-volume systems shall be provided to allow stable operation of all fan systems and associated primary systems for any length of time while they are serving a single airflow control area.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "5.2.11.2.(8)",
+      "text": "Temperature-control zones in which outdoor air and exhaust requirements prevent the reduction or stopping of the air supply need not be incorporated into airflow control areas.",
+      "clauses": []
+    }
+  ],
+  "page_start": 149,
+  "page_end": 150,
+  "timestamp": "2025-12-06T22:08:44.107145+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.2.7",
+  "title": "Internal and Service Water Heating Loads",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.2.7 Internal and Service Water Heating Loads\nInternal and Service Water Heating Loads\n1) The energy model calculations shall account for the loads due to\n  a) number of occupants,\n  b) receptacle equipment,\n  c) service water heating systems, and\n  d) miscellaneous equipment, as applicable.\n(See Note A-8.4.2.7.(1).)\n2) The energy model shall calculate the sensible and latent loads due to internal\nloads, lighting, and appliances. (See Notes A-8.4.3.2.(1) and A-8.4.3.2.(2).)\n3) The internal loads shall be adjusted for each time interval referred to in\nSentence 8.4.2.2.(3) based on the applicable operating schedule in Note A-8.4.3.2.(1).\n4) The calculation of sensible loads due to lighting shall account for\n  a) the lighting controls,\n  b) the effect of the proportion of radiant and convective heat, and\n  c) the percentage of heat gain from lighting going directly to return air.\n5) Miscellaneous equipment located within a conditioned space that affects\nthe energy consumption of one or more of the building systems described in\nSentence 8.4.2.2.(1) shall be included in the energy model and its energy consumption\nshall be calculated.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.2.7.(1)",
+      "text": "The energy model calculations shall account for the loads due to",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.7.(1)(a)",
+          "text": "number of occupants,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.7.(1)(b)",
+          "text": "receptacle equipment,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.2.7.(1)(c)",
+          "text": "service water heating systems, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "8.4.2.7.(1)(d)",
+          "text": "miscellaneous equipment, as applicable. (See Note A-8.4.2.7.(1).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.2.7.(2)",
+      "text": "The energy model shall calculate the sensible and latent loads due to internal loads, lighting, and appliances. (See Notes A-8.4.3.2.(1) and A-8.4.3.2.(2).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.2.7.(3)",
+      "text": "The internal loads shall be adjusted for each time interval referred to in Sentence 8.4.2.2.(3) based on the applicable operating schedule in Note A-8.4.3.2.(1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.2.7.(4)",
+      "text": "The calculation of sensible loads due to lighting shall account for",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.7.(4)(a)",
+          "text": "the lighting controls,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.7.(4)(b)",
+          "text": "the effect of the proportion of radiant and convective heat, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.2.7.(4)(c)",
+          "text": "the percentage of heat gain from lighting going directly to return air.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.2.7.(5)",
+      "text": "Miscellaneous equipment located within a conditioned space that affects the energy consumption of one or more of the building systems described in Sentence 8.4.2.2.(1) shall be included in the energy model and its energy consumption shall be calculated.",
+      "clauses": []
+    }
+  ],
+  "page_start": 205,
+  "page_end": 205,
+  "timestamp": "2025-12-06T22:08:44.125680+00:00",
+  "success": true,
+  "equation_count": 0
+}

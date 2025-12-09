@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.1.4",
+  "title": "Allowable Fenestration and Door Area",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.1.4 Allowable Fenestration and Door Area\nAllowable Fenestration and Door Area\n1) The maximum allowable total vertical fenestration and door area to gross wall\narea ratio (FDWR), determined in accordance with Article 3.1.1.6., shall be as follows:\nwhere\nHDD = the heating degree-days of the location of the building determined according\nto Sentence 1.1.4.1.(1).\n(See Note A-3.2.1.4.(1).)\n2) The total skylight area shall be less than 2% of the gross roof area as determined\nin Article 3.1.1.6.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.1.4.(1)",
+      "text": "The maximum allowable total vertical fenestration and door area to gross wall area ratio (FDWR), determined in accordance with Article 3.1.1.6., shall be as follows: where HDD = the heating degree-days of the location of the building determined according to Sentence 1.1.4.1.(1). (See Note A-3.2.1.4.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.1.4.(2)",
+      "text": "The total skylight area shall be less than 2% of the gross roof area as determined in Article 3.1.1.6.",
+      "clauses": []
+    }
+  ],
+  "page_start": 71,
+  "page_end": 71,
+  "timestamp": "2025-12-06T22:08:44.072190+00:00",
+  "success": true,
+  "equation_count": 0
+}

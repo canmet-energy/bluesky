@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.1.1",
+  "title": "Functional Statements",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "3.2.1.1 Functional Statements\nFunctional Statements\n1) The objectives of this Code are achieved by measures, such as those described\nin the acceptable solutions in Division B, that are intended to allow the building or its\nelements to perform the following functions (see Note A-3.2.1.1.(1)):\nF90\nTo limit the amount of uncontrolled air leakage through the\nbuilding envelope.\nF91\nTo limit the amount of uncontrolled air leakage through system\ncomponents.\nF92\nTo limit the amount of uncontrolled thermal transfer through\nthe building envelope.\nF93\nTo limit the amount of uncontrolled thermal transfer through\nsystem components.\nF94\nTo limit the unnecessary demand and/or consumption of energy\nfor lighting.\nF95\nTo limit the unnecessary demand and/or consumption of energy\nfor heating and cooling.\nF96\nTo limit the unnecessary demand and/or consumption of energy\nfor service water heating.\nF97\nTo limit the unnecessary demand and/or consumption of energy\nfor electrical equipment and devices.\nF98\nTo limit the inefficiency of equipment.\nF99\nTo limit the inefficiency of systems.\nF100 To limit the unnecessary rejection of reusable waste energy.\nNotes to Part 3\nFunctional Statements\nA-3.2.1.1.(1) Listing of Functional Statements. There is a master list of functional statements\ncovering the National Model Codes—the National Building Code, the National Fire Code, the National\nPlumbing Code and the National Energy Code for Buildings—but not all functional statements are pertinent\nto all Codes. The numbered functional statements are grouped according to functions that deal with closely\nrelated subjects.\nThese Notes are included for explanatory purposes only and do not form part of the requirements. The number\nthat introduces each Note corresponds to the applicable requirement in this Part.\nAcceptable Solutions",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.1.1.(1)",
+      "text": "The objectives of this Code are achieved by measures, such as those described in the acceptable solutions in Division B, that are intended to allow the building or its elements to perform the following functions (see Note A-3.2.1.1.(1)): F90 To limit the amount of uncontrolled air leakage through the building envelope. F91 To limit the amount of uncontrolled air leakage through system components. F92 To limit the amount of uncontrolled thermal transfer through the building envelope. F93 To limit the amount of uncontrolled thermal transfer through system components. F94 To limit the unnecessary demand and/or consumption of energy for lighting. F95 To limit the unnecessary demand and/or consumption of energy for heating and cooling. F96 To limit the unnecessary demand and/or consumption of energy for service water heating. F97 To limit the unnecessary demand and/or consumption of energy for electrical equipment and devices. F98 To limit the inefficiency of equipment. F99 To limit the inefficiency of systems. F100 To limit the unnecessary rejection of reusable waste energy. Notes to Part 3 Functional Statements A-3.2.1.1.(1) Listing of Functional Statements. There is a master list of functional statements covering the National Model Codes—the National Building Code, the National Fire Code, the National Plumbing Code and the National Energy Code for Buildings—but not all functional statements are pertinent to all Codes. The numbered functional statements are grouped according to functions that deal with closely related subjects. These Notes are included for explanatory purposes only and do not form part of the requirements. The number that introduces each Note corresponds to the applicable requirement in this Part. Acceptable Solutions",
+      "clauses": []
+    }
+  ],
+  "page_start": 44,
+  "page_end": 50,
+  "timestamp": "2025-12-06T22:08:44.056934+00:00",
+  "success": true,
+  "equation_count": 0
+}

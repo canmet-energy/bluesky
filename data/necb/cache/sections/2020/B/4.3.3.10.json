@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.3.10",
+  "title": "Determination of Factors for Occupancy Control and Personal Control",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.3.10 Determination of Factors for Occupancy Control and Personal Control\nDetermination of Factors for Occupancy Control and Personal Control\n1) The factor for occupancy control, Focc,i, shall be calculated using the following\nequation:\nwhere\nCA,i = factor to account for the relative absence of occupants in the space\ndetermined using Table 4.3.2.10.-A, and\nCocc,ctrl,i = factor to account for the occupancy-sensing mechanism determined using\nTable 4.3.2.10.-B based on the minimum requirement for the applicable\nspace according to the prescriptive path.\n2) The factor for personal control, Fpers,i, shall be set to 1.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.3.10.(1)",
+      "text": "The factor for occupancy control, Focc,i, shall be calculated using the following equation: where CA,i = factor to account for the relative absence of occupants in the space determined using Table 4.3.2.10.-A, and Cocc,ctrl,i = factor to account for the occupancy-sensing mechanism determined using Table 4.3.2.10.-B based on the minimum requirement for the applicable space according to the prescriptive path.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.3.3.10.(2)",
+      "text": "The factor for personal control, Fpers,i, shall be set to 1.",
+      "clauses": []
+    }
+  ],
+  "page_start": 121,
+  "page_end": 121,
+  "timestamp": "2025-12-06T22:08:44.092728+00:00",
+  "success": true,
+  "equation_count": 0
+}

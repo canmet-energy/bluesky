@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.2.7",
+  "title": "Cooling with Outdoor Air",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.2.7 Cooling with Outdoor Air\nCooling with Outdoor Air\n1) Except for HVAC systems serving only dwelling units or hotel or motel rooms,\neach system that incorporates mechanical cooling and has an air-handling capacity\nof more than 1 500 L/s or a cooling capacity of more than 20 kW shall be designed to\nuse outdoor air to reduce mechanical cooling energy by one of the means covered\nin Articles 5.2.2.8. and 5.2.2.9.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.2.7.(1)",
+      "text": "Except for HVAC systems serving only dwelling units or hotel or motel rooms, each system that incorporates mechanical cooling and has an air-handling capacity of more than 1 500 L/s or a cooling capacity of more than 20 kW shall be designed to use outdoor air to reduce mechanical cooling energy by one of the means covered in Articles 5.2.2.8. and 5.2.2.9.",
+      "clauses": []
+    }
+  ],
+  "page_start": 139,
+  "page_end": 139,
+  "timestamp": "2025-12-06T22:08:44.097298+00:00",
+  "success": true,
+  "equation_count": 0
+}

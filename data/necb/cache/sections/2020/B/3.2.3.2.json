@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.3.2",
+  "title": "Thermal Characteristics of Roofs in Contact with the Ground",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.3.2 Thermal Characteristics of Roofs in Contact with the Ground\nThermal Characteristics of Roofs in Contact with the Ground\n1) Except as provided in Sentence (2), the overall thermal transmittance of\nbelow-ground roofs that are part of the building envelope and are less than 1.2 m below\nthe exterior ground level shall be not greater than that shown in Table 3.2.3.1. for the\napplicable heating-degree-day category taken at 18°C. (See Note A-3.2.3.2.(1).)\n2) The overall thermal transmittance of below-ground roofs that are less than 1.2 m\nbelow the exterior ground level and are part of the building envelope of semi-heated\nbuildings, as defined in Sentence 1.2.1.2.(2), shall be not greater than that shown in\nTable 3.2.3.1. for the applicable heating-degree-day category taken at 15°C.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.3.2.(1)",
+      "text": "Except as provided in Sentence (2), the overall thermal transmittance of below-ground roofs that are part of the building envelope and are less than 1.2 m below the exterior ground level shall be not greater than that shown in Table 3.2.3.1. for the applicable heating-degree-day category taken at 18°C. (See Note A-3.2.3.2.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.3.2.(2)",
+      "text": "The overall thermal transmittance of below-ground roofs that are less than 1.2 m below the exterior ground level and are part of the building envelope of semi-heated buildings, as defined in Sentence 1.2.1.2.(2), shall be not greater than that shown in Table 3.2.3.1. for the applicable heating-degree-day category taken at 15°C.",
+      "clauses": []
+    }
+  ],
+  "page_start": 74,
+  "page_end": 74,
+  "timestamp": "2025-12-06T22:08:44.074235+00:00",
+  "success": true,
+  "equation_count": 0
+}

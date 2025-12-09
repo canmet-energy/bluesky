@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.3.1.1",
+  "title": "Effective Date",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "1.3.1.1 Effective Date\nEffective Date\n1) Unless otherwise specified herein, the documents referenced in this Code\nshall include all amendments, revisions, reaffirmations, reapprovals, addenda and\nsupplements effective to 15 July 2019.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.3.1.1.(1)",
+      "text": "Unless otherwise specified herein, the documents referenced in this Code shall include all amendments, revisions, reaffirmations, reapprovals, addenda and supplements effective to 15 July 2019.",
+      "clauses": []
+    }
+  ],
+  "page_start": 53,
+  "page_end": 53,
+  "timestamp": "2025-12-06T22:08:44.058873+00:00",
+  "success": true,
+  "equation_count": 0
+}

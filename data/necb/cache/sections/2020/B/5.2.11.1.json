@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.11.1",
+  "title": "Off-hours Controls",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.11.1 Off-hours Controls\nOff-hours Controls\n1) Except as provided in Sentence (3), systems serving dwelling units or other areas\nthat are not intended to operate continuously and whose zone-heating or -cooling\ncapacity requirement is 5 kW or more shall be equipped with automatic controls\ncapable of setting back or shutting down the systems during periods of non-use of the\nzones served. (See Note A-5.2.11.1.(1).)\n2) Controls required by Sentence (1) shall be capable of\n  a) shutting down fan systems and/or heating and cooling equipment and\nauxiliaries, where appropriate, when conditioning is not required by the\nspace,\n  b) setting back the space-heating temperature setpoint,\n  c) setting up the space-cooling temperature setpoint if the cooling system is\nrequired to operate during periods when the space is not in use,\n  d) reducing or shutting off outdoor air intake during heating or cooling system\noperation when the space is not in use (see Note A-5.2.11.1.(2)(d)), and\n  e) in the case of heat pumps, temporarily suppressing electrical back-up\nor adaptive anticipation of the recovery point in order to prevent the\nunit from resorting to supplementary heat at the time of recovery (see\nNotes A-5.2.11.1.(2)(e) and A-5.2.8.5.(1) and 5.2.11.1.(2)(e)).\n3) Zones with a total heating or cooling capacity requirement of less than 5 kW\nmay be controlled by readily accessible manual controls.\n4) Controls required by Sentence (1) shall be designed so that lowering a heating\nthermostat setpoint will not cause energy for cooling to be expended to reach the\nlowered setting and raising a cooling thermostat setpoint will not cause energy for\nheating to be expended to reach the raised setting.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.11.1.(1)",
+      "text": "Except as provided in Sentence (3), systems serving dwelling units or other areas that are not intended to operate continuously and whose zone-heating or -cooling capacity requirement is 5 kW or more shall be equipped with automatic controls capable of setting back or shutting down the systems during periods of non-use of the zones served. (See Note A-5.2.11.1.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.11.1.(2)",
+      "text": "Controls required by Sentence (1) shall be capable of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.11.1.(2)(a)",
+          "text": "shutting down fan systems and/or heating and cooling equipment and auxiliaries, where appropriate, when conditioning is not required by the space,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.11.1.(2)(b)",
+          "text": "setting back the space-heating temperature setpoint,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "5.2.11.1.(2)(c)",
+          "text": "setting up the space-cooling temperature setpoint if the cooling system is required to operate during periods when the space is not in use,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "5.2.11.1.(2)(d)",
+          "text": "reducing or shutting off outdoor air intake during heating or cooling system operation when the space is not in use (see Note A-5.2.11.1.(2)(d)), and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "5.2.11.1.(2)(e)",
+          "text": "in the case of heat pumps, temporarily suppressing electrical back-up or adaptive anticipation of the recovery point in order to prevent the unit from resorting to supplementary heat at the time of recovery (see Notes A-5.2.11.1.(2)(e) and A-5.2.8.5.(1) and 5.2.11.1.(2)(e)).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.11.1.(3)",
+      "text": "Zones with a total heating or cooling capacity requirement of less than 5 kW may be controlled by readily accessible manual controls.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.11.1.(4)",
+      "text": "Controls required by Sentence (1) shall be designed so that lowering a heating thermostat setpoint will not cause energy for cooling to be expended to reach the lowered setting and raising a cooling thermostat setpoint will not cause energy for heating to be expended to reach the raised setting.",
+      "clauses": []
+    }
+  ],
+  "page_start": 149,
+  "page_end": 149,
+  "timestamp": "2025-12-06T22:08:44.106776+00:00",
+  "success": true,
+  "equation_count": 0
+}

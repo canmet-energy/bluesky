@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "7.1.1.1",
+  "title": "Scope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "7.1.1.1 Scope\nScope\n1) This Part is concerned with electrical power systems and motors for the\napplication listed in Article 7.1.1.2.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "7.1.1.1.(1)",
+      "text": "This Part is concerned with electrical power systems and motors for the application listed in Article 7.1.1.2.",
+      "clauses": []
+    }
+  ],
+  "page_start": 194,
+  "page_end": 194,
+  "timestamp": "2025-12-06T22:08:44.118589+00:00",
+  "success": true,
+  "equation_count": 0
+}

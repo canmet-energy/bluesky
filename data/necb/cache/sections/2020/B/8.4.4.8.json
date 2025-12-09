@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.8",
+  "title": "Equipment Oversizing",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.8 Equipment Oversizing\nEquipment Oversizing\n(See Note A-8.4.4.8.)\n1) The heating equipment of the reference building shall be modeled as being\noversized by the lesser of\n  a) the percentage of oversizing applied to the proposed building, or\n  b) 30%.\n2) The cooling equipment of the reference building shall be modeled as being\noversized by the lesser of\n  a) the percentage of oversizing applied to the proposed building, or\n  b) 10%.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.8.(1)",
+      "text": "The heating equipment of the reference building shall be modeled as being oversized by the lesser of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.8.(1)(a)",
+          "text": "the percentage of oversizing applied to the proposed building, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.8.(1)(b)",
+          "text": "30%.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.8.(2)",
+      "text": "The cooling equipment of the reference building shall be modeled as being oversized by the lesser of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.8.(2)(a)",
+          "text": "the percentage of oversizing applied to the proposed building, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.8.(2)(b)",
+          "text": "10%.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 214,
+  "page_end": 214,
+  "timestamp": "2025-12-06T22:08:44.132664+00:00",
+  "success": true,
+  "equation_count": 0
+}

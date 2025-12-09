@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.8.2",
+  "title": "Temperature Control within Dwelling Units",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.8.2 Temperature Control within Dwelling Units\nTemperature Control within Dwelling Units\n1) Dwelling units shall be provided with manually operated or automatic devices as\na means to reduce the heating of each room, as appropriate for the heating system used.\n2) Where dwelling units are provided with a mechanical cooling system, they shall\nbe provided with manually operated or automatic devices as a means to reduce the\ncooling of each room, as appropriate for the cooling system used.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.8.2.(1)",
+      "text": "Dwelling units shall be provided with manually operated or automatic devices as a means to reduce the heating of each room, as appropriate for the heating system used.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.8.2.(2)",
+      "text": "Where dwelling units are provided with a mechanical cooling system, they shall be provided with manually operated or automatic devices as a means to reduce the cooling of each room, as appropriate for the cooling system used.",
+      "clauses": []
+    }
+  ],
+  "page_start": 144,
+  "page_end": 144,
+  "timestamp": "2025-12-06T22:08:44.102812+00:00",
+  "success": true,
+  "equation_count": 0
+}

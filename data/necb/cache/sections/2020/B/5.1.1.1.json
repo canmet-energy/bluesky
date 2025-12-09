@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.1.1.1",
+  "title": "Scope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.1.1.1 Scope\nScope\n1) This Part is concerned with the systems used for heating, ventilating and\nair-conditioning of buildings covered by this Code.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.1.1.1.(1)",
+      "text": "This Part is concerned with the systems used for heating, ventilating and air-conditioning of buildings covered by this Code.",
+      "clauses": []
+    }
+  ],
+  "page_start": 136,
+  "page_end": 136,
+  "timestamp": "2025-12-06T22:08:44.093313+00:00",
+  "success": true,
+  "equation_count": 0
+}

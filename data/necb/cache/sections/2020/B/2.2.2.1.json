@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.2.2.1",
+  "title": "General Information Required",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.2.2.1 General Information Required\nGeneral Information Required\n1) Sufficient information shall be provided to show that the proposed work\nwill conform to this Code and whether or not it will affect adjacent property. (See\nNote A-2.2.2.1.(1).)\n2) Plans shall be drawn to scale and shall indicate the nature and extent of the\nwork and proposed occupancy in sufficient detail to establish that, when completed, the\nwork and the proposed occupancy will conform to this Code.\n3) If proposed work is changed during construction, information on the changes\nshall comply with the requirements of this Section for proposed work.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.2.2.1.(1)",
+      "text": "Sufficient information shall be provided to show that the proposed work will conform to this Code and whether or not it will affect adjacent property. (See Note A-2.2.2.1.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "2.2.2.1.(2)",
+      "text": "Plans shall be drawn to scale and shall indicate the nature and extent of the work and proposed occupancy in sufficient detail to establish that, when completed, the work and the proposed occupancy will conform to this Code.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "2.2.2.1.(3)",
+      "text": "If proposed work is changed during construction, information on the changes shall comply with the requirements of this Section for proposed work.",
+      "clauses": []
+    }
+  ],
+  "page_start": 294,
+  "page_end": 294,
+  "timestamp": "2025-12-06T22:08:44.144434+00:00",
+  "success": true,
+  "equation_count": 0
+}

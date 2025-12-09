@@ -1,0 +1,123 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.1.3",
+  "title": "Compliance",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.1.3 Compliance\nCompliance\n1) The total annual energy consumption of interior lighting in the proposed building\nshall be calculated in accordance with\n  a) Subsection 4.3.2., or\n  b) except as provided in Sentence (4), CSA C873.4, “Building energy estimation\nmethodology – Part 4 – Energy consumption for lighting.”\n2) The maximum allowed annual energy consumption of interior lighting in the\nreference building shall be calculated in accordance with\n  a) Subsection 4.3.3., or\n  b) except as provided in Sentence (5), CSA C873.4, “Building energy estimation\nmethodology – Part 4 – Energy consumption for lighting.”\n3) Interior lighting shall be deemed to comply with this Section where\n  a) the total annual energy consumption of interior lighting in the proposed\nbuilding calculated in accordance with Subsection 4.3.2. is less than or equal\nto the maximum allowed annual energy consumption of interior lighting in the\nreference building calculated in accordance with Subsection 4.3.3., or\n  b) the total annual energy consumption of interior lighting in the proposed building\ncalculated in accordance with CSA C873.4, “Building energy estimation\nmethodology – Part 4 – Energy consumption for lighting,” is less than or\nequal to the maximum allowed annual energy consumption of interior lighting\nin the reference building calculated in accordance with that same standard.\n4) Where the total annual energy consumption of interior lighting in the proposed\nbuilding is calculated in accordance with CSA C873.4, “Building energy estimation\nmethodology – Part 4 – Energy consumption for lighting,” the following substitutions\nshall apply:\n  a) NECB Table 4.3.2.7.-A instead of CSA Table 8,\n  b) NECB Table 4.3.2.7.-B instead of CSA Table 9,\n  c) NECB Table 4.3.2.10.-B instead of CSA Table 16, and\n  d) NECB Articles 4.3.2.3. and 4.3.2.4. instead of CSA Clause 5.3.\n5) Where the maximum allowed annual energy consumption of interior lighting in\nthe reference building is calculated in accordance with CSA C873.4, “Building energy\nestimation methodology – Part 4 – Energy consumption for lighting,” the following\nqualifications shall apply:\n  a) the lighting power density for each space shall be determined using\nTable 4.2.1.6., and\n  b) NECB Sentences 4.3.3.7.(3) and (4) and Article 4.3.3.10. shall be used instead\nof CSA Clauses 5.5.2, 5.5.3, 5.8.1 and 5.8.2.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.1.3.(1)",
+      "text": "The total annual energy consumption of interior lighting in the proposed building shall be calculated in accordance with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.3.1.3.(1)(a)",
+          "text": "Subsection 4.3.2., or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.3.1.3.(1)(b)",
+          "text": "except as provided in Sentence (4), CSA C873.4, “Building energy estimation methodology – Part 4 – Energy consumption for lighting.”",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.3.1.3.(2)",
+      "text": "The maximum allowed annual energy consumption of interior lighting in the reference building shall be calculated in accordance with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.3.1.3.(2)(a)",
+          "text": "Subsection 4.3.3., or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.3.1.3.(2)(b)",
+          "text": "except as provided in Sentence (5), CSA C873.4, “Building energy estimation methodology – Part 4 – Energy consumption for lighting.”",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.3.1.3.(3)",
+      "text": "Interior lighting shall be deemed to comply with this Section where",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.3.1.3.(3)(a)",
+          "text": "the total annual energy consumption of interior lighting in the proposed building calculated in accordance with Subsection 4.3.2. is less than or equal to the maximum allowed annual energy consumption of interior lighting in the reference building calculated in accordance with Subsection 4.3.3., or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.3.1.3.(3)(b)",
+          "text": "the total annual energy consumption of interior lighting in the proposed building calculated in accordance with CSA C873.4, “Building energy estimation methodology – Part 4 – Energy consumption for lighting,” is less than or equal to the maximum allowed annual energy consumption of interior lighting in the reference building calculated in accordance with that same standard.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.3.1.3.(4)",
+      "text": "Where the total annual energy consumption of interior lighting in the proposed building is calculated in accordance with CSA C873.4, “Building energy estimation methodology – Part 4 – Energy consumption for lighting,” the following substitutions shall apply:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.3.1.3.(4)(a)",
+          "text": "NECB Table 4.3.2.7.-A instead of CSA Table 8,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.3.1.3.(4)(b)",
+          "text": "NECB Table 4.3.2.7.-B instead of CSA Table 9,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.3.1.3.(4)(c)",
+          "text": "NECB Table 4.3.2.10.-B instead of CSA Table 16, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "4.3.1.3.(4)(d)",
+          "text": "NECB Articles 4.3.2.3. and 4.3.2.4. instead of CSA Clause 5.3.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "4.3.1.3.(5)",
+      "text": "Where the maximum allowed annual energy consumption of interior lighting in the reference building is calculated in accordance with CSA C873.4, “Building energy estimation methodology – Part 4 – Energy consumption for lighting,” the following qualifications shall apply:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.3.1.3.(5)(a)",
+          "text": "the lighting power density for each space shall be determined using Table 4.2.1.6., and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.3.1.3.(5)(b)",
+          "text": "NECB Sentences 4.3.3.7.(3) and (4) and Article 4.3.3.10. shall be used instead of CSA Clauses 5.5.2, 5.5.3, 5.8.1 and 5.8.2.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 106,
+  "page_end": 107,
+  "timestamp": "2025-12-06T22:08:44.085115+00:00",
+  "success": true,
+  "equation_count": 0
+}

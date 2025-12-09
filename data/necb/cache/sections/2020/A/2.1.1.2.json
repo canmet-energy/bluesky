@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.1.1.2",
+  "title": "Application of Objectives",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "2.1.1.2 Application of Objectives\nApplication of Objectives\n1) The objectives described in this Part apply\n  a) to all buildings covered in this Code (see Article 1.1.1.1.), and\n  b) only to the extent that they relate to compliance with this Code as required\nin Article 1.2.1.1.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.1.1.2.(1)",
+      "text": "The objectives described in this Part apply",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.1.1.2.(1)(a)",
+          "text": "to all buildings covered in this Code (see Article 1.1.1.1.), and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.1.1.2.(1)(b)",
+          "text": "only to the extent that they relate to compliance with this Code as required in Article 1.2.1.1.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 38,
+  "page_end": 38,
+  "timestamp": "2025-12-06T22:08:44.056087+00:00",
+  "success": true,
+  "equation_count": 0
+}

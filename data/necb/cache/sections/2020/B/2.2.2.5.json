@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.2.2.5",
+  "title": "Documentation on HVAC Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.2.2.5 Documentation on HVAC Systems\nDocumentation on HVAC Systems\n1) The following documentation on the HVAC system shall be provided:\n  a) a description of each system, detailing its function, design details,\nperformance characteristics and distribution arrangement,\n  b) schematic and control diagrams and sequence of operation, and\n  c) start/stop and adjustment procedures.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.2.2.5.(1)",
+      "text": "The following documentation on the HVAC system shall be provided:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.5.(1)(a)",
+          "text": "a description of each system, detailing its function, design details, performance characteristics and distribution arrangement,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.5.(1)(b)",
+          "text": "schematic and control diagrams and sequence of operation, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "2.2.2.5.(1)(c)",
+          "text": "start/stop and adjustment procedures.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 295,
+  "page_end": 296,
+  "timestamp": "2025-12-06T22:08:44.145735+00:00",
+  "success": true,
+  "equation_count": 0
+}

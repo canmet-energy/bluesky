@@ -1,0 +1,140 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.2.8",
+  "title": "Building Envelope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.2.8 Building Envelope\nBuilding Envelope\n1) The energy model calculations shall account for heat transfer through walls,\nroofs and floors for each thermal block, while accounting for the dynamic response due\nto the thermal characteristics of the particular assembly.\n2) Calculations of heat transfer through walls and roofs shall account for the effect\nof solar radiation absorbed on their exterior surfaces, which depends on the orientation\nand absorptance of each surface.\n3) The energy model calculations shall account for heat transfer through\nfenestration, including skylights, while accounting for both indoor-outdoor temperature\ndifference and transmission of solar radiation through the glazing.\n4) Calculations of cooling and heating loads due to the transmission of solar\nradiation through fenestration shall account for\n  a) the orientation of the fenestration,\n  b) the solar optical properties of the glazing, and\n  c) dynamic response due to the effect of the thermal characteristics of each\nthermal block.\n5) The insulated surface areas of above-ground roof assemblies shall\n  a) be calculated along the plane of the insulation using dimensions measured\nto the interior surfaces of intersecting exterior walls, and\n  b) exclude openings for skylights and chimneys as measured to the surfaces of\nstructural framing surrounding such openings.\n6) The insulated surface areas of exterior above-ground wall assemblies shall\n  a) be calculated using dimensions measured to the exterior surfaces of\nintersecting exterior walls and to the exterior ground level, exclusive of the\nperimeter areas where floor or roof slabs interrupt the wall construction,\n  b) include perimeter areas of intersecting interior walls, and\n  c) exclude openings for doors and fenestration, as measured to the surfaces of\nstructural framing surrounding such openings.\n7) The insulated surface areas of above-ground exterior floor assemblies shall be\ncalculated using dimensions measured to the exterior surface of perimeter walls.\n8) The insulated surface areas of roof assemblies in contact with the ground shall\nbe calculated along the plane of the insulation using dimensions measured to the\nexterior surfaces of intersecting exterior walls.\n9) The insulated surface areas of wall assemblies in contact with the ground shall\nbe calculated using dimensions measured\n  a) horizontally to the exterior surfaces of perimeter wall assemblies in contact\nwith the ground, and\n  b) vertically from the exterior ground level to the underside of intersecting\nfloors in contact with the ground.\n10) The insulated surface areas of floor assemblies in contact with the ground shall\nbe calculated using dimensions measured to the exterior surfaces of perimeter walls.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.2.8.(1)",
+      "text": "The energy model calculations shall account for heat transfer through walls, roofs and floors for each thermal block, while accounting for the dynamic response due to the thermal characteristics of the particular assembly.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.2.8.(2)",
+      "text": "Calculations of heat transfer through walls and roofs shall account for the effect of solar radiation absorbed on their exterior surfaces, which depends on the orientation and absorptance of each surface.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.2.8.(3)",
+      "text": "The energy model calculations shall account for heat transfer through fenestration, including skylights, while accounting for both indoor-outdoor temperature difference and transmission of solar radiation through the glazing.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.2.8.(4)",
+      "text": "Calculations of cooling and heating loads due to the transmission of solar radiation through fenestration shall account for",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.8.(4)(a)",
+          "text": "the orientation of the fenestration,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.8.(4)(b)",
+          "text": "the solar optical properties of the glazing, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.2.8.(4)(c)",
+          "text": "dynamic response due to the effect of the thermal characteristics of each thermal block.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.2.8.(5)",
+      "text": "The insulated surface areas of above-ground roof assemblies shall",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.8.(5)(a)",
+          "text": "be calculated along the plane of the insulation using dimensions measured to the interior surfaces of intersecting exterior walls, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.8.(5)(b)",
+          "text": "exclude openings for skylights and chimneys as measured to the surfaces of structural framing surrounding such openings.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.2.8.(6)",
+      "text": "The insulated surface areas of exterior above-ground wall assemblies shall",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.8.(6)(a)",
+          "text": "be calculated using dimensions measured to the exterior surfaces of intersecting exterior walls and to the exterior ground level, exclusive of the perimeter areas where floor or roof slabs interrupt the wall construction,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.8.(6)(b)",
+          "text": "include perimeter areas of intersecting interior walls, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.2.8.(6)(c)",
+          "text": "exclude openings for doors and fenestration, as measured to the surfaces of structural framing surrounding such openings.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.2.8.(7)",
+      "text": "The insulated surface areas of above-ground exterior floor assemblies shall be calculated using dimensions measured to the exterior surface of perimeter walls.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "8.4.2.8.(8)",
+      "text": "The insulated surface areas of roof assemblies in contact with the ground shall be calculated along the plane of the insulation using dimensions measured to the exterior surfaces of intersecting exterior walls.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "9",
+      "reference": "8.4.2.8.(9)",
+      "text": "The insulated surface areas of wall assemblies in contact with the ground shall be calculated using dimensions measured",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.8.(9)(a)",
+          "text": "horizontally to the exterior surfaces of perimeter wall assemblies in contact with the ground, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.8.(9)(b)",
+          "text": "vertically from the exterior ground level to the underside of intersecting floors in contact with the ground.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "10",
+      "reference": "8.4.2.8.(10)",
+      "text": "The insulated surface areas of floor assemblies in contact with the ground shall be calculated using dimensions measured to the exterior surfaces of perimeter walls.",
+      "clauses": []
+    }
+  ],
+  "page_start": 205,
+  "page_end": 206,
+  "timestamp": "2025-12-06T22:08:44.126055+00:00",
+  "success": true,
+  "equation_count": 0
+}

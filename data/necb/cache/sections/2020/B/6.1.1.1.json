@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.1.1.1",
+  "title": "Scope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.1.1.1 Scope\nScope\n1) This Part is concerned with the systems used to heat service water and with\npumping systems that are part of service water systems.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.1.1.1.(1)",
+      "text": "This Part is concerned with the systems used to heat service water and with pumping systems that are part of service water systems.",
+      "clauses": []
+    }
+  ],
+  "page_start": 178,
+  "page_end": 178,
+  "timestamp": "2025-12-06T22:08:44.111737+00:00",
+  "success": true,
+  "equation_count": 0
+}

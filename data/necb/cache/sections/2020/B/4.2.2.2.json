@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.2.2",
+  "title": "Lighting Controls in Storage Garages",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.2.2 Lighting Controls in Storage Garages\nLighting Controls in Storage Garages\n1) Lighting in a storage garage shall be divided into zones no larger than 360 m2.\n2) Except as provided in Sentence (5), the lighting power in a lighting zone\nreferred to in Sentence (1) shall be controlled by a device that automatically reduces\nthe lighting power by at least 30% when no activity is detected for 20 min.\n3) Lighting for covered vehicle entrances and exits from storage garages shall be\nseparately controlled by a device that automatically reduces the lighting by at least\n50% from sunset to sunrise. (See Note A-4.2.2.2.(3).)\n4) Except as provided in Sentence (5), where the combined input of all luminaires\nwithin 6.1 m of any perimeter wall having a net opening-to-wall ratio of at least 40%\nand no exterior obstructions within 6.1 m exceeds 150 W, the power to those luminaires\nshall be automatically reduced in response to daylight.\n5) Daylight transition zones and ramps without parking need not comply with the\nprovisions of Sentences (1), (2) and (4).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.2.2.(1)",
+      "text": "Lighting in a storage garage shall be divided into zones no larger than 360 m2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.2.2.(2)",
+      "text": "Except as provided in Sentence (5), the lighting power in a lighting zone referred to in Sentence (1) shall be controlled by a device that automatically reduces the lighting power by at least 30% when no activity is detected for 20 min.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.2.2.2.(3)",
+      "text": "Lighting for covered vehicle entrances and exits from storage garages shall be separately controlled by a device that automatically reduces the lighting by at least 50% from sunset to sunrise. (See Note A-4.2.2.2.(3).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.2.2.2.(4)",
+      "text": "Except as provided in Sentence (5), where the combined input of all luminaires within 6.1 m of any perimeter wall having a net opening-to-wall ratio of at least 40% and no exterior obstructions within 6.1 m exceeds 150 W, the power to those luminaires shall be automatically reduced in response to daylight.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "4.2.2.2.(5)",
+      "text": "Daylight transition zones and ramps without parking need not comply with the provisions of Sentences (1), (2) and (4).",
+      "clauses": []
+    }
+  ],
+  "page_start": 101,
+  "page_end": 101,
+  "timestamp": "2025-12-06T22:08:44.081829+00:00",
+  "success": true,
+  "equation_count": 0
+}

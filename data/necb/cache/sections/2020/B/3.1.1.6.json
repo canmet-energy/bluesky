@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.1.1.6",
+  "title": "Calculation of Fenestration and Door Areas",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.1.1.6 Calculation of Fenestration and Door Areas\nCalculation of Fenestration and Door Areas\n1) Fenestration and door areas shall be calculated to the rough opening in the wall\nand shall include all related frame and sash members. (See Note A-3.1.1.6.(1).)\n2) The fenestration area made of flat panes that are not all in the same plane or\ncurved panes shall be measured along the surface of the glass. (See Note A-3.1.1.6.(2).)\n3) Except as provided in Sentence (4), in the calculation of allowable fenestration\nand door area, the gross wall area shall be calculated as the sum of the areas of all\nabove-ground wall assemblies including fenestration and doors, but not including\nparapets, projected fins, ornamentation and appendages.\n4) The calculation of allowable fenestration and door area in additions shall be\nbased upon\n  a) the addition being considered by itself, or\n  b) the addition being considered together with the existing building, provided\nthat the combined overall thermal transmittance of the addition and existing\nbuilding meets the prescriptive or trade-off requirements.\n5) In the calculation of allowable skylight area, the gross roof area shall be\ncalculated as the sum of the areas of insulated roof including skylights.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.1.1.6.(1)",
+      "text": "Fenestration and door areas shall be calculated to the rough opening in the wall and shall include all related frame and sash members. (See Note A-3.1.1.6.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.1.1.6.(2)",
+      "text": "The fenestration area made of flat panes that are not all in the same plane or curved panes shall be measured along the surface of the glass. (See Note A-3.1.1.6.(2).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.1.1.6.(3)",
+      "text": "Except as provided in Sentence (4), in the calculation of allowable fenestration and door area, the gross wall area shall be calculated as the sum of the areas of all above-ground wall assemblies including fenestration and doors, but not including parapets, projected fins, ornamentation and appendages.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "3.1.1.6.(4)",
+      "text": "The calculation of allowable fenestration and door area in additions shall be based upon",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.1.1.6.(4)(a)",
+          "text": "the addition being considered by itself, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.1.1.6.(4)(b)",
+          "text": "the addition being considered together with the existing building, provided that the combined overall thermal transmittance of the addition and existing building meets the prescriptive or trade-off requirements.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "3.1.1.6.(5)",
+      "text": "In the calculation of allowable skylight area, the gross roof area shall be calculated as the sum of the areas of insulated roof including skylights.",
+      "clauses": []
+    }
+  ],
+  "page_start": 69,
+  "page_end": 69,
+  "timestamp": "2025-12-06T22:08:44.070475+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.8.5",
+  "title": "Heat Pump Controls",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.8.5 Heat Pump Controls\nHeat Pump Controls\n1) Heat pumps equipped with supplementary heaters shall incorporate controls to\nprevent supplementary heater operation when the heating load can be met by the heat\npump alone, except during defrost cycles. (See Note A-5.2.8.5.(1) and 5.2.11.1.(2)(e).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.8.5.(1)",
+      "text": "Heat pumps equipped with supplementary heaters shall incorporate controls to prevent supplementary heater operation when the heating load can be met by the heat pump alone, except during defrost cycles. (See Note A-5.2.8.5.(1) and 5.2.11.1.(2)(e).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 145,
+  "page_end": 145,
+  "timestamp": "2025-12-06T22:08:44.103601+00:00",
+  "success": true,
+  "equation_count": 0
+}

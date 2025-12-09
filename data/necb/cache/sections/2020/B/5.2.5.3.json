@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.5.3",
+  "title": "Piping Insulation",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.5.3 Piping Insulation\nPiping Insulation\n1) Except as provided in Sentences (2) to (4), piping forming part of an\nHVAC system shall be thermally insulated in accordance with Table 5.2.5.3. (See\nNote A-5.2.5.3.(1).)\n2) Except for suction-line piping of direct expansion systems, piping located\nwithin conditioned space in a dwelling unit and serving only that dwelling unit need\nnot comply with Sentence (1).\n3) HVAC piping that conveys fluids with design operating temperatures greater\nthan 16°C and less than 41°C need not comply with Table 5.2.5.3., if it is located within\na conditioned space.\n4) Where piping insulation has a thermal conductivity that is greater than the\nranges given in Table 5.2.5.3., the insulation thickness given in the Table shall be\nincreased by the ratio u2/u1, where u1 is the value at the higher end of the conductivity\nrange for the operating temperature and u2 is the measured thermal conductivity of\nthe insulation at the mean rating temperature.\n5) Where piping insulation has a thermal conductivity that is lower than the\nranges given in Table 5.2.5.3., the insulation thickness given in the Table may be\ndecreased by the ratio u2/u1, where u1 is the value at lower end of the conductivity\nrange for the operating temperature and u2 is the measured thermal conductivity of\nthe insulation at the mean rating temperature.\n6) The thermal conductivity of piping insulation at a mean rating temperature\nshall be determined in conformance with ASTM C335/C335M, “Standard Test Method\nfor Steady-State Heat Transfer Properties of Pipe Insulation.”\n7) Insulation material required in Sentence (1) shall be installed in accordance\nwith good practice. (See Note A-5.2.2.5.(8) and 5.2.5.3.(7).)\n8) The insulation thickness used to determine compliance with Table 5.2.5.3. shall\nbe the thickness of the insulation after installation. (See Note A-5.2.2.5.(2), 5.2.5.3.(8)\nand 6.2.3.1.(6).)\n9) Manufactured insulation thicknesses shall not be altered.\nTable 5.2.5.3.\nMinimum Thickness of Piping Insulation\nForming Part of Sentences 5.2.5.3.(1), (3) to (5), and (8)\nType of System\nDesign Operating\nTemperature\nRange, °C\nThermal Conductivity of Insulation\nNominal Pipe Diameter, mm (inches)\nConductivity\nRange,\nMean Rating\nTemperature,\nRunouts(1)\n≤51 (2)\n≤25.4 (1)\n32 to 51\n(1¼ to 2)\n64 to 102\n(2½ to 4)\n≥127 (5)\nW/m×°C\nMinimum Thickness of Piping Insulation, mm\nHeating Systems\n(Steam, Steam\nCondensate and Hot\nWater)\n> 177\n122–177\n94–121\n61–93\n41–60\n0.046–0.049\n0.042–0.045\n0.039–0.043\n0.036–0.042\n0.035–0.040\n121\n38.1\n38.1\n38.1\n25.4\n25.4\n114\n76.2\n63.5\n38.1\n25.4\n127\n101.6\n63.5\n50.8\n38.1\n127\n114\n76.2\n50.8\n38.1\n127\n114\n76.2\n50.8\n38.1\nCooling Systems\n(Chilled Water, Brine\nand Refrigerant)\n4–16\n< 4\n0.030–0.039\n0.030–0.039\n25.4\n25.4\n25.4\n25.4\n25.4\n38.1\n25.4\n38.1\n25.4\n38.1\nNotes to Table 5.2.5.3.:\n(1) Refers to runouts to individual terminal units not exceeding 3.7 m in length.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.5.3.(1)",
+      "text": "Except as provided in Sentences (2) to (4), piping forming part of an HVAC system shall be thermally insulated in accordance with Table 5.2.5.3. (See Note A-5.2.5.3.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.5.3.(2)",
+      "text": "Except for suction-line piping of direct expansion systems, piping located within conditioned space in a dwelling unit and serving only that dwelling unit need not comply with Sentence (1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.5.3.(3)",
+      "text": "HVAC piping that conveys fluids with design operating temperatures greater than 16°C and less than 41°C need not comply with Table 5.2.5.3., if it is located within a conditioned space.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.5.3.(4)",
+      "text": "Where piping insulation has a thermal conductivity that is greater than the ranges given in Table 5.2.5.3., the insulation thickness given in the Table shall be increased by the ratio u2/u1, where u1 is the value at the higher end of the conductivity range for the operating temperature and u2 is the measured thermal conductivity of the insulation at the mean rating temperature.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "5.2.5.3.(5)",
+      "text": "Where piping insulation has a thermal conductivity that is lower than the ranges given in Table 5.2.5.3., the insulation thickness given in the Table may be decreased by the ratio u2/u1, where u1 is the value at lower end of the conductivity range for the operating temperature and u2 is the measured thermal conductivity of the insulation at the mean rating temperature.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "5.2.5.3.(6)",
+      "text": "The thermal conductivity of piping insulation at a mean rating temperature shall be determined in conformance with ASTM C335/C335M, “Standard Test Method for Steady-State Heat Transfer Properties of Pipe Insulation.”",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "5.2.5.3.(7)",
+      "text": "Insulation material required in Sentence (1) shall be installed in accordance with good practice. (See Note A-5.2.2.5.(8) and 5.2.5.3.(7).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "5.2.5.3.(8)",
+      "text": "The insulation thickness used to determine compliance with Table 5.2.5.3. shall be the thickness of the insulation after installation. (See Note A-5.2.2.5.(2), 5.2.5.3.(8) and 6.2.3.1.(6).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "9",
+      "reference": "5.2.5.3.(9)",
+      "text": "Manufactured insulation thicknesses shall not be altered. Table 5.2.5.3. Minimum Thickness of Piping Insulation Forming Part of Sentences 5.2.5.3.(1), (3) to (5), and (8) Type of System Design Operating Temperature Range, °C Thermal Conductivity of Insulation Nominal Pipe Diameter, mm (inches) Conductivity Range, Mean Rating Temperature, Runouts(1) ≤51 (2) ≤25.4 (1) 32 to 51 (1¼ to 2) 64 to 102 (2½ to 4) ≥127 (5) W/m×°C Minimum Thickness of Piping Insulation, mm Heating Systems (Steam, Steam Condensate and Hot Water) > 177 122–177 94–121 61–93 41–60 0.046–0.049 0.042–0.045 0.039–0.043 0.036–0.042 0.035–0.040 121 38.1 38.1 38.1 25.4 25.4 114 76.2 63.5 38.1 25.4 127 101.6 63.5 50.8 38.1 127 114 76.2 50.8 38.1 127 114 76.2 50.8 38.1 Cooling Systems (Chilled Water, Brine and Refrigerant) 4–16 < 4 0.030–0.039 0.030–0.039 25.4 25.4 25.4 25.4 25.4 38.1 25.4 38.1 25.4 38.1 Notes to Table 5.2.5.3.: (1) Refers to runouts to individual terminal units not exceeding 3.7 m in length.",
+      "clauses": []
+    }
+  ],
+  "page_start": 142,
+  "page_end": 143,
+  "timestamp": "2025-12-06T22:08:44.100687+00:00",
+  "success": true,
+  "equation_count": 0
+}

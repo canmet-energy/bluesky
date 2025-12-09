@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.3.1.1",
+  "title": "Application and Limitations",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.3.1.1 Application and Limitations\nApplication and Limitations\n1) Subject to the limitations stated in this Article, the simple trade-off path applies\nonly to variations from the maximum overall thermal transmittance of above-ground\nassemblies and to the allowable fenestration and door areas prescribed in Section 3.2.,\nprovided it can be demonstrated using the equation in Article 3.3.1.2. that the building\nenvelope will not transfer more energy than it would if all its components complied\nwith that Section.\n2) This Subsection does not apply to additions or to semi-heated buildings, as\ndefined in Sentence 1.2.1.2.(2).\n3) Vertical above-ground portions of the building envelope are only permitted to be\ntraded off against other vertical above-ground portions of the building envelope.\n4) Horizontal above-ground portions of the building envelope are only permitted to\nbe traded off against other horizontal above-ground portions of the building envelope.\n5) The overall thermal transmittance of building envelope assemblies that have\nradiant heating cables or heating or cooling pipes or membranes embedded in them\nshall not be increased to more than the overall thermal transmittance permitted by\nSentence 3.2.2.2.(4).\n6) Where the construction techniques used result in increased performance\ncompared to those required to be used by Articles 3.2.1.1. and 3.2.2.1. and\nSubsection 3.2.4., that difference in performance levels shall not be used in trade-off\ncalculations. (See Note A-3.3.1.1.(6).)\n7) Where the building envelope components used are more energy-efficient than\nthose prescribed in Section 3.2., the trade-off calculation is permitted to take this\nincreased performance level into account, provided it can be quantified and is not\ndependent on occupant interaction.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.3.1.1.(1)",
+      "text": "Subject to the limitations stated in this Article, the simple trade-off path applies only to variations from the maximum overall thermal transmittance of above-ground assemblies and to the allowable fenestration and door areas prescribed in Section 3.2., provided it can be demonstrated using the equation in Article 3.3.1.2. that the building envelope will not transfer more energy than it would if all its components complied with that Section.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.3.1.1.(2)",
+      "text": "This Subsection does not apply to additions or to semi-heated buildings, as defined in Sentence 1.2.1.2.(2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.3.1.1.(3)",
+      "text": "Vertical above-ground portions of the building envelope are only permitted to be traded off against other vertical above-ground portions of the building envelope.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "3.3.1.1.(4)",
+      "text": "Horizontal above-ground portions of the building envelope are only permitted to be traded off against other horizontal above-ground portions of the building envelope.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "3.3.1.1.(5)",
+      "text": "The overall thermal transmittance of building envelope assemblies that have radiant heating cables or heating or cooling pipes or membranes embedded in them shall not be increased to more than the overall thermal transmittance permitted by Sentence 3.2.2.2.(4).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "3.3.1.1.(6)",
+      "text": "Where the construction techniques used result in increased performance compared to those required to be used by Articles 3.2.1.1. and 3.2.2.1. and Subsection 3.2.4., that difference in performance levels shall not be used in trade-off calculations. (See Note A-3.3.1.1.(6).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "3.3.1.1.(7)",
+      "text": "Where the building envelope components used are more energy-efficient than those prescribed in Section 3.2., the trade-off calculation is permitted to take this increased performance level into account, provided it can be quantified and is not dependent on occupant interaction.",
+      "clauses": []
+    }
+  ],
+  "page_start": 76,
+  "page_end": 77,
+  "timestamp": "2025-12-06T22:08:44.076040+00:00",
+  "success": true,
+  "equation_count": 0
+}

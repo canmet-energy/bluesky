@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.2.1.1",
+  "title": "Conformance with Administrative Requirements",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.2.1.1 Conformance with Administrative Requirements\nConformance with Administrative Requirements\n1) This Code shall be administered in conformance with the appropriate federal,\nprovincial or territorial regulations or municipal bylaws or, in the absence of such\nregulations or bylaws, in conformance with the Administrative Requirements for Use\nwith the National Building Code of Canada 1985.\n2) The authority having jurisdiction may exempt a building or part thereof from\nsome or all of the requirements of this Code where it can be shown that the nature or\nduration of the occupancy makes it impractical to apply them. (See Note A-2.2.1.1.(2).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.2.1.1.(1)",
+      "text": "This Code shall be administered in conformance with the appropriate federal, provincial or territorial regulations or municipal bylaws or, in the absence of such regulations or bylaws, in conformance with the Administrative Requirements for Use with the National Building Code of Canada 1985.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "2.2.1.1.(2)",
+      "text": "The authority having jurisdiction may exempt a building or part thereof from some or all of the requirements of this Code where it can be shown that the nature or duration of the occupancy makes it impractical to apply them. (See Note A-2.2.1.1.(2).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 294,
+  "page_end": 294,
+  "timestamp": "2025-12-06T22:08:44.144126+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.3.7",
+  "title": "Determination of Factor for Daylight Harvesting",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.3.7 Determination of Factor for Daylight Harvesting\nDetermination of Factor for Daylight Harvesting\n1) The factor for daylight harvesting, FDL,i, shall be determined using the following\nequation:\nwhere\nCDL,sup,i = daylight supply factor determined in accordance with Sentences (2) and (3),\nCDL,ctrl,i = daylight system control factor determined in accordance with Sentence (4),\nand\nCEL,ctrl,i = daylight-dependent control factor for electric lighting determined in\naccordance with Sentence (5).\n2) For spaces where sidelighting is the primary daylight supply, the daylight\nsupply factor, CDL,sup,i, shall be determined in accordance with Article 4.3.2.8.\n3) For spaces where toplighting is the primary daylight supply, the daylight supply\nfactor, CDL,sup,i, shall be determined in accordance with Article 4.3.2.9.\n4) The daylight system control factor, CDL,ctrl,i, shall be set to the daylight system\ncontrol factor for “manual” stated in Table 4.3.2.7.-A. (See Note A-4.3.3.7.(4).)\n5) The daylight-dependent control factor for electric lighting, CEL,ctrl,i, shall\nbe determined using Table 4.3.2.7.-B based on the minimum requirement for the\napplicable space according to the prescriptive path.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.3.7.(1)",
+      "text": "The factor for daylight harvesting, FDL,i, shall be determined using the following equation: where CDL,sup,i = daylight supply factor determined in accordance with Sentences (2) and (3), CDL,ctrl,i = daylight system control factor determined in accordance with Sentence (4), and CEL,ctrl,i = daylight-dependent control factor for electric lighting determined in accordance with Sentence (5).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.3.3.7.(2)",
+      "text": "For spaces where sidelighting is the primary daylight supply, the daylight supply factor, CDL,sup,i, shall be determined in accordance with Article 4.3.2.8.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.3.3.7.(3)",
+      "text": "For spaces where toplighting is the primary daylight supply, the daylight supply factor, CDL,sup,i, shall be determined in accordance with Article 4.3.2.9.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.3.3.7.(4)",
+      "text": "The daylight system control factor, CDL,ctrl,i, shall be set to the daylight system control factor for “manual” stated in Table 4.3.2.7.-A. (See Note A-4.3.3.7.(4).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "4.3.3.7.(5)",
+      "text": "The daylight-dependent control factor for electric lighting, CEL,ctrl,i, shall be determined using Table 4.3.2.7.-B based on the minimum requirement for the applicable space according to the prescriptive path.",
+      "clauses": []
+    }
+  ],
+  "page_start": 120,
+  "page_end": 121,
+  "timestamp": "2025-12-06T22:08:44.091818+00:00",
+  "success": true,
+  "equation_count": 0
+}

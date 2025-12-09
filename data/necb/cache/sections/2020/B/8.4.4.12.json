@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.12",
+  "title": "Cooling with Outside Air",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.12 Cooling with Outside Air\nCooling with Outside Air\n1) Where Article 5.2.2.7. applies to a proposed building's HVAC system, the HVAC\nsystems of the corresponding thermal blocks in the reference building shall be modeled\nin accordance with that Article and Table 8.4.4.12.\nTable 8.4.4.12.\nApplicable Requirements for Cooling with Outside Air According to Type of HVAC System\nForming Part of Sentence 8.4.4.12.(1)\nType of System\nApplicable Article for Cooling with Outside Air\nHVAC systems 1, 3, 4 and 6(1)\nHVAC systems 2 and 5(1)\nAll types of heat pump systems(2)\n5.2.2.8.\n5.2.2.9.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.12.(1)",
+      "text": "Where Article 5.2.2.7. applies to a proposed building's HVAC system, the HVAC systems of the corresponding thermal blocks in the reference building shall be modeled in accordance with that Article and Table 8.4.4.12. Table 8.4.4.12. Applicable Requirements for Cooling with Outside Air According to Type of HVAC System Forming Part of Sentence 8.4.4.12.(1) Type of System Applicable Article for Cooling with Outside Air HVAC systems 1, 3, 4 and 6(1) HVAC systems 2 and 5(1) All types of heat pump systems(2) 5.2.2.8. 5.2.2.9.",
+      "clauses": []
+    }
+  ],
+  "page_start": 217,
+  "page_end": 217,
+  "timestamp": "2025-12-06T22:08:44.134548+00:00",
+  "success": true,
+  "equation_count": 0
+}

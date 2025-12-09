@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.11.5",
+  "title": "Loop Temperature Reset for Chilled- and Hot-Water Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.11.5 Loop Temperature Reset for Chilled- and Hot-Water Systems\nLoop Temperature Reset for Chilled- and Hot-Water Systems\n1) Except as provided in Sentences (2) and (3), chilled- or hot-water systems\nwith a design capacity greater than 88 kW supplying chilled or heated water to\ncomfort-conditioning systems shall be equipped with automatic controls that reset the\nsupply water loop temperatures\n  a) in relation to the outdoor temperature using an indoor/outdoor controller, or\n  b) in relation to representative building heating and cooling loads using the\nreturn water temperature in the system.\n2) Chilled- and hot-water systems described in Sentence (1) need not be equipped\nwith loop temperature reset controls where such controls would cause the improper\noperation of heating, cooling, humidifying, or dehumidifying equipment or systems.\n3) Chilled- and hot-water systems described in Sentence (1) that are designed with\nvariable-flow pumping complying with Sentence 5.2.6.2.(1) need not be equipped with\nloop temperature reset controls.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.11.5.(1)",
+      "text": "Except as provided in Sentences (2) and (3), chilled- or hot-water systems with a design capacity greater than 88 kW supplying chilled or heated water to comfort-conditioning systems shall be equipped with automatic controls that reset the supply water loop temperatures",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.11.5.(1)(a)",
+          "text": "in relation to the outdoor temperature using an indoor/outdoor controller, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.11.5.(1)(b)",
+          "text": "in relation to representative building heating and cooling loads using the return water temperature in the system.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.11.5.(2)",
+      "text": "Chilled- and hot-water systems described in Sentence (1) need not be equipped with loop temperature reset controls where such controls would cause the improper operation of heating, cooling, humidifying, or dehumidifying equipment or systems.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.11.5.(3)",
+      "text": "Chilled- and hot-water systems described in Sentence (1) that are designed with variable-flow pumping complying with Sentence 5.2.6.2.(1) need not be equipped with loop temperature reset controls.",
+      "clauses": []
+    }
+  ],
+  "page_start": 150,
+  "page_end": 150,
+  "timestamp": "2025-12-06T22:08:44.108078+00:00",
+  "success": true,
+  "equation_count": 0
+}

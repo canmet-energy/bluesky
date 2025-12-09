@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.5.9",
+  "title": "Fuel-Fired Service Water Heater",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.5.9 Fuel-Fired Service Water Heater\nFuel-Fired Service Water Heater\n1) The fuel consumption at part-load conditions, Fuelpartload, in Btu/h, of the reference fuel-fired service water heater shall be derived by applying an adjustment factor to the fuel consumption at full load: [Equation: Fuel_{partload} = Fuel_{design} \\times FHeatPLC] where Fueldesign = fuel consumption at design conditions, in Btu/h, and FHeatPLC = fuel heating part-load efficiency curve determined in accordance with Sentence (2).\n2) The fuel heating part-load efficiency curve, FHeatPLC, shall be calculated using the following equation: [Equation: FHeatPLC = a + b \\times \\frac{Q_{partload}}{Q_{design}} + c \\times \\left(\\frac{Q_{partload}}{Q_{design}}\\right)^{2}] where Qpartload = service water heater capacity at part-load conditions, in Btu/h, Qdesign = service water heater capacity at design conditions, in Btu/h, a = 0.021826, b = 0.977630, and c = 0.000543.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.5.9.(1)",
+      "text": "The fuel consumption at part-load conditions, Fuelpartload, in Btu/h, of the reference fuel-fired service water heater shall be derived by applying an adjustment factor to the fuel consumption at full load: [Equation: Fuel_{partload} = Fuel_{design} \\times FHeatPLC] where Fueldesign = fuel consumption at design conditions, in Btu/h, and FHeatPLC = fuel heating part-load efficiency curve determined in accordance with Sentence (2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.5.9.(2)",
+      "text": "The fuel heating part-load efficiency curve, FHeatPLC, shall be calculated using the following equation: [Equation: FHeatPLC = a + b \\times \\frac{Q_{partload}}{Q_{design}} + c \\times \\left(\\frac{Q_{partload}}{Q_{design}}\\right)^{2}] where Qpartload = service water heater capacity at part-load conditions, in Btu/h, Qdesign = service water heater capacity at design conditions, in Btu/h, a = 0.021826, b = 0.977630, and c = 0.000543.",
+      "clauses": []
+    }
+  ],
+  "page_start": 233,
+  "page_end": 233,
+  "timestamp": "2025-12-07T13:07:30.155972+00:00",
+  "success": true,
+  "equation_count": 2
+}

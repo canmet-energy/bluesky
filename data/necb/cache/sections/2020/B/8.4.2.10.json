@@ -1,0 +1,83 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.2.10",
+  "title": "HVAC Systems Calculations",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.2.10 HVAC Systems Calculations\nHVAC Systems Calculations\n1) For the purpose of compliance calculations, the reference building's HVAC\nsystems determined in accordance with Article 8.4.4.7. shall be modeled without\nsubstituting their components with thermodynamically similar components or using\napproximated calculations.\n2) The energy model calculations shall account for the effect of terminal devices,\nprimary systems and secondary systems having limited capacities on space temperature\nand energy use.\n3) Where applicable, the energy modeling of secondary systems shall account for\n  a) temperature rise of supply air due to heat from supply fan,\n  b) temperature rise of return air due to heat from return fan,\n  c) temperature rise of return air due to heat gain from lights,\n  d) fan power as a function of supply airflow,\n  e) temperature and humidity rise or drop of supply or return air due to heat\n(sensible and latent energy) transferred from a heat-recovery device, and\n  f) temperature rise of the outside air due to preheaters.\n4) The energy model calculations shall determine how many hours the primary\nsystem, secondary system and terminal device loads are not met.\n5) The energy model calculations shall account for the efficiency and capacity of\nthe HVAC equipment as a function of part load and parameters such as, but not limited\nto, the temperatures of entering fluids and climatic conditions.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.2.10.(1)",
+      "text": "For the purpose of compliance calculations, the reference building's HVAC systems determined in accordance with Article 8.4.4.7. shall be modeled without substituting their components with thermodynamically similar components or using approximated calculations.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.2.10.(2)",
+      "text": "The energy model calculations shall account for the effect of terminal devices, primary systems and secondary systems having limited capacities on space temperature and energy use.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.2.10.(3)",
+      "text": "Where applicable, the energy modeling of secondary systems shall account for",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.10.(3)(a)",
+          "text": "temperature rise of supply air due to heat from supply fan,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.10.(3)(b)",
+          "text": "temperature rise of return air due to heat from return fan,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.2.10.(3)(c)",
+          "text": "temperature rise of return air due to heat gain from lights,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "8.4.2.10.(3)(d)",
+          "text": "fan power as a function of supply airflow,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "8.4.2.10.(3)(e)",
+          "text": "temperature and humidity rise or drop of supply or return air due to heat (sensible and latent energy) transferred from a heat-recovery device, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "f",
+          "reference": "8.4.2.10.(3)(f)",
+          "text": "temperature rise of the outside air due to preheaters.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.2.10.(4)",
+      "text": "The energy model calculations shall determine how many hours the primary system, secondary system and terminal device loads are not met.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.2.10.(5)",
+      "text": "The energy model calculations shall account for the efficiency and capacity of the HVAC equipment as a function of part load and parameters such as, but not limited to, the temperatures of entering fluids and climatic conditions.",
+      "clauses": []
+    }
+  ],
+  "page_start": 206,
+  "page_end": 207,
+  "timestamp": "2025-12-06T22:08:44.126841+00:00",
+  "success": true,
+  "equation_count": 0
+}

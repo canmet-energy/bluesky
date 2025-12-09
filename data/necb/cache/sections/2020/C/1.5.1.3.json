@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.5.1.3",
+  "title": "Applicable Editions",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.5.1.3 Applicable Editions\nApplicable Editions\n1) Where documents are referenced in this Code, they shall be the editions\ndesignated in Subsection 1.3.1. of Division B.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.5.1.3.(1)",
+      "text": "Where documents are referenced in this Code, they shall be the editions designated in Subsection 1.3.1. of Division B.",
+      "clauses": []
+    }
+  ],
+  "page_start": 30,
+  "page_end": 30,
+  "timestamp": "2025-12-06T22:08:44.054974+00:00",
+  "success": true,
+  "equation_count": 0
+}

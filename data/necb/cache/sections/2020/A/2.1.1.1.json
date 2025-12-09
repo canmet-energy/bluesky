@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.1.1.1",
+  "title": "Application",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "2.1.1.1 Application\nApplication\n1) This Part applies to all buildings covered in this Code. (See Article 1.1.1.1.)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.1.1.1.(1)",
+      "text": "This Part applies to all buildings covered in this Code. (See Article 1.1.1.1.)",
+      "clauses": []
+    }
+  ],
+  "page_start": 38,
+  "page_end": 38,
+  "timestamp": "2025-12-06T22:08:44.055821+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.8.1",
+  "title": "Size of Water Storage Tank",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.8.1 Size of Water Storage Tank\nSize of Water Storage Tank\n(See Note A-6.2.8.1.)\n1) Constant-speed pressure booster systems shall be provided with a\nhydro-pneumatic storage tank sized to store a volume of water corresponding to at\nleast 1 min of operation at the system's design flow rate and pressure.\n2) Variable-speed pressure booster systems shall be provided with a\nhydro-pneumatic storage tank sized to store a volume of water corresponding to at\nleast 1 min of operation at 10% of the system's design flow rate and pressure.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.8.1.(1)",
+      "text": "Constant-speed pressure booster systems shall be provided with a hydro-pneumatic storage tank sized to store a volume of water corresponding to at least 1 min of operation at the system's design flow rate and pressure.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "6.2.8.1.(2)",
+      "text": "Variable-speed pressure booster systems shall be provided with a hydro-pneumatic storage tank sized to store a volume of water corresponding to at least 1 min of operation at 10% of the system's design flow rate and pressure.",
+      "clauses": []
+    }
+  ],
+  "page_start": 185,
+  "page_end": 185,
+  "timestamp": "2025-12-06T22:08:44.117113+00:00",
+  "success": true,
+  "equation_count": 0
+}

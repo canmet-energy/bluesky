@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.2.3",
+  "title": "Solar Thermal Service Water Heating Equipment",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.2.3 Solar Thermal Service Water Heating Equipment\nSolar Thermal Service Water Heating Equipment\n1) Service water heating equipment using solar thermal technology shall be\ndesigned and installed in accordance with\n  a) the manufacturer's procedures, or\n  b) CAN/CSA-F379 SERIES, “Packaged solar domestic hot water systems\n(liquid-to-liquid heat transfer).”",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.2.3.(1)",
+      "text": "Service water heating equipment using solar thermal technology shall be designed and installed in accordance with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "6.2.2.3.(1)(a)",
+          "text": "the manufacturer's procedures, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "6.2.2.3.(1)(b)",
+          "text": "CAN/CSA-F379 SERIES, “Packaged solar domestic hot water systems (liquid-to-liquid heat transfer).”",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 182,
+  "page_end": 182,
+  "timestamp": "2025-12-06T22:08:44.113772+00:00",
+  "success": true,
+  "equation_count": 0
+}

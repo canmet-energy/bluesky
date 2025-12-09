@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.5.7",
+  "title": "Electric Air-Source Heat Pump",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.5.7 Electric Air-Source Heat Pump\nElectric Air-Source Heat Pump\n1) The heating part-load performance characteristics of the reference electric air-source heat pump shall be adjusted for heating capacity by applying Sentence (2) and adjusted for power draw by applying Sentence (4).\n2) The available heating capacity, Qavailable, in Btu/h, of the reference heat pump as a function of present evaporator and condenser conditions shall be calculated using the following equation: [Equation: \\text{CAP\\_FT}_{\\text{EAS}} = a + (b \\times t_{\\text{odb}}) + (c \\times t_{\\text{odb}}^{2}) + (d \\times t_{\\text{odb}}^{3})] where CAP_FTEAS = heating capacity adjustment determined in accordance with Sentence (3), and Qrated = rated capacity at AHRI test conditions, in Btu/h.\n3) The heating capacity adjustment, CAP_FTEAS, shall be calculated using the following equation: where todb = outdoor-air dry-bulb temperature, in °F, a = 0.2536714, b = 0.0104351, c = 0.0001861, and d = –0.0000015.\n4) The power draw, Poperating, in kW, of the reference heat pump as a function of present evaporator and condenser conditions and part-load ratio shall be calculated using the following equation: [Equation: P_{operating} = P_{rated} \\times \\text{EIR\\_FPLR} \\times \\text{EIR\\_FT} \\times \\text{CAP\\_FT}_{\\text{EAS}}] where Prated = rated power draw at AHRI test conditions, in kW, EIR_FPLR = electric input ratio adjustment to rated efficiency due to changes in heat pump load determined in accordance with Sentence (5), EIR_FT = electric input ratio adjustment to rated efficiency due to environmental variables determined in accordance with Sentence (7), and CAP_FTEAS = heating capacity adjustment determined in accordance with Sentence (3).\n5) The electric input ratio adjustment to the rated efficiency due to changes in heat pump load, EIR_FPLR, shall be calculated using the following equation: [Equation: PLR = \\frac{Q_{operating}}{Q_{available}}] where PLR = part-load ratio based on available capacity (not rated capacity) determined in accordance with Sentence (6), a = 0.0856522, b = 0.9388137, c = –0.1834361, and d = 0.1589702.\n6) The part-load ratio based on available capacity, PLR, shall be calculated using the following equation: [Equation: PLR = \\frac{Q_{operating}}{Q_{available}}] where Qoperating = present load on heat pump, in Btu/h, and Qavailable = available capacity of heat pump at present evaporator and condenser conditions, in Btu/h, determined in accordance with Sentence (2).\n7) The electric input ratio adjustment to the rated efficiency due to environmental variables, EIR_FT, shall be calculated using the following equation: [Equation: EIR_{FT} = a + (b \\times t_{odb}) + (c \\times t_{odb}^{2}) + (d \\times t_{odb}^{3})] where todb = outdoor-air dry-bulb temperature, in °F, a = 2.4600298, b = –0.0622539, c = 0.0008800, and d = –0.0000046.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.5.7.(1)",
+      "text": "The heating part-load performance characteristics of the reference electric air-source heat pump shall be adjusted for heating capacity by applying Sentence (2) and adjusted for power draw by applying Sentence (4).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.5.7.(2)",
+      "text": "The available heating capacity, Qavailable, in Btu/h, of the reference heat pump as a function of present evaporator and condenser conditions shall be calculated using the following equation: [Equation: \\text{CAP\\_FT}_{\\text{EAS}} = a + (b \\times t_{\\text{odb}}) + (c \\times t_{\\text{odb}}^{2}) + (d \\times t_{\\text{odb}}^{3})] where CAP_FTEAS = heating capacity adjustment determined in accordance with Sentence (3), and Qrated = rated capacity at AHRI test conditions, in Btu/h.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.5.7.(3)",
+      "text": "The heating capacity adjustment, CAP_FTEAS, shall be calculated using the following equation: where todb = outdoor-air dry-bulb temperature, in °F, a = 0.2536714, b = 0.0104351, c = 0.0001861, and d = –0.0000015.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.5.7.(4)",
+      "text": "The power draw, Poperating, in kW, of the reference heat pump as a function of present evaporator and condenser conditions and part-load ratio shall be calculated using the following equation: [Equation: P_{operating} = P_{rated} \\times \\text{EIR\\_FPLR} \\times \\text{EIR\\_FT} \\times \\text{CAP\\_FT}_{\\text{EAS}}] where Prated = rated power draw at AHRI test conditions, in kW, EIR_FPLR = electric input ratio adjustment to rated efficiency due to changes in heat pump load determined in accordance with Sentence (5), EIR_FT = electric input ratio adjustment to rated efficiency due to environmental variables determined in accordance with Sentence (7), and CAP_FTEAS = heating capacity adjustment determined in accordance with Sentence (3).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.5.7.(5)",
+      "text": "The electric input ratio adjustment to the rated efficiency due to changes in heat pump load, EIR_FPLR, shall be calculated using the following equation: [Equation: PLR = \\frac{Q_{operating}}{Q_{available}}] where PLR = part-load ratio based on available capacity (not rated capacity) determined in accordance with Sentence (6), a = 0.0856522, b = 0.9388137, c = –0.1834361, and d = 0.1589702.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.5.7.(6)",
+      "text": "The part-load ratio based on available capacity, PLR, shall be calculated using the following equation: [Equation: PLR = \\frac{Q_{operating}}{Q_{available}}] where Qoperating = present load on heat pump, in Btu/h, and Qavailable = available capacity of heat pump at present evaporator and condenser conditions, in Btu/h, determined in accordance with Sentence (2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.5.7.(7)",
+      "text": "The electric input ratio adjustment to the rated efficiency due to environmental variables, EIR_FT, shall be calculated using the following equation: [Equation: EIR_{FT} = a + (b \\times t_{odb}) + (c \\times t_{odb}^{2}) + (d \\times t_{odb}^{3})] where todb = outdoor-air dry-bulb temperature, in °F, a = 2.4600298, b = –0.0622539, c = 0.0008800, and d = –0.0000046.",
+      "clauses": []
+    }
+  ],
+  "page_start": 229,
+  "page_end": 230,
+  "timestamp": "2025-12-06T22:08:44.139983+00:00",
+  "success": true,
+  "equation_count": 5
+}

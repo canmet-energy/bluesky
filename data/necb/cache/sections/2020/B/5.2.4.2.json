@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.4.2",
+  "title": "Type and Location of Dampers",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.4.2 Type and Location of Dampers\nType and Location of Dampers\n1) Except as provided in Sentences (3) and (4), dampers required by Article 5.2.4.1.\nshall be\n  a) located as near as possible to the plane of the building envelope, and\n  b) designed to close automatically when the HVAC system is not in operation.\n2) Motorized dampers required in Sentence 5.2.4.1.(1) shall be designed so that,\nwhen the damper is in the closed position, airflow does not exceed 15 L/s per m2 of\ncross-sectional area at a pressure differential of 250 Pa, when tested in accordance with\n  a) ANSI/AMCA 500-D, “Methods of Testing Dampers for Rating,” and\n  b) ANSI/AMCA 500-L, “Methods of Testing Louvers for Rating.”\n3) Dampers required in Article 5.2.4.1. are permitted to be located inboard of\nthe building envelope, provided the portion of the duct between the damper and the\nbuilding envelope is insulated in conformance with Sentence 5.2.2.5.(6) for ducts located\noutdoors.\n4) Dampers in air intakes and outlets serving air-heating or -cooling equipment\nlocated outside of the building envelope are permitted to be located within the\nequipment.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.4.2.(1)",
+      "text": "Except as provided in Sentences (3) and (4), dampers required by Article 5.2.4.1. shall be",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.4.2.(1)(a)",
+          "text": "located as near as possible to the plane of the building envelope, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.4.2.(1)(b)",
+          "text": "designed to close automatically when the HVAC system is not in operation.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.4.2.(2)",
+      "text": "Motorized dampers required in Sentence 5.2.4.1.(1) shall be designed so that, when the damper is in the closed position, airflow does not exceed 15 L/s per m2 of cross-sectional area at a pressure differential of 250 Pa, when tested in accordance with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.4.2.(2)(a)",
+          "text": "ANSI/AMCA 500-D, “Methods of Testing Dampers for Rating,” and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.4.2.(2)(b)",
+          "text": "ANSI/AMCA 500-L, “Methods of Testing Louvers for Rating.”",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.4.2.(3)",
+      "text": "Dampers required in Article 5.2.4.1. are permitted to be located inboard of the building envelope, provided the portion of the duct between the damper and the building envelope is insulated in conformance with Sentence 5.2.2.5.(6) for ducts located outdoors.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.4.2.(4)",
+      "text": "Dampers in air intakes and outlets serving air-heating or -cooling equipment located outside of the building envelope are permitted to be located within the equipment.",
+      "clauses": []
+    }
+  ],
+  "page_start": 141,
+  "page_end": 142,
+  "timestamp": "2025-12-06T22:08:44.099753+00:00",
+  "success": true,
+  "equation_count": 0
+}

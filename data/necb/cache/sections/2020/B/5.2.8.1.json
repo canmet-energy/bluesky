@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.8.1",
+  "title": "Temperature Controls",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.8.1 Temperature Controls\nTemperature Controls\n1) Each heating, ventilating or air-conditioning system intended to provide\ncomfort heating or cooling shall include at least one automatic space temperature\ncontrol device that is accurate to within 1°C.\n2) Each dwelling unit shall be controlled by at least one thermostatic control device.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.8.1.(1)",
+      "text": "Each heating, ventilating or air-conditioning system intended to provide comfort heating or cooling shall include at least one automatic space temperature control device that is accurate to within 1°C.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.8.1.(2)",
+      "text": "Each dwelling unit shall be controlled by at least one thermostatic control device.",
+      "clauses": []
+    }
+  ],
+  "page_start": 144,
+  "page_end": 144,
+  "timestamp": "2025-12-06T22:08:44.102557+00:00",
+  "success": true,
+  "equation_count": 0
+}

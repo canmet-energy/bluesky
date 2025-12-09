@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.1.1",
+  "title": "Application",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.1.1 Application\nApplication\n1) Subject to the limitations stated in Article 4.3.1.2., this Section applies to interior\nlighting and lighting controls.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.1.1.(1)",
+      "text": "Subject to the limitations stated in Article 4.3.1.2., this Section applies to interior lighting and lighting controls.",
+      "clauses": []
+    }
+  ],
+  "page_start": 106,
+  "page_end": 106,
+  "timestamp": "2025-12-06T22:08:44.084594+00:00",
+  "success": true,
+  "equation_count": 0
+}

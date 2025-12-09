@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.2.2",
+  "title": "Determination of Lighting Power Density",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.2.2 Determination of Lighting Power Density\nDetermination of Lighting Power Density\n1) The lighting power density for a space, pi, in W/m2, shall be calculated using the following equation: [Equation: A_{\\text{NDL},i} = A_i - A_{\\text{DL},i}] where Pi = lighting power in the space, in W, and Ai = gross interior floor area of that space, in m2.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.2.2.(1)",
+      "text": "The lighting power density for a space, pi, in W/m2, shall be calculated using the following equation: [Equation: A_{\\text{NDL},i} = A_i - A_{\\text{DL},i}] where Pi = lighting power in the space, in W, and Ai = gross interior floor area of that space, in m2.",
+      "clauses": []
+    }
+  ],
+  "page_start": 108,
+  "page_end": 108,
+  "timestamp": "2025-12-06T22:08:44.087340+00:00",
+  "success": true,
+  "equation_count": 1
+}

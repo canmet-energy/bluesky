@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.2.4",
+  "title": "Thermal Characteristics of Doors and Access Hatches",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.2.4 Thermal Characteristics of Doors and Access Hatches\nThermal Characteristics of Doors and Access Hatches\n1) Except as provided in Sentences (2), (3), (5) and 3.2.1.3.(1), the overall thermal\ntransmittance of doors shall be not more than that shown in Table 3.2.2.4. for the\napplicable heating degree-day category taken at 18°C, as determined in accordance\nwith Article 3.1.1.5.\n2) Except as provided in Sentences (3) and (5), the overall thermal transmittance of\ndoors in semi-heated buildings, as defined in Sentence 1.2.1.2.(2), shall be not more than\nthat shown in Table 3.2.2.4. for the applicable heating degree-day category taken at\n15°C, as determined in accordance with Article 3.1.1.5.\n3) Doors need not comply with Sentence (1) or (2) where\n  a) their total area does not exceed 2% of the gross wall area calculated in\naccordance with Article 3.1.1.6., and\n  b) their overall thermal transmittance does not exceed 4.4 W/(m2×K).\n4) Access hatches that are part of a building envelope shall be insulated to a nominal\nthermal transmittance of not more than 1.3 W/(m2×K), exclusive of stiffeners or edge\nconstruction.\n5) Storm doors, automatic sliding glass doors, revolving doors, and fire shutters\nneed not comply with Sentence (1) or (2). (See Note A-3.2.2.4.(5).)\nTable 3.2.2.4.\nOverall Thermal Transmittance of Doors\nForming Part of Sentences 3.2.2.4.(1) and (2)\nComponent\nHeating Degree-Days of Building Location,(1) in Celsius Degree-Days\nZone 4:(2)\n< 3000\nZone 5:(2)\n3000 to 3999\nZone 6:(2)\n4000 to 4999\nZone 7A:(2)\n5000 to 5999\nZone 7B:(2)\n6000 to 6999\nZone 8:(2)\n≥7000\nMaximum Overall Thermal Transmittance, W/(m2×K)\nAll doors\n2.12\n1.90\n1.90\n1.90\n1.90\n1.44\nNotes to Table 3.2.2.4.:\n(1) See Sentence 1.1.4.1.(1).\n(2) See Note A-Table 3.2.2.2.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.2.4.(1)",
+      "text": "Except as provided in Sentences (2), (3), (5) and 3.2.1.3.(1), the overall thermal transmittance of doors shall be not more than that shown in Table 3.2.2.4. for the applicable heating degree-day category taken at 18°C, as determined in accordance with Article 3.1.1.5.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.2.4.(2)",
+      "text": "Except as provided in Sentences (3) and (5), the overall thermal transmittance of doors in semi-heated buildings, as defined in Sentence 1.2.1.2.(2), shall be not more than that shown in Table 3.2.2.4. for the applicable heating degree-day category taken at 15°C, as determined in accordance with Article 3.1.1.5.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.2.2.4.(3)",
+      "text": "Doors need not comply with Sentence (1) or (2) where",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.2.2.4.(3)(a)",
+          "text": "their total area does not exceed 2% of the gross wall area calculated in accordance with Article 3.1.1.6., and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.2.2.4.(3)(b)",
+          "text": "their overall thermal transmittance does not exceed 4.4 W/(m2×K).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "3.2.2.4.(4)",
+      "text": "Access hatches that are part of a building envelope shall be insulated to a nominal thermal transmittance of not more than 1.3 W/(m2×K), exclusive of stiffeners or edge construction.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "3.2.2.4.(5)",
+      "text": "Storm doors, automatic sliding glass doors, revolving doors, and fire shutters need not comply with Sentence (1) or (2). (See Note A-3.2.2.4.(5).) Table 3.2.2.4. Overall Thermal Transmittance of Doors Forming Part of Sentences 3.2.2.4.(1) and (2) Component Heating Degree-Days of Building Location,(1) in Celsius Degree-Days Zone 4:(2) < 3000 Zone 5:(2) 3000 to 3999 Zone 6:(2) 4000 to 4999 Zone 7A:(2) 5000 to 5999 Zone 7B:(2) 6000 to 6999 Zone 8:(2) ≥7000 Maximum Overall Thermal Transmittance, W/(m2×K) All doors 2.12 1.90 1.90 1.90 1.90 1.44 Notes to Table 3.2.2.4.: (1) See Sentence 1.1.4.1.(1). (2) See Note A-Table 3.2.2.2.",
+      "clauses": []
+    }
+  ],
+  "page_start": 73,
+  "page_end": 73,
+  "timestamp": "2025-12-06T22:08:44.073477+00:00",
+  "success": true,
+  "equation_count": 0
+}

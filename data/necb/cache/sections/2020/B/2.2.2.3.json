@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.2.2.3",
+  "title": "Documentation on the Building Envelope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.2.2.3 Documentation on the Building Envelope\nDocumentation on the Building Envelope\n1) The following documentation on the building envelope shall be provided for\nthe proposed building and, if Section 3.3. of Division B is applied, for the reference\nbuilding as well:\n  a) gross wall area,\n  b) total window area,\n  c) total exterior door area,\n  d) gross roof area,\n  e) total skylight area,\n  f) ratio of total skylight area to gross roof area,\n  g) exposed floor areas,\n  h) ratio of total vertical fenestration and door area to gross wall area,\n  i) overall thermal transmittance of\n  i) opaque walls (above and below grade),\n    ii) roofs (above and below grade),\n    iii) floors (exposed floors and floors in contact with the ground)\n    iv) fenestration,\n  v) doors forming part of the building envelope, and\n    vi) skylights,\n  j) description and location of air barrier assemblies in opaque building assemblies,\n  k) air leakage characteristics of fenestration and doors that act as environmental\nseparators,\n  l) heat loss coefficient for the building, determined as the sum of the products\nof area and overall thermal transmittance for all above-ground building envelope\ncomponents, and\n  m) heat loss coefficient for the building, normalized by dividing the value from\nClause (l) by the total floor area.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.2.2.3.(1)",
+      "text": "The following documentation on the building envelope shall be provided for the proposed building and, if Section 3.3. of Division B is applied, for the reference building as well:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.3.(1)(a)",
+          "text": "gross wall area,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.3.(1)(b)",
+          "text": "total window area,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "2.2.2.3.(1)(c)",
+          "text": "total exterior door area,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "2.2.2.3.(1)(d)",
+          "text": "gross roof area,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "2.2.2.3.(1)(e)",
+          "text": "total skylight area,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "f",
+          "reference": "2.2.2.3.(1)(f)",
+          "text": "ratio of total skylight area to gross roof area,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "g",
+          "reference": "2.2.2.3.(1)(g)",
+          "text": "exposed floor areas,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "h",
+          "reference": "2.2.2.3.(1)(h)",
+          "text": "ratio of total vertical fenestration and door area to gross wall area,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "2.2.2.3.(1)(i)",
+          "text": "overall thermal transmittance of",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "2.2.2.3.(1)(i)",
+          "text": "opaque walls (above and below grade),",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "2.2.2.3.(1)(i)(ii)",
+              "text": "roofs (above and below grade),"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "2.2.2.3.(1)(i)(iii)",
+              "text": "floors (exposed floors and floors in contact with the ground)"
+            },
+            {
+              "subclause_numeral": "iv",
+              "reference": "2.2.2.3.(1)(i)(iv)",
+              "text": "fenestration,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "v",
+          "reference": "2.2.2.3.(1)(v)",
+          "text": "doors forming part of the building envelope, and",
+          "subclauses": [
+            {
+              "subclause_numeral": "vi",
+              "reference": "2.2.2.3.(1)(v)(vi)",
+              "text": "skylights,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "j",
+          "reference": "2.2.2.3.(1)(j)",
+          "text": "description and location of air barrier assemblies in opaque building assemblies,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "k",
+          "reference": "2.2.2.3.(1)(k)",
+          "text": "air leakage characteristics of fenestration and doors that act as environmental separators,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "l",
+          "reference": "2.2.2.3.(1)(l)",
+          "text": "heat loss coefficient for the building, determined as the sum of the products of area and overall thermal transmittance for all above-ground building envelope components, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "m",
+          "reference": "2.2.2.3.(1)(m)",
+          "text": "heat loss coefficient for the building, normalized by dividing the value from Clause (l) by the total floor area.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 295,
+  "page_end": 295,
+  "timestamp": "2025-12-06T22:08:44.144960+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "10.1.1.1",
+  "title": "Scope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "10.1.1.1 Scope\nScope\n1) Compliance with this Code is permitted to be achieved by applying the\nprovisions of this Part in lieu of\n  a) the prescriptive requirements in Sections 3.2., 4.2., 5.2., 6.2. and 7.2., or\n  b) the trade-off provisions in Sections 3.3. and 4.3.\n(See Note A-1.1.2.1.)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "10.1.1.1.(1)",
+      "text": "Compliance with this Code is permitted to be achieved by applying the provisions of this Part in lieu of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "10.1.1.1.(1)(a)",
+          "text": "the prescriptive requirements in Sections 3.2., 4.2., 5.2., 6.2. and 7.2., or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "10.1.1.1.(1)(b)",
+          "text": "the trade-off provisions in Sections 3.3. and 4.3. (See Note A-1.1.2.1.)",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 264,
+  "page_end": 264,
+  "timestamp": "2025-12-06T22:08:44.141425+00:00",
+  "success": true,
+  "equation_count": 0
+}

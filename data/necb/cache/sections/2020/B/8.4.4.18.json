@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.18",
+  "title": "Supply Air Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.18 Supply Air Systems\nSupply Air Systems\n1) The supply airflow rate provided by secondary systems shall be modeled as being\nequal to the sum of the airflow rates supplied to each of the thermal blocks calculated in\naccordance with Sentence (2).\n2) The supply airflow rate to a thermal block shall be modeled as being the greater of\n  a) the airflow rate for heating, based on the peak heating load and a\ntemperature difference of 21°C,\n  b) the airflow rate for cooling, based on the peak cooling load and a\ntemperature difference of 11°C, or\n  c) the outdoor air ventilation rate supplied to the thermal block in the proposed\nbuilding.\n3) Except as provided in Sentence (6), HVAC systems 1 to 5 of Table 8.4.4.7.-B\nshall be modeled with\n  a) a supply air temperature that is reset according to the thermal block's load,\n  b) a supply fan that has a static pressure of 640 Pa and a combined fan-motor\nefficiency of 40%, and\n  c) no return fan.\n4) Except as provided in Sentence (6), HVAC system 6 of Table 8.4.4.7.-B shall be\nmodeled with\n  a) a default supply air temperature of 13°C, with the supply air temperature\nreset in accordance with Article 5.2.8.9.,\n  b) a supply fan that has a static pressure of 1 000 Pa and a combined fan-motor\nefficiency of 55%, and\n  c) a return fan that has a static pressure of 250 Pa and a combined fan-motor\nefficiency of 30%.\n5) Where the proposed building's secondary system does not meet the requirements\nof Clause 5.2.3.1.(1)(b), the reference building's secondary system shall be modeled as\nhaving an identical fan power demand.\n6) Where a secondary system defined in Tables 8.4.4.7.-A and 8.4.4.13. comprises\nequipment whose fan energy is included in the minimum performance level required\nby Tables 5.2.12.1.-A to 5.2.12.1.-P, the capacity and performance of its heating and\ncooling equipment shall be adjusted so the maximum power demand of the secondary\nsystem, including fan power demand, meets the requirements of Article 5.2.12.1.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.18.(1)",
+      "text": "The supply airflow rate provided by secondary systems shall be modeled as being equal to the sum of the airflow rates supplied to each of the thermal blocks calculated in accordance with Sentence (2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.18.(2)",
+      "text": "The supply airflow rate to a thermal block shall be modeled as being the greater of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.18.(2)(a)",
+          "text": "the airflow rate for heating, based on the peak heating load and a temperature difference of 21°C,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.18.(2)(b)",
+          "text": "the airflow rate for cooling, based on the peak cooling load and a temperature difference of 11°C, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.18.(2)(c)",
+          "text": "the outdoor air ventilation rate supplied to the thermal block in the proposed building.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.18.(3)",
+      "text": "Except as provided in Sentence (6), HVAC systems 1 to 5 of Table 8.4.4.7.-B shall be modeled with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.18.(3)(a)",
+          "text": "a supply air temperature that is reset according to the thermal block's load,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.18.(3)(b)",
+          "text": "a supply fan that has a static pressure of 640 Pa and a combined fan-motor efficiency of 40%, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.18.(3)(c)",
+          "text": "no return fan.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.18.(4)",
+      "text": "Except as provided in Sentence (6), HVAC system 6 of Table 8.4.4.7.-B shall be modeled with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.18.(4)(a)",
+          "text": "a default supply air temperature of 13°C, with the supply air temperature reset in accordance with Article 5.2.8.9.,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.18.(4)(b)",
+          "text": "a supply fan that has a static pressure of 1 000 Pa and a combined fan-motor efficiency of 55%, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.18.(4)(c)",
+          "text": "a return fan that has a static pressure of 250 Pa and a combined fan-motor efficiency of 30%.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.18.(5)",
+      "text": "Where the proposed building's secondary system does not meet the requirements of Clause 5.2.3.1.(1)(b), the reference building's secondary system shall be modeled as having an identical fan power demand.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.4.18.(6)",
+      "text": "Where a secondary system defined in Tables 8.4.4.7.-A and 8.4.4.13. comprises equipment whose fan energy is included in the minimum performance level required by Tables 5.2.12.1.-A to 5.2.12.1.-P, the capacity and performance of its heating and cooling equipment shall be adjusted so the maximum power demand of the secondary system, including fan power demand, meets the requirements of Article 5.2.12.1.",
+      "clauses": []
+    }
+  ],
+  "page_start": 220,
+  "page_end": 221,
+  "timestamp": "2025-12-06T22:08:44.136517+00:00",
+  "success": true,
+  "equation_count": 0
+}

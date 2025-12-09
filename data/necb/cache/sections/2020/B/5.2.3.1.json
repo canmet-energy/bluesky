@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.3.1",
+  "title": "Application",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.3.1 Application\nApplication\n1) Except for equipment covered by Article 5.2.12.1. and whose minimum\nperformance includes fan energy, this Subsection applies to all fan systems\n  a) that are used for comfort heating, ventilating or air-conditioning, or any\ncombination thereof, and\n  b) for which the total of all fan motor nameplate ratings is 10 kW or more\n(see Note A-5.2.3.1.(2)).\n2) For the purposes of this Subsection, the power demand of a fan system shall be\nthe sum of the demand of all fans required to operate at design conditions to supply air\nto the conditioned space. (See Note A-5.2.3.1.(2).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.3.1.(1)",
+      "text": "Except for equipment covered by Article 5.2.12.1. and whose minimum performance includes fan energy, this Subsection applies to all fan systems",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.3.1.(1)(a)",
+          "text": "that are used for comfort heating, ventilating or air-conditioning, or any combination thereof, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.3.1.(1)(b)",
+          "text": "for which the total of all fan motor nameplate ratings is 10 kW or more (see Note A-5.2.3.1.(2)).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.3.1.(2)",
+      "text": "For the purposes of this Subsection, the power demand of a fan system shall be the sum of the demand of all fans required to operate at design conditions to supply air to the conditioned space. (See Note A-5.2.3.1.(2).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 140,
+  "page_end": 140,
+  "timestamp": "2025-12-06T22:08:44.098376+00:00",
+  "success": true,
+  "equation_count": 0
+}

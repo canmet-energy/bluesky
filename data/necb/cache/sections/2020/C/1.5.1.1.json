@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.5.1.1",
+  "title": "Application of Referenced Documents",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.5.1.1 Application of Referenced Documents\nApplication of Referenced Documents\n1) Except as provided in Sentence (2), the provisions of documents referenced in\nthis Code, and of any documents referenced within those documents, apply only\nto the extent that they relate to\n  a) buildings,\n  b) building systems, and\n  c) the objective and functional statements attributed to the applicable\nacceptable solutions in Division B where the documents are referenced.\n(See Note A-1.5.1.1.(1).)\n2) Where a provision of this Code references another National Model Code, the\napplicable objectives and functional statements shall include those found in that\nreferenced National Model Code.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.5.1.1.(1)",
+      "text": "Except as provided in Sentence (2), the provisions of documents referenced in this Code, and of any documents referenced within those documents, apply only to the extent that they relate to",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "1.5.1.1.(1)(a)",
+          "text": "buildings,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "1.5.1.1.(1)(b)",
+          "text": "building systems, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "1.5.1.1.(1)(c)",
+          "text": "the objective and functional statements attributed to the applicable acceptable solutions in Division B where the documents are referenced. (See Note A-1.5.1.1.(1).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "1.5.1.1.(2)",
+      "text": "Where a provision of this Code references another National Model Code, the applicable objectives and functional statements shall include those found in that referenced National Model Code.",
+      "clauses": []
+    }
+  ],
+  "page_start": 30,
+  "page_end": 30,
+  "timestamp": "2025-12-06T22:08:44.054396+00:00",
+  "success": true,
+  "equation_count": 0
+}

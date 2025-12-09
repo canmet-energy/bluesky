@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.3",
+  "title": "Building Envelope Components",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.3 Building Envelope Components\nBuilding Envelope Components\n1) Except as provided in Sentence (2), the solar absorptance of each opaque building\nassembly shall be modeled as being identical to that determined for the proposed\nbuilding in Sentence 8.4.3.3.(1).\n2) The solar absorptance of roof assemblies shall be\n  a) if the actual solar absorptance for the proposed building is not used, set to\nthe same value used in the proposed building, or\n  b) if the actual solar absorptance for the proposed building is used, set to 0.7.\n3) If the total vertical fenestration and door area to gross wall area ratio (FDWR)\nof the proposed building differs from the maximum permitted by Article 3.2.1.4., the\nFDWR of the reference building shall be adjusted proportionally along each orientation\nuntil it complies with that Article.\n4) Permanent fenestration shading devices and projections shall not be modeled\nin the reference building.\n5) If the proposed building is modeled with exterior shading provided by a nearby\nstructure or building, the reference building shall also be modeled as such.\n6) The air leakage rate shall be equal to the default value determined in\nSentence 8.4.3.3.(3).\n7) Heat transfer through interior partitions shall be modeled as being identical\nto that of the proposed building.\n8) Except for overall thermal transmittance, fenestration shall be modeled with\nthermal and optical properties that are identical to those used for the proposed\nbuilding. (See Note A-8.4.4.3.(8).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.3.(1)",
+      "text": "Except as provided in Sentence (2), the solar absorptance of each opaque building assembly shall be modeled as being identical to that determined for the proposed building in Sentence 8.4.3.3.(1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.3.(2)",
+      "text": "The solar absorptance of roof assemblies shall be",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.3.(2)(a)",
+          "text": "if the actual solar absorptance for the proposed building is not used, set to the same value used in the proposed building, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.3.(2)(b)",
+          "text": "if the actual solar absorptance for the proposed building is used, set to 0.7.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.3.(3)",
+      "text": "If the total vertical fenestration and door area to gross wall area ratio (FDWR) of the proposed building differs from the maximum permitted by Article 3.2.1.4., the FDWR of the reference building shall be adjusted proportionally along each orientation until it complies with that Article.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.3.(4)",
+      "text": "Permanent fenestration shading devices and projections shall not be modeled in the reference building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.3.(5)",
+      "text": "If the proposed building is modeled with exterior shading provided by a nearby structure or building, the reference building shall also be modeled as such.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.4.3.(6)",
+      "text": "The air leakage rate shall be equal to the default value determined in Sentence 8.4.3.3.(3).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.4.3.(7)",
+      "text": "Heat transfer through interior partitions shall be modeled as being identical to that of the proposed building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "8.4.4.3.(8)",
+      "text": "Except for overall thermal transmittance, fenestration shall be modeled with thermal and optical properties that are identical to those used for the proposed building. (See Note A-8.4.4.3.(8).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 210,
+  "page_end": 210,
+  "timestamp": "2025-12-06T22:08:44.130384+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.1.4.2",
+  "title": "Calculation Procedures",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "1.1.4.2 Calculation Procedures\nCalculation Procedures\n1) Calculations carried out to ensure compliance with this Code and not described\nin the balance of this Subsection or in other Parts of the Code shall be carried out\nusing procedures recognized for the particular purposes, such as those described in,\nbut not limited to:\n  a) ASHRAE Handbooks, Standards and Guidelines,\n  b) “HRAI Digest,”\n  c) Hydronics Institute Manuals, and\n  d) ISO 13790, “Energy performance of buildings – Calculation of energy use\nfor space heating and cooling.”",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.1.4.2.(1)",
+      "text": "Calculations carried out to ensure compliance with this Code and not described in the balance of this Subsection or in other Parts of the Code shall be carried out using procedures recognized for the particular purposes, such as those described in, but not limited to:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "1.1.4.2.(1)(a)",
+          "text": "ASHRAE Handbooks, Standards and Guidelines,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "1.1.4.2.(1)(b)",
+          "text": "“HRAI Digest,”",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "1.1.4.2.(1)(c)",
+          "text": "Hydronics Institute Manuals, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "1.1.4.2.(1)(d)",
+          "text": "ISO 13790, “Energy performance of buildings – Calculation of energy use for space heating and cooling.”",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 52,
+  "page_end": 53,
+  "timestamp": "2025-12-06T22:08:44.058033+00:00",
+  "success": true,
+  "equation_count": 0
+}

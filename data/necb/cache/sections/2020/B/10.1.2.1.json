@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "10.1.2.1",
+  "title": "Compliance",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "10.1.2.1 Compliance\nCompliance\n1) Compliance with this Part shall be achieved by designing and constructing\nbuildings in accordance with one of Energy Performance Tiers 1 to 4 specified in\nTable 10.1.2.1., each of which corresponds to\nthe annual energy consumption of the proposed building, expressed as a\npercent building energy target, or\n  b) the percentage of improvement of the annual energy consumption of the\nproposed building relative to the building energy target of the reference\nbuilding, expressed as a percent improvement.\nTable 10.1.2.1.\nEnergy Performance Tiers\nForming Part of Sentences 10.1.2.1.(1) and (2)\nEnergy Performance Tier\nPercent Building Energy Target(1)\nPercent Improvement(1)\n≤ 100%\n≤ 75%\n≤ 50%\n≤ 40%\n≥ 0%\n≥ 25%\n≥ 50%\n≥ 60%\nNotes to Table 10.1.2.1.:\n(1) See Sentence (2).\n2) Compliance of the proposed building with one of Energy Performance Tiers 1\nto 4 specified in Table 10.1.2.1. shall be determined by modeling the proposed and\nreference buildings in accordance with Part 8 to establish the annual energy consumption\nof the proposed building and the building energy target of the reference building then\n  a) dividing the annual energy consumption of the proposed building by the\nbuilding energy target of the reference building to derive the percent building\nenergy target, or\n  b) subtracting the annual energy consumption of the proposed building from\nthe building energy target of the reference building and dividing the result\nby the building energy target of the reference building to derive the percent\nimprovement.\n(See Note A-10.1.2.1.(2).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "10.1.2.1.(1)",
+      "text": "Compliance with this Part shall be achieved by designing and constructing buildings in accordance with one of Energy Performance Tiers 1 to 4 specified in Table 10.1.2.1., each of which corresponds to the annual energy consumption of the proposed building, expressed as a percent building energy target, or",
+      "clauses": [
+        {
+          "clause_letter": "b",
+          "reference": "10.1.2.1.(1)(b)",
+          "text": "the percentage of improvement of the annual energy consumption of the proposed building relative to the building energy target of the reference building, expressed as a percent improvement. Table 10.1.2.1. Energy Performance Tiers Forming Part of Sentences 10.1.2.1.(1) and (2) Energy Performance Tier Percent Building Energy Target(1) Percent Improvement(1) ≤ 100% ≤ 75% ≤ 50% ≤ 40% ≥ 0% ≥ 25% ≥ 50% ≥ 60% Notes to Table 10.1.2.1.: (1) See Sentence (2).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "10.1.2.1.(2)",
+      "text": "Compliance of the proposed building with one of Energy Performance Tiers 1 to 4 specified in Table 10.1.2.1. shall be determined by modeling the proposed and reference buildings in accordance with Part 8 to establish the annual energy consumption of the proposed building and the building energy target of the reference building then",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "10.1.2.1.(2)(a)",
+          "text": "dividing the annual energy consumption of the proposed building by the building energy target of the reference building to derive the percent building energy target, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "10.1.2.1.(2)(b)",
+          "text": "subtracting the annual energy consumption of the proposed building from the building energy target of the reference building and dividing the result by the building energy target of the reference building to derive the percent improvement. (See Note A-10.1.2.1.(2).)",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 264,
+  "page_end": 265,
+  "timestamp": "2025-12-06T22:08:44.142238+00:00",
+  "success": true,
+  "equation_count": 0
+}

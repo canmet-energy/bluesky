@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.2.1",
+  "title": "Determination of Installed Interior Lighting Energy",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.2.1 Determination of Installed Interior Lighting Energy\nDetermination of Installed Interior Lighting Energy\n1) The installed interior lighting energy, IILE, in (W×h)/a, which is the total annual energy consumption of interior lighting in all spaces of the proposed building, shall be calculated using the following equation: [Equation: \\text{IILE} = \\sum_{i=1}^{N} E_{i,\\text{proposed}}] where i = counter for spaces, N = total number of spaces in the proposed building, and Ei,proposed = annual energy consumption of interior lighting in a space, in (W×h)/a, calculated in accordance with Sentence (2).\n2) The annual energy consumption of interior lighting in a space, Ei,proposed, in (W×h)/a, shall be calculated using the following equation: [Equation: E_{i,\\text{proposed}} = \\text{pi} \\times \\left[A_{\\text{DL},i} \\times (t_{\\text{eff,day,DL},i} + t_{\\text{eff,night},i}) + A_{\\text{NDL},i} \\times (t_{\\text{eff,day,NDL},i} + t_{\\text{eff,night},i})\\right]] where pi = lighting power density in the space, in W/m2, determined in accordance with Article 4.3.2.2., ADL,i = daylighted area, in m2, determined in accordance with Article 4.3.2.3., ANDL,i = non-daylighted area, in m2, determined in accordance with Article 4.3.2.4., teff,day,DL,i = effective annual daytime operational time of daylighted area, in h/a, determined in accordance with Article 4.3.2.5., teff,day,NDL,i = effective annual daytime operational time of non-daylighted area, in h/a, determined in accordance with Article 4.3.2.5., and teff,night,i = effective annual nighttime operational time, in h/a, determined in accordance with Article 4.3.2.5.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.2.1.(1)",
+      "text": "The installed interior lighting energy, IILE, in (W×h)/a, which is the total annual energy consumption of interior lighting in all spaces of the proposed building, shall be calculated using the following equation: [Equation: \\text{IILE} = \\sum_{i=1}^{N} E_{i,\\text{proposed}}] where i = counter for spaces, N = total number of spaces in the proposed building, and Ei,proposed = annual energy consumption of interior lighting in a space, in (W×h)/a, calculated in accordance with Sentence (2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.3.2.1.(2)",
+      "text": "The annual energy consumption of interior lighting in a space, Ei,proposed, in (W×h)/a, shall be calculated using the following equation: [Equation: E_{i,\\text{proposed}} = \\text{pi} \\times \\left[A_{\\text{DL},i} \\times (t_{\\text{eff,day,DL},i} + t_{\\text{eff,night},i}) + A_{\\text{NDL},i} \\times (t_{\\text{eff,day,NDL},i} + t_{\\text{eff,night},i})\\right]] where pi = lighting power density in the space, in W/m2, determined in accordance with Article 4.3.2.2., ADL,i = daylighted area, in m2, determined in accordance with Article 4.3.2.3., ANDL,i = non-daylighted area, in m2, determined in accordance with Article 4.3.2.4., teff,day,DL,i = effective annual daytime operational time of daylighted area, in h/a, determined in accordance with Article 4.3.2.5., teff,day,NDL,i = effective annual daytime operational time of non-daylighted area, in h/a, determined in accordance with Article 4.3.2.5., and teff,night,i = effective annual nighttime operational time, in h/a, determined in accordance with Article 4.3.2.5.",
+      "clauses": []
+    }
+  ],
+  "page_start": 107,
+  "page_end": 108,
+  "timestamp": "2025-12-06T22:08:44.087000+00:00",
+  "success": true,
+  "equation_count": 2
+}

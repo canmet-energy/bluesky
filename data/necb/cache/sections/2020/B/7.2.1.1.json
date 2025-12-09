@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "7.2.1.1",
+  "title": "Monitoring",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "7.2.1.1 Monitoring\nMonitoring\n(See Note A-7.2.1.1.)\n1) Electrical distribution systems whose load-carrying capacity is greater than\n250 kVA shall be designed to facilitate the installation of a means to monitor the\nelectrical energy consumption of\n  a) HVAC systems,\n  b) interior lighting, and\n  c) exterior lighting.\n2) The electrical distribution systems of buildings with tenants or dwelling units\nshall have a means to separately monitor the electrical energy consumption of the total\nbuilding and of each individual tenant or dwelling unit, excluding shared systems.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "7.2.1.1.(1)",
+      "text": "Electrical distribution systems whose load-carrying capacity is greater than 250 kVA shall be designed to facilitate the installation of a means to monitor the electrical energy consumption of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "7.2.1.1.(1)(a)",
+          "text": "HVAC systems,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "7.2.1.1.(1)(b)",
+          "text": "interior lighting, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "7.2.1.1.(1)(c)",
+          "text": "exterior lighting.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "7.2.1.1.(2)",
+      "text": "The electrical distribution systems of buildings with tenants or dwelling units shall have a means to separately monitor the electrical energy consumption of the total building and of each individual tenant or dwelling unit, excluding shared systems.",
+      "clauses": []
+    }
+  ],
+  "page_start": 194,
+  "page_end": 195,
+  "timestamp": "2025-12-06T22:08:44.119568+00:00",
+  "success": true,
+  "equation_count": 0
+}

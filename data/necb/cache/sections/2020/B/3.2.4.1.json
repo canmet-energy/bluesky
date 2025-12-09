@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.4.1",
+  "title": "General",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.4.1 General\nGeneral\n1) To control air leakage into and out of the conditioned space, the building envelope\nshall be designed and constructed with a continuous air barrier system comprised of\nair barrier assemblies by complying with\n  a) Article 3.2.4.2., or\n  b) Article 3.2.4.3.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.4.1.(1)",
+      "text": "To control air leakage into and out of the conditioned space, the building envelope shall be designed and constructed with a continuous air barrier system comprised of air barrier assemblies by complying with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.2.4.1.(1)(a)",
+          "text": "Article 3.2.4.2., or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.2.4.1.(1)(b)",
+          "text": "Article 3.2.4.3.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 75,
+  "page_end": 75,
+  "timestamp": "2025-12-06T22:08:44.074877+00:00",
+  "success": true,
+  "equation_count": 0
+}

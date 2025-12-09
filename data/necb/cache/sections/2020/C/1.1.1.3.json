@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.1.1.3",
+  "title": "Relationship to Other Building Regulations",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.1.1.3 Relationship to Other Building Regulations\nRelationship to Other Building Regulations\n1) This Code shall be used in conjunction with applicable federal, provincial or\nterritorial regulations or municipal bylaws or, in the absence of such regulations or\nbylaws, in conjunction with the NBC.\n2) Where the requirements of this Code are in conflict with the requirements of the\nregulations or bylaws referred to in Sentence (1) or, where applicable, with the NBC,\nthe requirements providing the greatest performance level shall govern.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.1.1.3.(1)",
+      "text": "This Code shall be used in conjunction with applicable federal, provincial or territorial regulations or municipal bylaws or, in the absence of such regulations or bylaws, in conjunction with the NBC.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "1.1.1.3.(2)",
+      "text": "Where the requirements of this Code are in conflict with the requirements of the regulations or bylaws referred to in Sentence (1) or, where applicable, with the NBC, the requirements providing the greatest performance level shall govern.",
+      "clauses": []
+    }
+  ],
+  "page_start": 22,
+  "page_end": 22,
+  "timestamp": "2025-12-06T22:08:44.048537+00:00",
+  "success": true,
+  "equation_count": 0
+}

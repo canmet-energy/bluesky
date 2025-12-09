@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.6.2",
+  "title": "Variable-Flow Pumping Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.6.2 Variable-Flow Pumping Systems\nVariable-Flow Pumping Systems\n1) Except as provided in Sentence (2), HVAC pumping systems that serve control\nvalves designed to modulate or to open and close in steps as a function of load shall be\n  a) designed for variable fluid flow, and\n  b) capable of reducing system flow to 50% or less of design flow.\n(See Note A-5.2.6.2.(1).)\n2) Sentence (1) does not apply to systems\n  a) in which a minimum flow greater than 50% of the design flow is required\nfor the proper operation of primary equipment serving the system, such\nas chillers and boilers,\n  b) with a single control valve, or\n  c) that include controls to reset the fluid supply temperature based on either\noutdoor temperature or system loads.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.6.2.(1)",
+      "text": "Except as provided in Sentence (2), HVAC pumping systems that serve control valves designed to modulate or to open and close in steps as a function of load shall be",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.6.2.(1)(a)",
+          "text": "designed for variable fluid flow, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.6.2.(1)(b)",
+          "text": "capable of reducing system flow to 50% or less of design flow. (See Note A-5.2.6.2.(1).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.6.2.(2)",
+      "text": "Sentence (1) does not apply to systems",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.6.2.(2)(a)",
+          "text": "in which a minimum flow greater than 50% of the design flow is required for the proper operation of primary equipment serving the system, such as chillers and boilers,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.6.2.(2)(b)",
+          "text": "with a single control valve, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "5.2.6.2.(2)(c)",
+          "text": "that include controls to reset the fluid supply temperature based on either outdoor temperature or system loads.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 143,
+  "page_end": 144,
+  "timestamp": "2025-12-06T22:08:44.101559+00:00",
+  "success": true,
+  "equation_count": 0
+}

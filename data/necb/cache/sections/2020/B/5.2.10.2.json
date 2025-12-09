@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.10.2",
+  "title": "Heat Recovery from Dehumidification in Swimming Pools",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.10.2 Heat Recovery from Dehumidification in Swimming Pools\nHeat Recovery from Dehumidification in Swimming Pools\n1) Except for pools with a water surface area of less than 10 m2 and except as\nprovided in Sentence (2), systems that exhaust air from swimming pools within\nconditioned spaces shall be capable of recovering at least 40% of the sensible heat from\nexhaust air at design conditions, as calculated in accordance with Sentence 5.2.10.1.(4).\n(See Note A-5.2.10.2.(1).)\n2) Indoor swimming pools need not comply with Sentence (1), provided a\nstationary mechanical or desiccant dehumidification system is installed that provides at\nleast 80% of the dehumidification that would result from compliance with Sentence (1).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.10.2.(1)",
+      "text": "Except for pools with a water surface area of less than 10 m2 and except as provided in Sentence (2), systems that exhaust air from swimming pools within conditioned spaces shall be capable of recovering at least 40% of the sensible heat from exhaust air at design conditions, as calculated in accordance with Sentence 5.2.10.1.(4). (See Note A-5.2.10.2.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.10.2.(2)",
+      "text": "Indoor swimming pools need not comply with Sentence (1), provided a stationary mechanical or desiccant dehumidification system is installed that provides at least 80% of the dehumidification that would result from compliance with Sentence (1).",
+      "clauses": []
+    }
+  ],
+  "page_start": 148,
+  "page_end": 148,
+  "timestamp": "2025-12-06T22:08:44.105847+00:00",
+  "success": true,
+  "equation_count": 0
+}

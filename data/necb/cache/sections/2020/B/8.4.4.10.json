@@ -1,0 +1,187 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.10",
+  "title": "Cooling Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.10 Cooling Systems\nCooling Systems\n1) Except as provided in Sentence (2), the cooling system serving each thermal\nblock of the reference building shall be determined in accordance with Table 8.4.4.7.-A\nand this Article.\n2) Where the proposed building uses purchased energy, Article 8.4.4.6. shall apply\nto the reference building.\n3) Except as provided in Sentence (4), the energy type of the reference building's\ncooling system shall be modeled as being identical to that of the proposed building's\ncooling system.\n4) Where more than one energy type is used by the proposed building's cooling\nsystem,\n  a) the cooling capacities of the reference building's cooling equipment shall\nmatch the ratio of the proposed building's cooling equipment capacity\nallocation, and\n  b) the operating schedule, priority of use and other operational characteristics\nof the proposed building's use of energy types shall apply.\n5) Cooling equipment performance characteristics as a function of part-load\nshall be modeled in accordance with the part-load performance curves found in\nSubsection 8.4.5.\n6) Where a hydronic system is installed, the cooling plant shall be modeled as\nfollows:\n  a) the cooling capacity of the cooling plant shall be the sum of the cooling\ncapacities of the systems served by the plant, multiplied by the applicable\noversize factor,\n  b) where the cooling capacity is not greater than 2 100 kW, the cooling plant\nshall be modeled with one water chiller,\n  c) where the cooling capacity is greater than 2 100 kW, the cooling plant shall\nbe modeled with two water chillers, each having half the capacity of the\ncooling plant's capacity,\n  d) the water chiller's pumping system shall be modeled as a primary system\nwith constant speed operation,\n  e) the water chiller's pumping flow rate shall be set considering\n  i) the cooling plant's capacity,\n    ii) use of pure water, and\n    iii) a 6°C temperature rise,\n  f) the types of water chillers shall be modeled as being identical to those of\nthe proposed building,\n  g) the chilled water supply temperature shall be set at 7°C, and\n  h) each water chiller shall be fully modulating down to 25% of its capacity.\n7) Where Table 8.4.4.7.-A indicates that a cooling system is required in the\nsecondary system as well as in a terminal device, the cooling capacity of each type of\nequipment shall be set as follows:\n  a) the cooling capacity of the terminal device shall meet the thermal block's\ncooling load due to the transfer of energy through the building envelope and\ninternal loads only,\n  b) the combined cooling capacities of the cooling systems in the terminal\ndevice and secondary system shall meet the peak cooling load of the thermal\nblocks served by the system, and\n  c) the applicable oversize factor shall apply on each type of equipment.\n8) Where a direct-expansion system is modeled in the reference building, that\nsystem shall be modeled as follows:\n  a) the cooling capacity of the system shall be the sum of the cooling loads\nof the thermal blocks served by the system, multiplied by the applicable\noversize factor,\n  b) where the cooling capacity of the system is not greater than 66 kW, the\nsystem shall be modeled with two stages of equal capacity, and\n  c) where the cooling capacity is greater than 66 kW, the system shall be\nmodeled with a number of stages equal to its capacity divided by 66 kW and\nrounded up to the nearest integer.\n9) For water-cooled systems, heat rejection to the atmosphere shall be modeled in\naccordance with Article 8.4.4.11.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.10.(1)",
+      "text": "Except as provided in Sentence (2), the cooling system serving each thermal block of the reference building shall be determined in accordance with Table 8.4.4.7.-A and this Article.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.10.(2)",
+      "text": "Where the proposed building uses purchased energy, Article 8.4.4.6. shall apply to the reference building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.10.(3)",
+      "text": "Except as provided in Sentence (4), the energy type of the reference building's cooling system shall be modeled as being identical to that of the proposed building's cooling system.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.10.(4)",
+      "text": "Where more than one energy type is used by the proposed building's cooling system,",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.10.(4)(a)",
+          "text": "the cooling capacities of the reference building's cooling equipment shall match the ratio of the proposed building's cooling equipment capacity allocation, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.10.(4)(b)",
+          "text": "the operating schedule, priority of use and other operational characteristics of the proposed building's use of energy types shall apply.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.10.(5)",
+      "text": "Cooling equipment performance characteristics as a function of part-load shall be modeled in accordance with the part-load performance curves found in Subsection 8.4.5.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.4.10.(6)",
+      "text": "Where a hydronic system is installed, the cooling plant shall be modeled as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.10.(6)(a)",
+          "text": "the cooling capacity of the cooling plant shall be the sum of the cooling capacities of the systems served by the plant, multiplied by the applicable oversize factor,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.10.(6)(b)",
+          "text": "where the cooling capacity is not greater than 2 100 kW, the cooling plant shall be modeled with one water chiller,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.10.(6)(c)",
+          "text": "where the cooling capacity is greater than 2 100 kW, the cooling plant shall be modeled with two water chillers, each having half the capacity of the cooling plant's capacity,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "8.4.4.10.(6)(d)",
+          "text": "the water chiller's pumping system shall be modeled as a primary system with constant speed operation,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "8.4.4.10.(6)(e)",
+          "text": "the water chiller's pumping flow rate shall be set considering",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "8.4.4.10.(6)(i)",
+          "text": "the cooling plant's capacity,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "8.4.4.10.(6)(i)(ii)",
+              "text": "use of pure water, and"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "8.4.4.10.(6)(i)(iii)",
+              "text": "a 6°C temperature rise,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "f",
+          "reference": "8.4.4.10.(6)(f)",
+          "text": "the types of water chillers shall be modeled as being identical to those of the proposed building,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "g",
+          "reference": "8.4.4.10.(6)(g)",
+          "text": "the chilled water supply temperature shall be set at 7°C, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "h",
+          "reference": "8.4.4.10.(6)(h)",
+          "text": "each water chiller shall be fully modulating down to 25% of its capacity.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.4.10.(7)",
+      "text": "Where Table 8.4.4.7.-A indicates that a cooling system is required in the secondary system as well as in a terminal device, the cooling capacity of each type of equipment shall be set as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.10.(7)(a)",
+          "text": "the cooling capacity of the terminal device shall meet the thermal block's cooling load due to the transfer of energy through the building envelope and internal loads only,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.10.(7)(b)",
+          "text": "the combined cooling capacities of the cooling systems in the terminal device and secondary system shall meet the peak cooling load of the thermal blocks served by the system, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.10.(7)(c)",
+          "text": "the applicable oversize factor shall apply on each type of equipment.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "8",
+      "reference": "8.4.4.10.(8)",
+      "text": "Where a direct-expansion system is modeled in the reference building, that system shall be modeled as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.10.(8)(a)",
+          "text": "the cooling capacity of the system shall be the sum of the cooling loads of the thermal blocks served by the system, multiplied by the applicable oversize factor,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.10.(8)(b)",
+          "text": "where the cooling capacity of the system is not greater than 66 kW, the system shall be modeled with two stages of equal capacity, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.10.(8)(c)",
+          "text": "where the cooling capacity is greater than 66 kW, the system shall be modeled with a number of stages equal to its capacity divided by 66 kW and rounded up to the nearest integer.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "9",
+      "reference": "8.4.4.10.(9)",
+      "text": "For water-cooled systems, heat rejection to the atmosphere shall be modeled in accordance with Article 8.4.4.11.",
+      "clauses": []
+    }
+  ],
+  "page_start": 216,
+  "page_end": 217,
+  "timestamp": "2025-12-06T22:08:44.133608+00:00",
+  "success": true,
+  "equation_count": 0
+}

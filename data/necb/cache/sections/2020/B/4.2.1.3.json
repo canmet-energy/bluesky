@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.1.3",
+  "title": "Limits to Installed Interior Lighting Power",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.1.3 Limits to Installed Interior Lighting Power\nLimits to Installed Interior Lighting Power\n(See Note A-4.2.1.3.)\n1) The installed interior lighting power described in Article 4.2.1.4. shall not exceed\nthe value of the interior lighting power allowance determined using\n  a) the building area method described in Article 4.2.1.5., or\n  b) the space-by-space method described in Article 4.2.1.6.\n2) The individual power allowances in each space of the building do not have to be\nmet, provided the total installed interior lighting power is not exceeded.\n3) Only one of the methods described in Sentence (1) shall be selected for use\nwithin the same building.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.1.3.(1)",
+      "text": "The installed interior lighting power described in Article 4.2.1.4. shall not exceed the value of the interior lighting power allowance determined using",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.1.3.(1)(a)",
+          "text": "the building area method described in Article 4.2.1.5., or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.1.3.(1)(b)",
+          "text": "the space-by-space method described in Article 4.2.1.6.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.1.3.(2)",
+      "text": "The individual power allowances in each space of the building do not have to be met, provided the total installed interior lighting power is not exceeded.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.2.1.3.(3)",
+      "text": "Only one of the methods described in Sentence (1) shall be selected for use within the same building.",
+      "clauses": []
+    }
+  ],
+  "page_start": 89,
+  "page_end": 89,
+  "timestamp": "2025-12-06T22:08:44.079158+00:00",
+  "success": true,
+  "equation_count": 0
+}

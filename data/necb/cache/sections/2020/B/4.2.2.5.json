@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.2.5",
+  "title": "Determination of Daylighted Area Under Skylights",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.2.5 Determination of Daylighted Area Under Skylights\nDetermination of Daylighted Area Under Skylights\n1) The daylighted area under skylights shall refer to the combined daylighted area\nunder each skylight without double-counting overlapping areas. (See Note A-4.2.2.4.(1)\nand 4.2.2.5.(1).)\n2) The daylighted area under each skylight shall be calculated as the area of the\nskylight's projection from the ceiling onto the floor plus the horizontal distances\nextending from that projection assessed separately in each direction using the smallest\nof the following values:\n  a) 70% of the ceiling height,\n  b) the distance to any primary sidelighted area, as determined in accordance\nwith Article 4.2.2.3., or the daylighted area under roof monitors, or\n  c) the distance to the nearest face of any vertical obstruction where any part\nof the obstruction is farther away than 70% of the distance between the top\nof the obstruction and the ceiling.\n(See Note A-4.2.2.5.(2).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.2.5.(1)",
+      "text": "The daylighted area under skylights shall refer to the combined daylighted area under each skylight without double-counting overlapping areas. (See Note A-4.2.2.4.(1) and 4.2.2.5.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.2.5.(2)",
+      "text": "The daylighted area under each skylight shall be calculated as the area of the skylight's projection from the ceiling onto the floor plus the horizontal distances extending from that projection assessed separately in each direction using the smallest of the following values:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.5.(2)(a)",
+          "text": "70% of the ceiling height,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.5.(2)(b)",
+          "text": "the distance to any primary sidelighted area, as determined in accordance with Article 4.2.2.3., or the daylighted area under roof monitors, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.5.(2)(c)",
+          "text": "the distance to the nearest face of any vertical obstruction where any part of the obstruction is farther away than 70% of the distance between the top of the obstruction and the ceiling. (See Note A-4.2.2.5.(2).)",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 102,
+  "page_end": 103,
+  "timestamp": "2025-12-06T22:08:44.083008+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.2.5",
+  "title": "Duct and Plenum Insulation",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.2.5 Duct and Plenum Insulation\nDuct and Plenum Insulation\n1) Except as provided in Sentences (3) to (7), all air-handling ducts, plenums and\nrun-outs forming part of a heating, ventilating, or air-conditioning system shall be\nthermally insulated in accordance with Table 5.2.2.5.\n2) The insulation thickness used to determine compliance with Table 5.2.2.5. shall\nbe the thickness of the insulation after installation. (See Note A-5.2.2.5.(2), 5.2.5.3.(8)\nand 6.2.3.1.(6).)\nTable 5.2.2.5.\nInsulation of Ducts\nForming Part of Sentences 5.2.2.5.(1) and (2)\nTemperature Difference,(1) °C\nMinimum Thermal Resis­\ntance of Ducts and Plenums,\nm2×°C/W\nMinimum Thermal Resistance of Run-outs,(2)\nm2×°C/W\n< 5\n5 to 22\n> 22\n0.58\n0.88\n0.58\n0.58\nNotes to Table 5.2.2.5.:\n(1) Refers to the temperature difference at design conditions between the space within which the duct is located and the design temperature of the air\ncarried by the duct. Where a duct is used for both heating and cooling purposes, the larger temperature difference shall be used.\n(2) Refers to ducts not exceeding 3 m in length that connect to terminal grilles or diffusers.\n3) Exhaust ducts, return ducts and plenums located within conditioned space need\nnot comply with Sentence (1).\n4) Supply ducts and plenums located within the conditioned space they serve need\nnot comply with Sentence (1). (See Note A-5.2.2.5.(4).)\n5) Ducts and plenums located within conditioned space in a dwelling unit and serving\nonly that dwelling unit need not comply with Sentence (1).\n6) Except for relief and outside air ducts and except as provided in Sentence (7),\nall air-handling ducts and plenums forming part of a heating, ventilating or\nair-conditioning system that are located outside the building envelope shall be insulated\nto the same level as required for walls in Subsection 3.2.2.\n7) Factory-installed plenums and ducts provided as part of equipment tested and\nrated in accordance with Article 5.2.12.1. need not comply with Sentences (1) and (6),\nprovided they are insulated to a thermal resistance not less than 0.58 m2×°C/W.\n8) Insulation material required in Sentence (1) shall be installed in accordance\nwith good practice. (See Note A-5.2.2.5.(8) and 5.2.5.3.(7).)\n9) Manufactured insulation thicknesses shall not be altered.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.2.5.(1)",
+      "text": "Except as provided in Sentences (3) to (7), all air-handling ducts, plenums and run-outs forming part of a heating, ventilating, or air-conditioning system shall be thermally insulated in accordance with Table 5.2.2.5.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.2.5.(2)",
+      "text": "The insulation thickness used to determine compliance with Table 5.2.2.5. shall be the thickness of the insulation after installation. (See Note A-5.2.2.5.(2), 5.2.5.3.(8) and 6.2.3.1.(6).) Table 5.2.2.5. Insulation of Ducts Forming Part of Sentences 5.2.2.5.(1) and (2) Temperature Difference,(1) °C Minimum Thermal Resis­ tance of Ducts and Plenums, m2×°C/W Minimum Thermal Resistance of Run-outs,(2) m2×°C/W < 5 5 to 22 > 22 0.58 0.88 0.58 0.58 Notes to Table 5.2.2.5.: (1) Refers to the temperature difference at design conditions between the space within which the duct is located and the design temperature of the air carried by the duct. Where a duct is used for both heating and cooling purposes, the larger temperature difference shall be used. (2) Refers to ducts not exceeding 3 m in length that connect to terminal grilles or diffusers.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.2.5.(3)",
+      "text": "Exhaust ducts, return ducts and plenums located within conditioned space need not comply with Sentence (1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.2.5.(4)",
+      "text": "Supply ducts and plenums located within the conditioned space they serve need not comply with Sentence (1). (See Note A-5.2.2.5.(4).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "5.2.2.5.(5)",
+      "text": "Ducts and plenums located within conditioned space in a dwelling unit and serving only that dwelling unit need not comply with Sentence (1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "5.2.2.5.(6)",
+      "text": "Except for relief and outside air ducts and except as provided in Sentence (7), all air-handling ducts and plenums forming part of a heating, ventilating or air-conditioning system that are located outside the building envelope shall be insulated to the same level as required for walls in Subsection 3.2.2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "5.2.2.5.(7)",
+      "text": "Factory-installed plenums and ducts provided as part of equipment tested and rated in accordance with Article 5.2.12.1. need not comply with Sentences (1) and (6), provided they are insulated to a thermal resistance not less than 0.58 m2×°C/W.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "5.2.2.5.(8)",
+      "text": "Insulation material required in Sentence (1) shall be installed in accordance with good practice. (See Note A-5.2.2.5.(8) and 5.2.5.3.(7).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "9",
+      "reference": "5.2.2.5.(9)",
+      "text": "Manufactured insulation thicknesses shall not be altered.",
+      "clauses": []
+    }
+  ],
+  "page_start": 138,
+  "page_end": 139,
+  "timestamp": "2025-12-06T22:08:44.096394+00:00",
+  "success": true,
+  "equation_count": 0
+}

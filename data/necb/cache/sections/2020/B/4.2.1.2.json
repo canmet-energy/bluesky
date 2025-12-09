@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.1.2",
+  "title": "Fluorescent Lamp Ballasts",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.1.2 Fluorescent Lamp Ballasts\nFluorescent Lamp Ballasts\n1) Fluorescent lamp ballasts shall conform to CAN/CSA-C654, “Fluorescent lamp\nballast efficacy measurements.”\n2) Electronic fluorescent lamp ballasts that are not within the scope of\nCAN/CSA-C654, “Fluorescent lamp ballast efficacy measurements,” shall\nconform to ANSI_ANSLG C82.11, “American National Standard for Lamp\nBallasts–High-Frequency Fluorescent Lamp Ballasts.”",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.1.2.(1)",
+      "text": "Fluorescent lamp ballasts shall conform to CAN/CSA-C654, “Fluorescent lamp ballast efficacy measurements.”",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.1.2.(2)",
+      "text": "Electronic fluorescent lamp ballasts that are not within the scope of CAN/CSA-C654, “Fluorescent lamp ballast efficacy measurements,” shall conform to ANSI_ANSLG C82.11, “American National Standard for Lamp Ballasts–High-Frequency Fluorescent Lamp Ballasts.”",
+      "clauses": []
+    }
+  ],
+  "page_start": 88,
+  "page_end": 89,
+  "timestamp": "2025-12-06T22:08:44.078885+00:00",
+  "success": true,
+  "equation_count": 0
+}

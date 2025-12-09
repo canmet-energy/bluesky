@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.2.2",
+  "title": "Thermal Characteristics of Above-ground Opaque Building Assemblies",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.2.2 Thermal Characteristics of Above-ground Opaque Building Assemblies\nThermal Characteristics of Above-ground Opaque Building Assemblies\n1) Except as provided in Sentences (3) and (4) and in Sentence 3.2.1.3.(1), the\noverall thermal transmittance of above-ground opaque building assemblies shall be not\nmore than that shown in Table 3.2.2.2. for the building or part thereof enclosed by\nthe opaque building assembly, for the applicable heating degree-day category taken at\n18°C. (See Note A-3.2.2.2.(1).)\nTable 3.2.2.2.\nOverall Thermal Transmittance of Above-ground Opaque Building Assemblies\nForming Part of Sentences 3.2.2.2.(1) and (2)\nAbove-ground\nOpaque Building\nAssembly\nHeating Degree-Days of Building Location,(1) in Celsius Degree-Days\nZone 4:(2)\n< 3000\nZone 5:(2)\n3000 to 3999\nZone 6:(2)\n4000 to 4999\nZone 7A:(2)\n5000 to 5999\nZone 7B:(2)\n6000 to 6999\nZone 8:(2)\n≥7000\nMaximum Overall Thermal Transmittance, W/(m2×K)\nWalls\nRoofs\nFloors\n0.290\n0.164\n0.193\n0.265\n0.156\n0.175\n0.240\n0.138\n0.156\n0.215\n0.121\n0.138\n0.190\n0.117\n0.121\n0.165\n0.110\n0.117\nNotes to Table 3.2.2.2.:\n(1) See Sentence 1.1.4.1.(1).\n(2) See Note A-Table 3.2.2.2.\n2) Except as provided in Sentences (3), (4) and 3.2.1.3.(1), the overall thermal\ntransmittance of above-ground opaque building assemblies in semi-heated buildings, as\ndefined in Sentence 1.2.1.2.(2), shall be not more than that shown in Table 3.2.2.2. for\nthe building or part thereof enclosed by the opaque building assembly, for the applicable\nheating degree-day category taken at 15°C.\n3) The overall thermal transmittance of portions of a foundation wall that are above\nground, where the top of a foundation wall is less than 0.4 m above the adjoining\nground level, shall be not more than that shown in Table 3.2.3.1.\n4) Where radiant heating cables or heating or cooling pipes or membranes are\nembedded in the surface of an above-ground opaque building assembly, this assembly\nshall have an overall thermal transmittance no greater than 80% of that required by\nSentence (1). (See Note A-3.2.2.2.(4).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.2.2.(1)",
+      "text": "Except as provided in Sentences (3) and (4) and in Sentence 3.2.1.3.(1), the overall thermal transmittance of above-ground opaque building assemblies shall be not more than that shown in Table 3.2.2.2. for the building or part thereof enclosed by the opaque building assembly, for the applicable heating degree-day category taken at 18°C. (See Note A-3.2.2.2.(1).) Table 3.2.2.2. Overall Thermal Transmittance of Above-ground Opaque Building Assemblies Forming Part of Sentences 3.2.2.2.(1) and (2) Above-ground Opaque Building Assembly Heating Degree-Days of Building Location,(1) in Celsius Degree-Days Zone 4:(2) < 3000 Zone 5:(2) 3000 to 3999 Zone 6:(2) 4000 to 4999 Zone 7A:(2) 5000 to 5999 Zone 7B:(2) 6000 to 6999 Zone 8:(2) ≥7000 Maximum Overall Thermal Transmittance, W/(m2×K) Walls Roofs Floors 0.290 0.164 0.193 0.265 0.156 0.175 0.240 0.138 0.156 0.215 0.121 0.138 0.190 0.117 0.121 0.165 0.110 0.117 Notes to Table 3.2.2.2.: (1) See Sentence 1.1.4.1.(1). (2) See Note A-Table 3.2.2.2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.2.2.(2)",
+      "text": "Except as provided in Sentences (3), (4) and 3.2.1.3.(1), the overall thermal transmittance of above-ground opaque building assemblies in semi-heated buildings, as defined in Sentence 1.2.1.2.(2), shall be not more than that shown in Table 3.2.2.2. for the building or part thereof enclosed by the opaque building assembly, for the applicable heating degree-day category taken at 15°C.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.2.2.2.(3)",
+      "text": "The overall thermal transmittance of portions of a foundation wall that are above ground, where the top of a foundation wall is less than 0.4 m above the adjoining ground level, shall be not more than that shown in Table 3.2.3.1.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "3.2.2.2.(4)",
+      "text": "Where radiant heating cables or heating or cooling pipes or membranes are embedded in the surface of an above-ground opaque building assembly, this assembly shall have an overall thermal transmittance no greater than 80% of that required by Sentence (1). (See Note A-3.2.2.2.(4).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 71,
+  "page_end": 72,
+  "timestamp": "2025-12-06T22:08:44.072817+00:00",
+  "success": true,
+  "equation_count": 0
+}

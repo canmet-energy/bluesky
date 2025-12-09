@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.5.2",
+  "title": "Boiler",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.5.2 Boiler\nBoiler\n1) The fuel consumption at part-load conditions, Fuelpartload, in Btu/h, of the reference condensing or non-condensing boiler shall be derived by applying an adjustment factor to the fuel consumption at design conditions: where Fueldesign = fuel consumption at design conditions, in Btu/h, and FHeatPLC = fuel heating part-load efficiency curve determined in accordance with Sentence (2).\n2) The fuel heating part-load efficiency curve, FHeatPLC, shall be calculated using the following equation: [Equation: FHeatPLC = a + b \\times \\frac{Q_{partload}}{Q_{design}} + c \\times \\left(\\frac{Q_{partload}}{Q_{design}}\\right)^{2}] where Qpartload = boiler capacity at part-load conditions, in Btu/h, Qdesign = boiler capacity at design conditions, in Btu/h, and a, b, c = applicable coefficients from Table 8.4.5.2.-A. Table 8.4.5.2.-A Coefficients Used in the Calculation of FHeatPLC for Condensing and Non-Condensing Boilers Forming Part of Sentence 8.4.5.2.(2) Type of Boiler Coefficients for Calculation of FHeatPLC Non-condensing Condensing 0.082597 0.00533 0.996764 0.904 –0.079361 0.09066\n3) For modulating boilers, values for Qpartload/Qdesign and corresponding values for FHeatPLC shall be those listed in Table 8.4.5.2.-B. Table 8.4.5.2.-B Values for Qpartload, Qrated and Qdesign and FHeatPLC for Modulating Boilers and Furnaces Forming Part of Sentences 8.4.5.2.(3) and 8.4.5.3.(3) Qpartload, Qrated and Qdesign (Part-Load Ratio) FHeatPLC 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.118 0.209 0.308 0.407 0.506 0.605 0.704 0.802 0.901",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.5.2.(1)",
+      "text": "The fuel consumption at part-load conditions, Fuelpartload, in Btu/h, of the reference condensing or non-condensing boiler shall be derived by applying an adjustment factor to the fuel consumption at design conditions: where Fueldesign = fuel consumption at design conditions, in Btu/h, and FHeatPLC = fuel heating part-load efficiency curve determined in accordance with Sentence (2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.5.2.(2)",
+      "text": "The fuel heating part-load efficiency curve, FHeatPLC, shall be calculated using the following equation: [Equation: FHeatPLC = a + b \\times \\frac{Q_{partload}}{Q_{design}} + c \\times \\left(\\frac{Q_{partload}}{Q_{design}}\\right)^{2}] where Qpartload = boiler capacity at part-load conditions, in Btu/h, Qdesign = boiler capacity at design conditions, in Btu/h, and a, b, c = applicable coefficients from Table 8.4.5.2.-A. Table 8.4.5.2.-A Coefficients Used in the Calculation of FHeatPLC for Condensing and Non-Condensing Boilers Forming Part of Sentence 8.4.5.2.(2) Type of Boiler Coefficients for Calculation of FHeatPLC Non-condensing Condensing 0.082597 0.00533 0.996764 0.904 –0.079361 0.09066",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.5.2.(3)",
+      "text": "For modulating boilers, values for Qpartload/Qdesign and corresponding values for FHeatPLC shall be those listed in Table 8.4.5.2.-B. Table 8.4.5.2.-B Values for Qpartload, Qrated and Qdesign and FHeatPLC for Modulating Boilers and Furnaces Forming Part of Sentences 8.4.5.2.(3) and 8.4.5.3.(3) Qpartload, Qrated and Qdesign (Part-Load Ratio) FHeatPLC 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.118 0.209 0.308 0.407 0.506 0.605 0.704 0.802 0.901",
+      "clauses": []
+    }
+  ],
+  "page_start": 222,
+  "page_end": 223,
+  "timestamp": "2025-12-06T22:08:44.138071+00:00",
+  "success": true,
+  "equation_count": 1
+}

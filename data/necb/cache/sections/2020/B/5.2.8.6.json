@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.8.6",
+  "title": "Space Temperature Control",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.8.6 Space Temperature Control\nSpace Temperature Control\n1) Except as provided in Sentence (2), the supply of heating and cooling energy\nto a zone shall be controlled by individual thermostatic controls responding to\ntemperature within the zone.\n2) An independent perimeter heating and cooling system designed to offset only\nbuilding envelope heat losses or gains, or both, is permitted to be used, provided\n  a) it includes at least one thermostatic control for each building exposure\nhaving exterior walls facing only one orientation for an uninterrupted\ndistance of 15 m or more (see Note A-5.2.8.6.(2)(a)), and\n  b) its heating and cooling energy supply is controlled by thermostat(s) located\nwithin the zone(s) it serves.\n3) Where separate thermostatic controls are provided to control heating\nand cooling to a space, means shall be provided to prevent these controls from\nsimultaneously calling for heating and cooling. (See Note A-5.2.8.6.(3).)\n4) Thermostats installed to control electric resistance heater units shall conform\nto CAN/CSA-C828, “Performance requirements for thermostats used with individual\nroom electric space heating devices.”\n5) Vestibules between conditioned spaces and the outdoors shall have a\ntemperature-control device that limits the maximum heating temperature in the\nvestibule to 15°C.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.8.6.(1)",
+      "text": "Except as provided in Sentence (2), the supply of heating and cooling energy to a zone shall be controlled by individual thermostatic controls responding to temperature within the zone.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.8.6.(2)",
+      "text": "An independent perimeter heating and cooling system designed to offset only building envelope heat losses or gains, or both, is permitted to be used, provided",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.8.6.(2)(a)",
+          "text": "it includes at least one thermostatic control for each building exposure having exterior walls facing only one orientation for an uninterrupted distance of 15 m or more (see Note A-5.2.8.6.(2)(a)), and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.8.6.(2)(b)",
+          "text": "its heating and cooling energy supply is controlled by thermostat(s) located within the zone(s) it serves.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.8.6.(3)",
+      "text": "Where separate thermostatic controls are provided to control heating and cooling to a space, means shall be provided to prevent these controls from simultaneously calling for heating and cooling. (See Note A-5.2.8.6.(3).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.8.6.(4)",
+      "text": "Thermostats installed to control electric resistance heater units shall conform to CAN/CSA-C828, “Performance requirements for thermostats used with individual room electric space heating devices.”",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "5.2.8.6.(5)",
+      "text": "Vestibules between conditioned spaces and the outdoors shall have a temperature-control device that limits the maximum heating temperature in the vestibule to 15°C.",
+      "clauses": []
+    }
+  ],
+  "page_start": 145,
+  "page_end": 145,
+  "timestamp": "2025-12-06T22:08:44.103847+00:00",
+  "success": true,
+  "equation_count": 0
+}

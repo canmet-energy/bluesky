@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.3.5",
+  "title": "Purchased Energy",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.3.5 Purchased Energy\nPurchased Energy\n(See Note A-8.4.3.5.)\n1) Where the proposed building uses purchased energy for space heating or\ncooling or service water heating, Sentences (2) to (5) shall apply.\n2) Where purchased energy is used for heating, the equipment used to provide\nthis energy shall be modeled as a gas-fired modulating boiler that\n  a) is sized for the peak heating load provided by the purchased energy system,\nand\n  b) complies with Section 5.2.\n3) Where purchased energy is used for cooling, the equipment used to provide\nthis energy shall be modeled as an electric air-cooled chiller that\n  a) is sized for the peak cooling load provided by the purchased energy system,\nand\n  b) complies with Table 8.4.3.5.\nTable 8.4.3.5.\nType and Performance Levels of Chiller Providing Purchased Energy\nForming Part of Sentences 8.4.3.5.(3) and 8.4.4.6.(2)\nCooling Capacity, kW (Btu/h)\nType\nCOP\nIPLV\n< 528 (1 800 000)\nScroll\n2.802\n3.664\n≥ 528 (1 800 000)\nScrew\n2.802\n3.737\n4) Where purchased energy is used for service water heating, the equipment used\nto provide this energy shall be modeled as a gas-fired service water heater that\n  a) is sized for the peak heating capacity provided by the purchased energy\nsystem,\n  b) complies with Section 6.2., and\n  c) where the purchased energy is used to heat service water in a heater with a\nstorage tank, has the same storage capacity.\n5) The operating schedule, priority of use and other operational characteristics of\nthe purchased energy shall be included in the energy model.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.3.5.(1)",
+      "text": "Where the proposed building uses purchased energy for space heating or cooling or service water heating, Sentences (2) to (5) shall apply.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.3.5.(2)",
+      "text": "Where purchased energy is used for heating, the equipment used to provide this energy shall be modeled as a gas-fired modulating boiler that",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.3.5.(2)(a)",
+          "text": "is sized for the peak heating load provided by the purchased energy system, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.3.5.(2)(b)",
+          "text": "complies with Section 5.2.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.3.5.(3)",
+      "text": "Where purchased energy is used for cooling, the equipment used to provide this energy shall be modeled as an electric air-cooled chiller that",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.3.5.(3)(a)",
+          "text": "is sized for the peak cooling load provided by the purchased energy system, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.3.5.(3)(b)",
+          "text": "complies with Table 8.4.3.5. Table 8.4.3.5. Type and Performance Levels of Chiller Providing Purchased Energy Forming Part of Sentences 8.4.3.5.(3) and 8.4.4.6.(2) Cooling Capacity, kW (Btu/h) Type COP IPLV < 528 (1 800 000) Scroll 2.802 3.664 ≥ 528 (1 800 000) Screw 2.802 3.737",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.3.5.(4)",
+      "text": "Where purchased energy is used for service water heating, the equipment used to provide this energy shall be modeled as a gas-fired service water heater that",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.3.5.(4)(a)",
+          "text": "is sized for the peak heating capacity provided by the purchased energy system,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.3.5.(4)(b)",
+          "text": "complies with Section 6.2., and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.3.5.(4)(c)",
+          "text": "where the purchased energy is used to heat service water in a heater with a storage tank, has the same storage capacity.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.3.5.(5)",
+      "text": "The operating schedule, priority of use and other operational characteristics of the purchased energy shall be included in the energy model.",
+      "clauses": []
+    }
+  ],
+  "page_start": 208,
+  "page_end": 209,
+  "timestamp": "2025-12-06T22:08:44.128460+00:00",
+  "success": true,
+  "equation_count": 0
+}

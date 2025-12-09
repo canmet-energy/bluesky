@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.4.2",
+  "title": "Air Barrier System",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.4.2 Air Barrier System\nAir Barrier System\n1) The air barrier system shall have a normalized air leakage rate not greater than\n1.50 L/(s×m2) when tested in accordance with ASTM E3158, “Standard Test Method\nfor Measuring the Air Leakage Rate of a Large or Multizone Building,” at a pressure\ndifferential of 75 Pa, using the following criteria:\n  a) the building shall be prepared in accordance with the building envelope test\ndescribed in the standard,\n  b) the air leakage test shall be conducted under both pressurized and\ndepressurized conditions, and\n  c) the air leakage area used to determine the normalized air leakage rate shall\ninclude all the surfaces separating conditioned space from unconditioned\nspace.\n(See Note A-3.2.4.2.(1).)\n2) The air leakage rates measured in accordance with Sentence (1) shall be\naveraged.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.4.2.(1)",
+      "text": "The air barrier system shall have a normalized air leakage rate not greater than 1.50 L/(s×m2) when tested in accordance with ASTM E3158, “Standard Test Method for Measuring the Air Leakage Rate of a Large or Multizone Building,” at a pressure differential of 75 Pa, using the following criteria:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.2.4.2.(1)(a)",
+          "text": "the building shall be prepared in accordance with the building envelope test described in the standard,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.2.4.2.(1)(b)",
+          "text": "the air leakage test shall be conducted under both pressurized and depressurized conditions, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "3.2.4.2.(1)(c)",
+          "text": "the air leakage area used to determine the normalized air leakage rate shall include all the surfaces separating conditioned space from unconditioned space. (See Note A-3.2.4.2.(1).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.4.2.(2)",
+      "text": "The air leakage rates measured in accordance with Sentence (1) shall be averaged.",
+      "clauses": []
+    }
+  ],
+  "page_start": 75,
+  "page_end": 75,
+  "timestamp": "2025-12-06T22:08:44.075165+00:00",
+  "success": true,
+  "equation_count": 0
+}

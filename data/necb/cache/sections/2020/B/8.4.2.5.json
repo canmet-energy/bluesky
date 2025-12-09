@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.2.5",
+  "title": "Space Temperature",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.2.5 Space Temperature\nSpace Temperature\n1) The energy model calculations shall include a dynamic calculation of space\ntemperatures.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.2.5.(1)",
+      "text": "The energy model calculations shall include a dynamic calculation of space temperatures.",
+      "clauses": []
+    }
+  ],
+  "page_start": 204,
+  "page_end": 205,
+  "timestamp": "2025-12-06T22:08:44.125269+00:00",
+  "success": true,
+  "equation_count": 0
+}

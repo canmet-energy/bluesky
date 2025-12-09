@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.10.4",
+  "title": "Heat Recovery in Dwelling Units",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.10.4 Heat Recovery in Dwelling Units\nHeat Recovery in Dwelling Units\n1) Except for climate zones 4, 5 and 6, where a self-contained mechanical\nventilation system serves a single dwelling unit, the principal exhaust component\nof the ventilation system shall be equipped with heat-recovery capability. (See\nNote A-5.2.10.4.(1).)\n2) Heat-recovery ventilators used to meet the requirements of Sentence (1)\nshall have a sensible-heat-recovery efficiency, when tested in conformance\nwith the low-temperature thermal and ventilation test methods described in\nCAN/CSA-C439, “Standard laboratory methods of test for rating the performance\nof heat/energy-recovery ventilators,” of\n  a) at least 65% at an outside air test temperature of 0°C, and\n  b) not less than that required by Table 5.2.10.4. for the 2.5% January design\ntemperature for the building's location, as listed in Table C-1.\n(See Note A-5.2.10.4.(2).)\nTable 5.2.10.4.\nPerformance of Heat-recovery Ventilators\nForming Part of Sentence 5.2.10.4.(2)\n2.5% January Design Temperature at\nBuilding Location\nOutside Air Test Temperature at Station 1,(1) °C\nSensible-Heat-Recovery Efficiency, %\n≥ –10\n< –10 and > –30\n≤ –30\n–25\n–40\nNotes to Table 5.2.10.4.:\n(1) “Station 1” is a term that is defined in CAN/CSA-C439 and means the location where temperature is measured.\n3) The tests described in Sentence (2) shall be performed at the rated airflow for\ncontinuous operation of the equipment, which meets the principal exhaust component\nof the ventilation system referred to in Sentence (1).\n4) Except as stated in Sentence (5), where a heat-recovery system other than a\nheat-recovery ventilator is used to meet the requirements of Sentence (1), that system\nshall have a heat-recovery performance equivalent to that required in Sentence (2) for\nheat-recovery ventilators.\n5) Where heat-recovery systems are required in multi-unit residential buildings,\nthe minimum sensible-heat-recovery efficiency shall be 50%. (See Note A-5.2.10.4.(5).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.10.4.(1)",
+      "text": "Except for climate zones 4, 5 and 6, where a self-contained mechanical ventilation system serves a single dwelling unit, the principal exhaust component of the ventilation system shall be equipped with heat-recovery capability. (See Note A-5.2.10.4.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.10.4.(2)",
+      "text": "Heat-recovery ventilators used to meet the requirements of Sentence (1) shall have a sensible-heat-recovery efficiency, when tested in conformance with the low-temperature thermal and ventilation test methods described in CAN/CSA-C439, “Standard laboratory methods of test for rating the performance of heat/energy-recovery ventilators,” of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.10.4.(2)(a)",
+          "text": "at least 65% at an outside air test temperature of 0°C, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.10.4.(2)(b)",
+          "text": "not less than that required by Table 5.2.10.4. for the 2.5% January design temperature for the building's location, as listed in Table C-1. (See Note A-5.2.10.4.(2).) Table 5.2.10.4. Performance of Heat-recovery Ventilators Forming Part of Sentence 5.2.10.4.(2) 2.5% January Design Temperature at Building Location Outside Air Test Temperature at Station 1,(1) °C Sensible-Heat-Recovery Efficiency, % ≥ –10 < –10 and > –30 ≤ –30 –25 –40 Notes to Table 5.2.10.4.: (1) “Station 1” is a term that is defined in CAN/CSA-C439 and means the location where temperature is measured.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.10.4.(3)",
+      "text": "The tests described in Sentence (2) shall be performed at the rated airflow for continuous operation of the equipment, which meets the principal exhaust component of the ventilation system referred to in Sentence (1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.10.4.(4)",
+      "text": "Except as stated in Sentence (5), where a heat-recovery system other than a heat-recovery ventilator is used to meet the requirements of Sentence (1), that system shall have a heat-recovery performance equivalent to that required in Sentence (2) for heat-recovery ventilators.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "5.2.10.4.(5)",
+      "text": "Where heat-recovery systems are required in multi-unit residential buildings, the minimum sensible-heat-recovery efficiency shall be 50%. (See Note A-5.2.10.4.(5).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 148,
+  "page_end": 149,
+  "timestamp": "2025-12-06T22:08:44.106385+00:00",
+  "success": true,
+  "equation_count": 0
+}

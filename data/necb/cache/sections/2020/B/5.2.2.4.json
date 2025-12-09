@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.2.4",
+  "title": "Leakage Testing of Ducts",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.2.4 Leakage Testing of Ducts\nLeakage Testing of Ducts\n1) Where ducts are not constructed, installed and sealed in accordance\nwith Sentence 5.2.2.3.(1), they shall be tested for leakage in conformance with\nANSI/SMACNA 016, “HVAC Air Duct Leakage Test Manual,” and shall meet the\nrequirements of Sentence (2). (See Note A-5.2.2.4.(1).)\n2) For ducts tested in accordance with Sentence (1), the maximum permitted\nleakage shall be calculated as follows:\n[Equation: L_{max} = C_L \\times \\left(\\frac{P}{249}\\right)^{0.65}]\nwhere\nLmax = maximum permitted leakage, in L/s per m2 of duct surface area,\nCL = leakage class taken from Table 5.2.2.4., in L/s per m2, and\nP = maximum operating static pressure, in Pa.\nTable 5.2.2.4.\nLeakage Classes, CL\nForming Part of Sentence 5.2.2.4.(2)\nShape of Duct\nMaximum Operating Static Pressure, Pa\n< 500\n500–1000\n> 1000\nCL, L/s per m2\nRectangular\nRound\n0.81\n0.41\n0.41\n0.20\n0.20\n0.10",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.2.4.(1)",
+      "text": "Where ducts are not constructed, installed and sealed in accordance with Sentence 5.2.2.3.(1), they shall be tested for leakage in conformance with ANSI/SMACNA 016, “HVAC Air Duct Leakage Test Manual,” and shall meet the requirements of Sentence (2). (See Note A-5.2.2.4.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.2.4.(2)",
+      "text": "For ducts tested in accordance with Sentence (1), the maximum permitted leakage shall be calculated as follows: [Equation: L_{max} = C_L \\times \\left(\\frac{P}{249}\\right)^{0.65}] where Lmax = maximum permitted leakage, in L/s per m2 of duct surface area, CL = leakage class taken from Table 5.2.2.4., in L/s per m2, and P = maximum operating static pressure, in Pa. Table 5.2.2.4. Leakage Classes, CL Forming Part of Sentence 5.2.2.4.(2) Shape of Duct Maximum Operating Static Pressure, Pa < 500 500–1000 > 1000 CL, L/s per m2 Rectangular Round 0.81 0.41 0.41 0.20 0.20 0.10",
+      "clauses": []
+    }
+  ],
+  "page_start": 137,
+  "page_end": 138,
+  "timestamp": "2025-12-06T22:08:44.096013+00:00",
+  "success": true,
+  "equation_count": 1
+}

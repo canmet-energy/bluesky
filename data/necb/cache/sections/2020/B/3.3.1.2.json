@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.3.1.2",
+  "title": "Simple Trade-off Calculations",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.3.1.2 Simple Trade-off Calculations\nSimple Trade-off Calculations\n1) For the purpose of simple trade-off calculations, the sum of the areas of all\nabove-ground assemblies in the proposed building shall be equal to the sum of the areas\nof the corresponding above-ground assemblies in the reference building.\n2) Compliance with Article 3.3.1.1. shall be determined using the equation that\nfollows to demonstrate that the sum of the areas of all above-ground assemblies of the\nbuilding envelope multiplied by their respective overall thermal transmittance is not more\nthan it would be if all assemblies complied with Section 3.2.:\nwhere\nn = total number of above-ground assemblies,\nUip = overall thermal transmittance of assembly i of the proposed building,\nAip = area of assembly i of the proposed building,\nUir = overall thermal transmittance of assembly i of the reference building, and\nAir = area of assembly i of the reference building.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.3.1.2.(1)",
+      "text": "For the purpose of simple trade-off calculations, the sum of the areas of all above-ground assemblies in the proposed building shall be equal to the sum of the areas of the corresponding above-ground assemblies in the reference building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.3.1.2.(2)",
+      "text": "Compliance with Article 3.3.1.1. shall be determined using the equation that follows to demonstrate that the sum of the areas of all above-ground assemblies of the building envelope multiplied by their respective overall thermal transmittance is not more than it would be if all assemblies complied with Section 3.2.: where n = total number of above-ground assemblies, Uip = overall thermal transmittance of assembly i of the proposed building, Aip = area of assembly i of the proposed building, Uir = overall thermal transmittance of assembly i of the reference building, and Air = area of assembly i of the reference building.",
+      "clauses": []
+    }
+  ],
+  "page_start": 77,
+  "page_end": 77,
+  "timestamp": "2025-12-06T22:08:44.076417+00:00",
+  "success": true,
+  "equation_count": 0
+}

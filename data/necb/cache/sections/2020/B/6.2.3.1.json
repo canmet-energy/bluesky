@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.3.1",
+  "title": "Insulation",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.3.1 Insulation\nInsulation\n1) All piping conveying hot service water in circulating systems, non-circulating\nsystems without heat traps and non-circulating systems with electric heating elements\nalong the pipes to maintain temperature shall be insulated in accordance with\nTable 6.2.3.1. and Sentences (2) to (4). (See Note A-6.2.3.1.(1).)\n2) Where piping insulation has a thermal conductivity, as determined in\naccordance with Sentence (4), that is greater than the range given in Table 6.2.3.1., the\nthickness given in the Table shall be increased by the ratio u2/u1, where u1 is the value\nat the higher end of the conductivity range for the operating temperature and u2 is\nthe measured thermal conductivity of the insulation at the mean rating temperature.\n(See Note A-6.2.3.1.(2) and (3).)\n3) Where piping insulation has a thermal conductivity, as determined in\naccordance with Sentence (4), that is lower than the range given in Table 6.2.3.1., the\nthickness given in the Table may be decreased by the ratio u2/u1, where u1 is the value\nat the lower end of the conductivity range for the operating temperature and u2 is\nthe measured thermal conductivity of the insulation at the mean rating temperature.\n(See Note A-6.2.3.1.(2) and (3).)\n4) The thermal conductivity of piping insulation at the mean rating temperature\nshall be determined in conformance with ASTM C335/C335M, “Standard Test Method\nfor Steady-State Heat Transfer Properties of Pipe Insulation.”\n5) On non-circulating systems with heat traps, the inlet and outlet piping between\nthe storage or heating vessel and the heat traps as well as the first 2.4 m of outlet piping\ndownstream of the heat trap shall be insulated in accordance with Table 6.2.3.1. and\nSentences 5.2.5.3.(4) to (6).\n6) The insulation thickness used to determine compliance with Table 6.2.3.1. shall\nbe the thickness of the insulation after installation. (See Note A-5.2.2.5.(2), 5.2.5.3.(8)\nand 6.2.3.1.(6).)\n7) Insulation on piping conveying hot service water that is installed in areas where\nit may be subject to mechanical damage or weathering shall be protected.\n8) Manufactured insulation thicknesses shall not be altered.\nTable 6.2.3.1.\nMinimum Thickness of Piping Insulation for Service Water Heating Systems\nForming Part of Sentences 6.2.3.1.(1) to (3), (5) and (6)\nLocation of Piping\nThermal Conductivity of Insulation\nNominal Pipe Diameter,\nmm (in.)\nMinimum Thickness of\nPiping Insulation,(1) mm\nConductivity Range,\nW/m×°C\nMean Rating Temperature,\nConditioned space\n0.035–0.040\nRunouts(1) ≤51 (2)\n25.4\n≤ 25.4 (1)\n32 to 51 (1¼ to 2)\n64 to 102 (2½ to 4)\n38.1\n≥127 (5)\nUnconditioned space\nor outside\n0.046–0.049\nRunouts(1) ≤51 (2)\n38.1\n≤ 25.4 (1)\n63.5\n32 to 51 (1¼ to 2)\n64 to 102 (2½ to 4)\n76.2\n≥127 (5)\n88.9\nNotes to Table 6.2.3.1.:\n(1) The stated thicknesses apply to recirculating sections of service water heating systems and to the first 2.4 m from storage tanks for\nnon-recirculating systems.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.3.1.(1)",
+      "text": "All piping conveying hot service water in circulating systems, non-circulating systems without heat traps and non-circulating systems with electric heating elements along the pipes to maintain temperature shall be insulated in accordance with Table 6.2.3.1. and Sentences (2) to (4). (See Note A-6.2.3.1.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "6.2.3.1.(2)",
+      "text": "Where piping insulation has a thermal conductivity, as determined in accordance with Sentence (4), that is greater than the range given in Table 6.2.3.1., the thickness given in the Table shall be increased by the ratio u2/u1, where u1 is the value at the higher end of the conductivity range for the operating temperature and u2 is the measured thermal conductivity of the insulation at the mean rating temperature. (See Note A-6.2.3.1.(2) and (3).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "6.2.3.1.(3)",
+      "text": "Where piping insulation has a thermal conductivity, as determined in accordance with Sentence (4), that is lower than the range given in Table 6.2.3.1., the thickness given in the Table may be decreased by the ratio u2/u1, where u1 is the value at the lower end of the conductivity range for the operating temperature and u2 is the measured thermal conductivity of the insulation at the mean rating temperature. (See Note A-6.2.3.1.(2) and (3).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "6.2.3.1.(4)",
+      "text": "The thermal conductivity of piping insulation at the mean rating temperature shall be determined in conformance with ASTM C335/C335M, “Standard Test Method for Steady-State Heat Transfer Properties of Pipe Insulation.”",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "6.2.3.1.(5)",
+      "text": "On non-circulating systems with heat traps, the inlet and outlet piping between the storage or heating vessel and the heat traps as well as the first 2.4 m of outlet piping downstream of the heat trap shall be insulated in accordance with Table 6.2.3.1. and Sentences 5.2.5.3.(4) to (6).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "6.2.3.1.(6)",
+      "text": "The insulation thickness used to determine compliance with Table 6.2.3.1. shall be the thickness of the insulation after installation. (See Note A-5.2.2.5.(2), 5.2.5.3.(8) and 6.2.3.1.(6).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "6.2.3.1.(7)",
+      "text": "Insulation on piping conveying hot service water that is installed in areas where it may be subject to mechanical damage or weathering shall be protected.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "6.2.3.1.(8)",
+      "text": "Manufactured insulation thicknesses shall not be altered. Table 6.2.3.1. Minimum Thickness of Piping Insulation for Service Water Heating Systems Forming Part of Sentences 6.2.3.1.(1) to (3), (5) and (6) Location of Piping Thermal Conductivity of Insulation Nominal Pipe Diameter, mm (in.) Minimum Thickness of Piping Insulation,(1) mm Conductivity Range, W/m×°C Mean Rating Temperature, Conditioned space 0.035–0.040 Runouts(1) ≤51 (2) 25.4 ≤ 25.4 (1) 32 to 51 (1¼ to 2) 64 to 102 (2½ to 4) 38.1 ≥127 (5) Unconditioned space or outside 0.046–0.049 Runouts(1) ≤51 (2) 38.1 ≤ 25.4 (1) 63.5 32 to 51 (1¼ to 2) 64 to 102 (2½ to 4) 76.2 ≥127 (5) 88.9 Notes to Table 6.2.3.1.: (1) The stated thicknesses apply to recirculating sections of service water heating systems and to the first 2.4 m from storage tanks for non-recirculating systems.",
+      "clauses": []
+    }
+  ],
+  "page_start": 182,
+  "page_end": 183,
+  "timestamp": "2025-12-06T22:08:44.114621+00:00",
+  "success": true,
+  "equation_count": 0
+}

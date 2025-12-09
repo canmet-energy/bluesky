@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.4.1.1",
+  "title": "Non-defined Terms",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.4.1.1 Non-defined Terms\nNon-defined Terms\n1) Words and phrases used in this Code that are not included in the list of\ndefinitions in Article 1.4.1.2. shall have the meanings that are commonly assigned to\nthem in the context in which they are used, taking into account the specialized use of\nterms by the various trades and professions to which the terminology applies.\n2) Where objectives and functional statements are referred to in this Code, they\nshall be the objectives and functional statements described in Parts 2 and 3.\n3) Where acceptable solutions are referred to in this Code, they shall be the\nprovisions stated in Parts 3 to 8 and 10 of Division B.\n4) Where alternative solutions are referred to in this Code, they shall be the\nalternative solutions mentioned in Clause 1.2.1.1.(1)(b).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.4.1.1.(1)",
+      "text": "Words and phrases used in this Code that are not included in the list of definitions in Article 1.4.1.2. shall have the meanings that are commonly assigned to them in the context in which they are used, taking into account the specialized use of terms by the various trades and professions to which the terminology applies.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "1.4.1.1.(2)",
+      "text": "Where objectives and functional statements are referred to in this Code, they shall be the objectives and functional statements described in Parts 2 and 3.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "1.4.1.1.(3)",
+      "text": "Where acceptable solutions are referred to in this Code, they shall be the provisions stated in Parts 3 to 8 and 10 of Division B.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "1.4.1.1.(4)",
+      "text": "Where alternative solutions are referred to in this Code, they shall be the alternative solutions mentioned in Clause 1.2.1.1.(1)(b).",
+      "clauses": []
+    }
+  ],
+  "page_start": 24,
+  "page_end": 24,
+  "timestamp": "2025-12-06T22:08:44.053114+00:00",
+  "success": true,
+  "equation_count": 0
+}

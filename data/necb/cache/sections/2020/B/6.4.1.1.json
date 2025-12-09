@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.4.1.1",
+  "title": "Scope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.4.1.1 Scope\nScope\n1) Subject to the limitations stated in Article 6.4.1.2., where the service water\nheating system does not comply with the requirements of Section 6.2., it shall comply\nwith Part 8.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.4.1.1.(1)",
+      "text": "Subject to the limitations stated in Article 6.4.1.2., where the service water heating system does not comply with the requirements of Section 6.2., it shall comply with Part 8.",
+      "clauses": []
+    }
+  ],
+  "page_start": 185,
+  "page_end": 185,
+  "timestamp": "2025-12-06T22:08:44.117827+00:00",
+  "success": true,
+  "equation_count": 0
+}

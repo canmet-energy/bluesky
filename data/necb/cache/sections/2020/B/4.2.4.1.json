@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.4.1",
+  "title": "Requirements",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.4.1 Requirements\nRequirements\n1) Except as provided in Sentences (2) and (3), exterior lighting shall be controlled\n  a) astronomical time controls,\n  b) photosensors,\n  c) a combination of photosensors and timer shut-off switch, or\n  d) other types of controls that perform the same function as those referred to\nin Clauses (a) to (c).\n2) Except as provided in Sentence (3), exterior lighting designated for dusk-to-dawn\noperation shall be controlled by\n  a) astronomical time controls, or\n  b) photosensors.\n3) Exterior lighting for covered vehicle exterior entrances or exterior exits from\nbuildings or storage garages need not comply with Sentences (1) and (2) where it is\nrequired for safety, security, or eye adaptation. (See also Article 4.2.2.2.)\n4) Except as provided in Sentence (5), all exterior lighting, including advertising\nsignage and parking lot lighting, shall be equipped with a device that has the capability\nto automatically reduce the total connected lighting power by at least 30%.\n5) Facade lighting and landscape lighting shall have the capability to shut off\nautomatically.\n6) All lighting schedule controllers shall be equipped with backup provisions to\nretain programming and the time setting for at least 10 h during a power outage.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.4.1.(1)",
+      "text": "Except as provided in Sentences (2) and (3), exterior lighting shall be controlled",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.4.1.(1)(a)",
+          "text": "astronomical time controls,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.4.1.(1)(b)",
+          "text": "photosensors,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.4.1.(1)(c)",
+          "text": "a combination of photosensors and timer shut-off switch, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "4.2.4.1.(1)(d)",
+          "text": "other types of controls that perform the same function as those referred to in Clauses (a) to (c).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.4.1.(2)",
+      "text": "Except as provided in Sentence (3), exterior lighting designated for dusk-to-dawn operation shall be controlled by",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.4.1.(2)(a)",
+          "text": "astronomical time controls, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.4.1.(2)(b)",
+          "text": "photosensors.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.2.4.1.(3)",
+      "text": "Exterior lighting for covered vehicle exterior entrances or exterior exits from buildings or storage garages need not comply with Sentences (1) and (2) where it is required for safety, security, or eye adaptation. (See also Article 4.2.2.2.)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.2.4.1.(4)",
+      "text": "Except as provided in Sentence (5), all exterior lighting, including advertising signage and parking lot lighting, shall be equipped with a device that has the capability to automatically reduce the total connected lighting power by at least 30%.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "4.2.4.1.(5)",
+      "text": "Facade lighting and landscape lighting shall have the capability to shut off automatically.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "4.2.4.1.(6)",
+      "text": "All lighting schedule controllers shall be equipped with backup provisions to retain programming and the time setting for at least 10 h during a power outage.",
+      "clauses": []
+    }
+  ],
+  "page_start": 106,
+  "page_end": 106,
+  "timestamp": "2025-12-06T22:08:44.084207+00:00",
+  "success": true,
+  "equation_count": 0
+}

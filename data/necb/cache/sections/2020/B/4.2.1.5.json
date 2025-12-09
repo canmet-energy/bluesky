@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.1.5",
+  "title": "Calculation of Interior Lighting Power Allowance Using the Building",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.1.5 Calculation of Interior Lighting Power Allowance Using the Building\nCalculation of Interior Lighting Power Allowance Using the Building\nArea Method\n(See Note A-4.2.1.5.)\n1) Calculation of interior lighting power allowance using the building area method\nas provided in this Article may be applied only where\n  a) the interior lighting power allowance is being determined for an entire building,\nand\n  b) the building type or an equivalent building type is identified in Table 4.2.1.5.\n2) Except as provided in Sentence (3), interior lighting power allowance calculations\nshall be based on the primary use for which the building is intended.\n3) Where 10% or more of the gross lighted area of the building can be classified\nas being of a building type other than the principal type for the building, the interior\nlighting power allowance shall be calculated using the space-by-space method described\nin Article 4.2.1.6.\n4) Where the building is of a type other than those listed in Table 4.2.1.5. and no\nequivalent building type can be selected, the interior lighting power allowance shall be\ncalculated using the space-by-space method described in Article 4.2.1.6.\n5) The interior lighting power allowance using the building area method shall be\ncalculated by multiplying the lighting power density, in W/m2, for the building type\nprovided in Table 4.2.1.5. by the gross lighted area, in m2.\nTable 4.2.1.5.\nLighting Power Density by Building Type for Use with the Building Area Method\nForming Part of Sentences 4.2.1.5.(1), (4) and (5)\nBuilding Type\nLighting Power Density, W/m2\nAutomotive facility\nConvention centre\nCourthouse\nDining\nbar lounge/leisure\ncafeteria/fast food\n8.1\n6.9\n8.5\n8.6\n8.2\nTable 4.2.1.5. (Continued)\nBuilding Type\nLighting Power Density, W/m2\nfamily\n7.6\nDormitory\n5.7\nExercise centre\n7.8\nFire station\n6.0\nGymnasium\n8.2\nHealthcare clinic\n8.7\nHospital\n10.3\nHotel/Motel\n6.0\nLibrary\n8.9\nManufacturing facility\n8.8\nMotion picture theatre\n4.7\nMulti-unit residential building\n4.8\nMuseum\n5.9\nOffice\n6.9\nPenitentiary\n7.4\nPerforming arts theatre\n9.0\nPolice station\n7.1\nPost office\n7.0\nReligious building\n7.2\nRetail area\n9.0\nSchool/university\n7.8\nSports arena\n8.2\nStorage garage\n1.9\nTown hall\n7.4\nTransportation facility\n5.4\nWarehouse\n4.8\nWorkshop\n9.8",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.1.5.(1)",
+      "text": "Calculation of interior lighting power allowance using the building area method as provided in this Article may be applied only where",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.1.5.(1)(a)",
+          "text": "the interior lighting power allowance is being determined for an entire building, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.1.5.(1)(b)",
+          "text": "the building type or an equivalent building type is identified in Table 4.2.1.5.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.1.5.(2)",
+      "text": "Except as provided in Sentence (3), interior lighting power allowance calculations shall be based on the primary use for which the building is intended.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.2.1.5.(3)",
+      "text": "Where 10% or more of the gross lighted area of the building can be classified as being of a building type other than the principal type for the building, the interior lighting power allowance shall be calculated using the space-by-space method described in Article 4.2.1.6.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.2.1.5.(4)",
+      "text": "Where the building is of a type other than those listed in Table 4.2.1.5. and no equivalent building type can be selected, the interior lighting power allowance shall be calculated using the space-by-space method described in Article 4.2.1.6.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "4.2.1.5.(5)",
+      "text": "The interior lighting power allowance using the building area method shall be calculated by multiplying the lighting power density, in W/m2, for the building type provided in Table 4.2.1.5. by the gross lighted area, in m2. Table 4.2.1.5. Lighting Power Density by Building Type for Use with the Building Area Method Forming Part of Sentences 4.2.1.5.(1), (4) and (5) Building Type Lighting Power Density, W/m2 Automotive facility Convention centre Courthouse Dining bar lounge/leisure cafeteria/fast food 8.1 6.9 8.5 8.6 8.2 Table 4.2.1.5. (Continued) Building Type Lighting Power Density, W/m2 family 7.6 Dormitory 5.7 Exercise centre 7.8 Fire station 6.0 Gymnasium 8.2 Healthcare clinic 8.7 Hospital 10.3 Hotel/Motel 6.0 Library 8.9 Manufacturing facility 8.8 Motion picture theatre 4.7 Multi-unit residential building 4.8 Museum 5.9 Office 6.9 Penitentiary 7.4 Performing arts theatre 9.0 Police station 7.1 Post office 7.0 Religious building 7.2 Retail area 9.0 School/university 7.8 Sports arena 8.2 Storage garage 1.9 Town hall 7.4 Transportation facility 5.4 Warehouse 4.8 Workshop 9.8",
+      "clauses": []
+    }
+  ],
+  "page_start": 90,
+  "page_end": 91,
+  "timestamp": "2025-12-06T22:08:44.080116+00:00",
+  "success": true,
+  "equation_count": 0
+}

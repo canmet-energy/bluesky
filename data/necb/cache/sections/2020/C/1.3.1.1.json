@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.3.1.1",
+  "title": "Scope of Division A",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.3.1.1 Scope of Division A\nScope of Division A\n1) Division A contains the compliance and application provisions, objectives\nand functional statements of this Code.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.3.1.1.(1)",
+      "text": "Division A contains the compliance and application provisions, objectives and functional statements of this Code.",
+      "clauses": []
+    }
+  ],
+  "page_start": 23,
+  "page_end": 23,
+  "timestamp": "2025-12-06T22:08:44.050792+00:00",
+  "success": true,
+  "equation_count": 0
+}

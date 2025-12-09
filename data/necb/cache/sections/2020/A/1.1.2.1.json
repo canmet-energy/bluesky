@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.1.2.1",
+  "title": "Prescriptive, Trade-off or Performance Compliance",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "1.1.2.1 Prescriptive, Trade-off or Performance Compliance\nPrescriptive, Trade-off or Performance Compliance\n(See Note A-1.1.2.1.)\n1) Buildings shall comply with\n  a) the prescriptive or trade-off requirements stated in Parts 3 to 7,\n  b) the performance requirements stated in Part 8, or\n  c) the tiered performance requirements stated in Part 10.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.1.2.1.(1)",
+      "text": "Buildings shall comply with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "1.1.2.1.(1)(a)",
+          "text": "the prescriptive or trade-off requirements stated in Parts 3 to 7,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "1.1.2.1.(1)(b)",
+          "text": "the performance requirements stated in Part 8, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "1.1.2.1.(1)(c)",
+          "text": "the tiered performance requirements stated in Part 10.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 52,
+  "page_end": 52,
+  "timestamp": "2025-12-06T22:08:44.057357+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.16",
+  "title": "Space Temperature Control",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.16 Space Temperature Control\nSpace Temperature Control\n1) If an in-floor, in-ceiling or in-wall radiant heating and/or cooling system is used\nin the proposed building but the energy model calculations do not allow for modeling\nof radiant effects, each conditioned thermal block in the reference building shall be\nmodeled using heating and/or cooling temperature schedules, as applicable, that are\n2°C warmer and 2°C cooler respectively than those used for the proposed building in\nSentence 8.4.3.2.(1).\n2) The throttling range of the heating and cooling equipment shall be modeled as\nbeing identical to that determined for the proposed building in Sentence 8.4.3.7.(1).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.16.(1)",
+      "text": "If an in-floor, in-ceiling or in-wall radiant heating and/or cooling system is used in the proposed building but the energy model calculations do not allow for modeling of radiant effects, each conditioned thermal block in the reference building shall be modeled using heating and/or cooling temperature schedules, as applicable, that are 2°C warmer and 2°C cooler respectively than those used for the proposed building in Sentence 8.4.3.2.(1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.16.(2)",
+      "text": "The throttling range of the heating and cooling equipment shall be modeled as being identical to that determined for the proposed building in Sentence 8.4.3.7.(1).",
+      "clauses": []
+    }
+  ],
+  "page_start": 219,
+  "page_end": 220,
+  "timestamp": "2025-12-06T22:08:44.135848+00:00",
+  "success": true,
+  "equation_count": 0
+}

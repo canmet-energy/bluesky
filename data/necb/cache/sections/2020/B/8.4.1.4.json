@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.1.4",
+  "title": "Treatment of Additions",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.1.4 Treatment of Additions\nTreatment of Additions\n(See Note A-8.4.1.4.)\n1) For the purpose of performance compliance calculations, the assessment of\nadditions shall be based on\n  a) the addition being considered by itself, or\n  b) the addition being considered together with the existing building.\n2) Where the addition is being considered by itself, existing primary and secondary\nsystems that are extended to serve the addition shall be modeled for the proposed\nbuilding\n  a) as if they met the prescriptive requirements of the Code, or\n  b) using the characteristics of the existing equipment as determined in\naccordance with the standards referenced in Articles 5.2.12.1. and 6.2.2.1.\n(see Note A-8.4.1.4.(2)(b)).\n3) When the addition is being considered together with the existing building, the\ncharacteristics of existing components shall be their actual characteristics determined\nin accordance with Sections 3.2., 4.2., 5.2., 6.2. and 7.2.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.1.4.(1)",
+      "text": "For the purpose of performance compliance calculations, the assessment of additions shall be based on",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.1.4.(1)(a)",
+          "text": "the addition being considered by itself, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.1.4.(1)(b)",
+          "text": "the addition being considered together with the existing building.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.1.4.(2)",
+      "text": "Where the addition is being considered by itself, existing primary and secondary systems that are extended to serve the addition shall be modeled for the proposed building",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.1.4.(2)(a)",
+          "text": "as if they met the prescriptive requirements of the Code, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.1.4.(2)(b)",
+          "text": "using the characteristics of the existing equipment as determined in accordance with the standards referenced in Articles 5.2.12.1. and 6.2.2.1. (see Note A-8.4.1.4.(2)(b)).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.1.4.(3)",
+      "text": "When the addition is being considered together with the existing building, the characteristics of existing components shall be their actual characteristics determined in accordance with Sections 3.2., 4.2., 5.2., 6.2. and 7.2.",
+      "clauses": []
+    }
+  ],
+  "page_start": 203,
+  "page_end": 204,
+  "timestamp": "2025-12-06T22:08:44.123400+00:00",
+  "success": true,
+  "equation_count": 0
+}

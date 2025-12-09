@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.2.6",
+  "title": "Protection of Duct Insulation",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.2.6 Protection of Duct Insulation\nProtection of Duct Insulation\n1) Insulation on cold-air supply ducts shall be provided with vapour barrier\nprotection to prevent condensation, where the surface temperature of the duct is below\nthe dew point of the air surrounding the duct.\n2) Duct insulation installed in areas where it may be subject to mechanical damage\nor weathering shall be protected.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.2.6.(1)",
+      "text": "Insulation on cold-air supply ducts shall be provided with vapour barrier protection to prevent condensation, where the surface temperature of the duct is below the dew point of the air surrounding the duct.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.2.6.(2)",
+      "text": "Duct insulation installed in areas where it may be subject to mechanical damage or weathering shall be protected.",
+      "clauses": []
+    }
+  ],
+  "page_start": 139,
+  "page_end": 139,
+  "timestamp": "2025-12-06T22:08:44.096955+00:00",
+  "success": true,
+  "equation_count": 0
+}

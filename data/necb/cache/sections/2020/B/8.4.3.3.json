@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.3.3",
+  "title": "Building Envelope Components",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.3.3 Building Envelope Components\nBuilding Envelope Components\n1) Where the solar absorptance of a building envelope component is not known, the\nenergy model shall use a constant value of 0.7.\n2) Where the energy model does not include a detailed calculation of fenestration\nshading, the actual solar heat gain coefficient of the fenestration shall be multiplied by\nan adjustment factor of 0.8. (See Note A-8.4.3.3.(2).)\n3) Except as provided in Sentence (4), the normalized air leakage rate shall be\nassumed to be 1.50 L/(s×m2) at a pressure differential of 75 Pa and adjusted for the air\nleakage rate through the above-ground wall areas at the typical operating pressure\ndifferential in accordance with Sentence 8.4.2.9.(2).\n4) Where an air leakage rate is determined in accordance with Article 3.2.4.2., the\nnormalized air leakage rate at a pressure differential of 75 Pa and the flow exponent\nfrom the test are permitted to be used in Sentence 8.4.2.9.(2) to obtain the air leakage\nrate at a typical operating pressure differential and applied to the above-ground wall\nareas.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.3.3.(1)",
+      "text": "Where the solar absorptance of a building envelope component is not known, the energy model shall use a constant value of 0.7.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.3.3.(2)",
+      "text": "Where the energy model does not include a detailed calculation of fenestration shading, the actual solar heat gain coefficient of the fenestration shall be multiplied by an adjustment factor of 0.8. (See Note A-8.4.3.3.(2).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.3.3.(3)",
+      "text": "Except as provided in Sentence (4), the normalized air leakage rate shall be assumed to be 1.50 L/(s×m2) at a pressure differential of 75 Pa and adjusted for the air leakage rate through the above-ground wall areas at the typical operating pressure differential in accordance with Sentence 8.4.2.9.(2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.3.3.(4)",
+      "text": "Where an air leakage rate is determined in accordance with Article 3.2.4.2., the normalized air leakage rate at a pressure differential of 75 Pa and the flow exponent from the test are permitted to be used in Sentence 8.4.2.9.(2) to obtain the air leakage rate at a typical operating pressure differential and applied to the above-ground wall areas.",
+      "clauses": []
+    }
+  ],
+  "page_start": 208,
+  "page_end": 208,
+  "timestamp": "2025-12-06T22:08:44.127885+00:00",
+  "success": true,
+  "equation_count": 0
+}

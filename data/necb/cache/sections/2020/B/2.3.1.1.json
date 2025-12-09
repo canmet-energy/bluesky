@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.3.1.1",
+  "title": "Documentation",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.3.1.1 Documentation\nDocumentation\n1) Documentation conforming to this Subsection shall be provided by the person\nrequesting the use of an alternative solution to demonstrate that the proposed\nalternative solution complies with this Code.\n2) The documentation referred to in Sentence (1) shall include\n  a) a Code analysis outlining the analytical methods and rationales used to\ndetermine that a proposed alternative solution will achieve at least the level\nof performance required by Clause 1.2.1.1.(1)(b) of Division A, and\n  b) information concerning any special maintenance or operational\nrequirements, including any building component commissioning\nrequirements, that are necessary for the alternative solution to achieve\ncompliance with the Code after the building is constructed.\n3) The Code analysis referred to in Clause (2)(a) shall identify the objective,\nfunctional statements and acceptable solutions, and any assumptions, limiting or\nrestricting factors, testing procedures, engineering studies or building performance\nparameters that will support a Code compliance assessment.\n4) The Code analysis referred to in Clause (2)(a) shall include information\nabout the qualifications, experience and background of the person or persons taking\nresponsibility for the design.\n5) The information provided under Sentence (3) shall be in sufficient detail to\nconvey the design intent and to support the validity, accuracy, relevance and precision\nof the Code analysis.\n6) Where the design of a building includes proposed alternative solutions that\ninvolve more than one person taking responsibility for different aspects of the design,\nthe applicant for the permit shall identify a single person to co-ordinate the preparation\nof the design, Code analysis and documentation referred to in this Subsection.\nNotes to Part 2\nAdministrative Provisions\nA-2.2.1.1.(2) Exemptions Due to Special Occupancy Requirements. The intended use or\nnature of the occupancy of some buildings may be such that compliance with certain Code requirements could\nlimit or prevent these buildings from performing their intended function.\nSentence 2.2.1.1.(2) permits the authority having jurisdiction to review such special cases and to permit\ndeviations. Only the nature of the occupancy, rather than economic or other factors, should be considered\nin permitting such deviations.\nAs it would be difficult and onerous to include every single potential exemption in this Code, Sentence 2.2.1.1.(2)\naddresses unforeseen circumstances with a general statement. The following lists of possible exemptions to\nrequirements in Parts 3, 4 and 5 of Division B are not exhaustive.\nExamples of buildings that could be exempted from complying with some Part 3 requirements:\n• horticultural, silvicultural and botanical greenhouses, and greenhouses used for research could be\nexempted from the requirements related to fenestration performance and area,\n• buildings in which permanent processes continuously produce enough heat such that no other heating\nsource is required could have their insulation requirements reduced to the extent that the processes can\nstill provide all of the required heating,\n• industrial buildings where processes impose large ventilation requirements could be exempted from\nairtightness requirements,\n• buildings in which only sufficient radiant heating is provided to improve conditions locally for the\noccupants without temperature control of the ambient air, such as bus shelters or bleacher areas in some\nice arenas.\nExamples of buildings that could be exempted from complying with some Part 4 requirements:\n• The application of the lighting requirements in Part 4 may adversely affect the use of spaces with special\nfunctional requirements; as such, some exceptions to these requirements may be necessary. Except for\nparticular types of process lighting, however, it is unlikely that a space or lighting system would be\nexempt from all the requirements in Part 4. Some necessary exceptions to particular requirements are\nidentified in the Code. Exemption should be determined on a case-by-case basis, taking into consideration\nthe space's function, available technologies and cost-effectiveness.\nExample of buildings that could be exempted from complying with some Part 5 requirements:\n• buildings or rooms in which the processes or activities call for temperature or humidity conditions\noutside the normal range required for comfort.\nA-2.2.2.1.(1) General Information Required. The information documenting the conformity of a\nbuilding to this Code must describe the essential characteristics of the building and its systems. To this end, the\nauthority having jurisdiction may require access to the following information:\n• floor plan of the building giving the floor area of conditioned spaces and gross lighted area of each storey,\n• elevations of all the building's faces, giving finished floor and ground levels,\n• typical cross-sections of foundations, exterior walls, roofs, ceilings and floors that separate conditioned\nspace from unconditioned space or the exterior, describing their construction and giving the thermal\nresistance of each material and the overall thermal transmittance of each assembly of the building,\n• indoor design temperatures for all spaces,\n• required vestibules,\nThese Notes are included for explanatory purposes only and do not form part of the requirements. The number\nthat introduces each Note corresponds to the applicable requirement in this Part.\nA-2.3.1.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.3.1.1.(1)",
+      "text": "Documentation conforming to this Subsection shall be provided by the person requesting the use of an alternative solution to demonstrate that the proposed alternative solution complies with this Code.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "2.3.1.1.(2)",
+      "text": "The documentation referred to in Sentence (1) shall include",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.3.1.1.(2)(a)",
+          "text": "a Code analysis outlining the analytical methods and rationales used to determine that a proposed alternative solution will achieve at least the level of performance required by Clause 1.2.1.1.(1)(b) of Division A, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.3.1.1.(2)(b)",
+          "text": "information concerning any special maintenance or operational requirements, including any building component commissioning requirements, that are necessary for the alternative solution to achieve compliance with the Code after the building is constructed.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "2.3.1.1.(3)",
+      "text": "The Code analysis referred to in Clause (2)(a) shall identify the objective, functional statements and acceptable solutions, and any assumptions, limiting or restricting factors, testing procedures, engineering studies or building performance parameters that will support a Code compliance assessment.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "2.3.1.1.(4)",
+      "text": "The Code analysis referred to in Clause (2)(a) shall include information about the qualifications, experience and background of the person or persons taking responsibility for the design.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "2.3.1.1.(5)",
+      "text": "The information provided under Sentence (3) shall be in sufficient detail to convey the design intent and to support the validity, accuracy, relevance and precision of the Code analysis.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "2.3.1.1.(6)",
+      "text": "Where the design of a building includes proposed alternative solutions that involve more than one person taking responsibility for different aspects of the design, the applicant for the permit shall identify a single person to co-ordinate the preparation of the design, Code analysis and documentation referred to in this Subsection. Notes to Part 2 Administrative Provisions A-2.2.1.1.(2) Exemptions Due to Special Occupancy Requirements. The intended use or nature of the occupancy of some buildings may be such that compliance with certain Code requirements could limit or prevent these buildings from performing their intended function. Sentence 2.2.1.1.(2) permits the authority having jurisdiction to review such special cases and to permit deviations. Only the nature of the occupancy, rather than economic or other factors, should be considered in permitting such deviations. As it would be difficult and onerous to include every single potential exemption in this Code, Sentence 2.2.1.1.(2) addresses unforeseen circumstances with a general statement. The following lists of possible exemptions to requirements in Parts 3, 4 and 5 of Division B are not exhaustive. Examples of buildings that could be exempted from complying with some Part 3 requirements: • horticultural, silvicultural and botanical greenhouses, and greenhouses used for research could be exempted from the requirements related to fenestration performance and area, • buildings in which permanent processes continuously produce enough heat such that no other heating source is required could have their insulation requirements reduced to the extent that the processes can still provide all of the required heating, • industrial buildings where processes impose large ventilation requirements could be exempted from airtightness requirements, • buildings in which only sufficient radiant heating is provided to improve conditions locally for the occupants without temperature control of the ambient air, such as bus shelters or bleacher areas in some ice arenas. Examples of buildings that could be exempted from complying with some Part 4 requirements: • The application of the lighting requirements in Part 4 may adversely affect the use of spaces with special functional requirements; as such, some exceptions to these requirements may be necessary. Except for particular types of process lighting, however, it is unlikely that a space or lighting system would be exempt from all the requirements in Part 4. Some necessary exceptions to particular requirements are identified in the Code. Exemption should be determined on a case-by-case basis, taking into consideration the space's function, available technologies and cost-effectiveness. Example of buildings that could be exempted from complying with some Part 5 requirements: • buildings or rooms in which the processes or activities call for temperature or humidity conditions outside the normal range required for comfort. A-2.2.2.1.(1) General Information Required. The information documenting the conformity of a building to this Code must describe the essential characteristics of the building and its systems. To this end, the authority having jurisdiction may require access to the following information: • floor plan of the building giving the floor area of conditioned spaces and gross lighted area of each storey, • elevations of all the building's faces, giving finished floor and ground levels, • typical cross-sections of foundations, exterior walls, roofs, ceilings and floors that separate conditioned space from unconditioned space or the exterior, describing their construction and giving the thermal resistance of each material and the overall thermal transmittance of each assembly of the building, • indoor design temperatures for all spaces, • required vestibules, These Notes are included for explanatory purposes only and do not form part of the requirements. The number that introduces each Note corresponds to the applicable requirement in this Part. A-2.3.1.",
+      "clauses": []
+    }
+  ],
+  "page_start": 298,
+  "page_end": 301,
+  "timestamp": "2025-12-06T22:08:44.147335+00:00",
+  "success": true,
+  "equation_count": 0
+}

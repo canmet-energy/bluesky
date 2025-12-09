@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.4",
+  "title": "Thermal Mass",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.4 Thermal Mass\nThermal Mass\n1) The thermal characteristics of the reference building's building envelope assembly\nshall be modeled as being identical to those of lightweight construction. (See\nNote A-8.4.4.4.(1).)\n2) The thermal characteristics of the reference building's space shall be modeled as\nbeing identical to those of the proposed building. (See Note A-8.4.4.4.(2).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.4.(1)",
+      "text": "The thermal characteristics of the reference building's building envelope assembly shall be modeled as being identical to those of lightweight construction. (See Note A-8.4.4.4.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.4.(2)",
+      "text": "The thermal characteristics of the reference building's space shall be modeled as being identical to those of the proposed building. (See Note A-8.4.4.4.(2).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 210,
+  "page_end": 210,
+  "timestamp": "2025-12-06T22:08:44.130732+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.3.7",
+  "title": "Space Temperature Control",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.3.7 Space Temperature Control\nSpace Temperature Control\n1) Where the proposed building's specifications do not specify the throttling ranges\nof the heating and cooling equipment, the energy model shall use a range of ±1°C.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.3.7.(1)",
+      "text": "Where the proposed building's specifications do not specify the throttling ranges of the heating and cooling equipment, the energy model shall use a range of ±1°C.",
+      "clauses": []
+    }
+  ],
+  "page_start": 209,
+  "page_end": 209,
+  "timestamp": "2025-12-06T22:08:44.129071+00:00",
+  "success": true,
+  "equation_count": 0
+}

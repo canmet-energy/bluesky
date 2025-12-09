@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.3.2",
+  "title": "Determination of Lighting Power Density",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.3.2 Determination of Lighting Power Density\nDetermination of Lighting Power Density\n1) The lighting power density for a space, LPDi, shall be determined using\nTable 4.2.1.6.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.3.2.(1)",
+      "text": "The lighting power density for a space, LPDi, shall be determined using Table 4.2.1.6.",
+      "clauses": []
+    }
+  ],
+  "page_start": 119,
+  "page_end": 120,
+  "timestamp": "2025-12-06T22:08:44.090476+00:00",
+  "success": true,
+  "equation_count": 0
+}

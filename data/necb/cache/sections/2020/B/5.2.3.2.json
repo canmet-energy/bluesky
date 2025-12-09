@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.3.2",
+  "title": "Constant-Volume Fan Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.3.2 Constant-Volume Fan Systems\nConstant-Volume Fan Systems\n1) Where fans produce a constant airflow rate whenever the system is operating,\nthe power demand required by the motors for the combined supply and return fan\nsystem at design conditions shall not exceed 1.6 W per L/s of supply air delivered to\nthe conditioned space, calculated using the following equation:\n[Equation: W = 0.001 \\times F \\times \\frac{\\text{SP}}{\\eta}]\nwhere\nW = power demand, in watts,\nF = design flow rate, in L/s,\nSP = design static pressure across the fan, in Pa, and\nη = combined fan-drive-motor efficiency, expressed as a decimal fraction.\n(See Note A-5.2.3.2.(1).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.3.2.(1)",
+      "text": "Where fans produce a constant airflow rate whenever the system is operating, the power demand required by the motors for the combined supply and return fan system at design conditions shall not exceed 1.6 W per L/s of supply air delivered to the conditioned space, calculated using the following equation: [Equation: t_{eff,night,i} = t_{night,i} \\times F_{occ,i} \\times F_{pers,i}] where W = power demand, in watts, F = design flow rate, in L/s, SP = design static pressure across the fan, in Pa, and η = combined fan-drive-motor efficiency, expressed as a decimal fraction. (See Note A-5.2.3.2.(1).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 140,
+  "page_end": 140,
+  "timestamp": "2025-12-06T22:08:44.098680+00:00",
+  "success": true,
+  "equation_count": 1
+}

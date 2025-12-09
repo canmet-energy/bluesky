@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.3.1",
+  "title": "Thermal Characteristics of Walls in Contact with the Ground",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.3.1 Thermal Characteristics of Walls in Contact with the Ground\nThermal Characteristics of Walls in Contact with the Ground\n1) Except as provided in Sentences (2) and (4), the overall thermal transmittance of\nwalls or portions thereof that are below the exterior ground level and are part of the\nbuilding envelope shall be not greater than that shown in Table 3.2.3.1. for the applicable\nheating-degree-day category taken at 18°C.\n2) Except as provided in Sentence (4), the overall thermal transmittance of walls or\nportions thereof that are below the exterior ground level and are part of the building\nenvelope of semi-heated buildings, as defined in Sentence 1.2.1.2.(2), shall be not greater\nthan that shown in Table 3.2.3.1. for the applicable heating-degree-day category taken\nat 15°C.\nTable 3.2.3.1.\nOverall Thermal Transmittance of Building Assemblies in Contact with the Ground\nForming Part of Sentences 3.2.2.2.(3), 3.2.3.1.(1) and (2), 3.2.3.2.(1) and (2), and 3.2.3.3.(1) to (4)\nAssembly in\nContact with\nthe Ground\nHeating Degree-Days of Building Location,(1) in Celsius Degree-Days\nZone 4:(2)\n< 3000\nZone 5:(2)\n3000 to 3999\nZone 6:(2)\n4000 to 4999\nZone 7A:(2)\n5000 to 5999\nZone 7B:(2)\n6000 to 6999\nZone 8:(2)\n≥7000\nMaximum Overall Thermal Transmittance, W/(m2×K)\nWalls\nRoofs\nFloors\n0.568\n0.568\n0.757 for 1.2 m\n0.379\n0.379\n0.757 for 1.2 m\n0.284\n0.284\n0.757 for 1.2 m\n0.284\n0.284\n0.757 for 1.2 m\n0.284\n0.284\n0.757 for 1.2 m\n0.210\n0.210\n0.379 for full area\nNotes to Table 3.2.3.1.:\n(1) See Sentence 1.1.4.1.(1).\n(2) See Note A-Table 3.2.2.2.\n3) Insulation on walls or portions thereof that are in contact with the ground\nshall extend 2.4 m down from ground level or to the bottom of the wall, whichever\nis less. (See Note A-3.2.3.1.(3).)\n4) Where radiant heating cables or heating or cooling pipes or membranes are\nembedded in the surface of a wall or portion thereof that is below the exterior ground\nlevel and that separates conditioned space from the ground, the wall shall have an\noverall thermal transmittance no greater than 80% of that required by Sentence (1). (See\nNote A-3.2.2.2.(4).)\n5) Where the top of the footing is less than 0.6 m below the exterior ground level,\nthe same level of insulation stated in Sentence (1) shall be placed on the top or bottom\nsurface of the floor for a distance not less than 1.2 m from the perimeter.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.3.1.(1)",
+      "text": "Except as provided in Sentences (2) and (4), the overall thermal transmittance of walls or portions thereof that are below the exterior ground level and are part of the building envelope shall be not greater than that shown in Table 3.2.3.1. for the applicable heating-degree-day category taken at 18°C.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.3.1.(2)",
+      "text": "Except as provided in Sentence (4), the overall thermal transmittance of walls or portions thereof that are below the exterior ground level and are part of the building envelope of semi-heated buildings, as defined in Sentence 1.2.1.2.(2), shall be not greater than that shown in Table 3.2.3.1. for the applicable heating-degree-day category taken at 15°C. Table 3.2.3.1. Overall Thermal Transmittance of Building Assemblies in Contact with the Ground Forming Part of Sentences 3.2.2.2.(3), 3.2.3.1.(1) and (2), 3.2.3.2.(1) and (2), and 3.2.3.3.(1) to (4) Assembly in Contact with the Ground Heating Degree-Days of Building Location,(1) in Celsius Degree-Days Zone 4:(2) < 3000 Zone 5:(2) 3000 to 3999 Zone 6:(2) 4000 to 4999 Zone 7A:(2) 5000 to 5999 Zone 7B:(2) 6000 to 6999 Zone 8:(2) ≥7000 Maximum Overall Thermal Transmittance, W/(m2×K) Walls Roofs Floors 0.568 0.568 0.757 for 1.2 m 0.379 0.379 0.757 for 1.2 m 0.284 0.284 0.757 for 1.2 m 0.284 0.284 0.757 for 1.2 m 0.284 0.284 0.757 for 1.2 m 0.210 0.210 0.379 for full area Notes to Table 3.2.3.1.: (1) See Sentence 1.1.4.1.(1). (2) See Note A-Table 3.2.2.2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.2.3.1.(3)",
+      "text": "Insulation on walls or portions thereof that are in contact with the ground shall extend 2.4 m down from ground level or to the bottom of the wall, whichever is less. (See Note A-3.2.3.1.(3).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "3.2.3.1.(4)",
+      "text": "Where radiant heating cables or heating or cooling pipes or membranes are embedded in the surface of a wall or portion thereof that is below the exterior ground level and that separates conditioned space from the ground, the wall shall have an overall thermal transmittance no greater than 80% of that required by Sentence (1). (See Note A-3.2.2.2.(4).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "3.2.3.1.(5)",
+      "text": "Where the top of the footing is less than 0.6 m below the exterior ground level, the same level of insulation stated in Sentence (1) shall be placed on the top or bottom surface of the floor for a distance not less than 1.2 m from the perimeter.",
+      "clauses": []
+    }
+  ],
+  "page_start": 73,
+  "page_end": 74,
+  "timestamp": "2025-12-06T22:08:44.073857+00:00",
+  "success": true,
+  "equation_count": 0
+}

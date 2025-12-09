@@ -1,0 +1,123 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.1.1.7",
+  "title": "Calculation of Overall Thermal Transmittance",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.1.1.7 Calculation of Overall Thermal Transmittance\nCalculation of Overall Thermal Transmittance\n1) In calculating the overall thermal transmittance of assemblies for purposes of\ncomparison with the provisions in Section 3.2., the effect of thermal bridging shall\nbe considered for\n  a) closely spaced repetitive structural members, such as studs and joists, and\nancillary members, such as lintels, sills and plates,\n  b) major structural elements that penetrate or intersect the building envelope\n(see Note A-3.1.1.7.(1)(b)),\n  c) the junctions between the following building envelope materials, components,\nand assemblies:\n  i) glazing assemblies,\n    ii) spandrels,\n    iii) parapets,\n    iv) roof-to-wall junctions,\n  v) corners, and\n    vi) edges of walls or floors, and\n  d) secondary structural members (see Note A-3.1.1.7.(1)(d)).\n2) In calculating the overall thermal transmittance of assemblies for purposes\nof comparison with the provisions in Section 3.2., pipes, ducts, equipment with\nthrough-the-wall venting, packaged terminal air conditioners or heat pumps need not\nbe taken into account. (See Note A-3.1.1.7.(2).)\n3) In calculating the overall thermal transmittance of assemblies for purposes of\ncomparison with the provisions in Section 3.2., fasteners need not be taken into account.\n4) Where a component of the building envelope is protected by an enclosed\nunconditioned space, such as a sun porch, enclosed veranda or vestibule, the\nunconditioned enclosure may be considered to have an overall thermal transmittance of\n6.25 W/(m2×K). (See Note A-3.1.1.7.(4).)\n5) For the purposes of this Article, roof assemblies shall be considered to include\nall related structural framing.\n6) For the purposes of this Article, wall assemblies inclined less than 60° from the\nhorizontal shall be considered as roof assemblies, and roof assemblies inclined 60° or\nmore from the horizontal shall be considered as wall assemblies.\n7) For the purposes of this Article, wall assemblies shall be considered to include\nall related structural framing and perimeter areas of intersecting interior walls.\n8) For the purposes of this Article, floor assemblies shall be considered to include\nall related structural framing.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.1.1.7.(1)",
+      "text": "In calculating the overall thermal transmittance of assemblies for purposes of comparison with the provisions in Section 3.2., the effect of thermal bridging shall be considered for",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.1.1.7.(1)(a)",
+          "text": "closely spaced repetitive structural members, such as studs and joists, and ancillary members, such as lintels, sills and plates,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.1.1.7.(1)(b)",
+          "text": "major structural elements that penetrate or intersect the building envelope (see Note A-3.1.1.7.(1)(b)),",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "3.1.1.7.(1)(c)",
+          "text": "the junctions between the following building envelope materials, components, and assemblies:",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "3.1.1.7.(1)(i)",
+          "text": "glazing assemblies,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "3.1.1.7.(1)(i)(ii)",
+              "text": "spandrels,"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "3.1.1.7.(1)(i)(iii)",
+              "text": "parapets,"
+            },
+            {
+              "subclause_numeral": "iv",
+              "reference": "3.1.1.7.(1)(i)(iv)",
+              "text": "roof-to-wall junctions,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "v",
+          "reference": "3.1.1.7.(1)(v)",
+          "text": "corners, and",
+          "subclauses": [
+            {
+              "subclause_numeral": "vi",
+              "reference": "3.1.1.7.(1)(v)(vi)",
+              "text": "edges of walls or floors, and"
+            }
+          ]
+        },
+        {
+          "clause_letter": "d",
+          "reference": "3.1.1.7.(1)(d)",
+          "text": "secondary structural members (see Note A-3.1.1.7.(1)(d)).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.1.1.7.(2)",
+      "text": "In calculating the overall thermal transmittance of assemblies for purposes of comparison with the provisions in Section 3.2., pipes, ducts, equipment with through-the-wall venting, packaged terminal air conditioners or heat pumps need not be taken into account. (See Note A-3.1.1.7.(2).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.1.1.7.(3)",
+      "text": "In calculating the overall thermal transmittance of assemblies for purposes of comparison with the provisions in Section 3.2., fasteners need not be taken into account.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "3.1.1.7.(4)",
+      "text": "Where a component of the building envelope is protected by an enclosed unconditioned space, such as a sun porch, enclosed veranda or vestibule, the unconditioned enclosure may be considered to have an overall thermal transmittance of 6.25 W/(m2×K). (See Note A-3.1.1.7.(4).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "3.1.1.7.(5)",
+      "text": "For the purposes of this Article, roof assemblies shall be considered to include all related structural framing.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "3.1.1.7.(6)",
+      "text": "For the purposes of this Article, wall assemblies inclined less than 60° from the horizontal shall be considered as roof assemblies, and roof assemblies inclined 60° or more from the horizontal shall be considered as wall assemblies.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "3.1.1.7.(7)",
+      "text": "For the purposes of this Article, wall assemblies shall be considered to include all related structural framing and perimeter areas of intersecting interior walls.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "3.1.1.7.(8)",
+      "text": "For the purposes of this Article, floor assemblies shall be considered to include all related structural framing.",
+      "clauses": []
+    }
+  ],
+  "page_start": 69,
+  "page_end": 70,
+  "timestamp": "2025-12-06T22:08:44.070826+00:00",
+  "success": true,
+  "equation_count": 0
+}

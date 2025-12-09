@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.2.2.6",
+  "title": "Documentation on Service Water Heating Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.2.2.6 Documentation on Service Water Heating Systems\nDocumentation on Service Water Heating Systems\n1) The following documentation on the service water heating system shall be\nprovided:\n  a) a description of each system detailing its function, design details,\nperformance characteristics and distribution arrangement,\n  b) schematic and control diagrams and sequence of operation, and\n  c) start/stop and adjustment procedures.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.2.2.6.(1)",
+      "text": "The following documentation on the service water heating system shall be provided:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.6.(1)(a)",
+          "text": "a description of each system detailing its function, design details, performance characteristics and distribution arrangement,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.6.(1)(b)",
+          "text": "schematic and control diagrams and sequence of operation, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "2.2.2.6.(1)(c)",
+          "text": "start/stop and adjustment procedures.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 296,
+  "page_end": 296,
+  "timestamp": "2025-12-06T22:08:44.146010+00:00",
+  "success": true,
+  "equation_count": 0
+}

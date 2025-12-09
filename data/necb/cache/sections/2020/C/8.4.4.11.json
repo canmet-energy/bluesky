@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.11",
+  "title": ", 8.4.4.17., 8.4.4.18.",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.11 , 8.4.4.17., 8.4.4.18.\npower demand, 5.2.3.1., 5.2.3.3., 5.2.11.2.\nvariable-air-volume, 5.2.3.3., 5.2.11.2.\nFarm buildings\nCode not applicable to, 1.1.1.1.[A]\ndefinition, 1.4.1.2.[A]\nFaucets, 6.2.6.2.\nFeeder conductors, 7.2.2.1.\nFenestration\n(see also Doors; Windows)\nair leakage, 3.2.4.3.\nallowable area of, 3.1.1.6., 3.2.1.4.\ndefinition, 1.4.1.2.[A]\ndocumentation, 2.2.2.3.[C]\neffective luminous transmittance, 4.3.2.8.\noverall thermal transmittance, 3.1.1.5., 3.2.2.3.\nperformance path calculations, 8.4.2.8., 8.4.3.1.,\n8.4.4.3.\nthermal characteristics, 3.2.2.3.\ntrade-off path, 3.3.1.1.\nFenestration and door area to gross wall area ratio\n(FDWR)\ncalculation of, 3.1.1.6.\nmaximum allowable, 3.2.1.4.\nperformance compliance, 8.4.4.3.\ntrade-off, simple, 3.3.1.1.\nFire stations\nfactors for occupancy control and personal control,\n4.3.2.10.\nlighting power density, 4.2.1.5., 4.2.1.6.\nFireplace doors, 3.2.4.3.\nFirewalls, 1.4.1.2.[A]\nFloor surface area, 1.4.1.2.[A]\nFloors/floor assemblies\nabove-ground, 3.2.2.2.\ndocumentation, 2.2.2.3.[C]\nin contact with ground, 3.2.3.3.\noverall thermal transmittance, calculation of,\n3.1.1.7.\nperformance path calculations, 8.4.2.8.\nthermal characteristics, 3.2.2.2., 3.2.3.3.\ntrade-off path, 3.3.\nFluorescent lamp ballasts, 4.2.1.2., 4.2.1.4.\nFood preparation areas\nfactors for occupancy control and personal control,",
+  "sentences": [],
+  "page_start": 306,
+  "page_end": 306,
+  "timestamp": "2025-12-06T22:08:44.151387+00:00",
+  "success": true,
+  "equation_count": 0
+}

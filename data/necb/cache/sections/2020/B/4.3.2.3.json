@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.2.3",
+  "title": "Determination of Daylighted Area",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.2.3 Determination of Daylighted Area\nDetermination of Daylighted Area\n1) Subject to the limitations stated in Sentence (2), the daylighted area of a space,\nADL,i, in m2, shall be determined in accordance with Article 4.2.2.3. for sidelighting and\nArticles 4.2.2.4. (roof monitors) and 4.2.2.5. (skylights) for toplighting.\n2) Where a space is illuminated by both sidelighting and toplighting, the daylighted\narea provided by only one of these daylight supplies shall be determined and used in\nthe daylighting calculations in this Section. (See Note A-4.3.2.3.(2).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.2.3.(1)",
+      "text": "Subject to the limitations stated in Sentence (2), the daylighted area of a space, ADL,i, in m2, shall be determined in accordance with Article 4.2.2.3. for sidelighting and Articles 4.2.2.4. (roof monitors) and 4.2.2.5. (skylights) for toplighting.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.3.2.3.(2)",
+      "text": "Where a space is illuminated by both sidelighting and toplighting, the daylighted area provided by only one of these daylight supplies shall be determined and used in the daylighting calculations in this Section. (See Note A-4.3.2.3.(2).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 108,
+  "page_end": 108,
+  "timestamp": "2025-12-06T22:08:44.087616+00:00",
+  "success": true,
+  "equation_count": 0
+}

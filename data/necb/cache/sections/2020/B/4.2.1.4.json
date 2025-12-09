@@ -1,0 +1,204 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.1.4",
+  "title": "Determination of the Installed Interior Lighting Power",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.1.4 Determination of the Installed Interior Lighting Power\nDetermination of the Installed Interior Lighting Power\n1) Except as provided in Sentences (4) and (5), the installed interior lighting power\nshall include all power used by the luminaires, including lamps, ballasts, transformers,\nand control devices.\n2) The determination of the installed interior lighting power shall include\n  a) connected lighting power for both permanently installed interior lighting and\nsupplemental interior lighting provided by movable or plug-in luminaires,\nand\n  b) in cases where two or more independently operating lighting systems in a\nspace are controlled to prevent simultaneous operation, the lighting system\nwith the highest wattage.\n(See Note A-4.2.1.4.(2).)\n3) Luminaire wattage to be included in installed interior lighting power shall be\ndetermined in accordance with the following criteria:\n  a) except as provided in Clause (b), the wattage of luminaires shall be the\ndesign operating input wattage of the lamp/auxiliary combination based\non values provided by a recognized testing laboratory or, in the absence\nof such information, the maximum labeled wattage of the luminaire shall\nbe used (see Note A-4.2.1.4.(3)(a)),\n  b) the wattage of luminaires with ballasts designed for multiple wattages shall\nbe the maximum labeled wattage of the luminaire,\n  c) for line-voltage lighting track and plug-in busway designed to allow the\naddition and/or relocation of luminaires without altering the wiring of the\nsystem, the wattage shall be\n  i) the specified wattage of the luminaires included in the\nsystem with a minimum of 98 W/m,\n    ii) the wattage limit of the system's circuit breaker, or\n    iii) the wattage limit of other permanent current-limiting\ndevice(s) on the system,\n  d) the wattage of low-voltage lighting track, cable conductor, rail conductor,\nand other flexible lighting systems that allow the addition and/or relocation\nof luminaires without altering the wiring of the system shall be the specified\nwattage of the transformer supplying the system, and\n  e) the wattage of all other miscellaneous lighting equipment shall be the\nspecified wattage of the lighting equipment.\n4) Lighting for the following functions, spaces or equipment need not be included\nin the calculation of installed interior lighting power:\n  a) display or accent lighting that is an essential element for the function it\nperforms in galleries, museums, and monuments,\n  b) lighting that is integral to equipment or instrumentation and is installed\nby its manufacturer,\n  c) lighting specifically designed for use only during medical or dental\nprocedures,\n  d) lighting integral to both open and glass-enclosed refrigerator and freezer\ncases,\n  e) lighting integral to food warming and food preparation equipment,\n  f) lighting for plant growth or maintenance,\n  g) lighting in retail display windows, provided the display area is enclosed\nby ceiling-height partitions,\n  h) lighting in interior spaces that have been specifically designated as a\nregistered interior historic landmark,\n  i) lighting that is an integral part of advertising or directional signage,\n  j) exit signs,\n  k) lighting that is for sale or for lighting educational demonstration systems,\n  l) lighting for theatrical purposes, including performance, stage, and film\nand video production,\n  m) lighting for television broadcasting in sporting activity areas,\n  n) casino gaming areas,\n  o) mirror lighting in dressing rooms, and\n  p) accent lighting in religious pulpit and choir areas.\n5) Lighting for functions, spaces or equipment need not be included in the\ncalculation of installed interior lighting power where it can be shown that its inclusion\nwill adversely affect the intended functions or the use of the space or equipment.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.1.4.(1)",
+      "text": "Except as provided in Sentences (4) and (5), the installed interior lighting power shall include all power used by the luminaires, including lamps, ballasts, transformers, and control devices.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.1.4.(2)",
+      "text": "The determination of the installed interior lighting power shall include",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.1.4.(2)(a)",
+          "text": "connected lighting power for both permanently installed interior lighting and supplemental interior lighting provided by movable or plug-in luminaires, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.1.4.(2)(b)",
+          "text": "in cases where two or more independently operating lighting systems in a space are controlled to prevent simultaneous operation, the lighting system with the highest wattage. (See Note A-4.2.1.4.(2).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.2.1.4.(3)",
+      "text": "Luminaire wattage to be included in installed interior lighting power shall be determined in accordance with the following criteria:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.1.4.(3)(a)",
+          "text": "except as provided in Clause (b), the wattage of luminaires shall be the design operating input wattage of the lamp/auxiliary combination based on values provided by a recognized testing laboratory or, in the absence of such information, the maximum labeled wattage of the luminaire shall be used (see Note A-4.2.1.4.(3)(a)),",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.1.4.(3)(b)",
+          "text": "the wattage of luminaires with ballasts designed for multiple wattages shall be the maximum labeled wattage of the luminaire,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.1.4.(3)(c)",
+          "text": "for line-voltage lighting track and plug-in busway designed to allow the addition and/or relocation of luminaires without altering the wiring of the system, the wattage shall be",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "4.2.1.4.(3)(i)",
+          "text": "the specified wattage of the luminaires included in the system with a minimum of 98 W/m,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "4.2.1.4.(3)(i)(ii)",
+              "text": "the wattage limit of the system's circuit breaker, or"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "4.2.1.4.(3)(i)(iii)",
+              "text": "the wattage limit of other permanent current-limiting device(s) on the system,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "d",
+          "reference": "4.2.1.4.(3)(d)",
+          "text": "the wattage of low-voltage lighting track, cable conductor, rail conductor, and other flexible lighting systems that allow the addition and/or relocation of luminaires without altering the wiring of the system shall be the specified wattage of the transformer supplying the system, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "4.2.1.4.(3)(e)",
+          "text": "the wattage of all other miscellaneous lighting equipment shall be the specified wattage of the lighting equipment.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.2.1.4.(4)",
+      "text": "Lighting for the following functions, spaces or equipment need not be included in the calculation of installed interior lighting power:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.1.4.(4)(a)",
+          "text": "display or accent lighting that is an essential element for the function it performs in galleries, museums, and monuments,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.1.4.(4)(b)",
+          "text": "lighting that is integral to equipment or instrumentation and is installed by its manufacturer,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.1.4.(4)(c)",
+          "text": "lighting specifically designed for use only during medical or dental procedures,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "4.2.1.4.(4)(d)",
+          "text": "lighting integral to both open and glass-enclosed refrigerator and freezer cases,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "4.2.1.4.(4)(e)",
+          "text": "lighting integral to food warming and food preparation equipment,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "f",
+          "reference": "4.2.1.4.(4)(f)",
+          "text": "lighting for plant growth or maintenance,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "g",
+          "reference": "4.2.1.4.(4)(g)",
+          "text": "lighting in retail display windows, provided the display area is enclosed by ceiling-height partitions,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "h",
+          "reference": "4.2.1.4.(4)(h)",
+          "text": "lighting in interior spaces that have been specifically designated as a registered interior historic landmark,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "4.2.1.4.(4)(i)",
+          "text": "lighting that is an integral part of advertising or directional signage,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "j",
+          "reference": "4.2.1.4.(4)(j)",
+          "text": "exit signs,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "k",
+          "reference": "4.2.1.4.(4)(k)",
+          "text": "lighting that is for sale or for lighting educational demonstration systems,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "l",
+          "reference": "4.2.1.4.(4)(l)",
+          "text": "lighting for theatrical purposes, including performance, stage, and film and video production,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "m",
+          "reference": "4.2.1.4.(4)(m)",
+          "text": "lighting for television broadcasting in sporting activity areas,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "n",
+          "reference": "4.2.1.4.(4)(n)",
+          "text": "casino gaming areas,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "o",
+          "reference": "4.2.1.4.(4)(o)",
+          "text": "mirror lighting in dressing rooms, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "p",
+          "reference": "4.2.1.4.(4)(p)",
+          "text": "accent lighting in religious pulpit and choir areas.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "4.2.1.4.(5)",
+      "text": "Lighting for functions, spaces or equipment need not be included in the calculation of installed interior lighting power where it can be shown that its inclusion will adversely affect the intended functions or the use of the space or equipment.",
+      "clauses": []
+    }
+  ],
+  "page_start": 89,
+  "page_end": 90,
+  "timestamp": "2025-12-06T22:08:44.079473+00:00",
+  "success": true,
+  "equation_count": 0
+}

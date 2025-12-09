@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.11",
+  "title": "Cooling Tower Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.11 Cooling Tower Systems\nCooling Tower Systems\n1) Where applicable, water-cooled systems shall be paired to an axial-fan,\ndirect-contact cooling tower that has\n  a) a capacity equal to the nominal heat rejection rate of the equipment,\n  b) inlet and outlet water temperatures of 35°C and 29°C, respectively, and\n  c) an inlet outside air wet bulb temperature of 24°C.\n2) A cooling tower with a capacity not greater than 1 750 kW shall be modeled\nwith one cell.\n3) A cooling tower with a capacity greater than 1 750 kW shall be modeled with a\nnumber of cells equal to its capacity divided by 1 750 and rounded up to the nearest\ninteger.\n4) The pumping system shall be modeled as constant speed operation.\n5) The pumping flow rate shall be set considering\n  a) the cooling tower's capacity,\n  b) use of pure water, and\n  c) a 6°C temperature drop.\n6) The fan of each cooling tower cell shall be modeled with cycling control to\nmaintain an outlet water temperature of 29°C.\n7) Cooling tower equipment performance characteristics as a function of part-load\nshall be modeled in accordance with the part-load performance curves found in\nSubsection 8.4.5.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.11.(1)",
+      "text": "Where applicable, water-cooled systems shall be paired to an axial-fan, direct-contact cooling tower that has",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.11.(1)(a)",
+          "text": "a capacity equal to the nominal heat rejection rate of the equipment,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.11.(1)(b)",
+          "text": "inlet and outlet water temperatures of 35°C and 29°C, respectively, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.11.(1)(c)",
+          "text": "an inlet outside air wet bulb temperature of 24°C.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.11.(2)",
+      "text": "A cooling tower with a capacity not greater than 1 750 kW shall be modeled with one cell.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.11.(3)",
+      "text": "A cooling tower with a capacity greater than 1 750 kW shall be modeled with a number of cells equal to its capacity divided by 1 750 and rounded up to the nearest integer.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.11.(4)",
+      "text": "The pumping system shall be modeled as constant speed operation.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.11.(5)",
+      "text": "The pumping flow rate shall be set considering",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.11.(5)(a)",
+          "text": "the cooling tower's capacity,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.11.(5)(b)",
+          "text": "use of pure water, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.11.(5)(c)",
+          "text": "a 6°C temperature drop.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.4.11.(6)",
+      "text": "The fan of each cooling tower cell shall be modeled with cycling control to maintain an outlet water temperature of 29°C.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.4.11.(7)",
+      "text": "Cooling tower equipment performance characteristics as a function of part-load shall be modeled in accordance with the part-load performance curves found in Subsection 8.4.5.",
+      "clauses": []
+    }
+  ],
+  "page_start": 217,
+  "page_end": 217,
+  "timestamp": "2025-12-06T22:08:44.134164+00:00",
+  "success": true,
+  "equation_count": 0
+}

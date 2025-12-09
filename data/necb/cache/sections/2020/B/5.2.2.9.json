@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.2.9",
+  "title": "Cooling by Indirect Use of Outdoor Air (Water Economizer System)",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.2.9 Cooling by Indirect Use of Outdoor Air (Water Economizer System)\nCooling by Indirect Use of Outdoor Air (Water Economizer System)\n1) HVAC systems that reduce mechanical cooling energy use by using outdoor air\nto chill cooling distribution fluid by direct evaporation, indirect evaporation, or both,\nshall be capable of cooling supply air so as to provide 100% of the cooling load when\nthe outdoor air wet-bulb temperature is 7°C or lower.\n2) HVAC systems that reduce mechanical cooling energy use by using outdoor air\nto chill cooling distribution fluid by sensible heat transfer shall be capable of cooling\nsupply air so as to provide 100% of the cooling load when the outdoor-air dry-bulb\ntemperature is 10°C or lower.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.2.9.(1)",
+      "text": "HVAC systems that reduce mechanical cooling energy use by using outdoor air to chill cooling distribution fluid by direct evaporation, indirect evaporation, or both, shall be capable of cooling supply air so as to provide 100% of the cooling load when the outdoor air wet-bulb temperature is 7°C or lower.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.2.9.(2)",
+      "text": "HVAC systems that reduce mechanical cooling energy use by using outdoor air to chill cooling distribution fluid by sensible heat transfer shall be capable of cooling supply air so as to provide 100% of the cooling load when the outdoor-air dry-bulb temperature is 10°C or lower.",
+      "clauses": []
+    }
+  ],
+  "page_start": 139,
+  "page_end": 140,
+  "timestamp": "2025-12-06T22:08:44.098051+00:00",
+  "success": true,
+  "equation_count": 0
+}

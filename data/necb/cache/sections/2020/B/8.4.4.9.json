@@ -1,0 +1,205 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.9",
+  "title": "Heating System",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.9 Heating System\nHeating System\n1) Except as provided in Sentence (2), the heating system serving each thermal\nblock of the reference building shall be determined in accordance with Table 8.4.4.7.-A\nand this Article.\n2) Where the proposed building uses purchased energy, Article 8.4.4.6. shall apply\nto the reference building.\n3) Where Tables 8.4.4.7.-A and 8.4.4.7.-B indicate that a heating system is required\nin the secondary system as well as in a terminal device, the heating capacity of each\ntype of equipment shall be set as follows:\n  a) the heating capacity of the terminal device shall meet the thermal block's\nheating load due to the transfer of energy through the building envelope only,\n  b) the combined heating capacities of the heating systems in the terminal\ndevice and secondary system shall meet the peak heating load of the thermal\nblocks served by those systems, and\n  c) the applicable oversize factor shall apply to each type of equipment.\n4) Except as provided in Sentence (5), the energy type of the reference building's\nheating system shall be modeled as being identical to the energy type of the proposed\nbuilding's heating system.\n5) Where more than one energy type is used by the proposed building's heating\nsystem,\n  a) the heating capacities of the reference building's heating equipment shall\nmatch the ratio of the proposed building's heating equipment capacity\nallocation, and\n  b) the operating schedule, priority of use and other operational characteristics\nof the proposed building's use of energy types shall apply.\n6) Where a hydronic system is modeled in the reference building, the heating\nplant shall be modeled as follows:\n  a) the heating capacity of the heating plant shall be the sum of the heating\ncapacities of the systems served by the plant, multiplied by the applicable\noversize factor,\n  b) where the heating capacity is not greater than 176 kW, the heating plant\nshall be modeled with one single-stage boiler,\n  c) where the heating capacity is greater than 176 kW and not greater than\n352 kW, the heating plant shall be modeled to operate as required by the\nreference building's load with\n  i) two boilers of equal capacity, or\n    ii) a two-staged boiler that operates in stages with a 1:2 ratio,\n  d) where the heating capacity exceeds 352 kW, the heating plant shall be\nmodeled with a boiler that is fully modulating down to 25% of its capacity,\n  e) the pumping system shall be modeled as a primary system with constant\nspeed operation,\n  f) the peak pumping flow rate shall be set considering\n  i) the installed heating plant's capacity,\n    ii) use of pure water, and\n    iii) a 16°C temperature drop,\n  g) the pump's operating schedule shall be modeled as being identical to that of\nthe proposed building, and\n  h) the hot water supply temperature shall be reset to\n  i) 82°C for an outside air temperature of −16°C, and\n    ii) 60°C for an outside air temperature of 0°C.\n7) Where the reference building contains a furnace, it shall be modeled as follows:\n  a) the heating capacity of the furnace shall be the sum of the heating loads\nof the thermal blocks served by the furnace, multiplied by the applicable\noversize factor,\n  b) where the heating capacity is not greater than 66 kW, the furnace shall be\nmodeled with two stages of equal capacity, and\n  c) where the heating capacity is greater than 66 kW, the furnace shall be\nmodeled with a number of stages equal to its capacity divided by 66 kW and\nrounded up to the nearest integer.\n8) Heating equipment performance characteristics as a function of part-load\nshall be modeled in accordance with the part-load performance curves found in\nSubsection 8.4.5.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.9.(1)",
+      "text": "Except as provided in Sentence (2), the heating system serving each thermal block of the reference building shall be determined in accordance with Table 8.4.4.7.-A and this Article.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.9.(2)",
+      "text": "Where the proposed building uses purchased energy, Article 8.4.4.6. shall apply to the reference building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.9.(3)",
+      "text": "Where Tables 8.4.4.7.-A and 8.4.4.7.-B indicate that a heating system is required in the secondary system as well as in a terminal device, the heating capacity of each type of equipment shall be set as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.9.(3)(a)",
+          "text": "the heating capacity of the terminal device shall meet the thermal block's heating load due to the transfer of energy through the building envelope only,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.9.(3)(b)",
+          "text": "the combined heating capacities of the heating systems in the terminal device and secondary system shall meet the peak heating load of the thermal blocks served by those systems, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.9.(3)(c)",
+          "text": "the applicable oversize factor shall apply to each type of equipment.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.9.(4)",
+      "text": "Except as provided in Sentence (5), the energy type of the reference building's heating system shall be modeled as being identical to the energy type of the proposed building's heating system.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.9.(5)",
+      "text": "Where more than one energy type is used by the proposed building's heating system,",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.9.(5)(a)",
+          "text": "the heating capacities of the reference building's heating equipment shall match the ratio of the proposed building's heating equipment capacity allocation, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.9.(5)(b)",
+          "text": "the operating schedule, priority of use and other operational characteristics of the proposed building's use of energy types shall apply.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.4.9.(6)",
+      "text": "Where a hydronic system is modeled in the reference building, the heating plant shall be modeled as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.9.(6)(a)",
+          "text": "the heating capacity of the heating plant shall be the sum of the heating capacities of the systems served by the plant, multiplied by the applicable oversize factor,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.9.(6)(b)",
+          "text": "where the heating capacity is not greater than 176 kW, the heating plant shall be modeled with one single-stage boiler,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.9.(6)(c)",
+          "text": "where the heating capacity is greater than 176 kW and not greater than 352 kW, the heating plant shall be modeled to operate as required by the reference building's load with",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "8.4.4.9.(6)(i)",
+          "text": "two boilers of equal capacity, or",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "8.4.4.9.(6)(i)(ii)",
+              "text": "a two-staged boiler that operates in stages with a 1:2 ratio,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "d",
+          "reference": "8.4.4.9.(6)(d)",
+          "text": "where the heating capacity exceeds 352 kW, the heating plant shall be modeled with a boiler that is fully modulating down to 25% of its capacity,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "8.4.4.9.(6)(e)",
+          "text": "the pumping system shall be modeled as a primary system with constant speed operation,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "f",
+          "reference": "8.4.4.9.(6)(f)",
+          "text": "the peak pumping flow rate shall be set considering",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "8.4.4.9.(6)(i)",
+          "text": "the installed heating plant's capacity,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "8.4.4.9.(6)(i)(ii)",
+              "text": "use of pure water, and"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "8.4.4.9.(6)(i)(iii)",
+              "text": "a 16°C temperature drop,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "g",
+          "reference": "8.4.4.9.(6)(g)",
+          "text": "the pump's operating schedule shall be modeled as being identical to that of the proposed building, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "h",
+          "reference": "8.4.4.9.(6)(h)",
+          "text": "the hot water supply temperature shall be reset to",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "8.4.4.9.(6)(i)",
+          "text": "82°C for an outside air temperature of −16°C, and",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "8.4.4.9.(6)(i)(ii)",
+              "text": "60°C for an outside air temperature of 0°C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.4.9.(7)",
+      "text": "Where the reference building contains a furnace, it shall be modeled as follows:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.9.(7)(a)",
+          "text": "the heating capacity of the furnace shall be the sum of the heating loads of the thermal blocks served by the furnace, multiplied by the applicable oversize factor,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.9.(7)(b)",
+          "text": "where the heating capacity is not greater than 66 kW, the furnace shall be modeled with two stages of equal capacity, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.9.(7)(c)",
+          "text": "where the heating capacity is greater than 66 kW, the furnace shall be modeled with a number of stages equal to its capacity divided by 66 kW and rounded up to the nearest integer.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "8",
+      "reference": "8.4.4.9.(8)",
+      "text": "Heating equipment performance characteristics as a function of part-load shall be modeled in accordance with the part-load performance curves found in Subsection 8.4.5.",
+      "clauses": []
+    }
+  ],
+  "page_start": 214,
+  "page_end": 216,
+  "timestamp": "2025-12-06T22:08:44.132997+00:00",
+  "success": true,
+  "equation_count": 0
+}

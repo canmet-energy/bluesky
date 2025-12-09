@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.2.9",
+  "title": "Determination of the Daylight Supply Factor for Toplighting",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.2.9 Determination of the Daylight Supply Factor for Toplighting\nDetermination of the Daylight Supply Factor for Toplighting\n1) For spaces where toplighting is the primary daylight supply, the daylight supply factor, CDL,sup,i, shall be determined using Table 4.3.2.9.-A.\n2) The mean daylight factor for toplighting, Di, shall be calculated using the following equation: [Equation: D_i = \\tau_{D65,i} \\times k_{skyl,1,i} \\times k_{skyl,2,i} \\times k_{skyl,3,i} \\times \\frac{\\sum A_{R,b,i}}{A_{RG,i}} \\times \\eta_{R,i}] where τD65,i = luminous transmittance of the roof glazing for standard illuminant D65, kskyl,1,i = factor to account for framing defined as the ratio of glazed area to overall area of the opening including area of framing (if unknown, value shall be set to 0.7), kskyl,2,i = factor to account for dirt accumulation (if unknown, value shall be set to 0.9), kskyl,3,i = factor to account for non-perpendicular light incidence (if unknown, value shall be set to 0.85), ARb,i = area of the openings providing toplighting (area of rough opening), in m2, ARG,i = area of the space, in m2, and ηR,i = utilization factor determined using Table 4.3.2.9.-B.\n3) The room cavity ratio, RCR, shall be calculated using the following equation: [Equation: t_{eff,day,NDL,i} = t_{day,i} \\times F_{occ,i} \\times F_{pers,i}] where H = height of the space, in m, L = length of the space, in m, and W = width of the space, in m. Table 4.3.2.9.-A Daylight Supply Factors for Toplighting, CDL,sup,i Forming Part of Sentence 4.3.2.9.(1) Design Illuminance, in lx Classification of the Daylighting Supply Low (2% ≤ Di < 4%)(1) Medium (4% ≤ Di < 7%)(1) Good (Di ≥7%)(1) CDL,sup,i 300 500 750 1 000 0.81 0.75 0.67 0.59 0.86 0.82 0.77 0.73 0.88 0.85 0.82 0.79 Notes to Table 4.3.2.9.-A: (1) See Sentence (2) to calculate the mean daylight factor for toplighting, Di. For Di < 2%, CDL,sup,i = 0. Table 4.3.2.9.-B Utilization Factor, ηR,i, as a Function of Room Cavity Ratio, RCR Forming Part of Sentence 4.3.2.9.(2) RCR(1) Utilization Factor,(2) ηR,i 1.00 0.5 0.98 0.95 1.5 0.89 0.84 2.5 0.79 0.74 0.65 0.57 0.52 0.47 0.41 0.35 0.29 Notes to Table 4.3.2.9.-B: (1) See Sentence (3) to calculate the room cavity ratio, RCR. (2) The utilization factors are derived based on room reflectances of 70 pc (ceiling cavity)/50 pw (walls)/20 pf (floor cavity).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.2.9.(1)",
+      "text": "For spaces where toplighting is the primary daylight supply, the daylight supply factor, CDL,sup,i, shall be determined using Table 4.3.2.9.-A.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.3.2.9.(2)",
+      "text": "The mean daylight factor for toplighting, Di, shall be calculated using the following equation: [Equation: D_i = \\tau_{D65,i} \\times k_{skyl,1,i} \\times k_{skyl,2,i} \\times k_{skyl,3,i} \\times \\frac{\\sum A_{R,b,i}}{A_{RG,i}} \\times \\eta_{R,i}] where τD65,i = luminous transmittance of the roof glazing for standard illuminant D65, kskyl,1,i = factor to account for framing defined as the ratio of glazed area to overall area of the opening including area of framing (if unknown, value shall be set to 0.7), kskyl,2,i = factor to account for dirt accumulation (if unknown, value shall be set to 0.9), kskyl,3,i = factor to account for non-perpendicular light incidence (if unknown, value shall be set to 0.85), ARb,i = area of the openings providing toplighting (area of rough opening), in m2, ARG,i = area of the space, in m2, and ηR,i = utilization factor determined using Table 4.3.2.9.-B.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.3.2.9.(3)",
+      "text": "The room cavity ratio, RCR, shall be calculated using the following equation: [Equation: t_{eff,day,NDL,i} = t_{day,i} \\times F_{occ,i} \\times F_{pers,i}] where H = height of the space, in m, L = length of the space, in m, and W = width of the space, in m. Table 4.3.2.9.-A Daylight Supply Factors for Toplighting, CDL,sup,i Forming Part of Sentence 4.3.2.9.(1) Design Illuminance, in lx Classification of the Daylighting Supply Low (2% ≤ Di < 4%)(1) Medium (4% ≤ Di < 7%)(1) Good (Di ≥7%)(1) CDL,sup,i 300 500 750 1 000 0.81 0.75 0.67 0.59 0.86 0.82 0.77 0.73 0.88 0.85 0.82 0.79 Notes to Table 4.3.2.9.-A: (1) See Sentence (2) to calculate the mean daylight factor for toplighting, Di. For Di < 2%, CDL,sup,i = 0. Table 4.3.2.9.-B Utilization Factor, ηR,i, as a Function of Room Cavity Ratio, RCR Forming Part of Sentence 4.3.2.9.(2) RCR(1) Utilization Factor,(2) ηR,i 1.00 0.5 0.98 0.95 1.5 0.89 0.84 2.5 0.79 0.74 0.65 0.57 0.52 0.47 0.41 0.35 0.29 Notes to Table 4.3.2.9.-B: (1) See Sentence (3) to calculate the room cavity ratio, RCR. (2) The utilization factors are derived based on room reflectances of 70 pc (ceiling cavity)/50 pw (walls)/20 pf (floor cavity).",
+      "clauses": []
+    }
+  ],
+  "page_start": 114,
+  "page_end": 115,
+  "timestamp": "2025-12-06T22:08:44.089516+00:00",
+  "success": true,
+  "equation_count": 2
+}

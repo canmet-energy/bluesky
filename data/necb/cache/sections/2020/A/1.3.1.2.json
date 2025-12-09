@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.3.1.2",
+  "title": "Applicable Editions",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "1.3.1.2 Applicable Editions\nApplicable Editions\n1) Where documents are referenced in this Code, they shall be the editions\ndesignated in Table 1.3.1.2. (See also Note A-1.5.1.1.(1) of Division A.)\nTable 1.3.1.2.\nDocuments Referenced in the National Energy Code of Canada for Buildings 2020(1)\nForming Part of Sentence 1.3.1.2.(1)\nIssuing Agency\nDocument Number(2)\nTitle of Document\nCode Reference\nAAMA\n501.5-07\nTest Method for Thermal Cycling of Exterior Walls 3.2.4.3.(3)\nAHRI\nAHRI\nANSI/AHRI 210/240-2008\nAHRI 310/380-2014/CSA C744-14\nPerformance Rating of Unitary Air-Conditioning\nand Air-Source Heat Pump Equipment\nPackaged Terminal Air-Conditioners and Heat\nPumps\nTable 5.2.12.1.-C\nTable 5.2.12.1.-G\nTable 1.3.1.2. (Continued)\nIssuing Agency\nDocument Number(2)\nTitle of Document\nCode Reference\nAHRI\nANSI/AHRI 340/360-2007\nPerformance Rating of Commercial and Industrial\nUnitary Air-Conditioning and Heat Pump\nEquipment\nTable 5.2.12.1.-A\nTable 5.2.12.1.-C\nAHRI\nANSI/AHRI 366 (SI/2009)\nPerformance Rating of Commercial and Industrial\nUnitary Air-Conditioning Condensing Units\nTable 5.2.12.1.-D\nAHRI\nANSI/AHRI 460-2005\nPerformance Rating of Remote Mechanical-Draft\nAir-Cooled Refrigerant Condensers\nTable 5.2.12.2.\nAHRI\nANSI/AHRI 551/591 (SI/2018)\nPerformance Rating of Water-chilling and Heat\nPump Water-heating Packages Using the Vapor\nCompression Cycle\nTable 5.2.12.1.-L\nTable 5.2.12.1.-M\nAHRI\nANSI/AHRI 921 (SI/2015)\nPerformance Rating of DX-Dedicated Outdoor\nAir System Units\nTable 5.2.12.1.-J\nAHRI\n1061 (SI/2013)\nPerformance Rating of Air-to-Air Exchangers for\nEnergy Recovery Ventilation Equipment",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.3.1.2.(1)",
+      "text": "Where documents are referenced in this Code, they shall be the editions designated in Table 1.3.1.2. (See also Note A-1.5.1.1.(1) of Division A.) Table 1.3.1.2. Documents Referenced in the National Energy Code of Canada for Buildings 2020(1) Forming Part of Sentence 1.3.1.2.(1) Issuing Agency Document Number(2) Title of Document Code Reference AAMA 501.5-07 Test Method for Thermal Cycling of Exterior Walls 3.2.4.3.(3) AHRI AHRI ANSI/AHRI 210/240-2008 AHRI 310/380-2014/CSA C744-14 Performance Rating of Unitary Air-Conditioning and Air-Source Heat Pump Equipment Packaged Terminal Air-Conditioners and Heat Pumps Table 5.2.12.1.-C Table 5.2.12.1.-G Table 1.3.1.2. (Continued) Issuing Agency Document Number(2) Title of Document Code Reference AHRI ANSI/AHRI 340/360-2007 Performance Rating of Commercial and Industrial Unitary Air-Conditioning and Heat Pump Equipment Table 5.2.12.1.-A Table 5.2.12.1.-C AHRI ANSI/AHRI 366 (SI/2009) Performance Rating of Commercial and Industrial Unitary Air-Conditioning Condensing Units Table 5.2.12.1.-D AHRI ANSI/AHRI 460-2005 Performance Rating of Remote Mechanical-Draft Air-Cooled Refrigerant Condensers Table 5.2.12.2. AHRI ANSI/AHRI 551/591 (SI/2018) Performance Rating of Water-chilling and Heat Pump Water-heating Packages Using the Vapor Compression Cycle Table 5.2.12.1.-L Table 5.2.12.1.-M AHRI ANSI/AHRI 921 (SI/2015) Performance Rating of DX-Dedicated Outdoor Air System Units Table 5.2.12.1.-J AHRI 1061 (SI/2013) Performance Rating of Air-to-Air Exchangers for Energy Recovery Ventilation Equipment",
+      "clauses": []
+    }
+  ],
+  "page_start": 53,
+  "page_end": 54,
+  "timestamp": "2025-12-06T22:08:44.059060+00:00",
+  "success": true,
+  "equation_count": 0
+}

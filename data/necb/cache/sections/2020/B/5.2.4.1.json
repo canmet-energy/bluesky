@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.4.1",
+  "title": "Required Dampers",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.4.1 Required Dampers\nRequired Dampers\n1) Except as provided in Sentences (2) to (4), every duct or opening intended to\ndischarge air from a conditioned space to the outdoors or to unconditioned space, and\nevery outdoor air intake duct or opening shall be equipped with a motorized damper.\n2) Where dampers are not permitted by other regulations, air intakes and outlets\nneed not comply with Sentence (1).\n3) Air intakes and outlets serving HVAC systems required to operate continuously\nneed not comply with Sentence (1).\n4) Where the duct or opening does not exceed 0.08 m2 in cross-sectional area,\nair intake dampers required by Sentence (1) are permitted to be manually operated\nand air outlet dampers required by Sentence (1) are permitted to consist of gravity\nor spring-operated backflow dampers.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.4.1.(1)",
+      "text": "Except as provided in Sentences (2) to (4), every duct or opening intended to discharge air from a conditioned space to the outdoors or to unconditioned space, and every outdoor air intake duct or opening shall be equipped with a motorized damper.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.4.1.(2)",
+      "text": "Where dampers are not permitted by other regulations, air intakes and outlets need not comply with Sentence (1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.4.1.(3)",
+      "text": "Air intakes and outlets serving HVAC systems required to operate continuously need not comply with Sentence (1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.4.1.(4)",
+      "text": "Where the duct or opening does not exceed 0.08 m2 in cross-sectional area, air intake dampers required by Sentence (1) are permitted to be manually operated and air outlet dampers required by Sentence (1) are permitted to consist of gravity or spring-operated backflow dampers.",
+      "clauses": []
+    }
+  ],
+  "page_start": 141,
+  "page_end": 141,
+  "timestamp": "2025-12-06T22:08:44.099509+00:00",
+  "success": true,
+  "equation_count": 0
+}

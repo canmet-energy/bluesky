@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.2.2.4",
+  "title": "Documentation on Lighting Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.2.2.4 Documentation on Lighting Systems\nDocumentation on Lighting Systems\n1) The following documentation on the lighting systems shall be provided:\n  a) an as-built single-line diagram of the lighting control system showing the\nlocation of each illuminated zone and associated switches and controls,\n  b) installed interior lighting power in conditioned spaces, in kW,\n  c) average lighting power density, in W/m2, obtained by dividing the installed\ninterior lighting power by the total floor area,\n  d) if the building area method is used to determine the interior lighting power\nallowance, the associated lighting power density, in W/m2, and the gross\nlighted area, in m2,\n  e) if the space-by-space method is used to determine the interior lighting power\nallowance, a detailed line-by-line breakdown of spaces, their floor area, in\nm2, the associated lighting power densities, in W/m2, and the resulting\nlighting power allowances, in kW,\n  f) interior lighting power allowance, in kW,\n  g) installed interior automatic controls and justification for spaces exempted,\n  h) exterior lighting power, in kW, including a detailed line-by-line breakdown\nof spaces and/or functions, and\n  i) installed exterior automatic controls and justification for spaces and/or\nfunctions exempted.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.2.2.4.(1)",
+      "text": "The following documentation on the lighting systems shall be provided:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.4.(1)(a)",
+          "text": "an as-built single-line diagram of the lighting control system showing the location of each illuminated zone and associated switches and controls,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.4.(1)(b)",
+          "text": "installed interior lighting power in conditioned spaces, in kW,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "2.2.2.4.(1)(c)",
+          "text": "average lighting power density, in W/m2, obtained by dividing the installed interior lighting power by the total floor area,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "2.2.2.4.(1)(d)",
+          "text": "if the building area method is used to determine the interior lighting power allowance, the associated lighting power density, in W/m2, and the gross lighted area, in m2,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "2.2.2.4.(1)(e)",
+          "text": "if the space-by-space method is used to determine the interior lighting power allowance, a detailed line-by-line breakdown of spaces, their floor area, in m2, the associated lighting power densities, in W/m2, and the resulting lighting power allowances, in kW,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "f",
+          "reference": "2.2.2.4.(1)(f)",
+          "text": "interior lighting power allowance, in kW,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "g",
+          "reference": "2.2.2.4.(1)(g)",
+          "text": "installed interior automatic controls and justification for spaces exempted,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "h",
+          "reference": "2.2.2.4.(1)(h)",
+          "text": "exterior lighting power, in kW, including a detailed line-by-line breakdown of spaces and/or functions, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "2.2.2.4.(1)(i)",
+          "text": "installed exterior automatic controls and justification for spaces and/or functions exempted.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 295,
+  "page_end": 295,
+  "timestamp": "2025-12-06T22:08:44.145389+00:00",
+  "success": true,
+  "equation_count": 0
+}

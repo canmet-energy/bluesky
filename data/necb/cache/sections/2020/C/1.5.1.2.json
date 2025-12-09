@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.5.1.2",
+  "title": "Conflicting Requirements",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.5.1.2 Conflicting Requirements\nConflicting Requirements\n1) In the case of conflict between the provisions of this Code and those of a\nreferenced document, the provisions of this Code shall govern.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.5.1.2.(1)",
+      "text": "In the case of conflict between the provisions of this Code and those of a referenced document, the provisions of this Code shall govern.",
+      "clauses": []
+    }
+  ],
+  "page_start": 30,
+  "page_end": 30,
+  "timestamp": "2025-12-06T22:08:44.054715+00:00",
+  "success": true,
+  "equation_count": 0
+}

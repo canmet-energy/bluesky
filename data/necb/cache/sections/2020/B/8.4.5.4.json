@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.5.4",
+  "title": "Direct-Expansion Cooling Equipment",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.5.4 Direct-Expansion Cooling Equipment\nDirect-Expansion Cooling Equipment\n1) The part-load performance characteristics of the reference electric direct-expansion (DX) coil cooling equipment shall be adjusted for cooling capacity by applying Sentence (2) and adjusted for power draw by applying Sentence (4).\n2) The available total cooling capacity, Qavailable, in Btu/h, of the reference electric DX coil as a function of present evaporator and condenser conditions shall be calculated using the following equation: [Equation: Q_{available} = \\text{CAP\\_FT}_{EDX} \\times Q_{rated}] where CAP_FTEDX = cooling capacity adjustment determined in accordance with Sentence (3), and Qrated = rated capacity at AHRI test conditions, in Btu/h.\n3) The cooling capacity adjustment, CAP_FTEDX, shall be calculated using the following equation: where twb = entering coil wet-bulb temperature, in °F, todb = except as provided in Sentence (8), outdoor-air dry-bulb temperature, in °F, a = 0.8740302, b = –0.0011416, c = 0.0001711, d = –0.0029570, e = 0.0000102, and f = –0.0000592.\n4) The power draw at specified operating conditions, Poperating, in kW, of the reference electric DX coil as a function of present evaporator and condenser conditions and part-load ratio shall be calculated using the following equation: [Equation: P_{operating} = P_{rated} \\times \\text{EIR\\_FPLR} \\times \\text{EIR\\_FT} \\times \\text{CAP\\_FT\\_EDX}] where Prated = rated power draw at AHRI test conditions, in kW, EIR_FPLR = electric input ratio adjustment to rated efficiency due to changes in coil load determined in accordance with Sentence (5), EIR_FT = electric input ratio adjustment to rated efficiency due to environmental variables determined in accordance with Sentence (7), and CAP_FTEDX = cooling capacity adjustment determined in accordance with Sentence (3).\n5) The electric input ratio adjustment to the rated efficiency due to changes in coil load, EIR_FPLR, shall be calculated using the following equation: [Equation: Q_{available} = \\text{CAP\\_FT}_{EC} \\times Q_{rated}] where PLR = part-load ratio based on available capacity (not rated capacity) determined in accordance with Sentence (6), a = 0.2012301, b = –0.0312175, c = 1.9504979, and d = –1.1205105.\n6) The part-load ratio based on available capacity (not rated capacity), PLR, shall be calculated using the following equation: [Equation: \\text{CAP\\_FT}_{EDX} = a + (b \\times t_{wb}) + (c \\times t_{wb}^{2}) + (d \\times t_{odb}) + (e \\times t_{odb}^{2}) + (f \\times t_{wb} \\times t_{odb})] where Qoperating = present load on electric DX coil, in Btu/h, and Qavailable = available capacity of electric DX coil at present evaporator and condenser conditions, in Btu/h, determined in accordance with Sentence (2).\n7) The electric input ratio adjustment to the rated efficiency due to environmental variables, EIR_FT, shall be calculated using the following equation: [Equation: \\text{EIR\\_FT} = a + (b \\times t_{wb}) + (c \\times t_{wb}^{2}) + (d \\times t_{odb}) + (e \\times t_{odb}^{2}) + (f \\times t_{wb} \\times t_{odb})] where twb = entering coil wet-bulb temperature, in °F, todb = except as provided in Sentence (8), outdoor-air dry-bulb temperature, in °F, a = –1.0639310, b = 0.0306584, c = –0.0001269, d = 0.0154213, e = 0.0000497, and f = –0.0002096.\n8) If an air-cooled unit uses an evaporative condenser, the outdoor-air dry-bulb temperature, todb, used in Sentences (3) and (7) shall be the effective dry-bulb temperature of the air leaving the evaporative cooling unit.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.5.4.(1)",
+      "text": "The part-load performance characteristics of the reference electric direct-expansion (DX) coil cooling equipment shall be adjusted for cooling capacity by applying Sentence (2) and adjusted for power draw by applying Sentence (4).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.5.4.(2)",
+      "text": "The available total cooling capacity, Qavailable, in Btu/h, of the reference electric DX coil as a function of present evaporator and condenser conditions shall be calculated using the following equation: [Equation: Q_{available} = \\text{CAP\\_FT}_{EDX} \\times Q_{rated}] where CAP_FTEDX = cooling capacity adjustment determined in accordance with Sentence (3), and Qrated = rated capacity at AHRI test conditions, in Btu/h.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.5.4.(3)",
+      "text": "The cooling capacity adjustment, CAP_FTEDX, shall be calculated using the following equation: where twb = entering coil wet-bulb temperature, in °F, todb = except as provided in Sentence (8), outdoor-air dry-bulb temperature, in °F, a = 0.8740302, b = –0.0011416, c = 0.0001711, d = –0.0029570, e = 0.0000102, and f = –0.0000592.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.5.4.(4)",
+      "text": "The power draw at specified operating conditions, Poperating, in kW, of the reference electric DX coil as a function of present evaporator and condenser conditions and part-load ratio shall be calculated using the following equation: [Equation: P_{operating} = P_{rated} \\times \\text{EIR\\_FPLR} \\times \\text{EIR\\_FT} \\times \\text{CAP\\_FT\\_EDX}] where Prated = rated power draw at AHRI test conditions, in kW, EIR_FPLR = electric input ratio adjustment to rated efficiency due to changes in coil load determined in accordance with Sentence (5), EIR_FT = electric input ratio adjustment to rated efficiency due to environmental variables determined in accordance with Sentence (7), and CAP_FTEDX = cooling capacity adjustment determined in accordance with Sentence (3).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.5.4.(5)",
+      "text": "The electric input ratio adjustment to the rated efficiency due to changes in coil load, EIR_FPLR, shall be calculated using the following equation: [Equation: Q_{available} = \\text{CAP\\_FT}_{EC} \\times Q_{rated}] where PLR = part-load ratio based on available capacity (not rated capacity) determined in accordance with Sentence (6), a = 0.2012301, b = –0.0312175, c = 1.9504979, and d = –1.1205105.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.5.4.(6)",
+      "text": "The part-load ratio based on available capacity (not rated capacity), PLR, shall be calculated using the following equation: [Equation: \\text{CAP\\_FT}_{EDX} = a + (b \\times t_{wb}) + (c \\times t_{wb}^{2}) + (d \\times t_{odb}) + (e \\times t_{odb}^{2}) + (f \\times t_{wb} \\times t_{odb})] where Qoperating = present load on electric DX coil, in Btu/h, and Qavailable = available capacity of electric DX coil at present evaporator and condenser conditions, in Btu/h, determined in accordance with Sentence (2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.5.4.(7)",
+      "text": "The electric input ratio adjustment to the rated efficiency due to environmental variables, EIR_FT, shall be calculated using the following equation: [Equation: \\text{EIR\\_FT} = a + (b \\times t_{wb}) + (c \\times t_{wb}^{2}) + (d \\times t_{odb}) + (e \\times t_{odb}^{2}) + (f \\times t_{wb} \\times t_{odb})] where twb = entering coil wet-bulb temperature, in °F, todb = except as provided in Sentence (8), outdoor-air dry-bulb temperature, in °F, a = –1.0639310, b = 0.0306584, c = –0.0001269, d = 0.0154213, e = 0.0000497, and f = –0.0002096.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "8.4.5.4.(8)",
+      "text": "If an air-cooled unit uses an evaporative condenser, the outdoor-air dry-bulb temperature, todb, used in Sentences (3) and (7) shall be the effective dry-bulb temperature of the air leaving the evaporative cooling unit.",
+      "clauses": []
+    }
+  ],
+  "page_start": 224,
+  "page_end": 225,
+  "timestamp": "2025-12-06T22:08:44.138680+00:00",
+  "success": true,
+  "equation_count": 5
+}

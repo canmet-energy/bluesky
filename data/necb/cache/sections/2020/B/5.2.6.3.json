@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.6.3",
+  "title": "Pumping Power Demand",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.6.3 Pumping Power Demand\nPumping Power Demand\n1) The combined pumping power demand required by the motors of all the\npumps in a given hydronic system shall not exceed the values stated in Table 5.2.6.3.\nfor the applicable system.\nTable 5.2.6.3.\nMaximum Pumping Power Demand of Pump Motors\nForming Part of Sentence 5.2.6.3.(1)\nType of Hydronic System\nMaximum Combined Pumping Power Demand of Pump\nMotors, Wmotorpower/kWthermalpeak(1)\nHeating\nHeat rejection\nCooling\nWater-source heat pump\n4.5\nNotes to Table 5.2.6.3.:\n(1) Wmotorpower = combined power of the pump motors\nkWthermalpeak = peak thermal demand of the loop at design conditions",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.6.3.(1)",
+      "text": "The combined pumping power demand required by the motors of all the pumps in a given hydronic system shall not exceed the values stated in Table 5.2.6.3. for the applicable system. Table 5.2.6.3. Maximum Pumping Power Demand of Pump Motors Forming Part of Sentence 5.2.6.3.(1) Type of Hydronic System Maximum Combined Pumping Power Demand of Pump Motors, Wmotorpower/kWthermalpeak(1) Heating Heat rejection Cooling Water-source heat pump 4.5 Notes to Table 5.2.6.3.: (1) Wmotorpower = combined power of the pump motors kWthermalpeak = peak thermal demand of the loop at design conditions",
+      "clauses": []
+    }
+  ],
+  "page_start": 144,
+  "page_end": 144,
+  "timestamp": "2025-12-06T22:08:44.102038+00:00",
+  "success": true,
+  "equation_count": 0
+}

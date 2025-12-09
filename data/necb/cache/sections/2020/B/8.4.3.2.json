@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.3.2",
+  "title": "Operating Schedules, Internal Loads, Service Water Heating Loads",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.3.2 Operating Schedules, Internal Loads, Service Water Heating Loads\nOperating Schedules, Internal Loads, Service Water Heating Loads\nand Set-point Temperature\n1) The operating schedules relating to the presence of occupants and of loads due\nto the operation of lighting, receptacle equipment, and heating, cooling and service\nwater heating systems shall be representative of the proposed building's type or space\nfunctions. (See Note A-8.4.3.2.(1).)\n2) Internal loads, service water heating loads, and illuminance levels used in the\nenergy compliance calculations shall be representative of the proposed building's type\nor space functions. (See Note A-8.4.3.2.(2).)\n3) For semi-heated buildings, as defined in Sentence 1.2.1.2.(2), the set-point\ntemperature of the proposed building shall be that shown in the specifications.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.3.2.(1)",
+      "text": "The operating schedules relating to the presence of occupants and of loads due to the operation of lighting, receptacle equipment, and heating, cooling and service water heating systems shall be representative of the proposed building's type or space functions. (See Note A-8.4.3.2.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.3.2.(2)",
+      "text": "Internal loads, service water heating loads, and illuminance levels used in the energy compliance calculations shall be representative of the proposed building's type or space functions. (See Note A-8.4.3.2.(2).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.3.2.(3)",
+      "text": "For semi-heated buildings, as defined in Sentence 1.2.1.2.(2), the set-point temperature of the proposed building shall be that shown in the specifications.",
+      "clauses": []
+    }
+  ],
+  "page_start": 207,
+  "page_end": 208,
+  "timestamp": "2025-12-06T22:08:44.127632+00:00",
+  "success": true,
+  "equation_count": 0
+}

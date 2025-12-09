@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.2.2",
+  "title": "Equipment Insulation",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.2.2 Equipment Insulation\nEquipment Insulation\n1) Except for tanks covered by Article 6.2.2.1., hot service water storage tanks shall\nbe covered with insulation having a maximum U-value of 0.45 W/(m2×K).\n2) Tank insulation referred to in Sentence (1) that is installed in areas where it may\nbe subject to mechanical damage shall be protected.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.2.2.(1)",
+      "text": "Except for tanks covered by Article 6.2.2.1., hot service water storage tanks shall be covered with insulation having a maximum U-value of 0.45 W/(m2×K).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "6.2.2.2.(2)",
+      "text": "Tank insulation referred to in Sentence (1) that is installed in areas where it may be subject to mechanical damage shall be protected.",
+      "clauses": []
+    }
+  ],
+  "page_start": 182,
+  "page_end": 182,
+  "timestamp": "2025-12-06T22:08:44.113485+00:00",
+  "success": true,
+  "equation_count": 0
+}

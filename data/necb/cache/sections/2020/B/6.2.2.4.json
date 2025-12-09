@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.2.4",
+  "title": "Combination Service Water Heating and Space-Heating Equipment",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.2.4 Combination Service Water Heating and Space-Heating Equipment\nCombination Service Water Heating and Space-Heating Equipment\n1) Combination service water heating and space-heating equipment is only\npermitted to be used where input to the combination equipment is\n  a) less than 22 kW, or\n  b) less than twice the design service water heating load.\n2) Where combination equipment referred to in Sentence (1) is used, its\nperformance shall meet the greater of the minimum energy efficiency ratings for service\nwater heating equipment and space-heating equipment required in the applicable\nstandards listed in Tables 5.2.12.1.-A to 5.2.12.1.-P and 6.2.2.1. or, where such\nequipment is not covered in these Tables, with the “Energy Efficiency Act” and the\n“Energy Efficiency Regulations.”",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.2.4.(1)",
+      "text": "Combination service water heating and space-heating equipment is only permitted to be used where input to the combination equipment is",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "6.2.2.4.(1)(a)",
+          "text": "less than 22 kW, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "6.2.2.4.(1)(b)",
+          "text": "less than twice the design service water heating load.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "6.2.2.4.(2)",
+      "text": "Where combination equipment referred to in Sentence (1) is used, its performance shall meet the greater of the minimum energy efficiency ratings for service water heating equipment and space-heating equipment required in the applicable standards listed in Tables 5.2.12.1.-A to 5.2.12.1.-P and 6.2.2.1. or, where such equipment is not covered in these Tables, with the “Energy Efficiency Act” and the “Energy Efficiency Regulations.”",
+      "clauses": []
+    }
+  ],
+  "page_start": 182,
+  "page_end": 182,
+  "timestamp": "2025-12-06T22:08:44.114049+00:00",
+  "success": true,
+  "equation_count": 0
+}

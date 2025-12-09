@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.2.9",
+  "title": "Air Leakage",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.2.9 Air Leakage\nAir Leakage\n1) The energy model calculations shall account for air leakage through the building envelope.\n2) The air leakage rate of the building envelope shall be adjusted using the following equation: [Equation: I_{AGW} = C \\times I_{75Pa} \\times \\frac{S}{A_{AGW}}] where IAGW = adjusted air leakage rate of the building envelope at a typical operating pressure differential of 5 Pa and relative to the area of the above-ground walls, in L/(s×m2), C = (5 Pa / 75 Pa)n, where n = flow exponent, which shall be 0.60, if no whole building test result is available, or the calculated value, if whole building testing is carried out in accordance with Article 3.2.4.2. and a series of tests are conducted at different differential pressures, I75Pa = assumed or measured normalized air leakage rate of the building envelope at a pressure differential of 75 Pa, in L/(s×m2), where the measured air leakage rate at a pressure differential of 75 Pa is calculated as I75Pa = Q/S, where Q = volume of air flowing through the building envelope when subjected to a pressure differential of 75 Pa, determined in accordance with ASTM E779, “Standard Test Method for Determining Air Leakage Rate by Fan Pressurization,” in L/s, and S = total area of the building envelope, as per Sentence 3.2.4.2.(1), in m2, and AAGW = total area of above-ground walls, in m2. (See Note A-8.4.2.9.(2).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.2.9.(1)",
+      "text": "The energy model calculations shall account for air leakage through the building envelope.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.2.9.(2)",
+      "text": "The air leakage rate of the building envelope shall be adjusted using the following equation: [Equation: I_{AGW} = C \\times I_{75Pa} \\times \\frac{S}{A_{AGW}}] where IAGW = adjusted air leakage rate of the building envelope at a typical operating pressure differential of 5 Pa and relative to the area of the above-ground walls, in L/(s×m2), C = (5 Pa / 75 Pa)n, where n = flow exponent, which shall be 0.60, if no whole building test result is available, or the calculated value, if whole building testing is carried out in accordance with Article 3.2.4.2. and a series of tests are conducted at different differential pressures, I75Pa = assumed or measured normalized air leakage rate of the building envelope at a pressure differential of 75 Pa, in L/(s×m2), where the measured air leakage rate at a pressure differential of 75 Pa is calculated as I75Pa = Q/S, where Q = volume of air flowing through the building envelope when subjected to a pressure differential of 75 Pa, determined in accordance with ASTM E779, “Standard Test Method for Determining Air Leakage Rate by Fan Pressurization,” in L/s, and S = total area of the building envelope, as per Sentence 3.2.4.2.(1), in m2, and AAGW = total area of above-ground walls, in m2. (See Note A-8.4.2.9.(2).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 206,
+  "page_end": 206,
+  "timestamp": "2025-12-06T22:08:44.126533+00:00",
+  "success": true,
+  "equation_count": 1
+}

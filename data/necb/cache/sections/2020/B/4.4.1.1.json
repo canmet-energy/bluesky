@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.4.1.1",
+  "title": "Scope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.4.1.1 Scope\nScope\n1) Where the lighting system does not comply with the requirements of",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.4.1.1.(1)",
+      "text": "Where the lighting system does not comply with the requirements of",
+      "clauses": []
+    }
+  ],
+  "page_start": 121,
+  "page_end": 121,
+  "timestamp": "2025-12-06T22:08:44.092937+00:00",
+  "success": true,
+  "equation_count": 0
+}

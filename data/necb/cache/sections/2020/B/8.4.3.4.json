@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.3.4",
+  "title": "Interior Lighting",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.3.4 Interior Lighting\nInterior Lighting\n1) Dwelling units shall be modeled with an installed lighting power density of\n5 W/m2.\n2) Where controls based on space occupancy are provided, the installed interior\nlighting power shall be multiplied by the factor for occupancy control, Focc,i, and the\nfactor for personal control, Fpers,i, as determined in accordance with Article 4.3.2.10. for\nthe appropriate occupancy-sensing mechanism.\n3) Where daylight-dependent controls are provided, daylighting calculations\nshall be performed\n  a) for the lighting fixtures controlled by the daylight-dependent controls, and\n  b) where the energy model is unable to perform detailed daylighting\ncalculations, by multiplying the installed interior lighting power in the\ndaylighted area by the factor for daylight harvesting, FDL,i, as calculated\nin accordance with Article 4.3.2.7.\n4) The illumination set-point of the photocontrols referred to in Sentence (3) shall\nbe representative of the space use without task lighting. (See Note A-8.4.3.4.(4).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.3.4.(1)",
+      "text": "Dwelling units shall be modeled with an installed lighting power density of 5 W/m2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.3.4.(2)",
+      "text": "Where controls based on space occupancy are provided, the installed interior lighting power shall be multiplied by the factor for occupancy control, Focc,i, and the factor for personal control, Fpers,i, as determined in accordance with Article 4.3.2.10. for the appropriate occupancy-sensing mechanism.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.3.4.(3)",
+      "text": "Where daylight-dependent controls are provided, daylighting calculations shall be performed",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.3.4.(3)(a)",
+          "text": "for the lighting fixtures controlled by the daylight-dependent controls, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.3.4.(3)(b)",
+          "text": "where the energy model is unable to perform detailed daylighting calculations, by multiplying the installed interior lighting power in the daylighted area by the factor for daylight harvesting, FDL,i, as calculated in accordance with Article 4.3.2.7.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.3.4.(4)",
+      "text": "The illumination set-point of the photocontrols referred to in Sentence (3) shall be representative of the space use without task lighting. (See Note A-8.4.3.4.(4).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 208,
+  "page_end": 208,
+  "timestamp": "2025-12-06T22:08:44.128154+00:00",
+  "success": true,
+  "equation_count": 0
+}

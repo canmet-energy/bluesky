@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "7.2.4.1",
+  "title": "Efficiency",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "7.2.4.1 Efficiency\nEfficiency\n1) Except for elevator motors and motors that are components of rated equipment,\npermanently wired polyphase motors serving the building shall have a nominal\nfull-load motor efficiency not less than the minimum specified in CSA C390, “Test\nmethods, marking requirements, and energy efficiency levels for three-phase induction\nmotors.”",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "7.2.4.1.(1)",
+      "text": "Except for elevator motors and motors that are components of rated equipment, permanently wired polyphase motors serving the building shall have a nominal full-load motor efficiency not less than the minimum specified in CSA C390, “Test methods, marking requirements, and energy efficiency levels for three-phase induction motors.”",
+      "clauses": []
+    }
+  ],
+  "page_start": 195,
+  "page_end": 195,
+  "timestamp": "2025-12-06T22:08:44.120733+00:00",
+  "success": true,
+  "equation_count": 0
+}

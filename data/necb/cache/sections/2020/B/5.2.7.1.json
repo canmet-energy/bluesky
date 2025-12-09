@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.7.1",
+  "title": "Manufacturer's Designation",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.7.1 Manufacturer's Designation\nManufacturer's Designation\n1) Equipment installed outdoors or in an unconditioned space shall be designated\nby the manufacturer for such installation.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.7.1.(1)",
+      "text": "Equipment installed outdoors or in an unconditioned space shall be designated by the manufacturer for such installation.",
+      "clauses": []
+    }
+  ],
+  "page_start": 144,
+  "page_end": 144,
+  "timestamp": "2025-12-06T22:08:44.102307+00:00",
+  "success": true,
+  "equation_count": 0
+}

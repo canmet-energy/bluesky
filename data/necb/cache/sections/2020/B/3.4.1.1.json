@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.4.1.1",
+  "title": "Scope",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.4.1.1 Scope\nScope\n1) Subject to the limitations stated in Article 3.4.1.2., where the building envelope\ndoes not comply with the requirements of Section 3.2. or 3.3., it shall comply with\nPart 8.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.4.1.1.(1)",
+      "text": "Subject to the limitations stated in Article 3.4.1.2., where the building envelope does not comply with the requirements of Section 3.2. or 3.3., it shall comply with Part 8.",
+      "clauses": []
+    }
+  ],
+  "page_start": 77,
+  "page_end": 78,
+  "timestamp": "2025-12-06T22:08:44.076896+00:00",
+  "success": true,
+  "equation_count": 0
+}

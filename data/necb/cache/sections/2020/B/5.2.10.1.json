@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.10.1",
+  "title": "Energy Recovery Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.10.1 Energy Recovery Systems\nEnergy Recovery Systems\n1) Except as provided in Sentence (3), where an exhaust air system’s design supply\nfan airflow rate meets or exceeds the applicable values listed in Table 5.2.10.1.-A\nor 5.2.10.1.-B, which depend on the ventilation system’s continuous or non-continuous\noperation and the percentage of outdoor air it uses at design airflow conditions, as\nwell as the climate zone of the building location, it shall be equipped with an energy\nrecovery system. (See Note A-5.2.10.1.(1).)\nTable 5.2.10.1.-A\nSupply Fan Airflow Rate Threshold Values at which an Energy Recovery System is Required for the Exhaust Air System:\nNON-CONTINUOUSLY OPERATING VENTILATION SYSTEMS(1)\nForming Part of Sentence 5.2.10.1.(1)\nHeating\nDegree-Days\nof Building\nLocation,(2)\nin Celsius\nDegree-Days\nPercentage of Outdoor Air at Design Airflow Conditions\n≥ 10% and\n< 20%\n≥ 20% and\n< 30%\n≥ 30% and\n< 40%\n≥ 40% and\n< 50%\n≥50% and\n< 60%\n≥ 60% and\n< 70%\n≥ 70% and\n< 80%\n≥ 80%\nDesign Supply Fan Airflow Rate Threshold Values,(3) L/s (ft.3/min)\nZone 4:(4)\n< 3000\nZone 5:(4)\n3000 to 3999\n≥12 270\n(25 999)\n≥7 550\n(15 998)\n≥ 2 600\n(5 509)\n≥2 120\n(4 492)\n≥1 650\n(3 496)\n≥ 940 (1 992)\n≥ 470 (996)\nZone 6:(4)\n4000 to 4999\n≥12 270\n(25 999)\n≥7 550\n(15 998)\n≥ 2 600\n(5 509)\n≥2 120\n(4 492)\n≥1 650\n(3 496)\n≥ 940 (1 992)\n≥ 470 (996)\nZones 7A and\n7B:(4) 5000 to\n6999\n≥2 120\n(4 492)\n≥1 890\n(4 005)\n≥ 1 180\n(2 500)\n≥ 470 (996)\nZone 8:(4)\n≥ 7000\n≥2 120\n(4 492)\n≥1 890\n(4 005)\n≥ 1 180\n(2 500)\n≥ 470 (996)\nNotes to Table 5.2.10.1.-A:\n(1) Ventilation systems that operate less than 8 000 hours per year are considered “non-continuously operating.”\nTable 5.2.10.1.-A (Continued)\n(2) See Sentence 1.1.4.1.(1).\n(3) The abbreviations that appear in this Table have the following meanings:\nNR = energy recovery system is not required at any design supply fan airflow rate\nR = energy recovery system is required at all design supply fan airflow rates\n(4) See Note A-Table 3.2.2.2.\nTable 5.2.10.1.-B\nSupply Fan Airflow Rate Threshold Values at which an Energy Recovery System is Required for the Exhaust Air System:\nCONTINUOUSLY OPERATING VENTILATION SYSTEMS(1)\nForming Part of Sentence 5.2.10.1.(1)\nHeating\nDegree-Days\nof Building\nLocation,(2)\nin Celsius\nDegree-Days\nPercentage of Outdoor Air at Design Airflow Conditions\n≥ 10% and\n< 20%\n≥ 20% and\n< 30%\n≥ 30% and\n< 40%\n≥ 40% and\n< 50%\n≥50% and\n< 60%\n≥ 60% and\n< 70%\n≥ 70% and\n< 80%\n≥ 80%\nDesign Supply Fan Airflow Rate Threshold Values,(3) L/s (ft.3/min)\nZone 4:(4)\n< 3000\n≥9 200\n(19 494)\n≥ 4 250\n(9 005)\n≥2 360\n(5 001)\n≥1 890\n(4 005)\n≥1 420\n(3 009)\n≥ 710 (1 504)\nAll other\nzones:(4)\n≥ 3000\nNotes to Table 5.2.10.1.-B:\n(1) Ventilation systems that operate 8 000 hours or more per year are considered “continuously operating.”\n(2) See Sentence 1.1.4.1.(1).\n(3) The abbreviations that appear in this Table have the following meanings:\nNR = energy recovery system is not required at any design supply fan airflow rate\nR = energy recovery system is required at all design supply fan airflow rates.\n(4) See Note A-Table 3.2.2.2.\n2) Heat recovered in accordance with Sentence (1) shall be used in building\nsystems.\n3) Specialized exhaust systems, such as those used to exhaust smoke, grease-laden\nvapours, toxic flammable paint or corrosive fumes or dust, need not comply with\nSentence (1).\n4) Energy recovery systems required by Sentence (1) shall have at least 50%\nenergy recovery effectiveness, E, determined as a change in the enthalpy of the outdoor\nair supply equal to 50% of the difference between the outdoor air and return air\nenthalpies at design conditions:\nwhere\nhOA entering = enthalpy of the outdoor air entering the energy recovery system, kJ/kg\ndry air (Btu/lb. dry air),\nhOA leaving = enthalpy of the outdoor air leaving the energy recovery system, kJ/kg dry\nair (Btu/lb. dry air), and\nhRA = enthalpy of the return air entering the energy recovery system, kJ/kg dry\nair (Btu/lb. dry air).\n(See Note A-5.2.10.1.(4).)\n5) At airflow rates not less than the system design capacity, the energy recovery\neffectiveness of an energy recovery apparatus referred to in Sentence (1) shall be\ndetermined in conformance with the test method described in\n  a) AHRI 1061 (SI), “Performance Rating of Air-to-Air Exchangers for Energy\nRecovery Ventilation Equipment,”\n  b) CAN/CSA-C439, “Standard laboratory methods of test for rating the\nperformance of heat/energy-recovery ventilators,” or\n  c) ANSI/ASHRAE 84, “Method of Testing Air-to-Air Heat/Energy\nExchangers.”\n6) Energy recovery systems shall include bypass or control measures so their\noperation does not cause the HVAC system’s supply air temperature to overshoot\nthe set-point. (See Note A-5.2.10.1.(6).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.10.1.(1)",
+      "text": "Except as provided in Sentence (3), where an exhaust air system’s design supply fan airflow rate meets or exceeds the applicable values listed in Table 5.2.10.1.-A or 5.2.10.1.-B, which depend on the ventilation system’s continuous or non-continuous operation and the percentage of outdoor air it uses at design airflow conditions, as well as the climate zone of the building location, it shall be equipped with an energy recovery system. (See Note A-5.2.10.1.(1).) Table 5.2.10.1.-A Supply Fan Airflow Rate Threshold Values at which an Energy Recovery System is Required for the Exhaust Air System: NON-CONTINUOUSLY OPERATING VENTILATION SYSTEMS(1) Forming Part of Sentence 5.2.10.1.(1) Heating Degree-Days of Building Location,(2) in Celsius Degree-Days Percentage of Outdoor Air at Design Airflow Conditions ≥ 10% and < 20% ≥ 20% and < 30% ≥ 30% and < 40% ≥ 40% and < 50% ≥50% and < 60% ≥ 60% and < 70% ≥ 70% and < 80% ≥ 80% Design Supply Fan Airflow Rate Threshold Values,(3) L/s (ft.3/min) Zone 4:(4) < 3000 Zone 5:(4) 3000 to 3999 ≥12 270 (25 999) ≥7 550 (15 998) ≥ 2 600 (5 509) ≥2 120 (4 492) ≥1 650 (3 496) ≥ 940 (1 992) ≥ 470 (996) Zone 6:(4) 4000 to 4999 ≥12 270 (25 999) ≥7 550 (15 998) ≥ 2 600 (5 509) ≥2 120 (4 492) ≥1 650 (3 496) ≥ 940 (1 992) ≥ 470 (996) Zones 7A and 7B:(4) 5000 to 6999 ≥2 120 (4 492) ≥1 890 (4 005) ≥ 1 180 (2 500) ≥ 470 (996) Zone 8:(4) ≥ 7000 ≥2 120 (4 492) ≥1 890 (4 005) ≥ 1 180 (2 500) ≥ 470 (996) Notes to Table 5.2.10.1.-A: (1) Ventilation systems that operate less than 8 000 hours per year are considered “non-continuously operating.” Table 5.2.10.1.-A (Continued) (2) See Sentence 1.1.4.1.(1). (3) The abbreviations that appear in this Table have the following meanings: NR = energy recovery system is not required at any design supply fan airflow rate R = energy recovery system is required at all design supply fan airflow rates (4) See Note A-Table 3.2.2.2. Table 5.2.10.1.-B Supply Fan Airflow Rate Threshold Values at which an Energy Recovery System is Required for the Exhaust Air System: CONTINUOUSLY OPERATING VENTILATION SYSTEMS(1) Forming Part of Sentence 5.2.10.1.(1) Heating Degree-Days of Building Location,(2) in Celsius Degree-Days Percentage of Outdoor Air at Design Airflow Conditions ≥ 10% and < 20% ≥ 20% and < 30% ≥ 30% and < 40% ≥ 40% and < 50% ≥50% and < 60% ≥ 60% and < 70% ≥ 70% and < 80% ≥ 80% Design Supply Fan Airflow Rate Threshold Values,(3) L/s (ft.3/min) Zone 4:(4) < 3000 ≥9 200 (19 494) ≥ 4 250 (9 005) ≥2 360 (5 001) ≥1 890 (4 005) ≥1 420 (3 009) ≥ 710 (1 504) All other zones:(4) ≥ 3000 Notes to Table 5.2.10.1.-B: (1) Ventilation systems that operate 8 000 hours or more per year are considered “continuously operating.” (2) See Sentence 1.1.4.1.(1). (3) The abbreviations that appear in this Table have the following meanings: NR = energy recovery system is not required at any design supply fan airflow rate R = energy recovery system is required at all design supply fan airflow rates. (4) See Note A-Table 3.2.2.2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.10.1.(2)",
+      "text": "Heat recovered in accordance with Sentence (1) shall be used in building systems.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.10.1.(3)",
+      "text": "Specialized exhaust systems, such as those used to exhaust smoke, grease-laden vapours, toxic flammable paint or corrosive fumes or dust, need not comply with Sentence (1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.10.1.(4)",
+      "text": "Energy recovery systems required by Sentence (1) shall have at least 50% energy recovery effectiveness, E, determined as a change in the enthalpy of the outdoor air supply equal to 50% of the difference between the outdoor air and return air enthalpies at design conditions: where hOA entering = enthalpy of the outdoor air entering the energy recovery system, kJ/kg dry air (Btu/lb. dry air), hOA leaving = enthalpy of the outdoor air leaving the energy recovery system, kJ/kg dry air (Btu/lb. dry air), and hRA = enthalpy of the return air entering the energy recovery system, kJ/kg dry air (Btu/lb. dry air). (See Note A-5.2.10.1.(4).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "5.2.10.1.(5)",
+      "text": "At airflow rates not less than the system design capacity, the energy recovery effectiveness of an energy recovery apparatus referred to in Sentence (1) shall be determined in conformance with the test method described in",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.10.1.(5)(a)",
+          "text": "AHRI 1061 (SI), “Performance Rating of Air-to-Air Exchangers for Energy Recovery Ventilation Equipment,”",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.10.1.(5)(b)",
+          "text": "CAN/CSA-C439, “Standard laboratory methods of test for rating the performance of heat/energy-recovery ventilators,” or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "5.2.10.1.(5)(c)",
+          "text": "ANSI/ASHRAE 84, “Method of Testing Air-to-Air Heat/Energy Exchangers.”",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "6",
+      "reference": "5.2.10.1.(6)",
+      "text": "Energy recovery systems shall include bypass or control measures so their operation does not cause the HVAC system’s supply air temperature to overshoot the set-point. (See Note A-5.2.10.1.(6).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 146,
+  "page_end": 148,
+  "timestamp": "2025-12-06T22:08:44.105423+00:00",
+  "success": true,
+  "equation_count": 0
+}

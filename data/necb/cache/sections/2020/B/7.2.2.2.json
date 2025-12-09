@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "7.2.2.2",
+  "title": "Branch Circuits",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "7.2.2.2 Branch Circuits\nBranch Circuits\n1) Branch circuit conductors shall be sized for a maximum voltage drop of 3%\nat design load.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "7.2.2.2.(1)",
+      "text": "Branch circuit conductors shall be sized for a maximum voltage drop of 3% at design load.",
+      "clauses": []
+    }
+  ],
+  "page_start": 195,
+  "page_end": 195,
+  "timestamp": "2025-12-06T22:08:44.120213+00:00",
+  "success": true,
+  "equation_count": 0
+}

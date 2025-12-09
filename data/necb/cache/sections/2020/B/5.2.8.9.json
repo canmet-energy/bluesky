@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.8.9",
+  "title": "Control of Space Temperature by Reheating or Recooling",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.8.9 Control of Space Temperature by Reheating or Recooling\nControl of Space Temperature by Reheating or Recooling\n1) Except as provided in Sentence (4), HVAC systems that control the temperature\nof a space by reheating previously cooled air shall be equipped with controls that\nautomatically adjust the temperature of the cool air supply to the highest temperature\nthat will satisfy the temperature-control zone requiring the coolest air.\n2) Except as provided in Sentence (4), HVAC systems that control the temperature\nof a space by recooling previously heated air shall be equipped with controls that\nautomatically adjust the temperature of the warm air supply to the lowest temperature\nthat will satisfy the temperature-control zone requiring the warmest air.\n3) Except as provided in Sentence (4), HVAC systems that control the temperature\nof a space by mixing heated supply air and cooled supply air shall be equipped with\ncontrols that\n  a) automatically adjust the temperature of the warm supply air to the lowest\ntemperature that will satisfy the temperature-control zone requiring the\nwarmest air, and\n  b) automatically adjust the temperature of the cool supply air to the highest\ntemperature that will satisfy the temperature-control zone requiring the\ncoolest air.\n4) HVAC systems need not comply with Sentences (1) to (3) if they are designed\nto reduce the supply airflow rate to each temperature-control zone to the greater of\n  a) 30% of the design airflow rate, and\n  b) the airflow rate required to comply with the ventilation requirements for\nthat zone.\n(See Note A-5.2.8.9.(4).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.8.9.(1)",
+      "text": "Except as provided in Sentence (4), HVAC systems that control the temperature of a space by reheating previously cooled air shall be equipped with controls that automatically adjust the temperature of the cool air supply to the highest temperature that will satisfy the temperature-control zone requiring the coolest air.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.8.9.(2)",
+      "text": "Except as provided in Sentence (4), HVAC systems that control the temperature of a space by recooling previously heated air shall be equipped with controls that automatically adjust the temperature of the warm air supply to the lowest temperature that will satisfy the temperature-control zone requiring the warmest air.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.8.9.(3)",
+      "text": "Except as provided in Sentence (4), HVAC systems that control the temperature of a space by mixing heated supply air and cooled supply air shall be equipped with controls that",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.8.9.(3)(a)",
+          "text": "automatically adjust the temperature of the warm supply air to the lowest temperature that will satisfy the temperature-control zone requiring the warmest air, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.8.9.(3)(b)",
+          "text": "automatically adjust the temperature of the cool supply air to the highest temperature that will satisfy the temperature-control zone requiring the coolest air.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.8.9.(4)",
+      "text": "HVAC systems need not comply with Sentences (1) to (3) if they are designed to reduce the supply airflow rate to each temperature-control zone to the greater of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "5.2.8.9.(4)(a)",
+          "text": "30% of the design airflow rate, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "5.2.8.9.(4)(b)",
+          "text": "the airflow rate required to comply with the ventilation requirements for that zone. (See Note A-5.2.8.9.(4).)",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 145,
+  "page_end": 146,
+  "timestamp": "2025-12-06T22:08:44.104838+00:00",
+  "success": true,
+  "equation_count": 0
+}

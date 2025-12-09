@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.6.1",
+  "title": "Showers",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.6.1 Showers\nShowers\n1) Except for emergency eye washes and emergency showers, individual shower\nheads shall have an integral means of limiting the maximum water flow rate to\n7.6 L/min when tested in accordance with ASME A112.18.1/CSA B125.1, “Plumbing\nSupply Fittings.” (See Note A-6.2.6.1.(1).)\n2) Where multiple shower heads installed in a public showering facility are served\nby one temperature control, each shower head shall be equipped with a device capable\nof automatically shutting off the flow of water when the showerhead is not in use.\n(See Note A-6.2.6.1.(2) and 6.2.6.2.(2).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.6.1.(1)",
+      "text": "Except for emergency eye washes and emergency showers, individual shower heads shall have an integral means of limiting the maximum water flow rate to 7.6 L/min when tested in accordance with ASME A112.18.1/CSA B125.1, “Plumbing Supply Fittings.” (See Note A-6.2.6.1.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "6.2.6.1.(2)",
+      "text": "Where multiple shower heads installed in a public showering facility are served by one temperature control, each shower head shall be equipped with a device capable of automatically shutting off the flow of water when the showerhead is not in use. (See Note A-6.2.6.1.(2) and 6.2.6.2.(2).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 184,
+  "page_end": 184,
+  "timestamp": "2025-12-06T22:08:44.115971+00:00",
+  "success": true,
+  "equation_count": 0
+}

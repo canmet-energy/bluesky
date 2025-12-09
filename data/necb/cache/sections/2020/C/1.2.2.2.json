@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.2.2.2",
+  "title": "Storage on the Building Site",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.2.2.2 Storage on the Building Site\nStorage on the Building Site\n1) All building materials, appliances and equipment on the building site shall be\nstored in such a way as to prevent the deterioration or impairment of their essential\nproperties.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.2.2.2.(1)",
+      "text": "All building materials, appliances and equipment on the building site shall be stored in such a way as to prevent the deterioration or impairment of their essential properties.",
+      "clauses": []
+    }
+  ],
+  "page_start": 23,
+  "page_end": 23,
+  "timestamp": "2025-12-06T22:08:44.050260+00:00",
+  "success": true,
+  "equation_count": 0
+}

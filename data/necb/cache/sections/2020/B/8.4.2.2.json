@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.2.2",
+  "title": "Calculation Methods",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.2.2 Calculation Methods\nCalculation Methods\n1) Except as provided in Sentence (5), the energy model calculations shall account\nfor the annual energy consumption of\n  a) space-heating equipment,\n  b) space-cooling equipment,\n  c) fans,\n  d) interior and exterior lighting devices,\n  e) service water heating equipment,\n  f) pumps,\n  g) auxiliary HVAC equipment (see Note A-8.4.2.2.(1)(g)),\n  h) receptacle loads and miscellaneous equipment as per Article 8.4.2.7.,\n  i) appliances, and\n  j) elevators and escalators.\n2) The energy model calculations shall be performed for a one-year period\n(8 760 hours) using time intervals no greater than one hour.\n3) Operating schedules and climatic data input in the energy model shall use a\ntime interval no greater than one hour.\n4) If a computer program is used to carry out the compliance calculations, the\ncalculation methods employed in the energy model shall conform to\n  a) ANSI/ASHRAE 140, “Standard Method of Test for the Evaluation of\nBuilding Energy Analysis Computer Programs,” or\n  b) an equivalent test method.\n5) Redundant or back-up equipment is permitted to be excluded from the energy\nmodel, provided it is equipped with controls that operate the equipment only when\nthe primary equipment is not operating.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.2.2.(1)",
+      "text": "Except as provided in Sentence (5), the energy model calculations shall account for the annual energy consumption of",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.2.(1)(a)",
+          "text": "space-heating equipment,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.2.(1)(b)",
+          "text": "space-cooling equipment,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.2.2.(1)(c)",
+          "text": "fans,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "8.4.2.2.(1)(d)",
+          "text": "interior and exterior lighting devices,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "8.4.2.2.(1)(e)",
+          "text": "service water heating equipment,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "f",
+          "reference": "8.4.2.2.(1)(f)",
+          "text": "pumps,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "g",
+          "reference": "8.4.2.2.(1)(g)",
+          "text": "auxiliary HVAC equipment (see Note A-8.4.2.2.(1)(g)),",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "h",
+          "reference": "8.4.2.2.(1)(h)",
+          "text": "receptacle loads and miscellaneous equipment as per Article 8.4.2.7.,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "8.4.2.2.(1)(i)",
+          "text": "appliances, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "j",
+          "reference": "8.4.2.2.(1)(j)",
+          "text": "elevators and escalators.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.2.2.(2)",
+      "text": "The energy model calculations shall be performed for a one-year period (8 760 hours) using time intervals no greater than one hour.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.2.2.(3)",
+      "text": "Operating schedules and climatic data input in the energy model shall use a time interval no greater than one hour.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.2.2.(4)",
+      "text": "If a computer program is used to carry out the compliance calculations, the calculation methods employed in the energy model shall conform to",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.2.2.(4)(a)",
+          "text": "ANSI/ASHRAE 140, “Standard Method of Test for the Evaluation of Building Energy Analysis Computer Programs,” or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.2.2.(4)(b)",
+          "text": "an equivalent test method.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.2.2.(5)",
+      "text": "Redundant or back-up equipment is permitted to be excluded from the energy model, provided it is equipped with controls that operate the equipment only when the primary equipment is not operating.",
+      "clauses": []
+    }
+  ],
+  "page_start": 204,
+  "page_end": 204,
+  "timestamp": "2025-12-06T22:08:44.124021+00:00",
+  "success": true,
+  "equation_count": 0
+}

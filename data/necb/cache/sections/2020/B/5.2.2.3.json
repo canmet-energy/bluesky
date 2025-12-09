@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.2.3",
+  "title": "Duct Sealing",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.2.3 Duct Sealing\nDuct Sealing\n1) Except as provided in Sentences (2) to (5), air-handling ducts and plenums\nforming part of a heating, ventilating or air-conditioning system shall be constructed,\ninstalled and sealed as described in the ANSI/SMACNA 006, “HVAC Duct\nConstruction Standards – Metal and Flexible,” and in accordance with Table 5.2.2.3.\n(See Note A-5.2.2.3.(1).)\n2) Air-handling ducts and plenums that do not conform to Sentence (1) shall be\ntested to meet the requirements of Article 5.2.2.4.\n3) Return ducts located within conditioned space or in spaces used as return air\nplenums need not comply with Sentence (1).\n4) Except for supply ducts located upstream of zone coils, mixing boxes,\nvariable-air-volume boxes and diffusers with integral variable-air-volume controls,\nsupply ducts located within the conditioned space to which they supply air need not\ncomply with Sentence (1). (See Note A-5.2.2.3.(4).)\n5) Sealing tape shall not be used as the primary sealant for air-handling ducts\nand plenums.\nTable 5.2.2.3.\nSealing of Ducts\nForming Part of Sentence 5.2.2.3.(1)\nStatic Pressure Class, Pa(1)\nSeal Class(1)\n≤500\n> 500 and < 1000\n≥1000\nNotes to Table 5.2.2.3.:\n(1) The Static Pressure and Seal Classes are taken from ANSI/SMACNA 006. The Static Pressure Classes shown do not refer to actual design static\npressure and include both negatively and positively pressurized ducts.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.2.3.(1)",
+      "text": "Except as provided in Sentences (2) to (5), air-handling ducts and plenums forming part of a heating, ventilating or air-conditioning system shall be constructed, installed and sealed as described in the ANSI/SMACNA 006, “HVAC Duct Construction Standards – Metal and Flexible,” and in accordance with Table 5.2.2.3. (See Note A-5.2.2.3.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.2.3.(2)",
+      "text": "Air-handling ducts and plenums that do not conform to Sentence (1) shall be tested to meet the requirements of Article 5.2.2.4.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.2.3.(3)",
+      "text": "Return ducts located within conditioned space or in spaces used as return air plenums need not comply with Sentence (1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "5.2.2.3.(4)",
+      "text": "Except for supply ducts located upstream of zone coils, mixing boxes, variable-air-volume boxes and diffusers with integral variable-air-volume controls, supply ducts located within the conditioned space to which they supply air need not comply with Sentence (1). (See Note A-5.2.2.3.(4).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "5.2.2.3.(5)",
+      "text": "Sealing tape shall not be used as the primary sealant for air-handling ducts and plenums. Table 5.2.2.3. Sealing of Ducts Forming Part of Sentence 5.2.2.3.(1) Static Pressure Class, Pa(1) Seal Class(1) ≤500 > 500 and < 1000 ≥1000 Notes to Table 5.2.2.3.: (1) The Static Pressure and Seal Classes are taken from ANSI/SMACNA 006. The Static Pressure Classes shown do not refer to actual design static pressure and include both negatively and positively pressurized ducts.",
+      "clauses": []
+    }
+  ],
+  "page_start": 137,
+  "page_end": 137,
+  "timestamp": "2025-12-06T22:08:44.095682+00:00",
+  "success": true,
+  "equation_count": 0
+}

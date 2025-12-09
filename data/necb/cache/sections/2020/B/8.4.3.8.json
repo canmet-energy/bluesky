@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.3.8",
+  "title": "Part-Load Performance Curves",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.3.8 Part-Load Performance Curves\nPart-Load Performance Curves\n1) Part-load performance curves for the proposed building's systems shall be\nconsistent with the equipment detailed in the building specifications.\n2) Where part-load performance curves referred to in Sentence (1) are not\navailable, the performance curves provided in Subsection 8.4.5. shall be used.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.3.8.(1)",
+      "text": "Part-load performance curves for the proposed building's systems shall be consistent with the equipment detailed in the building specifications.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.3.8.(2)",
+      "text": "Where part-load performance curves referred to in Sentence (1) are not available, the performance curves provided in Subsection 8.4.5. shall be used.",
+      "clauses": []
+    }
+  ],
+  "page_start": 209,
+  "page_end": 209,
+  "timestamp": "2025-12-06T22:08:44.129264+00:00",
+  "success": true,
+  "equation_count": 0
+}

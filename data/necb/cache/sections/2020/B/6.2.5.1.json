@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.5.1",
+  "title": "Remote or Booster Heaters",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.5.1 Remote or Booster Heaters\nRemote or Booster Heaters\n1) Where less than 50% of the total design flow of a service water heating system\nhas a design discharge temperature higher than 60°C, separate remote heaters or\nbooster heaters shall be installed for those portions of the system with a design\ntemperature higher than 60°C. (See Note A-6.2.5.1.(1).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.5.1.(1)",
+      "text": "Where less than 50% of the total design flow of a service water heating system has a design discharge temperature higher than 60°C, separate remote heaters or booster heaters shall be installed for those portions of the system with a design temperature higher than 60°C. (See Note A-6.2.5.1.(1).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 184,
+  "page_end": 184,
+  "timestamp": "2025-12-06T22:08:44.115714+00:00",
+  "success": true,
+  "equation_count": 0
+}

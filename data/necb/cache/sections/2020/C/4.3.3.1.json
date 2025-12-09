@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.3.1",
+  "title": ", 4.3.3.5., 4.3.3.7., 4.3.3.10.",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "4.3.3.1 , 4.3.3.5., 4.3.3.7., 4.3.3.10.\nLighting trade-off path\napplication of Code, 4.3.1.1.\ncompliance, 4.3.1.3.\ninstalled interior lighting energy, 4.3.2.\ninterior lighting energy allowance, 4.3.3.\nlimitations of Code application, 4.3.1.2.\nLimitations of compliance\nback-up HVAC systems, 5.4.1.2.\nback-up service water systems, 6.4.1.2.\nbuilding energy performance path, 8.4.1.3.\nbuilding envelope performance path, 3.4.1.2.\nHVAC equipment, 5.4.1.2.\nlighting trade-off path, 4.3.1.2.\nLoad calculations\nHVAC systems, 5.2.1.1., 8.4.2.10., 8.4.3.8., 8.4.5.\npart-load, 8.4.5.\nservice water heating systems, 8.4.2.7.\nLoading docks, 3.2.4.3., 4.2.1.6.\nLoads\nboilers, 5.2.11.4.\ncombination systems, service water heating,\n6.2.2.4.\ncooling with outdoor air, 5.2.2.7., 5.2.2.8., 5.2.2.9.\nelectrical motors, 7.2.4.1.\nfan control, 5.2.3.3., 8.4.4.17.\nheat pumps, 5.2.8.5.\nmonitoring, 7.2.1.1.\npart-loads, 8.4.3.8., 8.4.4.14., 8.4.5.\nperformance, 8.4.3.5.\nvoltage drop, 7.2.2.1.\nLobbies (see Vestibules)\nLocker rooms, 4.2.1.6., 4.3.2.10.\nLuminaires, 4.2.1.4., 4.2.2.6., 4.2.3.1.\nManufacturing facilities, 4.2.1.5., 4.2.1.6., 4.3.2.10.\nMaterials\ncharacteristics, 1.2.2.1.[A]\nstandards, 1.3., 1.5.[A]\nstorage, 1.2.2.2.[A]\nused, 1.2.2.3.[A]\nMotors, electrical, 7.2.4.\nMulti-purpose rooms\nfactors for occupancy control and personal control,",
+  "sentences": [],
+  "page_start": 308,
+  "page_end": 309,
+  "timestamp": "2025-12-06T22:08:44.152822+00:00",
+  "success": true,
+  "equation_count": 0
+}

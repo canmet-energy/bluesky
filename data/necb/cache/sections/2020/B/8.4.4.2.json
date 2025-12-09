@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.2",
+  "title": "Operating Schedules, Internal Loads, Service Water Heating Loads",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.2 Operating Schedules, Internal Loads, Service Water Heating Loads\nOperating Schedules, Internal Loads, Service Water Heating Loads\nand Set-point Temperature\n1) Except as provided in Sentence (3), and except as needed to model the\noccupancy controls required in the prescriptive path, the reference building's operating\nschedules shall be modeled as being identical to those determined for the proposed\nbuilding in Sentence 8.4.3.2.(1). (See Note A-8.4.4.2.(1).)\n2) The reference building's internal and service water heating loads shall be modeled\nas being identical to those determined for the proposed building in Sentence 8.4.3.2.(2).\n3) If the reference building is a semi-heated building, as defined in\nSentence 1.2.1.2.(2), and the capacity of the installed heating equipment in the\nsemi-heated proposed building is no more than the semi-heated proposed building's\npeak heating load plus 5%, it shall be modeled with\n  a) a set-point temperature of 18°C, and\n  b) thermal characteristics that are based on the heating degree-days at 18°C of\nthe building's location.\n(See Note A-8.4.4.2.(3).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.2.(1)",
+      "text": "Except as provided in Sentence (3), and except as needed to model the occupancy controls required in the prescriptive path, the reference building's operating schedules shall be modeled as being identical to those determined for the proposed building in Sentence 8.4.3.2.(1). (See Note A-8.4.4.2.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.2.(2)",
+      "text": "The reference building's internal and service water heating loads shall be modeled as being identical to those determined for the proposed building in Sentence 8.4.3.2.(2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.2.(3)",
+      "text": "If the reference building is a semi-heated building, as defined in Sentence 1.2.1.2.(2), and the capacity of the installed heating equipment in the semi-heated proposed building is no more than the semi-heated proposed building's peak heating load plus 5%, it shall be modeled with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.2.(3)(a)",
+          "text": "a set-point temperature of 18°C, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.2.(3)(b)",
+          "text": "thermal characteristics that are based on the heating degree-days at 18°C of the building's location. (See Note A-8.4.4.2.(3).)",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 210,
+  "page_end": 210,
+  "timestamp": "2025-12-06T22:08:44.130015+00:00",
+  "success": true,
+  "equation_count": 0
+}

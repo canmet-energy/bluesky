@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.3.3",
+  "title": "Variable-Air-Volume Fan Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.3.3 Variable-Air-Volume Fan Systems\nVariable-Air-Volume Fan Systems\n1) For fan systems through which airflow varies automatically as a function of\nload, the power demand required by the motors for the combined supply and return\nfan system, as calculated using the equation in Sentence 5.2.3.2.(1), shall not exceed\n2.65 W per L/s of supply air delivered to the conditioned space at design conditions.\n(See Note A-5.2.3.3.(1).)\n2) In variable-air-volume systems, any individual supply, relief or return fan with\na power demand greater than 7.5 kW and less than 25 kW, as calculated using the\nequation in Sentence 5.2.3.2.(1), shall incorporate controls and devices such that, if air\ndelivery volume is reduced to 50% of design air volume, the corresponding fan power\ndemand will be no more than 55% of design wattage, based on the manufacturer‘s\ntest data.\n3) In variable-air-volume systems, any individual supply, relief or return fan with\na power demand equal to or greater than 25 kW, as calculated using the equation in\nSentence 5.2.3.2.(1), shall incorporate controls and devices necessary to prevent the fan\nmotor from demanding more than 30% of design wattage at 50% of design air volume,\nbased on the manufacturer's test data.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.3.3.(1)",
+      "text": "For fan systems through which airflow varies automatically as a function of load, the power demand required by the motors for the combined supply and return fan system, as calculated using the equation in Sentence 5.2.3.2.(1), shall not exceed 2.65 W per L/s of supply air delivered to the conditioned space at design conditions. (See Note A-5.2.3.3.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.3.3.(2)",
+      "text": "In variable-air-volume systems, any individual supply, relief or return fan with a power demand greater than 7.5 kW and less than 25 kW, as calculated using the equation in Sentence 5.2.3.2.(1), shall incorporate controls and devices such that, if air delivery volume is reduced to 50% of design air volume, the corresponding fan power demand will be no more than 55% of design wattage, based on the manufacturer‘s test data.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "5.2.3.3.(3)",
+      "text": "In variable-air-volume systems, any individual supply, relief or return fan with a power demand equal to or greater than 25 kW, as calculated using the equation in Sentence 5.2.3.2.(1), shall incorporate controls and devices necessary to prevent the fan motor from demanding more than 30% of design wattage at 50% of design air volume, based on the manufacturer's test data.",
+      "clauses": []
+    }
+  ],
+  "page_start": 140,
+  "page_end": 140,
+  "timestamp": "2025-12-06T22:08:44.098960+00:00",
+  "success": true,
+  "equation_count": 0
+}

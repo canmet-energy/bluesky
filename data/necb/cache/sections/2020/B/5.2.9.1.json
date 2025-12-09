@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.9.1",
+  "title": "Humidification Controls",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.9.1 Humidification Controls\nHumidification Controls\n1) If an HVAC system is equipped with a means for adding or removing moisture\nto maintain specific humidity levels in a space, an automatic humidity control device\nshall be provided.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.9.1.(1)",
+      "text": "If an HVAC system is equipped with a means for adding or removing moisture to maintain specific humidity levels in a space, an automatic humidity control device shall be provided.",
+      "clauses": []
+    }
+  ],
+  "page_start": 146,
+  "page_end": 146,
+  "timestamp": "2025-12-06T22:08:44.105173+00:00",
+  "success": true,
+  "equation_count": 0
+}

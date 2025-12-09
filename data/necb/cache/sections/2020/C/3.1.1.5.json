@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.1.1.5",
+  "title": "Index",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "3.1.1.5 Index\nIndex\nCeiling height, 1.4.1.2.[A]\nChillers\ncooling HVAC systems, 8.4.4.7.\ncooling hydronic systems, 8.4.4.10.\nefficiency requirements, 5.2.12.1.\nheat-recovery capacity, 8.4.4.19.\nice plants as, 8.4.3.9.\nloop temperature reset, 5.2.11.5.\npart-load performance characteristics, 8.4.5.5.\nperformance path calculations, 8.4.3.5., 8.4.4.6.\nvariable-flow pumping systems, 5.2.6.2.\nClassrooms\nfactors for occupancy control and personal control,",
+  "sentences": [],
+  "page_start": 303,
+  "page_end": 304,
+  "timestamp": "2025-12-06T22:08:44.150134+00:00",
+  "success": true,
+  "equation_count": 0
+}

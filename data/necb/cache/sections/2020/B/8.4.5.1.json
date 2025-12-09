@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.5.1",
+  "title": "General",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.5.1 General\nGeneral\n1) Part-load performance curves for the reference building's systems shall be\ncalculated in accordance with Articles 8.4.5.2. to 8.4.5.9., using the parameters\ndescribed in this Subsection.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.5.1.(1)",
+      "text": "Part-load performance curves for the reference building's systems shall be calculated in accordance with Articles 8.4.5.2. to 8.4.5.9., using the parameters described in this Subsection.",
+      "clauses": []
+    }
+  ],
+  "page_start": 222,
+  "page_end": 222,
+  "timestamp": "2025-12-06T22:08:44.137799+00:00",
+  "success": true,
+  "equation_count": 0
+}

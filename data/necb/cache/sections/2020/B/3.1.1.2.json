@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.1.1.2",
+  "title": "Application",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.1.1.2 Application\nApplication\n1) This Part applies to the building envelope in buildings\n  a) that are equipped with space-conditioning systems or have provisions for\nthe future installation of such systems (see Note A-3.1.1.2.(1)(a)), and\n  b) whose heating and/or cooling system output capacity is equal to or greater\nthan 10 W/m2 of floor surface area.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.1.1.2.(1)",
+      "text": "This Part applies to the building envelope in buildings",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.1.1.2.(1)(a)",
+          "text": "that are equipped with space-conditioning systems or have provisions for the future installation of such systems (see Note A-3.1.1.2.(1)(a)), and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.1.1.2.(1)(b)",
+          "text": "whose heating and/or cooling system output capacity is equal to or greater than 10 W/m2 of floor surface area.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 68,
+  "page_end": 68,
+  "timestamp": "2025-12-06T22:08:44.069183+00:00",
+  "success": true,
+  "equation_count": 0
+}

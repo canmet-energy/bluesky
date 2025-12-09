@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.2.3",
+  "title": "Space heaters",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "6.2.2.3 Space heaters\nSpace heaters\nequipment using service water, 5.2.12.4.\nSpace temperatures\ncontrols, 5.2.8.1., 5.2.8.6., 5.2.8.9., 8.4.3.7., 8.4.4.16.\ndiffering, 3.2.1.3.\nenergy model calculations, 8.4.2.5.\nSpace types\nHVAC system selection, 8.4.4.7.\nlighting controls, 4.2.2.1., 4.3.2.10.\nlighting power allowance calculations, 4.2.1.6.\nSpace, unconditioned, 3.1.1.7., 5.2.4.1., 5.2.7.1., 6.2.3.1.\nStairways/stairwells, 4.2.1.6.\nStandards\norganizations, 1.3.2., 1.5.2.[A]\nreferenced documents, 1.3.1., 1.5.1.[A]\nStandby losses (SL), definition, 1.4.1.2.[A]\nStorage garages, 1.4.1.2.[A], 4.2.2.2.\nStorage on building site, 1.2.2.2.[A]\nStorage rooms, 4.2.1.6.\nStorage-type service water heater, 1.4.1.2.[A]\nStorage vessels, 6.2.2., 6.2.8.1.\nStorey, 1.4.1.2.[A]\nSuites, 1.4.1.2.[A]\nSun porches, 3.1.1.7.\nSupply air handlers, 1.4.1.2.[A], 5.2.8.8.\nSupply ducts, 1.4.1.2.[A], 5.2.2.6.\nSwimming pools\ncovers, 6.2.7.2.\nheat recovery, 5.2.10.2.\nheaters, 6.2.2.1.\nheating controls, 6.2.7.1.\nIndex\nperformance path, 8.4.2.7., 8.4.4.7.\nwater systems, 6.2.7.\nSymbols used in the Code, 1.4.2.1.[A]\nSystems\ncharacteristics, 1.2.2.1.[A]\nperformance path, 8.4.2.10., 8.4.4.7.\nstorage on building site, 1.2.2.2.[A]\nused, 1.2.2.3.[A]\nTemperature-control zones, 1.4.1.2.[A], 5.2.8.6., 5.2.8.9.\nTemperature controls\nairflow control areas, 5.2.11.2.\ndwelling units, 5.2.8.1., 5.2.8.2.\nHVAC systems, 5.2.2.7., 5.2.6.2., 5.2.8., 5.2.11.2.,",
+  "sentences": [],
+  "page_start": 311,
+  "page_end": 312,
+  "timestamp": "2025-12-06T22:08:44.151132+00:00",
+  "success": true,
+  "equation_count": 0
+}

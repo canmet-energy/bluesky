@@ -1,0 +1,116 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.1.1.5",
+  "title": "Thermal Characteristics of Building Assemblies",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.1.1.5 Thermal Characteristics of Building Assemblies\nThermal Characteristics of Building Assemblies\n(See Note A-3.1.1.5.)\n1) The thermal characteristics of building envelope materials shall be determined\nin accordance with the applicable product standards listed in the NBC or, in the\nabsence of such standards or where such standards do not address the determination\nof thermal characteristics, in accordance with\n  a) ASTM C177, “Standard Test Method for Steady-State Heat Flux\nMeasurements and Thermal Transmission Properties by Means of the\nGuarded-Hot-Plate Apparatus,” or\n  b) ASTM C518, “Standard Test Method for Steady-State Thermal Transmission\nProperties by Means of the Heat Flow Meter Apparatus.”\n2) Calculations and tests performed in accordance with Sentence (1) shall be\ncarried out at an average temperature of 24±2°C and under a temperature difference\nof 22±2°C.\n3) Except as provided in Sentence (4), the overall thermal transmittance of fenestration\nand doors shall be determined for the reference sizes listed in accordance with\n  a) CSA A440.2/A440.3, “Fenestration energy performance/User guide to CSA\nA440.2:19, Fenestration energy performance,”or\n  b) NFRC 100, “Procedure for Determining Fenestration Product U-factors.”\n4) The overall thermal transmittance of fenestration and doors that are not within the\nscope of the standards listed in Sentence (3) shall be determined from\n  a) calculations carried out using the procedures described in the “ASHRAE\nHandbook – Fundamentals,” or\n  b) laboratory tests performed in accordance with ASTM C1363, “Standard\nTest Method for Thermal Performance of Building Materials and Envelope\nAssemblies by Means of a Hot Box Apparatus,” using an indoor air\ntemperature of 21±1°C and an outdoor air temperature of –18±1°C measured\nat the mid-height of the fenestration or door.\n5) The thermal characteristics of building assemblies other than fenestration and\ndoors shall be determined from\n  a) calculations carried out using the procedures described in\n  i) the “ASHRAE Handbook – Fundamentals,” or\n    ii) ISO 14683, “Thermal bridges in building construction –\nLinear thermal transmittance – Simplified methods and\ndefault values,”\n(see Note A-3.1.1.5.(5)(a)),\n  b) two- or three-dimensional thermal modeling, or\n  c) laboratory tests performed in accordance with ASTM C1363, “Standard\nTest Method for Thermal Performance of Building Materials and Envelope\nAssemblies by Means of a Hot Box Apparatus,” using an indoor air\ntemperature of 21±1°C and an outdoor air temperature of –18±1°C.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.1.1.5.(1)",
+      "text": "The thermal characteristics of building envelope materials shall be determined in accordance with the applicable product standards listed in the NBC or, in the absence of such standards or where such standards do not address the determination of thermal characteristics, in accordance with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.1.1.5.(1)(a)",
+          "text": "ASTM C177, “Standard Test Method for Steady-State Heat Flux Measurements and Thermal Transmission Properties by Means of the Guarded-Hot-Plate Apparatus,” or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.1.1.5.(1)(b)",
+          "text": "ASTM C518, “Standard Test Method for Steady-State Thermal Transmission Properties by Means of the Heat Flow Meter Apparatus.”",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.1.1.5.(2)",
+      "text": "Calculations and tests performed in accordance with Sentence (1) shall be carried out at an average temperature of 24±2°C and under a temperature difference of 22±2°C.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.1.1.5.(3)",
+      "text": "Except as provided in Sentence (4), the overall thermal transmittance of fenestration and doors shall be determined for the reference sizes listed in accordance with",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.1.1.5.(3)(a)",
+          "text": "CSA A440.2/A440.3, “Fenestration energy performance/User guide to CSA A440.2:19, Fenestration energy performance,”or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.1.1.5.(3)(b)",
+          "text": "NFRC 100, “Procedure for Determining Fenestration Product U-factors.”",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "3.1.1.5.(4)",
+      "text": "The overall thermal transmittance of fenestration and doors that are not within the scope of the standards listed in Sentence (3) shall be determined from",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.1.1.5.(4)(a)",
+          "text": "calculations carried out using the procedures described in the “ASHRAE Handbook – Fundamentals,” or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.1.1.5.(4)(b)",
+          "text": "laboratory tests performed in accordance with ASTM C1363, “Standard Test Method for Thermal Performance of Building Materials and Envelope Assemblies by Means of a Hot Box Apparatus,” using an indoor air temperature of 21±1°C and an outdoor air temperature of –18±1°C measured at the mid-height of the fenestration or door.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "3.1.1.5.(5)",
+      "text": "The thermal characteristics of building assemblies other than fenestration and doors shall be determined from",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.1.1.5.(5)(a)",
+          "text": "calculations carried out using the procedures described in",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "3.1.1.5.(5)(i)",
+          "text": "the “ASHRAE Handbook – Fundamentals,” or",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "3.1.1.5.(5)(i)(ii)",
+              "text": "ISO 14683, “Thermal bridges in building construction – Linear thermal transmittance – Simplified methods and default values,” (see Note A-3.1.1.5.(5)(a)),"
+            }
+          ]
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.1.1.5.(5)(b)",
+          "text": "two- or three-dimensional thermal modeling, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "3.1.1.5.(5)(c)",
+          "text": "laboratory tests performed in accordance with ASTM C1363, “Standard Test Method for Thermal Performance of Building Materials and Envelope Assemblies by Means of a Hot Box Apparatus,” using an indoor air temperature of 21±1°C and an outdoor air temperature of –18±1°C.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 68,
+  "page_end": 69,
+  "timestamp": "2025-12-06T22:08:44.069999+00:00",
+  "success": true,
+  "equation_count": 0
+}

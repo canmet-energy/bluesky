@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.19",
+  "title": "Energy Recovery Systems",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.19 Energy Recovery Systems\nEnergy Recovery Systems\n1) Where Subsection 5.2.10. applies to a reference building's HVAC system,\nthat system shall be modeled with energy recovery capabilities that comply with\nSubsection 5.2.10. and Sentences (2) and (3).\n2) Energy recovered from an HVAC system's exhaust air shall be used to preheat\nthe outside air supplied by that system.\n3) Where the proposed building has ice-making loads along with simultaneous\nheating and/or service water heating loads, the reference building's ice plant shall be\nmodeled with the following characteristics and components:\n  a) a water-cooled, double-bundle water chiller having 100% heat-recovery\ncapacity, where the energy model calculations do not allow for modeling of\nthe ice plant and/or of heat recovery from the ice plant,\n  b) operation and performance characteristics, such as efficiency, capacity,\npart-load performance and pumping flow rates, that are identical to those\nof the proposed building's machine,\n  c) peak load and demand schedules that are identical to those of the proposed\nbuilding, and\n  d) heat rejection to\n  i) at least one hydronic system for heating or service water\nheating, where the system has a load, and\n    ii) the atmosphere using a cooling tower defined in accordance\nwith Articles 8.4.4.10. and 8.4.4.11., when the heat\nrejected is greater than the coincident heating load (see\nNote A-8.4.3.9.).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.19.(1)",
+      "text": "Where Subsection 5.2.10. applies to a reference building's HVAC system, that system shall be modeled with energy recovery capabilities that comply with Subsection 5.2.10. and Sentences (2) and (3).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.19.(2)",
+      "text": "Energy recovered from an HVAC system's exhaust air shall be used to preheat the outside air supplied by that system.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.19.(3)",
+      "text": "Where the proposed building has ice-making loads along with simultaneous heating and/or service water heating loads, the reference building's ice plant shall be modeled with the following characteristics and components:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.19.(3)(a)",
+          "text": "a water-cooled, double-bundle water chiller having 100% heat-recovery capacity, where the energy model calculations do not allow for modeling of the ice plant and/or of heat recovery from the ice plant,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.19.(3)(b)",
+          "text": "operation and performance characteristics, such as efficiency, capacity, part-load performance and pumping flow rates, that are identical to those of the proposed building's machine,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.19.(3)(c)",
+          "text": "peak load and demand schedules that are identical to those of the proposed building, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "8.4.4.19.(3)(d)",
+          "text": "heat rejection to",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "8.4.4.19.(3)(i)",
+          "text": "at least one hydronic system for heating or service water heating, where the system has a load, and",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "8.4.4.19.(3)(i)(ii)",
+              "text": "the atmosphere using a cooling tower defined in accordance with Articles 8.4.4.10. and 8.4.4.11., when the heat rejected is greater than the coincident heating load (see Note A-8.4.3.9.)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_start": 221,
+  "page_end": 221,
+  "timestamp": "2025-12-06T22:08:44.136962+00:00",
+  "success": true,
+  "equation_count": 0
+}

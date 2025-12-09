@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.2.1.2",
+  "title": "Defined Terms",
+  "division": "A",
+  "hierarchy_level": "article",
+  "full_text": "1.2.1.2 Defined Terms\nDefined Terms\n1) The words and terms in italics in Division B shall have the meanings assigned\nto them in Article 1.4.1.2. of Division A.\n2) For the purposes of this Code, a semi-heated building is considered to be a\nbuilding with a design set-point temperature of less than 15°C.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.2.1.2.(1)",
+      "text": "The words and terms in italics in Division B shall have the meanings assigned to them in Article 1.4.1.2. of Division A.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "1.2.1.2.(2)",
+      "text": "For the purposes of this Code, a semi-heated building is considered to be a building with a design set-point temperature of less than 15°C.",
+      "clauses": []
+    }
+  ],
+  "page_start": 53,
+  "page_end": 53,
+  "timestamp": "2025-12-06T22:08:44.058497+00:00",
+  "success": true,
+  "equation_count": 0
+}

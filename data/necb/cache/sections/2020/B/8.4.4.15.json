@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.15",
+  "title": "Outdoor Air",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.15 Outdoor Air\nOutdoor Air\n1) The peak outdoor air ventilation rates for the reference building shall be identical\nto those determined for the proposed building in Sentence 8.4.3.6.(1).\n2) Where demand control ventilation strategies required by Article 5.2.3.4. are\nimplemented in the proposed building, the reference building shall be modeled with\nthose same strategies.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.15.(1)",
+      "text": "The peak outdoor air ventilation rates for the reference building shall be identical to those determined for the proposed building in Sentence 8.4.3.6.(1).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.15.(2)",
+      "text": "Where demand control ventilation strategies required by Article 5.2.3.4. are implemented in the proposed building, the reference building shall be modeled with those same strategies.",
+      "clauses": []
+    }
+  ],
+  "page_start": 219,
+  "page_end": 219,
+  "timestamp": "2025-12-06T22:08:44.135579+00:00",
+  "success": true,
+  "equation_count": 0
+}

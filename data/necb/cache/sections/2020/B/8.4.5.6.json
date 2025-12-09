@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.5.6",
+  "title": "Cooling Tower",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.5.6 Cooling Tower\nCooling Tower\n1) The part-load performance characteristics of the reference cooling tower shall be adjusted for cooling capacity by applying Sentence (2).\n2) The available total cooling capacity, Qavailable, in Btu/h, of the reference cooling tower as a function of present outdoor-air wet-bulb, condenser water supply and condenser water return temperatures shall be calculated using the following equation: [Equation: Q_{available} = Q_{rated} \\times FWB \\times \\frac{t_R}{10}] where Qrated = rated cooling capacity at CTI test conditions, in Btu/h, FWB = ratio of available capacity to rated capacity, in gpm/gpm, determined in accordance with Sentence (3), and tR = tower range, in °F, determined in accordance with Sentence (5).\n3) The ratio of available capacity to rated capacity, FWB, shall be calculated using the following equation: [Equation: FWB = a + (b \\times \\text{FRA}) + (c \\times \\text{FRA}^{2}) + (d \\times t_{cwb}) + (e \\times t_{cwb}^{2}) + (f \\times \\text{FRA} \\times t_{cwb})] where FRA = intermediate capacity curve based on range and approach determined in accordance with Sentence (4), tcwb = outdoor-air wet-bulb temperature, in °F, a = 0.60531402, b = –0.03554536, c = 0.00804083, d = –0.02860259, e = 0.00024972, and f = 0.00490857.\n4) The intermediate capacity curve based on range and approach, FRA, shall be calculated using the following equation: [Equation: \\text{FRA} = \\frac{-d - (f \\times t_R) + \\sqrt{[d + (f \\times t_R)]^2 - 4 \\times e \\times [a + (b \\times t_R) + (c \\times t_R^2) - t_A]}}{2 \\times e}] where tR = tower range, in °F, determined in accordance with Sentence (5), tA = tower approach, in °F, determined in accordance with Sentence (6), a = –2.22888899, b = 0.16679543, c = –0.01410247, d = 0.03222333, e = 0.18560214, and f = 0.24251871.\n5) The tower range, tR, shall be calculated using the following equation: [Equation: t_{R} = t_{CWR} - t_{CWS}] where tcwr = condenser water return temperature, in °F, and tcws = condenser water supply temperature, in °F.\n6) The tower approach, tA, shall be calculated using the following equation: where tcws = condenser water supply temperature, in °F, and towb = outdoor-air wet-bulb temperature, in °F.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.5.6.(1)",
+      "text": "The part-load performance characteristics of the reference cooling tower shall be adjusted for cooling capacity by applying Sentence (2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.5.6.(2)",
+      "text": "The available total cooling capacity, Qavailable, in Btu/h, of the reference cooling tower as a function of present outdoor-air wet-bulb, condenser water supply and condenser water return temperatures shall be calculated using the following equation: [Equation: Q_{available} = Q_{rated} \\times FWB \\times \\frac{t_R}{10}] where Qrated = rated cooling capacity at CTI test conditions, in Btu/h, FWB = ratio of available capacity to rated capacity, in gpm/gpm, determined in accordance with Sentence (3), and tR = tower range, in °F, determined in accordance with Sentence (5).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.5.6.(3)",
+      "text": "The ratio of available capacity to rated capacity, FWB, shall be calculated using the following equation: [Equation: FWB = a + (b \\times \\text{FRA}) + (c \\times \\text{FRA}^{2}) + (d \\times t_{cwb}) + (e \\times t_{cwb}^{2}) + (f \\times \\text{FRA} \\times t_{cwb})] where FRA = intermediate capacity curve based on range and approach determined in accordance with Sentence (4), tcwb = outdoor-air wet-bulb temperature, in °F, a = 0.60531402, b = –0.03554536, c = 0.00804083, d = –0.02860259, e = 0.00024972, and f = 0.00490857.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.5.6.(4)",
+      "text": "The intermediate capacity curve based on range and approach, FRA, shall be calculated using the following equation: [Equation: \\text{FRA} = \\frac{-d - (f \\times t_R) + \\sqrt{[d + (f \\times t_R)]^2 - 4 \\times e \\times [a + (b \\times t_R) + (c \\times t_R^2) - t_A]}}{2 \\times e}] where tR = tower range, in °F, determined in accordance with Sentence (5), tA = tower approach, in °F, determined in accordance with Sentence (6), a = –2.22888899, b = 0.16679543, c = –0.01410247, d = 0.03222333, e = 0.18560214, and f = 0.24251871.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.5.6.(5)",
+      "text": "The tower range, tR, shall be calculated using the following equation: [Equation: t_{R} = t_{CWR} - t_{CWS}] where tcwr = condenser water return temperature, in °F, and tcws = condenser water supply temperature, in °F.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.5.6.(6)",
+      "text": "The tower approach, tA, shall be calculated using the following equation: where tcws = condenser water supply temperature, in °F, and towb = outdoor-air wet-bulb temperature, in °F.",
+      "clauses": []
+    }
+  ],
+  "page_start": 228,
+  "page_end": 229,
+  "timestamp": "2025-12-06T22:08:44.139609+00:00",
+  "success": true,
+  "equation_count": 4
+}

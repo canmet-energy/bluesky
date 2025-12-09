@@ -1,0 +1,376 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.2.2.1",
+  "title": "Interior Lighting Controls",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.2.2.1 Interior Lighting Controls\nInterior Lighting Controls\n(See Note A-4.2.2.1.)\n1) Except as provided in Sentence (2), interior lighting controls shall be installed in\naccordance with this Article for each space type in the building.\n2) Where the LPD requirements are determined in accordance with the\nspace-by-space method described in Article 4.2.1.6., the same space types shall be used\nto determine the applicable lighting control requirements from Table 4.2.1.6.\n3) At least one manual lighting control device shall be installed in conformance\nwith Sentence (4) in each space type listed in Table 4.2.1.6. to control all the lighting\n  a) in each area less than or equal to 250 m2, where the area of the space is less\nthan or equal to 1 000 m2, and\n  b) in each area less than or equal to 1 000 m2, where the area of the space is\ngreater than 1 000 m2.\n4) Except as provided in Sentence (5), manual lighting control devices referred to\nin Sentence (3) shall be installed in a readily accessible location from which occupants\ncan see the controlled lighting.\n5) Manual lighting control devices are permitted to be located remotely for\nreasons of safety or security, provided each control device\n  a) has an indicator pilot light that is integral or adjacent to the control device,\nand\n  b) bears a label identifying which lighting it controls.\n6) Except as provided in Sentence (7), none of the lighting in spaces requiring\ncontrols that are restricted to “Manual ON” in accordance with Table 4.2.1.6. shall turn\non automatically.\n7) Sentence (6) need not apply where “Manual ON” operation of the general\nlighting would endanger the safety or security of the building occupants.\n8) Up to 50% of the lighting power for the general lighting, and for no other\nlighting, in spaces requiring controls that are restricted to “Partial Automatic ON” in\naccordance with Table 4.2.1.6. is permitted to turn on automatically.\n9) The general lighting in spaces requiring “Bi-Level” lighting control in accordance\nwith Table 4.2.1.6. shall have controls that allow at least one intermediate level of\nlighting, in addition to “full ON” and “full OFF,” that is between 30% and 70% full\nlighting power, or continuous dimming.\n10) Except as provided in Sentence (12), the general lighting in primary and\nsecondary sidelighted areas, as applicable, in spaces requiring “Automatic Daylight\nResponsive Controls for Sidelighting” in accordance with Table 4.2.1.6. shall be\nseparately controlled by photocontrols that comply with Sentence (11), where\n  a) the combined input power of all the general lighting that is completely or\npartially within the primary sidelighted areas is 150 W or greater, or\n  b) the combined input power of all the general lighting that is completely or\npartially within the primary and secondary sidelighted areas is 300 W or\ngreater.\n11) The photocontrols required in Sentence (10) shall\n  a) reduce electric lighting power in response to available daylight through\n  i) at least one intermediate level of lighting that is equivalent\nto 50% to 70% of design lighting power, at least one\nother intermediate level of lighting that is equivalent to\n20% to 40% of design lighting power, or the lowest dimming\nlevel the technology allows, as well as a control point that\nturns off all the controlled lighting, or\n    ii) continuous dimming,\n  b) control the general lighting in the secondary sidelighted area independently\nof the general lighting in the primary sidelighted area, and\n  c) be readily accessible for calibration adjustments.\n(See Note A-4.2.2.1.(11) and (14).)\n12) General lighting in the following areas need not comply with Sentence (10):\n  a) primary sidelighted areas where the vertical projected distance from the\ntop of the windows to the top of any adjacent structure divided by the\nhorizontal distance from the window to the adjacent structure is greater\nthan or equal to 2,\n  b) sidelighted areas where the total glazing area is less than 2 m2, and\n  c) retail spaces.\n13) Except as provided in Sentence (15), the general lighting in daylighted areas\nunder skylights and roof monitors in spaces requiring “Automatic Daylight Responsive\nControls for Toplighting” in accordance with Table 4.2.1.6. shall be controlled by\nphotocontrols that comply with Sentence (14), where the combined input power of all\nthe general lighting that is completely or partially within the daylighted areas under\nskylights and under roof monitors is 150 W or greater.\n14) The photocontrols required in Sentence (13) shall\n  a) reduce electric lighting power in response to available daylight through\n  i) at least one intermediate level of lighting that is equivalent\nto 50% to 70% of design lighting power, at least one\nother intermediate level of lighting that is equivalent to\n20% to 40% of design lighting power, or the lowest dimming\nlevel the technology allows, as well as a control point that\nturns off all the controlled lighting, or\n    ii) continuous dimming,\n  b) control the general lighting in overlapping toplighted and sidelighted areas\ntogether with the general lighting in the daylighted areas under skylights\nor roof monitors, and\n  c) be readily accessible for calibration adjustments.\n(See Note A-4.2.2.1.(11) and (14).)\n15) General lighting in the following areas need not comply with Sentence (13):\n  a) daylighted areas under skylights and roof monitors where it can be\ndemonstrated that existing adjacent structures or natural objects block direct\nsunlight for more than 1 500 hours per year between 8 a.m. and 4 p.m.,\n  b) daylighted areas where the visual transmittance, VT, of the skylights and\nroof monitors is less than 0.4, and\n  c) spaces in buildings located above the 55°N latitude where the input power of\nthe general lighting within daylighted areas is less than 200 W.\n16) Except as provided in Sentence (17), the power for general lighting in spaces\nrequiring controls that are “Automatic Partial OFF” in accordance with Table 4.2.1.6.\nshall automatically reduce by 50% or more within 20 min of the space being\nunoccupied.\n17) General lighting need not be controlled in accordance with Sentence (16) where\n  a) the lighting power density for the space is not greater than 8.6 W/m2,\n  b) the space is lit by high-intensity discharge (HID) lamps, and\n  c) the power for the general lighting in the space reduces automatically by 30%\nor more within 20 min of the space being unoccupied.\n18) Except as provided in Sentence (19), the lighting in spaces requiring controls\nthat are “Automatic Full OFF” in accordance with Table 4.2.1.6. shall be controlled by\nautomatic control devices that shut off the lighting within 20 min of the space being\nunoccupied, where each automatic control device controls an area not greater than\n50 m2.\n19) The following lighting applications need not comply with Sentence (18):\n  a) general lighting and task lighting in shop and laboratory classrooms,\n  b) general lighting and task lighting in spaces where automatic shut-off would\nendanger the safety or security of the building occupants, and\n  c) lighting required to operate continuously due to operational requirements.\n20) Except as provided in Sentence (23), the lighting in spaces requiring controls\nthat are “Scheduled Shut-off” in accordance with Table 4.2.1.6. shall shut off\nautomatically during periods when the spaces are scheduled to be unoccupied by\nmeans of control devices complying with Sentence (21) that are\n  a) time-of-day operated control devices that automatically turn the lighting\noff at programmed times, or\n  b) signals from other automatic control devices or alarm/security systems.\n21) A control device installed to meet the requirements of Sentence (20) shall\ncontrol the lighting for an area of not more than 2 500 m2 on not more than one floor.\n22) Any manual control device installed to override the “Scheduled Shut-off”\ncontrol device required in Sentence (20) shall\n  a) turn the lighting on for 2 h or less per activation during scheduled “off”\nperiods, and\n  b) control an area of 500 m2 or less.\n23) Lighting need not be controlled in accordance with Sentence (20) where it is\n  a) required to operate continuously due to operational requirements,\n  b) located in spaces where patient care is rendered, or\n  c) located in spaces where automatic shut-off would endanger the safety or\nsecurity of the building occupants.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.2.2.1.(1)",
+      "text": "Except as provided in Sentence (2), interior lighting controls shall be installed in accordance with this Article for each space type in the building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.2.2.1.(2)",
+      "text": "Where the LPD requirements are determined in accordance with the space-by-space method described in Article 4.2.1.6., the same space types shall be used to determine the applicable lighting control requirements from Table 4.2.1.6.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.2.2.1.(3)",
+      "text": "At least one manual lighting control device shall be installed in conformance with Sentence (4) in each space type listed in Table 4.2.1.6. to control all the lighting",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(3)(a)",
+          "text": "in each area less than or equal to 250 m2, where the area of the space is less than or equal to 1 000 m2, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(3)(b)",
+          "text": "in each area less than or equal to 1 000 m2, where the area of the space is greater than 1 000 m2.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.2.2.1.(4)",
+      "text": "Except as provided in Sentence (5), manual lighting control devices referred to in Sentence (3) shall be installed in a readily accessible location from which occupants can see the controlled lighting.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "4.2.2.1.(5)",
+      "text": "Manual lighting control devices are permitted to be located remotely for reasons of safety or security, provided each control device",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(5)(a)",
+          "text": "has an indicator pilot light that is integral or adjacent to the control device, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(5)(b)",
+          "text": "bears a label identifying which lighting it controls.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "6",
+      "reference": "4.2.2.1.(6)",
+      "text": "Except as provided in Sentence (7), none of the lighting in spaces requiring controls that are restricted to “Manual ON” in accordance with Table 4.2.1.6. shall turn on automatically.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "4.2.2.1.(7)",
+      "text": "Sentence (6) need not apply where “Manual ON” operation of the general lighting would endanger the safety or security of the building occupants.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "4.2.2.1.(8)",
+      "text": "Up to 50% of the lighting power for the general lighting, and for no other lighting, in spaces requiring controls that are restricted to “Partial Automatic ON” in accordance with Table 4.2.1.6. is permitted to turn on automatically.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "9",
+      "reference": "4.2.2.1.(9)",
+      "text": "The general lighting in spaces requiring “Bi-Level” lighting control in accordance with Table 4.2.1.6. shall have controls that allow at least one intermediate level of lighting, in addition to “full ON” and “full OFF,” that is between 30% and 70% full lighting power, or continuous dimming.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "10",
+      "reference": "4.2.2.1.(10)",
+      "text": "Except as provided in Sentence (12), the general lighting in primary and secondary sidelighted areas, as applicable, in spaces requiring “Automatic Daylight Responsive Controls for Sidelighting” in accordance with Table 4.2.1.6. shall be separately controlled by photocontrols that comply with Sentence (11), where",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(10)(a)",
+          "text": "the combined input power of all the general lighting that is completely or partially within the primary sidelighted areas is 150 W or greater, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(10)(b)",
+          "text": "the combined input power of all the general lighting that is completely or partially within the primary and secondary sidelighted areas is 300 W or greater.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "11",
+      "reference": "4.2.2.1.(11)",
+      "text": "The photocontrols required in Sentence (10) shall",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(11)(a)",
+          "text": "reduce electric lighting power in response to available daylight through",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "4.2.2.1.(11)(i)",
+          "text": "at least one intermediate level of lighting that is equivalent to 50% to 70% of design lighting power, at least one other intermediate level of lighting that is equivalent to 20% to 40% of design lighting power, or the lowest dimming level the technology allows, as well as a control point that turns off all the controlled lighting, or",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "4.2.2.1.(11)(i)(ii)",
+              "text": "continuous dimming,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(11)(b)",
+          "text": "control the general lighting in the secondary sidelighted area independently of the general lighting in the primary sidelighted area, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.1.(11)(c)",
+          "text": "be readily accessible for calibration adjustments. (See Note A-4.2.2.1.(11) and (14).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "12",
+      "reference": "4.2.2.1.(12)",
+      "text": "General lighting in the following areas need not comply with Sentence (10):",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(12)(a)",
+          "text": "primary sidelighted areas where the vertical projected distance from the top of the windows to the top of any adjacent structure divided by the horizontal distance from the window to the adjacent structure is greater than or equal to 2,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(12)(b)",
+          "text": "sidelighted areas where the total glazing area is less than 2 m2, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.1.(12)(c)",
+          "text": "retail spaces.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "13",
+      "reference": "4.2.2.1.(13)",
+      "text": "Except as provided in Sentence (15), the general lighting in daylighted areas under skylights and roof monitors in spaces requiring “Automatic Daylight Responsive Controls for Toplighting” in accordance with Table 4.2.1.6. shall be controlled by photocontrols that comply with Sentence (14), where the combined input power of all the general lighting that is completely or partially within the daylighted areas under skylights and under roof monitors is 150 W or greater.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "14",
+      "reference": "4.2.2.1.(14)",
+      "text": "The photocontrols required in Sentence (13) shall",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(14)(a)",
+          "text": "reduce electric lighting power in response to available daylight through",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "4.2.2.1.(14)(i)",
+          "text": "at least one intermediate level of lighting that is equivalent to 50% to 70% of design lighting power, at least one other intermediate level of lighting that is equivalent to 20% to 40% of design lighting power, or the lowest dimming level the technology allows, as well as a control point that turns off all the controlled lighting, or",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "4.2.2.1.(14)(i)(ii)",
+              "text": "continuous dimming,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(14)(b)",
+          "text": "control the general lighting in overlapping toplighted and sidelighted areas together with the general lighting in the daylighted areas under skylights or roof monitors, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.1.(14)(c)",
+          "text": "be readily accessible for calibration adjustments. (See Note A-4.2.2.1.(11) and (14).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "15",
+      "reference": "4.2.2.1.(15)",
+      "text": "General lighting in the following areas need not comply with Sentence (13):",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(15)(a)",
+          "text": "daylighted areas under skylights and roof monitors where it can be demonstrated that existing adjacent structures or natural objects block direct sunlight for more than 1 500 hours per year between 8 a.m. and 4 p.m.,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(15)(b)",
+          "text": "daylighted areas where the visual transmittance, VT, of the skylights and roof monitors is less than 0.4, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.1.(15)(c)",
+          "text": "spaces in buildings located above the 55°N latitude where the input power of the general lighting within daylighted areas is less than 200 W.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "16",
+      "reference": "4.2.2.1.(16)",
+      "text": "Except as provided in Sentence (17), the power for general lighting in spaces requiring controls that are “Automatic Partial OFF” in accordance with Table 4.2.1.6. shall automatically reduce by 50% or more within 20 min of the space being unoccupied.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "17",
+      "reference": "4.2.2.1.(17)",
+      "text": "General lighting need not be controlled in accordance with Sentence (16) where",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(17)(a)",
+          "text": "the lighting power density for the space is not greater than 8.6 W/m2,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(17)(b)",
+          "text": "the space is lit by high-intensity discharge (HID) lamps, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.1.(17)(c)",
+          "text": "the power for the general lighting in the space reduces automatically by 30% or more within 20 min of the space being unoccupied.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "18",
+      "reference": "4.2.2.1.(18)",
+      "text": "Except as provided in Sentence (19), the lighting in spaces requiring controls that are “Automatic Full OFF” in accordance with Table 4.2.1.6. shall be controlled by automatic control devices that shut off the lighting within 20 min of the space being unoccupied, where each automatic control device controls an area not greater than 50 m2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "19",
+      "reference": "4.2.2.1.(19)",
+      "text": "The following lighting applications need not comply with Sentence (18):",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(19)(a)",
+          "text": "general lighting and task lighting in shop and laboratory classrooms,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(19)(b)",
+          "text": "general lighting and task lighting in spaces where automatic shut-off would endanger the safety or security of the building occupants, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.1.(19)(c)",
+          "text": "lighting required to operate continuously due to operational requirements.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "20",
+      "reference": "4.2.2.1.(20)",
+      "text": "Except as provided in Sentence (23), the lighting in spaces requiring controls that are “Scheduled Shut-off” in accordance with Table 4.2.1.6. shall shut off automatically during periods when the spaces are scheduled to be unoccupied by means of control devices complying with Sentence (21) that are",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(20)(a)",
+          "text": "time-of-day operated control devices that automatically turn the lighting off at programmed times, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(20)(b)",
+          "text": "signals from other automatic control devices or alarm/security systems.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "21",
+      "reference": "4.2.2.1.(21)",
+      "text": "A control device installed to meet the requirements of Sentence (20) shall control the lighting for an area of not more than 2 500 m2 on not more than one floor.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "22",
+      "reference": "4.2.2.1.(22)",
+      "text": "Any manual control device installed to override the “Scheduled Shut-off” control device required in Sentence (20) shall",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(22)(a)",
+          "text": "turn the lighting on for 2 h or less per activation during scheduled “off” periods, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(22)(b)",
+          "text": "control an area of 500 m2 or less.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "23",
+      "reference": "4.2.2.1.(23)",
+      "text": "Lighting need not be controlled in accordance with Sentence (20) where it is",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.2.2.1.(23)(a)",
+          "text": "required to operate continuously due to operational requirements,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.2.2.1.(23)(b)",
+          "text": "located in spaces where patient care is rendered, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.2.2.1.(23)(c)",
+          "text": "located in spaces where automatic shut-off would endanger the safety or security of the building occupants.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 99,
+  "page_end": 101,
+  "timestamp": "2025-12-06T22:08:44.080847+00:00",
+  "success": true,
+  "equation_count": 0
+}

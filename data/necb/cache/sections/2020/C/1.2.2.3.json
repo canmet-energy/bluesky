@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.2.2.3",
+  "title": "Used Materials, Appliances and Equipment",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.2.2.3 Used Materials, Appliances and Equipment\nUsed Materials, Appliances and Equipment\n1) Unless otherwise specified, used materials, appliances and equipment are\npermitted to be reused when they meet the requirements of this Code for new materials\nand are satisfactory for the intended use.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.2.2.3.(1)",
+      "text": "Unless otherwise specified, used materials, appliances and equipment are permitted to be reused when they meet the requirements of this Code for new materials and are satisfactory for the intended use.",
+      "clauses": []
+    }
+  ],
+  "page_start": 23,
+  "page_end": 23,
+  "timestamp": "2025-12-06T22:08:44.050535+00:00",
+  "success": true,
+  "equation_count": 0
+}

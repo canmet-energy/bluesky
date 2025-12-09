@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.2.8",
+  "title": "Determination of the Daylight Supply Factor for Sidelighting",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.2.8 Determination of the Daylight Supply Factor for Sidelighting\nDetermination of the Daylight Supply Factor for Sidelighting\n1) For spaces where sidelighting is the primary daylight supply, the daylight supply factor, CDL,sup,i, shall be calculated using the following equation: [Equation: C_{DL,sup,i} = \\tau_{eff,i} \\times C_{DL,sup,raw,i} \\times f_{obst,i}] where τeff,i = effective luminous transmittance of the fenestration providing sidelighting calculated in accordance with Sentence (2), CDL,sup,raw,i = raw daylight supply factor for the rough opening (opening without fenestration) calculated in accordance with Sentence (3), and fobst,i = factor to account for horizontal obstructions calculated in accordance with Sentence (4).\n2) The effective luminous transmittance of the fenestration providing sidelighting, τeff,i, shall be calculated using the following equation: [Equation: f_{obst,i} = \\begin{cases} \\cos(1.5 \\times \\gamma_{obst,i}) & \\text{if } \\gamma_{obst,i} < 60° \\\\ 0 & \\text{if } \\gamma_{obst,i} \\geq 60° \\end{cases}] where τD65,i = luminous transmittance of the glazing for standard illuminant D65, k1,i = factor to account for framing defined as the ratio of glazed area to overall area of the opening including area of framing, k2,i = factor to account for dirt accumulation (if unknown, value shall be set to 0.8), and k3,i = factor to account for non-perpendicular light incidence (if unknown, value shall be set to 0.85).\n3) The raw daylight supply factor for the rough opening, CDL,sup,raw,i, shall be determined using Table 4.3.2.8.\n4) The factor to account for horizontal obstructions, fobst,i, shall be calculated using the following equation: where γobst,i = angle from the centre of the fenestration to the top of the horizontal obstruction, in degrees. Table 4.3.2.8. Raw Daylight Supply Factors for Rough Opening in Primary Sidelighted Area, CDL,sup,raw,i Forming Part of Sentence 4.3.2.8.(3) Design Illuminance, in lx(1) Orientation of Fenestration Providing Sidelighting(2) North East South West CDL,sup,raw,i(3) 300 500 750 1000 0.72 0.59 0.50 0.44 0.72 0.62 0.55 0.49 0.74 0.66 0.60 0.55 0.73 0.64 0.57 0.52 Notes to Table 4.3.2.8.: (1) See Note A-Table 4.3.2.8. (2) See Note A-4.3.2.3.(2). Table 4.3.2.8. (Continued) (3) For spaces requiring “Automatic Daylight Responsive Controls for Sidelighting” in primary and secondary sidelighted areas, as described in Sentence 4.2.2.1.(10), CDL,sup,raw,i shall be multiplied by 0.75 and the resulting reduced factor shall be applied to the sum of the primary and secondary sidelighted areas.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.2.8.(1)",
+      "text": "For spaces where sidelighting is the primary daylight supply, the daylight supply factor, CDL,sup,i, shall be calculated using the following equation: [Equation: C_{DL,sup,i} = \\tau_{eff,i} \\times C_{DL,sup,raw,i} \\times f_{obst,i}] where τeff,i = effective luminous transmittance of the fenestration providing sidelighting calculated in accordance with Sentence (2), CDL,sup,raw,i = raw daylight supply factor for the rough opening (opening without fenestration) calculated in accordance with Sentence (3), and fobst,i = factor to account for horizontal obstructions calculated in accordance with Sentence (4).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.3.2.8.(2)",
+      "text": "The effective luminous transmittance of the fenestration providing sidelighting, τeff,i, shall be calculated using the following equation: [Equation: f_{obst,i} = \\begin{cases} \\cos(1.5 \\times \\gamma_{obst,i}) & \\text{if } \\gamma_{obst,i} < 60° \\\\ 0 & \\text{if } \\gamma_{obst,i} \\geq 60° \\end{cases}] where τD65,i = luminous transmittance of the glazing for standard illuminant D65, k1,i = factor to account for framing defined as the ratio of glazed area to overall area of the opening including area of framing, k2,i = factor to account for dirt accumulation (if unknown, value shall be set to 0.8), and k3,i = factor to account for non-perpendicular light incidence (if unknown, value shall be set to 0.85).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.3.2.8.(3)",
+      "text": "The raw daylight supply factor for the rough opening, CDL,sup,raw,i, shall be determined using Table 4.3.2.8.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "4.3.2.8.(4)",
+      "text": "The factor to account for horizontal obstructions, fobst,i, shall be calculated using the following equation: where γobst,i = angle from the centre of the fenestration to the top of the horizontal obstruction, in degrees. Table 4.3.2.8. Raw Daylight Supply Factors for Rough Opening in Primary Sidelighted Area, CDL,sup,raw,i Forming Part of Sentence 4.3.2.8.(3) Design Illuminance, in lx(1) Orientation of Fenestration Providing Sidelighting(2) North East South West CDL,sup,raw,i(3) 300 500 750 1000 0.72 0.59 0.50 0.44 0.72 0.62 0.55 0.49 0.74 0.66 0.60 0.55 0.73 0.64 0.57 0.52 Notes to Table 4.3.2.8.: (1) See Note A-Table 4.3.2.8. (2) See Note A-4.3.2.3.(2). Table 4.3.2.8. (Continued) (3) For spaces requiring “Automatic Daylight Responsive Controls for Sidelighting” in primary and secondary sidelighted areas, as described in Sentence 4.2.2.1.(10), CDL,sup,raw,i shall be multiplied by 0.75 and the resulting reduced factor shall be applied to the sum of the primary and secondary sidelighted areas.",
+      "clauses": []
+    }
+  ],
+  "page_start": 113,
+  "page_end": 114,
+  "timestamp": "2025-12-06T22:08:44.089179+00:00",
+  "success": true,
+  "equation_count": 2
+}

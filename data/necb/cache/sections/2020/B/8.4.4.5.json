@@ -1,0 +1,170 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.5",
+  "title": "Lighting",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.5 Lighting\nLighting\n1) Except as provided in Sentences (2) and (3), the installed interior lighting power of\nthe reference building shall be set at the interior lighting power allowance determined in\nArticle 4.2.1.5. or 4.2.1.6., as applicable.\n2) Dwelling units shall be modeled with an installed lighting power density of\n5 W/m2.\n3) Where controls based on space occupancy are required by Subsection 4.2.2.,\nthe installed interior lighting power shall be multiplied by the factor for occupancy\ncontrol, Focc,i, and the factor for personal control, Fpers,i, as determined in accordance\nwith Article 4.3.2.10. for the appropriate occupancy-sensing mechanism. (See\nNote A-8.4.4.5.(3).)\n4) The proportions of radiant and convective heat and the percentage of heat gain\nfrom lighting going directly to return air shall be modeled as being identical to those\ndetermined for the proposed building in Article 8.4.2.7.\n5) Except as provided in Sentence (9), for the purpose of determining the primary\nand secondary sidelighted areas, the total fenestration area of each thermal block shall\nbe modeled for each orientation as a single centered window with the following\ncharacteristics:\n  a) a sill located 0.9 m above the floor,\n  b) a window opening height of 1.8 m, and\n  c) a width that would result in a window-to-wall ratio meeting the maximum\nFDWR value permitted by Article 3.2.1.4.\n6) The primary and secondary sidelighted areas shall be determined assuming\na depth of 2 m. (See Note A-8.4.4.5.(6).)\n7) For the purpose of determining the daylighted area under skylights, the\ncalculations shall be performed assuming a single square skylight positioned at the\ncentre of each thermal block\n  a) that is sized to meet the maximum skylight-to-roof ratio permitted by\nArticle 3.2.1.4., and\n  b) whose projection onto the floor extends horizontally in all directions for a\ndistance equal to 0.5 times the ceiling height.\n(See Note A-8.4.4.5.(7).)\n8) The combined input power within the daylighted areas shall be the sum of\nthe daylighted areas multiplied by the appropriate interior lighting power allowance\nspecified in Table 4.2.1.6.\n9) Where photocontrols are required by Subsection 4.2.2., their effect shall be\nevaluated in accordance with Sentences (10) to (12).\n10) Calculations of daylighting levels in each thermal block shall be performed\nassuming\n  a) the thermal block is a single open space surrounded by opaque walls,\n  b) floor, wall and ceiling reflectances of 0.15, 0.50 and 0.80, respectively (see\nNote A-8.4.4.5.(10)(b)),\n  c) illuminance levels measured at a height of 0.75 m from the floor, at the edge\nof the daylighted areas that is the farthest from the source of daylight and\nmeasured perpendicular to this source, and\n  d) a fenestration visible light transmittance corresponding\n  i) to the area-weighted average of the visible light\ntransmittance for that thermal block in the proposed building,\n    ii) if there is no fenestration in the proposed building's\ncorresponding thermal block, to a value of 0.50.\n11) The illumination set-point of the photocontrols shall\n  a) be identical to that of the proposed building's photocontrols, or\n  b) if there are no photocontrols in the proposed building, be representative of\nthe space use without task lighting.\n(See Note A-8.4.4.5.(11).)\n12) Where the energy model is unable to perform detailed daylighting calculations,\nthe interior lighting power allowance in the daylighted area shall be multiplied by the\nfactor for daylight harvesting, FDL,i, as calculated in accordance with Article 4.3.3.7.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.5.(1)",
+      "text": "Except as provided in Sentences (2) and (3), the installed interior lighting power of the reference building shall be set at the interior lighting power allowance determined in Article 4.2.1.5. or 4.2.1.6., as applicable.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.5.(2)",
+      "text": "Dwelling units shall be modeled with an installed lighting power density of 5 W/m2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.5.(3)",
+      "text": "Where controls based on space occupancy are required by Subsection 4.2.2., the installed interior lighting power shall be multiplied by the factor for occupancy control, Focc,i, and the factor for personal control, Fpers,i, as determined in accordance with Article 4.3.2.10. for the appropriate occupancy-sensing mechanism. (See Note A-8.4.4.5.(3).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.5.(4)",
+      "text": "The proportions of radiant and convective heat and the percentage of heat gain from lighting going directly to return air shall be modeled as being identical to those determined for the proposed building in Article 8.4.2.7.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.5.(5)",
+      "text": "Except as provided in Sentence (9), for the purpose of determining the primary and secondary sidelighted areas, the total fenestration area of each thermal block shall be modeled for each orientation as a single centered window with the following characteristics:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.5.(5)(a)",
+          "text": "a sill located 0.9 m above the floor,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.5.(5)(b)",
+          "text": "a window opening height of 1.8 m, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.5.(5)(c)",
+          "text": "a width that would result in a window-to-wall ratio meeting the maximum FDWR value permitted by Article 3.2.1.4.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.4.5.(6)",
+      "text": "The primary and secondary sidelighted areas shall be determined assuming a depth of 2 m. (See Note A-8.4.4.5.(6).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.4.5.(7)",
+      "text": "For the purpose of determining the daylighted area under skylights, the calculations shall be performed assuming a single square skylight positioned at the centre of each thermal block",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.5.(7)(a)",
+          "text": "that is sized to meet the maximum skylight-to-roof ratio permitted by Article 3.2.1.4., and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.5.(7)(b)",
+          "text": "whose projection onto the floor extends horizontally in all directions for a distance equal to 0.5 times the ceiling height. (See Note A-8.4.4.5.(7).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "8",
+      "reference": "8.4.4.5.(8)",
+      "text": "The combined input power within the daylighted areas shall be the sum of the daylighted areas multiplied by the appropriate interior lighting power allowance specified in Table 4.2.1.6.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "9",
+      "reference": "8.4.4.5.(9)",
+      "text": "Where photocontrols are required by Subsection 4.2.2., their effect shall be evaluated in accordance with Sentences (10) to (12).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "10",
+      "reference": "8.4.4.5.(10)",
+      "text": "Calculations of daylighting levels in each thermal block shall be performed assuming",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.5.(10)(a)",
+          "text": "the thermal block is a single open space surrounded by opaque walls,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.5.(10)(b)",
+          "text": "floor, wall and ceiling reflectances of 0.15, 0.50 and 0.80, respectively (see Note A-8.4.4.5.(10)(b)),",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.5.(10)(c)",
+          "text": "illuminance levels measured at a height of 0.75 m from the floor, at the edge of the daylighted areas that is the farthest from the source of daylight and measured perpendicular to this source, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "8.4.4.5.(10)(d)",
+          "text": "a fenestration visible light transmittance corresponding",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "8.4.4.5.(10)(i)",
+          "text": "to the area-weighted average of the visible light transmittance for that thermal block in the proposed building,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "8.4.4.5.(10)(i)(ii)",
+              "text": "if there is no fenestration in the proposed building's corresponding thermal block, to a value of 0.50."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sentence_number": "11",
+      "reference": "8.4.4.5.(11)",
+      "text": "The illumination set-point of the photocontrols shall",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.5.(11)(a)",
+          "text": "be identical to that of the proposed building's photocontrols, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.5.(11)(b)",
+          "text": "if there are no photocontrols in the proposed building, be representative of the space use without task lighting. (See Note A-8.4.4.5.(11).)",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "12",
+      "reference": "8.4.4.5.(12)",
+      "text": "Where the energy model is unable to perform detailed daylighting calculations, the interior lighting power allowance in the daylighted area shall be multiplied by the factor for daylight harvesting, FDL,i, as calculated in accordance with Article 4.3.3.7.",
+      "clauses": []
+    }
+  ],
+  "page_start": 210,
+  "page_end": 212,
+  "timestamp": "2025-12-06T22:08:44.131009+00:00",
+  "success": true,
+  "equation_count": 0
+}

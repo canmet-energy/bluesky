@@ -1,0 +1,322 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "2.2.2.8",
+  "title": "Documentation Requirements for Building Performance Compliance",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "2.2.2.8 Documentation Requirements for Building Performance Compliance\nDocumentation Requirements for Building Performance Compliance\n1) If Part 8 of Division B is used to demonstrate compliance with Parts 3 to 7 of\nDivision B, a building performance compliance calculation report shall be produced\nin accordance with this Article in addition to the documentation required by\nArticles 2.2.2.3. to 2.2.2.7.\n2) The header of each page of the building performance compliance calculation\nreport shall contain the following information:\n  a) project name,\n  b) date of analysis,\n  c) unique run number to identify all report pages as being the result of that\nanalysis run,\n  d) report title, and\n  e) page number (consecutive within each report).\n3) The following information shall be included in the building performance\ncompliance calculation report:\n  a) the project information section of the report shall contain:\n  i) project name or identifier,\n    ii) project description,\n    iii) project address,\n    iv) geographic region in which proposed design is to be built,\n  v) identifier for climate data set used for analysis, and\n    vi) floor area of conditioned spaces of the proposed design,\n  b) the building envelope data summary section of the report shall contain the\ndocumentation required in Article 2.2.2.3. for both the proposed building\nand the reference building,\n  c) the lighting systems data summary section of the report shall contain the\nfollowing data for both the proposed building and the reference building:\n  i) installed interior lighting power in conditioned spaces, in kW,\n    ii) average installed lighting power density, in W/m2, obtained\nby dividing the installed interior lighting power by the total\nfloor area,\n    iii) interior lighting power allowance, in kW,\n    iv) average lighting power allowance density, in W/m2,\nobtained by dividing the interior lighting power allowance\nby the total floor area,\n  v) exterior lighting power, and\n    vi) if daylighting calculations are performed, the method of\ncalculation and the results,\n  d) the HVAC data summary section of the report shall contain the following\ndata for both the proposed building and the reference building:\n  i) total heating capacity, by energy source used for heating,\n    ii) total cooling capacity, by energy source used for cooling,\n    iii) total supply airflow, in L/s,\n    iv) total supply fan power at design, in kW,\n  v) total return fan power at design, in kW,\n    vi) sum of supply fan power plus return fan power divided by\ntotal supply airflow, in W per L/s,\n    vii) type of HVAC system, and\n    viii) the design basis for the ventilation rates,\n  e) the service water heating data summary section of the report shall contain the\nfollowing data:\n  i) whether or not the service water heating systems of the\nproposed building have been taken into account in the\nsimulation, and\n    ii) if service water heating systems are part of the building\nperformance calculation, the total heating capacity for both\nthe proposed building and the reference building, and\n  f) the energy performance data summary section of the report shall contain\nthe results of the following building performance calculations:\n  i) the amount of each energy source used by the proposed\nbuilding, in MJ,\n    ii) the amount of each energy source used by the reference\nbuilding, in MJ,\n    iii) the annual energy consumption of the proposed building (sum\nof all energy sources), in MJ,\n    iv) the building energy target of the reference building (sum of all\nenergy sources), in MJ, and\n  v) a breakdown of energy usage, per energy source, for the\nfollowing building components and systems: space-heating\nequipment, space-cooling equipment, interior lighting,\nservice water heating equipment, elevators and escalators,\nfans, pumps and other HVAC equipment, miscellaneous\nequipment and receptacle power equipment.\n4) The report shall identify which building characteristics fail to meet, which ones\nmeet, and which ones exceed the performance levels of the prescriptive requirements\nof Parts 3 to 7 of Division B.\n5) If the energy usage of the proposed building is no greater than the energy usage\nof the reference building, the report shall state that the proposed building satisfies the\nbuilding energy target calculation requirements and complies with the Code, exclusive\nof verification of the limitations contained in Parts 3 to 7 of Division B.\n6) The report shall contain a certification section stating that\n  a) the analysis was performed in accordance with Part 8 of Division B of the\nNECB,\n  b) the input for the analysis is a true representation of the proposed building\nsubmitted for approval, and\n  c) all other requirements of Part 8 of Division B have been satisfied.\n7) The report shall contain a complete list of all the inputs on which the compliance\nanalysis for both the proposed building and reference building is based.\n8) The report shall contain a list of system data that were excluded for both the\nreference building and the proposed building, citing one of the following reasons:\n  a) system was excluded because it complies with the prescriptive requirements\nof the Code and has no effect on other building components, or\n  b) system was excluded because of an exemption permitted by the Code.\n9) The report shall contain a description of any adaptations made to the\ncompliance calculations, if applicable.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "2.2.2.8.(1)",
+      "text": "If Part 8 of Division B is used to demonstrate compliance with Parts 3 to 7 of Division B, a building performance compliance calculation report shall be produced in accordance with this Article in addition to the documentation required by Articles 2.2.2.3. to 2.2.2.7.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "2.2.2.8.(2)",
+      "text": "The header of each page of the building performance compliance calculation report shall contain the following information:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.8.(2)(a)",
+          "text": "project name,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.8.(2)(b)",
+          "text": "date of analysis,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "2.2.2.8.(2)(c)",
+          "text": "unique run number to identify all report pages as being the result of that analysis run,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "2.2.2.8.(2)(d)",
+          "text": "report title, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "2.2.2.8.(2)(e)",
+          "text": "page number (consecutive within each report).",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "3",
+      "reference": "2.2.2.8.(3)",
+      "text": "The following information shall be included in the building performance compliance calculation report:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.8.(3)(a)",
+          "text": "the project information section of the report shall contain:",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "2.2.2.8.(3)(i)",
+          "text": "project name or identifier,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "2.2.2.8.(3)(i)(ii)",
+              "text": "project description,"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "2.2.2.8.(3)(i)(iii)",
+              "text": "project address,"
+            },
+            {
+              "subclause_numeral": "iv",
+              "reference": "2.2.2.8.(3)(i)(iv)",
+              "text": "geographic region in which proposed design is to be built,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "v",
+          "reference": "2.2.2.8.(3)(v)",
+          "text": "identifier for climate data set used for analysis, and",
+          "subclauses": [
+            {
+              "subclause_numeral": "vi",
+              "reference": "2.2.2.8.(3)(v)(vi)",
+              "text": "floor area of conditioned spaces of the proposed design,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.8.(3)(b)",
+          "text": "the building envelope data summary section of the report shall contain the documentation required in Article 2.2.2.3. for both the proposed building and the reference building,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "2.2.2.8.(3)(c)",
+          "text": "the lighting systems data summary section of the report shall contain the following data for both the proposed building and the reference building:",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "2.2.2.8.(3)(i)",
+          "text": "installed interior lighting power in conditioned spaces, in kW,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "2.2.2.8.(3)(i)(ii)",
+              "text": "average installed lighting power density, in W/m2, obtained by dividing the installed interior lighting power by the total floor area,"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "2.2.2.8.(3)(i)(iii)",
+              "text": "interior lighting power allowance, in kW,"
+            },
+            {
+              "subclause_numeral": "iv",
+              "reference": "2.2.2.8.(3)(i)(iv)",
+              "text": "average lighting power allowance density, in W/m2, obtained by dividing the interior lighting power allowance by the total floor area,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "v",
+          "reference": "2.2.2.8.(3)(v)",
+          "text": "exterior lighting power, and",
+          "subclauses": [
+            {
+              "subclause_numeral": "vi",
+              "reference": "2.2.2.8.(3)(v)(vi)",
+              "text": "if daylighting calculations are performed, the method of calculation and the results,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "d",
+          "reference": "2.2.2.8.(3)(d)",
+          "text": "the HVAC data summary section of the report shall contain the following data for both the proposed building and the reference building:",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "2.2.2.8.(3)(i)",
+          "text": "total heating capacity, by energy source used for heating,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "2.2.2.8.(3)(i)(ii)",
+              "text": "total cooling capacity, by energy source used for cooling,"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "2.2.2.8.(3)(i)(iii)",
+              "text": "total supply airflow, in L/s,"
+            },
+            {
+              "subclause_numeral": "iv",
+              "reference": "2.2.2.8.(3)(i)(iv)",
+              "text": "total supply fan power at design, in kW,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "v",
+          "reference": "2.2.2.8.(3)(v)",
+          "text": "total return fan power at design, in kW,",
+          "subclauses": [
+            {
+              "subclause_numeral": "vi",
+              "reference": "2.2.2.8.(3)(v)(vi)",
+              "text": "sum of supply fan power plus return fan power divided by total supply airflow, in W per L/s,"
+            },
+            {
+              "subclause_numeral": "vii",
+              "reference": "2.2.2.8.(3)(v)(vii)",
+              "text": "type of HVAC system, and"
+            },
+            {
+              "subclause_numeral": "viii",
+              "reference": "2.2.2.8.(3)(v)(viii)",
+              "text": "the design basis for the ventilation rates,"
+            }
+          ]
+        },
+        {
+          "clause_letter": "e",
+          "reference": "2.2.2.8.(3)(e)",
+          "text": "the service water heating data summary section of the report shall contain the following data:",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "2.2.2.8.(3)(i)",
+          "text": "whether or not the service water heating systems of the proposed building have been taken into account in the simulation, and",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "2.2.2.8.(3)(i)(ii)",
+              "text": "if service water heating systems are part of the building performance calculation, the total heating capacity for both the proposed building and the reference building, and"
+            }
+          ]
+        },
+        {
+          "clause_letter": "f",
+          "reference": "2.2.2.8.(3)(f)",
+          "text": "the energy performance data summary section of the report shall contain the results of the following building performance calculations:",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "2.2.2.8.(3)(i)",
+          "text": "the amount of each energy source used by the proposed building, in MJ,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "2.2.2.8.(3)(i)(ii)",
+              "text": "the amount of each energy source used by the reference building, in MJ,"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "2.2.2.8.(3)(i)(iii)",
+              "text": "the annual energy consumption of the proposed building (sum of all energy sources), in MJ,"
+            },
+            {
+              "subclause_numeral": "iv",
+              "reference": "2.2.2.8.(3)(i)(iv)",
+              "text": "the building energy target of the reference building (sum of all energy sources), in MJ, and"
+            }
+          ]
+        },
+        {
+          "clause_letter": "v",
+          "reference": "2.2.2.8.(3)(v)",
+          "text": "a breakdown of energy usage, per energy source, for the following building components and systems: space-heating equipment, space-cooling equipment, interior lighting, service water heating equipment, elevators and escalators, fans, pumps and other HVAC equipment, miscellaneous equipment and receptacle power equipment.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "4",
+      "reference": "2.2.2.8.(4)",
+      "text": "The report shall identify which building characteristics fail to meet, which ones meet, and which ones exceed the performance levels of the prescriptive requirements of Parts 3 to 7 of Division B.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "5",
+      "reference": "2.2.2.8.(5)",
+      "text": "If the energy usage of the proposed building is no greater than the energy usage of the reference building, the report shall state that the proposed building satisfies the building energy target calculation requirements and complies with the Code, exclusive of verification of the limitations contained in Parts 3 to 7 of Division B.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "2.2.2.8.(6)",
+      "text": "The report shall contain a certification section stating that",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.8.(6)(a)",
+          "text": "the analysis was performed in accordance with Part 8 of Division B of the NECB,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.8.(6)(b)",
+          "text": "the input for the analysis is a true representation of the proposed building submitted for approval, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "2.2.2.8.(6)(c)",
+          "text": "all other requirements of Part 8 of Division B have been satisfied.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "7",
+      "reference": "2.2.2.8.(7)",
+      "text": "The report shall contain a complete list of all the inputs on which the compliance analysis for both the proposed building and reference building is based.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "8",
+      "reference": "2.2.2.8.(8)",
+      "text": "The report shall contain a list of system data that were excluded for both the reference building and the proposed building, citing one of the following reasons:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "2.2.2.8.(8)(a)",
+          "text": "system was excluded because it complies with the prescriptive requirements of the Code and has no effect on other building components, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "2.2.2.8.(8)(b)",
+          "text": "system was excluded because of an exemption permitted by the Code.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "9",
+      "reference": "2.2.2.8.(9)",
+      "text": "The report shall contain a description of any adaptations made to the compliance calculations, if applicable.",
+      "clauses": []
+    }
+  ],
+  "page_start": 296,
+  "page_end": 298,
+  "timestamp": "2025-12-06T22:08:44.146580+00:00",
+  "success": true,
+  "equation_count": 0
+}

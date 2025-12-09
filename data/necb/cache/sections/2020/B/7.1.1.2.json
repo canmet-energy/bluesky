@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "7.1.1.2",
+  "title": "Application",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "7.1.1.2 Application\nApplication\n1) This Part applies to the electrical power systems and motors that are connected\nto the building's electrical service. (See Note A-7.1.1.2.(1).)",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "7.1.1.2.(1)",
+      "text": "This Part applies to the electrical power systems and motors that are connected to the building's electrical service. (See Note A-7.1.1.2.(1).)",
+      "clauses": []
+    }
+  ],
+  "page_start": 194,
+  "page_end": 194,
+  "timestamp": "2025-12-06T22:08:44.118820+00:00",
+  "success": true,
+  "equation_count": 0
+}

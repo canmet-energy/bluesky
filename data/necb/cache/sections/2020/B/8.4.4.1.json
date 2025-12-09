@@ -1,0 +1,89 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "8.4.4.1",
+  "title": "General",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "8.4.4.1 General\nGeneral\n1) The building energy target of the reference building shall be calculated based on\nthe parameters described in this Subsection.\n2) The components and systems of the reference building shall meet the\nprescriptive requirements of Sections 3.2., 4.2., 5.2., 6.2. and 7.2.\n3) The energy model calculations shall include all the energy uses addressed in\nSections 3.2., 4.2., 5.2., 6.2. and 7.2.\n4) Except as noted otherwise in this Subsection, the following characteristics of the\nreference building shall be modeled as being identical to those of the proposed building:\n  a) total floor area of conditioned and unconditioned spaces,\n  b) use of building spaces,\n  c) number, type and conditioning of thermal blocks,\n  d) shape and exterior dimensions, and\n  e) orientation.\n5) The presence or absence of heating and/or cooling systems in each conditioned\nthermal block of the reference building shall be modeled as being identical to those in the\nproposed building.\n6) Climatic data used in the compliance calculations for the proposed building\nshall be applied.\n7) The simulation shall account for the effect of part-load operation on equipment\nperformance.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "8.4.4.1.(1)",
+      "text": "The building energy target of the reference building shall be calculated based on the parameters described in this Subsection.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "8.4.4.1.(2)",
+      "text": "The components and systems of the reference building shall meet the prescriptive requirements of Sections 3.2., 4.2., 5.2., 6.2. and 7.2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "8.4.4.1.(3)",
+      "text": "The energy model calculations shall include all the energy uses addressed in Sections 3.2., 4.2., 5.2., 6.2. and 7.2.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "4",
+      "reference": "8.4.4.1.(4)",
+      "text": "Except as noted otherwise in this Subsection, the following characteristics of the reference building shall be modeled as being identical to those of the proposed building:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "8.4.4.1.(4)(a)",
+          "text": "total floor area of conditioned and unconditioned spaces,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "8.4.4.1.(4)(b)",
+          "text": "use of building spaces,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "8.4.4.1.(4)(c)",
+          "text": "number, type and conditioning of thermal blocks,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "8.4.4.1.(4)(d)",
+          "text": "shape and exterior dimensions, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "8.4.4.1.(4)(e)",
+          "text": "orientation.",
+          "subclauses": []
+        }
+      ]
+    },
+    {
+      "sentence_number": "5",
+      "reference": "8.4.4.1.(5)",
+      "text": "The presence or absence of heating and/or cooling systems in each conditioned thermal block of the reference building shall be modeled as being identical to those in the proposed building.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "6",
+      "reference": "8.4.4.1.(6)",
+      "text": "Climatic data used in the compliance calculations for the proposed building shall be applied.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "7",
+      "reference": "8.4.4.1.(7)",
+      "text": "The simulation shall account for the effect of part-load operation on equipment performance.",
+      "clauses": []
+    }
+  ],
+  "page_start": 209,
+  "page_end": 210,
+  "timestamp": "2025-12-06T22:08:44.129652+00:00",
+  "success": true,
+  "equation_count": 0
+}

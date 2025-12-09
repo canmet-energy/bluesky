@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.7.2",
+  "title": "Pool and Hot Tub Covers",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.7.2 Pool and Hot Tub Covers\nPool and Hot Tub Covers\n1) Heated outdoor swimming pools and tubs shall be equipped with covers\ncapable of covering at least 90% of the water surface.\n2) Where pools or tubs are heated to a temperature above 32°C, the covers\ndescribed in Sentence (1) shall have a nominal thermal transmittance of no more than\n0.48 W/m2×°C.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.7.2.(1)",
+      "text": "Heated outdoor swimming pools and tubs shall be equipped with covers capable of covering at least 90% of the water surface.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "6.2.7.2.(2)",
+      "text": "Where pools or tubs are heated to a temperature above 32°C, the covers described in Sentence (1) shall have a nominal thermal transmittance of no more than 0.48 W/m2×°C.",
+      "clauses": []
+    }
+  ],
+  "page_start": 184,
+  "page_end": 185,
+  "timestamp": "2025-12-06T22:08:44.116813+00:00",
+  "success": true,
+  "equation_count": 0
+}

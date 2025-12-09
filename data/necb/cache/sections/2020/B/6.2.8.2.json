@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "6.2.8.2",
+  "title": "Pressure Control",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "6.2.8.2 Pressure Control\nPressure Control\n1) Pressure booster systems shall be provided with at least one pressure sensor\nthat starts and stops the system or varies the pump speed so that the pressure required\nfor operation of the service water system is maintained. (See Note A-6.2.8.2.(1).)\n2) Except for safety devices, pressure-reducing devices shall not be installed on a\npressure booster system.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "6.2.8.2.(1)",
+      "text": "Pressure booster systems shall be provided with at least one pressure sensor that starts and stops the system or varies the pump speed so that the pressure required for operation of the service water system is maintained. (See Note A-6.2.8.2.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "6.2.8.2.(2)",
+      "text": "Except for safety devices, pressure-reducing devices shall not be installed on a pressure booster system.",
+      "clauses": []
+    }
+  ],
+  "page_start": 185,
+  "page_end": 185,
+  "timestamp": "2025-12-06T22:08:44.117554+00:00",
+  "success": true,
+  "equation_count": 0
+}

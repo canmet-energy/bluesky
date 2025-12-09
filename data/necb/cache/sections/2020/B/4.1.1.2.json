@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.1.1.2",
+  "title": "Application",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.1.1.2 Application\nApplication\n1) Except as provided in Sentence (2), this Part applies to lighting components and\nsystems that are connected to the building's electrical service. (See Note A-4.1.1.2.(1).)\n2) This Part does not apply to the following lighting systems:\n  a) emergency lighting that is automatically off during normal hours of building\noperation,\n  b) lighting within dwelling units, and\n  c) lighting in buildings or parts of buildings and in certain exterior spaces\nassociated with the building where it can be shown that the nature of\nthe occupancy makes it impractical to apply these requirements (see\nNote A-4.1.1.2.(2)(c)).",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.1.1.2.(1)",
+      "text": "Except as provided in Sentence (2), this Part applies to lighting components and systems that are connected to the building's electrical service. (See Note A-4.1.1.2.(1).)",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.1.1.2.(2)",
+      "text": "This Part does not apply to the following lighting systems:",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "4.1.1.2.(2)(a)",
+          "text": "emergency lighting that is automatically off during normal hours of building operation,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "4.1.1.2.(2)(b)",
+          "text": "lighting within dwelling units, and",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "4.1.1.2.(2)(c)",
+          "text": "lighting in buildings or parts of buildings and in certain exterior spaces associated with the building where it can be shown that the nature of the occupancy makes it impractical to apply these requirements (see Note A-4.1.1.2.(2)(c)).",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 88,
+  "page_end": 88,
+  "timestamp": "2025-12-06T22:08:44.077762+00:00",
+  "success": true,
+  "equation_count": 0
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "3.2.2.1",
+  "title": "Vestibules",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "3.2.2.1 Vestibules\nVestibules\n1) Except as provided in Sentence (3), a door that separates conditioned space from\nthe exterior shall be protected with an enclosed vestibule whose doors opening into\nand out of the vestibule are equipped with self-closing devices.\n2) Except for doors equipped with power operators in barrier-free entrances,\nvestibules required in Sentence (1) shall be designed so that users passing through the\nvestibule are not required to open the interior and exterior doors at the same time.\n3) A vestibule is not required for an exterior door that\n  a) is a revolving door,\n  b) is used primarily to facilitate vehicular movement or material handling,\n  c) is intended to be used as a service, emergency exit, or stairwell exit door only,\n  d) is intended to be used as a seasonal use door, such as a door leading to\na patio,\n  e) opens directly from a dwelling unit,\n  f) opens directly from a retail space less than 200 m2 in area or from a space\nless than 150 m2 for other uses, or\n  g) is located in a building less than 5 storeys in building height in any area that\nhas fewer than 3500 heating degree-days (°C) as listed in Table C-1.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "3.2.2.1.(1)",
+      "text": "Except as provided in Sentence (3), a door that separates conditioned space from the exterior shall be protected with an enclosed vestibule whose doors opening into and out of the vestibule are equipped with self-closing devices.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "3.2.2.1.(2)",
+      "text": "Except for doors equipped with power operators in barrier-free entrances, vestibules required in Sentence (1) shall be designed so that users passing through the vestibule are not required to open the interior and exterior doors at the same time.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "3.2.2.1.(3)",
+      "text": "A vestibule is not required for an exterior door that",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "3.2.2.1.(3)(a)",
+          "text": "is a revolving door,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "3.2.2.1.(3)(b)",
+          "text": "is used primarily to facilitate vehicular movement or material handling,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "c",
+          "reference": "3.2.2.1.(3)(c)",
+          "text": "is intended to be used as a service, emergency exit, or stairwell exit door only,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "d",
+          "reference": "3.2.2.1.(3)(d)",
+          "text": "is intended to be used as a seasonal use door, such as a door leading to a patio,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "e",
+          "reference": "3.2.2.1.(3)(e)",
+          "text": "opens directly from a dwelling unit,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "f",
+          "reference": "3.2.2.1.(3)(f)",
+          "text": "opens directly from a retail space less than 200 m2 in area or from a space less than 150 m2 for other uses, or",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "g",
+          "reference": "3.2.2.1.(3)(g)",
+          "text": "is located in a building less than 5 storeys in building height in any area that has fewer than 3500 heating degree-days (°C) as listed in Table C-1.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 71,
+  "page_end": 71,
+  "timestamp": "2025-12-06T22:08:44.072464+00:00",
+  "success": true,
+  "equation_count": 0
+}

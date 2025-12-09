@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "4.3.3.5",
+  "title": "Determination of Effective Annual Operational Times",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "4.3.3.5 Determination of Effective Annual Operational Times\nDetermination of Effective Annual Operational Times\n1) The effective annual daytime operational time of the daylighted area, teff,day,DL,i, in h/a, shall be calculated using the following equation: [Equation: t_{eff,day,NDL,i} = t_{day,i} \\times F_{occ,i} \\times F_{pers,i}] where tday,i = annual operational time of space during daytime, in h, determined in accordance with Article 4.3.3.6., FDL,i = factor for daylight harvesting determined in accordance with Article 4.3.3.7., Focc,i = factor for occupancy control determined in accordance with Article 4.3.3.10., and Fpers,I = factor for personal control determined in accordance with Article 4.3.3.10.\n2) The effective annual daytime operational time of the non-daylighted area, teff,day,NDL,i, in h/a, shall be calculated using the following equation: [Equation: t_{eff,day,DL,i} = t_{day,i} \\times F_{DL,i} \\times F_{occ,i} \\times F_{pers,i}] where tday,i = annual operational time of space during daytime, in h, determined in accordance with Article 4.3.3.6., Focc,i = factor for occupancy control determined in accordance with Article 4.3.3.10., and Fpers,i = factor for personal control determined in accordance with Article 4.3.3.10.\n3) The effective annual nighttime operational time, teff,night,i, in h/a, shall be calculated using the following equation: [Equation: \\text{RCR} = \\frac{5 \\times H \\times (L + W)}{[L \\times W]}] where tnight,i = annual operational time of the space during nighttime, in h, determined in accordance with Article 4.3.3.6., Focc,i = factor for occupancy control determined in accordance with Article 4.3.3.10., and Fpers,I = factor for personal control determined in accordance with Article 4.3.3.10.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "4.3.3.5.(1)",
+      "text": "The effective annual daytime operational time of the daylighted area, teff,day,DL,i, in h/a, shall be calculated using the following equation: [Equation: t_{eff,day,NDL,i} = t_{day,i} \\times F_{occ,i} \\times F_{pers,i}] where tday,i = annual operational time of space during daytime, in h, determined in accordance with Article 4.3.3.6., FDL,i = factor for daylight harvesting determined in accordance with Article 4.3.3.7., Focc,i = factor for occupancy control determined in accordance with Article 4.3.3.10., and Fpers,I = factor for personal control determined in accordance with Article 4.3.3.10.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "4.3.3.5.(2)",
+      "text": "The effective annual daytime operational time of the non-daylighted area, teff,day,NDL,i, in h/a, shall be calculated using the following equation: [Equation: t_{eff,day,DL,i} = t_{day,i} \\times F_{DL,i} \\times F_{occ,i} \\times F_{pers,i}] where tday,i = annual operational time of space during daytime, in h, determined in accordance with Article 4.3.3.6., Focc,i = factor for occupancy control determined in accordance with Article 4.3.3.10., and Fpers,i = factor for personal control determined in accordance with Article 4.3.3.10.",
+      "clauses": []
+    },
+    {
+      "sentence_number": "3",
+      "reference": "4.3.3.5.(3)",
+      "text": "The effective annual nighttime operational time, teff,night,i, in h/a, shall be calculated using the following equation: [Equation: \\text{RCR} = \\frac{5 \\times H \\times (L + W)}{[L \\times W]}] where tnight,i = annual operational time of the space during nighttime, in h, determined in accordance with Article 4.3.3.6., Focc,i = factor for occupancy control determined in accordance with Article 4.3.3.10., and Fpers,I = factor for personal control determined in accordance with Article 4.3.3.10.",
+      "clauses": []
+    }
+  ],
+  "page_start": 120,
+  "page_end": 120,
+  "timestamp": "2025-12-06T22:08:44.091209+00:00",
+  "success": true,
+  "equation_count": 3
+}

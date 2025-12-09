@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "1.1.1.2",
+  "title": "Building Parameters Covered by this Code",
+  "division": "C",
+  "hierarchy_level": "article",
+  "full_text": "1.1.1.2 Building Parameters Covered by this Code\nBuilding Parameters Covered by this Code\n1) This Code contains requirements for\n  a) the design and construction of the building envelope,\n  b) the design and construction or specification of systems and equipment for\n  i) heating, ventilating or air-conditioning,\n    ii) service water, and\n    iii) lighting, and\n  c) the provision of electrical power systems and motors, excluding process\nloads.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "1.1.1.2.(1)",
+      "text": "This Code contains requirements for",
+      "clauses": [
+        {
+          "clause_letter": "a",
+          "reference": "1.1.1.2.(1)(a)",
+          "text": "the design and construction of the building envelope,",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "b",
+          "reference": "1.1.1.2.(1)(b)",
+          "text": "the design and construction or specification of systems and equipment for",
+          "subclauses": []
+        },
+        {
+          "clause_letter": "i",
+          "reference": "1.1.1.2.(1)(i)",
+          "text": "heating, ventilating or air-conditioning,",
+          "subclauses": [
+            {
+              "subclause_numeral": "ii",
+              "reference": "1.1.1.2.(1)(i)(ii)",
+              "text": "service water, and"
+            },
+            {
+              "subclause_numeral": "iii",
+              "reference": "1.1.1.2.(1)(i)(iii)",
+              "text": "lighting, and"
+            }
+          ]
+        },
+        {
+          "clause_letter": "c",
+          "reference": "1.1.1.2.(1)(c)",
+          "text": "the provision of electrical power systems and motors, excluding process loads.",
+          "subclauses": []
+        }
+      ]
+    }
+  ],
+  "page_start": 22,
+  "page_end": 22,
+  "timestamp": "2025-12-06T22:08:44.048003+00:00",
+  "success": true,
+  "equation_count": 0
+}

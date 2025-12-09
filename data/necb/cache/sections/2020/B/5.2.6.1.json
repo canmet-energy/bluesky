@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.6.1",
+  "title": "Application",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.6.1 Application\nApplication\n1) Except as provided in Article 5.2.6.3., this Subsection applies to HVAC pumping\nsystems with a total pump system motor nameplate power of 7.5 kW or greater\ndetermined in accordance with Sentence (2).\n2) For the purposes of this Subsection, the total pump system motor nameplate\npower shall be the sum of the nameplate power of all pumps required to operate\nat design conditions to supply thermal energy to an HVAC system, equipment or\nappliance, or to a conditioned space.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.6.1.(1)",
+      "text": "Except as provided in Article 5.2.6.3., this Subsection applies to HVAC pumping systems with a total pump system motor nameplate power of 7.5 kW or greater determined in accordance with Sentence (2).",
+      "clauses": []
+    },
+    {
+      "sentence_number": "2",
+      "reference": "5.2.6.1.(2)",
+      "text": "For the purposes of this Subsection, the total pump system motor nameplate power shall be the sum of the nameplate power of all pumps required to operate at design conditions to supply thermal energy to an HVAC system, equipment or appliance, or to a conditioned space.",
+      "clauses": []
+    }
+  ],
+  "page_start": 143,
+  "page_end": 143,
+  "timestamp": "2025-12-06T22:08:44.101349+00:00",
+  "success": true,
+  "equation_count": 0
+}

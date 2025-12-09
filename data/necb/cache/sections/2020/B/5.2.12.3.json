@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "vintage": "2020",
+  "article_number": "5.2.12.3",
+  "title": "Field-Assembled Equipment and Components",
+  "division": "B",
+  "hierarchy_level": "article",
+  "full_text": "5.2.12.3 Field-Assembled Equipment and Components\nField-Assembled Equipment and Components\n1) Where components from more than one manufacturer are used as parts of\na heating, ventilating or air-conditioning system, the system shall be designed in\naccordance with good engineering practice and based on component efficiency data\nprovided by the component manufacturers so as to provide the overall efficiency\nrequired by Article 5.2.12.1.",
+  "sentences": [
+    {
+      "sentence_number": "1",
+      "reference": "5.2.12.3.(1)",
+      "text": "Where components from more than one manufacturer are used as parts of a heating, ventilating or air-conditioning system, the system shall be designed in accordance with good engineering practice and based on component efficiency data provided by the component manufacturers so as to provide the overall efficiency required by Article 5.2.12.1.",
+      "clauses": []
+    }
+  ],
+  "page_start": 165,
+  "page_end": 165,
+  "timestamp": "2025-12-06T22:08:44.109641+00:00",
+  "success": true,
+  "equation_count": 0
+}
