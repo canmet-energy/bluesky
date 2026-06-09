@@ -7,7 +7,7 @@
 		"context": "..",
 		"args": {
 			"DEVCONTAINER_QGIS_VERSION": "3.34.4", // Remove to skip QGIS install (system package)
-//			"DEVCONTAINER_QGIS_DEV": "1" // Remove to skip QGIS dev libs (Qt Designer, C++ headers, pyuic5)
+			//			"DEVCONTAINER_QGIS_DEV": "1" // Remove to skip QGIS dev libs (Qt Designer, C++ headers, pyuic5)
 		}
 	},
 	"containerEnv": {
@@ -24,7 +24,10 @@
 		"DEVCONTAINER_OS_STANDARDS": "0.8.4", // Remove to skip openstudio-standards gem (requires Ruby + OpenStudio)
 		"DEVCONTAINER_H2K_HPXML_BRANCH": "extract-os-setup-package", // Remove to skip H2K-HPXML dependency sync
 		"DEVCONTAINER_OPENSTUDIO_VERSION": "3.11.0", // Remove to skip OpenStudio/EnergyPlus install via osdep
-		"DEVCONTAINER_PY_DSS_INTERFACE": "2.3.0" // Remove to skip py-dss-interface (OpenDSS) install
+		"DEVCONTAINER_PY_DSS_INTERFACE": "2.3.0", // Remove to skip py-dss-interface (OpenDSS) install
+		// ── Host LLM access (remove to skip) ──
+		"DEVCONTAINER_VLLM_PORT": "8001", // vLLM port on the host machine
+		"OPENCODE_CONFIG": "${containerWorkspaceFolder}/.devcontainer/ai_assistance/opencode.container.json"
 	},
 	"customizations": {
 		"vscode": {
@@ -89,6 +92,8 @@
 		// These were removed: NODE_EXTRA_CA_CERTS, SSL_CERT_FILE, REQUESTS_CA_BUNDLE, AWS_CA_BUNDLE, UV_NATIVE_TLS
 	},
 	"runArgs": [
+		// Allow container to reach services on the Docker host (e.g. vLLM, Ollama)
+		"--add-host=host.docker.internal:host-gateway",
 		// WSLg support for GUI applications
 		"--env=DISPLAY=${localEnv:DISPLAY:-:0}",
 		"--env=WAYLAND_DISPLAY=${localEnv:WAYLAND_DISPLAY:-wayland-0}",
@@ -107,11 +112,12 @@
 		"--env=WINEDEBUG=-all",
 		"--env=WINEFSYNC=1",
 		"--cap-add=SYS_PTRACE",
-		"--security-opt=seccomp=unconfined"
+		"--security-opt=seccomp=unconfined",
 	],
 	"forwardPorts": [
 		8080,
 		8000,
+		8001,
 		3000
 	],
 	"portsAttributes": {
@@ -138,7 +144,7 @@
 		// and understand the implications of running Docker inside a container.
 		// "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
 	],
-	//"postCreateCommand": ".devcontainer/scripts/post-create.sh",
+	"postCreateCommand": ".devcontainer/scripts/post-create.sh",
 	"containerUser": "vscode",
 	"remoteUser": "vscode"
 }

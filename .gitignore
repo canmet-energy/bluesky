@@ -3,6 +3,9 @@ output/
 logs/
 *.log
 
+# Generated configs (from templates)
+.devcontainer/ai_assistance/opencode.container.json
+
 # Python cache and build artifacts
 __pycache__/
 .pytest_cache/
