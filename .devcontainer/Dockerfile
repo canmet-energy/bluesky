@@ -1,9 +1,11 @@
 # Development-only Dockerfile for Bluesky projects
 # Simplified single-stage container focused on development workflow
 
-FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04
+FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-24.04
 
-# No build arguments needed - UV handles Python version management at runtime
+# Opt-in build arguments (empty = skip installation)
+ARG DEVCONTAINER_QGIS_VERSION
+ARG DEVCONTAINER_QGIS_DEV
 
 # Install certificate management (single script)
 COPY .devcontainer/certs* /tmp/certs/
@@ -143,7 +145,12 @@ RUN bash -c '. /usr/local/bin/certctl && \
     # Install development tools (order matters for dependencies)
     /tmp/install-scripts/install-system-github-cli.sh && \
     /tmp/install-scripts/install-system-docker-cli.sh && \
+    /tmp/install-scripts/install-system-qgis.sh && \
     rm -rf /var/lib/apt/lists/*'
+
+# Make QGIS version available at runtime for post-create checks
+ENV DEVCONTAINER_QGIS_VERSION=${DEVCONTAINER_QGIS_VERSION}
+ENV DEVCONTAINER_QGIS_DEV=${DEVCONTAINER_QGIS_DEV}
 
 # Set up application directory and permissions
 RUN mkdir -p /app/deps && chown -R vscode:vscode /app
@@ -194,7 +201,8 @@ RUN bash -c '. /usr/local/bin/certctl 2>/dev/null || true && \
     /tmp/install-scripts/install-user-claude-cli.sh'
 RUN bash -c '. /usr/local/bin/certctl 2>/dev/null || true && \
     certctl_load 2>/dev/null || true && \
-    /tmp/install-scripts/install-user-github-copilot-cli.sh'
+    /tmp/install-scripts/install-user-opencode-cli.sh'
+
 
 # Hot2000 Windows application setup (optional)
 # To use Hot2000:

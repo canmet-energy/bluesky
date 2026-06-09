@@ -124,11 +124,13 @@ _dev_build_ps1() {     # Classic multi-line prompt only
 }
 
 ## Hook into PROMPT_COMMAND (prepend once)
+## NOTE: Do NOT export PROMPT_COMMAND — exporting causes child (non-login)
+## shells to inherit the variable without the function definitions, leading
+## to "command not found" errors.
 if [ -n "${PROMPT_COMMAND:-}" ]; then
   case "$PROMPT_COMMAND" in *"_dev_build_ps1"*) : ;; *) PROMPT_COMMAND="_dev_build_ps1; $PROMPT_COMMAND" ;; esac
 else
   PROMPT_COMMAND="_dev_build_ps1"
 fi
-export PROMPT_COMMAND
 
 return 0 2>/dev/null || true  # (Allows 'source' in bash -c contexts without error)

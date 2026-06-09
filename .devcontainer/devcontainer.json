@@ -4,21 +4,27 @@
 	"name": "Bluesky",
 	"build": {
 		"dockerfile": "./Dockerfile",
-		"context": ".."
+		"context": "..",
+		"args": {
+			"DEVCONTAINER_QGIS_VERSION": "3.34.4", // Remove to skip QGIS install (system package)
+//			"DEVCONTAINER_QGIS_DEV": "1" // Remove to skip QGIS dev libs (Qt Designer, C++ headers, pyuic5)
+		}
 	},
 	"containerEnv": {
 		"UV_PROJECT_ENVIRONMENT": "${containerWorkspaceFolder}/.venv",
 		"UV_PYTHON_PREFERENCE": "managed",
 		"UV_LINK_MODE": "copy", // Use copy mode for UV to avoid symlinks in the container
-		"ENABLE_GPU_AI": "0", // Set to 0 to skip GPU AI/LLM stack (PyTorch etc.) installation
-		"DEVCONTAINER_NODE_VERSION": "22.11.0", // Node.js version installed by install-user-nodejs.sh (override as needed)
-		"DEVCONTAINER_UV_VERSION": "0.8.15", // UV (Python package manager) version installed by install-user-uv.sh
-		"DEVCONTAINER_PYTHON_VERSION": "3.12", // Python version used when creating the virtual environment
-		"DEVCONTAINER_RUBY_VERSION": "3.2.2", // Ruby version used when creating the virtual environment
-		"DEVCONTAINER_OS_STANDARDS": "0.8.4", // OpenStudio standards ruby gem version (tag format: v0.8.4)
-		"DEVCONTAINER_EPPY_VERSION": "0.5.63", // Eppy (EnergyPlus IDF parser) Python package version
-		"DEVCONTAINER_H2K_HPXML_BRANCH": "main", // H2K-HPXML git branch to use
-		"DEVCONTAINER_OPENSTUDIO_VERSION": "3.9.0" // OpenStudio Python package version 
+		// ── Required (always installed) ──
+		"DEVCONTAINER_UV_VERSION": "0.8.15", // UV (Python package manager) — always installed
+		"DEVCONTAINER_PYTHON_VERSION": "3.12", // Python version for venv — always installed
+		// ── Opt-in (remove or comment out to skip installation) ──
+		"ENABLE_GPU_AI": "0", // Set to "1" to install GPU AI/LLM stack; "0" or remove to skip
+		// "DEVCONTAINER_NODE_VERSION": "22.11.0", // Remove to skip Node.js install
+		"DEVCONTAINER_RUBY_VERSION": "3.2.2", // Remove to skip Ruby install
+		"DEVCONTAINER_OS_STANDARDS": "0.8.4", // Remove to skip openstudio-standards gem (requires Ruby + OpenStudio)
+		"DEVCONTAINER_H2K_HPXML_BRANCH": "extract-os-setup-package", // Remove to skip H2K-HPXML dependency sync
+		"DEVCONTAINER_OPENSTUDIO_VERSION": "3.11.0", // Remove to skip OpenStudio/EnergyPlus install via osdep
+		"DEVCONTAINER_PY_DSS_INTERFACE": "2.3.0" // Remove to skip py-dss-interface (OpenDSS) install
 	},
 	"customizations": {
 		"vscode": {
@@ -132,7 +138,7 @@
 		// and understand the implications of running Docker inside a container.
 		// "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
 	],
-	"postCreateCommand": ".devcontainer/scripts/post-create.sh",
+	//"postCreateCommand": ".devcontainer/scripts/post-create.sh",
 	"containerUser": "vscode",
 	"remoteUser": "vscode"
 }

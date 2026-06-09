@@ -2,6 +2,12 @@
 set -e
 
 # Install Node.js for user (no sudo required)
+# Opt-in: skip if DEVCONTAINER_NODE_VERSION is not set
+if [ -z "${DEVCONTAINER_NODE_VERSION:-}" ] && [ -z "${NODE_VERSION:-}" ]; then
+  echo "ℹ️ Skipping Node.js install (DEVCONTAINER_NODE_VERSION not set)"
+  exit 0
+fi
+
 echo "🟢 Installing Node.js for user $(whoami)..."
 
 # Certificate environment now handled system-wide by certctl

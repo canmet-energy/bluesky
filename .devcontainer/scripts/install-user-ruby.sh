@@ -2,6 +2,12 @@
 set -e
 
 # Install Ruby via rbenv for user (no sudo required)
+# Opt-in: skip if DEVCONTAINER_RUBY_VERSION is not set
+if [ -z "${DEVCONTAINER_RUBY_VERSION:-}" ] && [ -z "${RUBY_VERSION:-}" ]; then
+  echo "ℹ️ Skipping Ruby install (DEVCONTAINER_RUBY_VERSION not set)"
+  exit 0
+fi
+
 echo "💎 Installing Ruby via rbenv for user $(whoami)..."
 
 # Certificate environment now handled system-wide by certctl

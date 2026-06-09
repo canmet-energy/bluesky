@@ -25,28 +25,24 @@ PROJECT_ROOT="$(pwd)"
 PYPROJECT_TOML="$PROJECT_ROOT/pyproject.toml"
 
 # Read version configuration (with defaults) for Python deps
-EPPY_VERSION="${DEVCONTAINER_EPPY_VERSION:-0.5.63}"
-H2K_HPXML_BRANCH="${DEVCONTAINER_H2K_HPXML_BRANCH:-main}"
-OPENSTUDIO_VERSION="${DEVCONTAINER_OPENSTUDIO_VERSION:-3.9.0}"
+H2K_HPXML_BRANCH="${DEVCONTAINER_H2K_HPXML_BRANCH:-}"
 
-echo "🧪 Preparing dependency spec (pyproject.toml)"
-if [ -f "$PYPROJECT_TOML" ]; then
-  python3 - "$PYPROJECT_TOML" "$EPPY_VERSION" "$H2K_HPXML_BRANCH" "$OPENSTUDIO_VERSION" <<'PYEOF'
+if [ -z "$H2K_HPXML_BRANCH" ]; then
+  echo "ℹ️ Skipping H2K-HPXML dependency sync (DEVCONTAINER_H2K_HPXML_BRANCH not set)"
+elif [ -f "$PYPROJECT_TOML" ]; then
+  echo "🧪 Preparing dependency spec (pyproject.toml)"
+  python3 - "$PYPROJECT_TOML" "$H2K_HPXML_BRANCH" <<'PYEOF'
 import sys
 from pathlib import Path
 
 pyproject_path = Path(sys.argv[1])
-eppy_version = sys.argv[2]
-h2k_hpxml_branch = sys.argv[3]
-openstudio_version = sys.argv[4]
+h2k_hpxml_branch = sys.argv[2]
 
 content = pyproject_path.read_text()
 lines = content.splitlines()
 
 required_deps = {
-  "eppy": f"eppy=={eppy_version}",
   "h2k-hpxml": f"h2k-hpxml @ git+https://github.com/canmet-energy/h2k-hpxml.git@{h2k_hpxml_branch}",
-  "openstudio": f"openstudio=={openstudio_version}",
 }
 
 missing = []
@@ -98,7 +94,6 @@ PYEOF
 else
   echo "⚠️ pyproject.toml not found at $PYPROJECT_TOML (skipping Python dependency sync)"
 fi
-
 # Detect Docker socket mount (host Docker access).
 echo "🐳 Checking Docker support..."
 if [ -S /var/run/docker.sock ]; then
@@ -128,11 +123,34 @@ rm -rf .venv
 uv venv --python "$_PY_REQ" --clear
 uv pip install -e '.[dev]'
 
-# Install OpenStudio and EnergyPlus binaries via os-setup
-echo "🏗️ Installing OpenStudio and EnergyPlus via os-setup..."
-echo "ℹ️  This may take several minutes on first run..."
-uv run os-setup --install-quiet
-echo "✅ OpenStudio and EnergyPlus installation complete"
+# Expose system PyQGIS to the venv via .pth file (if QGIS is installed)
+if [ -n "${DEVCONTAINER_QGIS_VERSION:-}" ] && [ -d /usr/lib/python3/dist-packages/qgis ]; then
+  VENV_SITE=$(.venv/bin/python -c "import site; print(site.getsitepackages()[0])")
+  echo "/usr/lib/python3/dist-packages" > "$VENV_SITE/qgis-system.pth"
+  echo "🌍 PyQGIS linked into venv via $VENV_SITE/qgis-system.pth"
+fi
+
+# Install OpenStudio and EnergyPlus binaries via openstudio-deps (osdep)
+# Opt-in: skip if DEVCONTAINER_OPENSTUDIO_VERSION is not set
+if [ -n "${DEVCONTAINER_OPENSTUDIO_VERSION:-}" ]; then
+  echo "🏗️ Installing OpenStudio and EnergyPlus via osdep..."
+  echo "ℹ️  This may take several minutes on first run..."
+  OS_VERSION="$DEVCONTAINER_OPENSTUDIO_VERSION"
+  uv run osdep --auto-install --openstudio-version "$OS_VERSION"
+  echo "✅ OpenStudio and EnergyPlus installation complete"
+else
+  echo "ℹ️ Skipping OpenStudio install (DEVCONTAINER_OPENSTUDIO_VERSION not set)"
+fi
+
+# Install py-dss-interface (OpenDSS Python bindings)
+# Opt-in: skip if DEVCONTAINER_PY_DSS_INTERFACE is not set
+if [ -n "${DEVCONTAINER_PY_DSS_INTERFACE:-}" ]; then
+  echo "⚡ Installing py-dss-interface==${DEVCONTAINER_PY_DSS_INTERFACE}..."
+  uv pip install "py-dss-interface==${DEVCONTAINER_PY_DSS_INTERFACE}"
+  echo "✅ py-dss-interface installation complete"
+else
+  echo "ℹ️ Skipping py-dss-interface install (DEVCONTAINER_PY_DSS_INTERFACE not set)"
+fi
 
 # Optional: GPU AI/LLM stack (PyTorch w/ CUDA) if host provides NVIDIA runtime
 # Installation delegated to modular script for maintainability
@@ -185,26 +203,10 @@ echo "💎 Managing Gemfile (post-create)..."
 PROJECT_ROOT="$(pwd)"
 GEMFILE_PATH="$PROJECT_ROOT/Gemfile"
 
-if command -v ruby >/dev/null 2>&1; then
-  have_ruby=true
-else
-  have_ruby=false
-fi
-
-# Detect OpenStudio (either CLI binary in PATH or typical install dirs)
-if command -v openstudio >/dev/null 2>&1 || [ -d "$HOME/OpenStudio" ] || [ -d "/usr/local/openstudio" ]; then
-  have_openstudio=true
-else
-  have_openstudio=false
-fi
-
-# Standards gem version tag (default v0.8.4; ensure leading v)
-OS_STANDARDS_VERSION="${DEVCONTAINER_OS_STANDARDS:-v0.8.4}"
-if [[ ! "$OS_STANDARDS_VERSION" =~ ^v ]]; then
-  OS_STANDARDS_VERSION="v${OS_STANDARDS_VERSION}"
-fi
-
-if ! $have_ruby; then
+# Opt-in: skip Gemfile management entirely if Ruby was not requested
+if [ -z "${DEVCONTAINER_RUBY_VERSION:-}" ]; then
+  echo "ℹ️ Skipping Gemfile management (DEVCONTAINER_RUBY_VERSION not set)"
+elif ! command -v ruby >/dev/null 2>&1; then
   echo "ℹ️ Ruby not installed yet; skipping Gemfile management. Run install-user-ruby.sh then re-run post-create if needed.";
 else
   create_base_gemfile() {
@@ -259,21 +261,31 @@ EOF
     ' "$GEMFILE_PATH" > "$GEMFILE_PATH.tmp" && mv "$GEMFILE_PATH.tmp" "$GEMFILE_PATH"
   }
 
-  if $have_openstudio; then
-    echo "🔍 OpenStudio detected; ensuring simulation gems & standards present."
-    ensure_gem_in_group simulation 'gem "rubyzip", "~> 2.3"'
-    # Add openstudio-standards gem (git tag) if not already present
-    if ! grep -q 'openstudio-standards' "$GEMFILE_PATH"; then
-      cat >> "$GEMFILE_PATH" <<EOF
+  if [ -n "${DEVCONTAINER_OS_STANDARDS:-}" ]; then
+    # Standards gem version tag; ensure leading v
+    OS_STANDARDS_VERSION="$DEVCONTAINER_OS_STANDARDS"
+    if [[ ! "$OS_STANDARDS_VERSION" =~ ^v ]]; then
+      OS_STANDARDS_VERSION="v${OS_STANDARDS_VERSION}"
+    fi
+
+    if command -v openstudio >/dev/null 2>&1 || [ -d "$HOME/OpenStudio" ] || [ -d "/usr/local/openstudio" ]; then
+      echo "🔍 OpenStudio detected; ensuring simulation gems & standards present."
+      ensure_gem_in_group simulation 'gem "rubyzip", "~> 2.3"'
+      # Add openstudio-standards gem (git tag) if not already present
+      if ! grep -q 'openstudio-standards' "$GEMFILE_PATH"; then
+        cat >> "$GEMFILE_PATH" <<EOF
 
 # OpenStudio Standards (Ruby gem)
 gem "openstudio-standards", git: "https://github.com/NREL/openstudio-standards.git", tag: "$OS_STANDARDS_VERSION"
 EOF
+      else
+        echo "✅ openstudio-standards already in Gemfile"
+      fi
     else
-      echo "✅ openstudio-standards already in Gemfile"
+      echo "ℹ️ OpenStudio not detected; skipping openstudio-standards gem."
     fi
   else
-    echo "ℹ️ OpenStudio not detected; skipping openstudio-standards gem."
+    echo "ℹ️ Skipping openstudio-standards (DEVCONTAINER_OS_STANDARDS not set)"
   fi
 
   echo "📦 Configuring bundler to use vendor/bundle..."
