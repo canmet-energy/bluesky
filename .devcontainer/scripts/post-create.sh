@@ -6,6 +6,45 @@ set -e  # Exit on error
 
 echo "🚀 Starting post-create setup..."
 
+# Ensure host.docker.internal resolves to a reachable host IP
+# Docker Desktop's host-gateway (192.168.65.254) often can't route to WSL2.
+# Auto-detect: probe candidate IPs on the vLLM port, or fall back to user-configured IP.
+_resolve_host_ip() {
+    local port="${DEVCONTAINER_VLLM_PORT:-8001}"
+    local candidates=""
+
+    # Candidate 1: user-supplied override
+    [ -n "${DEVCONTAINER_HOST_IP:-}" ] && candidates="$DEVCONTAINER_HOST_IP"
+
+    # Candidate 2: current host.docker.internal (from --add-host or /etc/hosts)
+    local current_ip
+    current_ip=$(getent hosts host.docker.internal 2>/dev/null | awk '{print $1; exit}')
+    [ -n "$current_ip" ] && candidates="$candidates $current_ip"
+
+    # Candidate 3: default gateway (Docker bridge → host on plain Docker/Linux)
+    local gw_ip
+    gw_ip=$(ip route 2>/dev/null | awk '/default/ {print $3; exit}')
+    [ -n "$gw_ip" ] && candidates="$candidates $gw_ip"
+
+    # Probe each candidate
+    for ip in $candidates; do
+        if curl -sf --connect-timeout 2 "http://${ip}:${port}/v1/models" >/dev/null 2>&1; then
+            echo "$ip"
+            return 0
+        fi
+    done
+    # No probe succeeded — return whatever we have
+    [ -n "$current_ip" ] && echo "$current_ip" || echo "${gw_ip:-127.0.0.1}"
+    return 1
+}
+
+HOST_IP=$(_resolve_host_ip)
+echo "🌐 host.docker.internal → $HOST_IP"
+# Update /etc/hosts (cp workaround: sed -i fails with "Device or resource busy")
+grep -v 'host\.docker\.internal' /etc/hosts > /tmp/hosts.tmp 2>/dev/null || true
+echo "$HOST_IP host.docker.internal" >> /tmp/hosts.tmp
+sudo cp /tmp/hosts.tmp /etc/hosts && rm -f /tmp/hosts.tmp
+
 # ── Generate OpenCode config from template (host LLM access) ──
 OPENCODE_TEMPLATE=".devcontainer/ai_assistance/opencode.container.json.template"
 OPENCODE_CONFIG_OUT=".devcontainer/ai_assistance/opencode.container.json"

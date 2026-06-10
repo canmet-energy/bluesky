@@ -140,6 +140,9 @@ dev = [
     { name = "pytest-xdist" },
     { name = "ruff" },
 ]
+dss = [
+    { name = "py-dss-interface" },
+]
 test = [
     { name = "pytest" },
 ]
@@ -165,6 +168,7 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.2.0" },
     { name = "pdfplumber", specifier = ">=0.10.0" },
     { name = "pre-commit", marker = "extra == 'dev'", specifier = ">=3.0.0" },
+    { name = "py-dss-interface", marker = "extra == 'dss'", specifier = ">=2.3.0" },
     { name = "pyfiglet", specifier = "==1.0.2" },
     { name = "pytest", marker = "extra == 'dev'", specifier = "==8.3.3" },
     { name = "pytest", marker = "extra == 'test'", specifier = "==8.3.3" },
@@ -180,7 +184,7 @@ requires-dist = [
     { name = "unidecode", specifier = "==1.3.8" },
     { name = "xmltodict", specifier = "==0.13.0" },
 ]
-provides-extras = ["test", "dev"]
+provides-extras = ["test", "dev", "dss"]
 
 [[package]]
 name = "boto3"
@@ -1158,6 +1162,17 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ff/29/7cf5bbc236333876e4b41f56e06857a87937ce4bf91e117a6991a2dbb02a/pre_commit-4.3.0.tar.gz", hash = "sha256:499fe450cc9d42e9d58e606262795ecb64dd05438943c62b66f6a8673da30b16", size = 193792, upload-time = "2025-08-09T18:56:14.651Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5b/a5/987a405322d78a73b66e39e4a90e4ef156fd7141bf71df987e50717c321b/pre_commit-4.3.0-py2.py3-none-any.whl", hash = "sha256:2b0747ad7e6e967169136edffee14c16e148a778a54e4f967921aa1ebf2308d8", size = 220965, upload-time = "2025-08-09T18:56:13.192Z" },
+]
+
+[[package]]
+name = "py-dss-interface"
+version = "2.3.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f5/3b/ca5328203876aa067a62ca2e11dd7398a3090db65820807716c6c07f05d7/py_dss_interface-2.3.0-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:8de8f9ce8fece7c26a96d74bc1dbfc72e53867e9af0c5e20ab0cd3b4dbc7722b", size = 9065515, upload-time = "2026-02-16T15:20:40.165Z" },
+    { url = "https://files.pythonhosted.org/packages/73/e6/60d186be0eedbe3951041894004787803662d825ef93afc010644708c261/py_dss_interface-2.3.0-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:288485e91ad4c1c7f83887da0f25d567594f5cf9f4c8242e8a6a90f2c2ab190c", size = 9207056, upload-time = "2026-02-16T15:20:43.486Z" },
+    { url = "https://files.pythonhosted.org/packages/c6/c2/ad1de36489a3d50b84e0ad2500180ce1cc5fcc02a2c5171a38c575532b84/py_dss_interface-2.3.0-py3-none-win32.whl", hash = "sha256:ae19e594f8bac9ab685acdbacad597ff65d10a22c03c44c3be7d80f71c53078b", size = 9038888, upload-time = "2026-02-16T15:20:45.424Z" },
+    { url = "https://files.pythonhosted.org/packages/73/57/c7c29bc844dac9a71a3170473ae44f32ae515df479dfa4221a6816b76201/py_dss_interface-2.3.0-py3-none-win_amd64.whl", hash = "sha256:f6cbbf08209e516f56f4ed06fb460e3646bc47901af2f2830a6d049878928b26", size = 9038885, upload-time = "2026-02-16T15:20:47.701Z" },
 ]
 
 [[package]]

@@ -27,6 +27,7 @@
 		"DEVCONTAINER_PY_DSS_INTERFACE": "2.3.0", // Remove to skip py-dss-interface (OpenDSS) install
 		// ── Host LLM access (remove to skip) ──
 		"DEVCONTAINER_VLLM_PORT": "8001", // vLLM port on the host machine
+		// "DEVCONTAINER_HOST_IP": "", // Override auto-detected host IP (for WSL2 setups where host-gateway is wrong)
 		"OPENCODE_CONFIG": "${containerWorkspaceFolder}/.devcontainer/ai_assistance/opencode.container.json"
 	},
 	"customizations": {
@@ -117,7 +118,6 @@
 	"forwardPorts": [
 		8080,
 		8000,
-		8001,
 		3000
 	],
 	"portsAttributes": {

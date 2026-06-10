@@ -44,7 +44,10 @@
       "mcp__openstudio__get_ruby_gem_structure",
       "mcp__openstudio__read_ruby_source_file",
       "Bash(sqlite3:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(gem which *)",
+      "Bash(ruby -e \"require 'openstudio-standards'; puts OpenstudioStandards::VERSION\")",
+      "Bash(gem contents *)"
     ],
     "deny": [],
     "ask": []

@@ -2,12 +2,14 @@
     "$schema": "https://opencode.ai/config.json",
     "provider": {
         "vllm": {
+            "npm": "@ai-sdk/openai-compatible",
             "name": "vLLM (host)",
-            "api": "openai",
-            "baseURL": "http://host.docker.internal:${DEVCONTAINER_VLLM_PORT}/v1",
+            "options": {
+                "baseURL": "http://host.docker.internal:${DEVCONTAINER_VLLM_PORT}/v1"
+            },
             "models": {
                 "qwen3-coder": {
-                    "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
+                    "id": "qwen3-coder",
                     "name": "Qwen3 Coder 30B",
                     "attachment": true,
                     "reasoning": true
@@ -15,8 +17,5 @@
             }
         }
     },
-    "model": {
-        "build": "vllm/qwen3-coder",
-        "plan": "vllm/qwen3-coder"
-    }
+    "model": "vllm/qwen3-coder"
 }
