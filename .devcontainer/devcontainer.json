@@ -2,6 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
 	"name": "Bluesky",
+	// Auto-copy the WSL host's corporate CAs into .devcontainer/certs/ before each
+	// build, so certctl trusts them in the container. Runs on the host; no-op if
+	// none present. certs/*.crt stays gitignored -- nothing is committed.
+	"initializeCommand": "mkdir -p ${localWorkspaceFolder}/.devcontainer/certs && cp /usr/local/share/ca-certificates/*.crt ${localWorkspaceFolder}/.devcontainer/certs/ 2>/dev/null || true",
 	"build": {
 		"dockerfile": "./Dockerfile",
 		"context": "..",
