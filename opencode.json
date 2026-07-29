@@ -34,36 +34,6 @@
                     "reasoning": true
                 }
             }
-        },
-        "vllm": {
-            "npm": "@ai-sdk/openai-compatible",
-            "name": "vLLM (host)",
-            "options": {
-                "baseURL": "http://host.docker.internal:8001/v1"
-            },
-            "models": {
-                "qwen3-coder": {
-                    "id": "qwen3-coder",
-                    "name": "Qwen3 Coder 30B",
-                    "attachment": true,
-                    "reasoning": true
-                }
-            }
-        },
-        "anthropic": {
-            "npm": "@ai-sdk/anthropic",
-            "name": "Anthropic (Claude)",
-            "options": {
-                "apiKey": "{env:ANTHROPIC_API_KEY}"
-            },
-            "models": {
-                "claude-opus-4-8": {
-                    "id": "claude-opus-4-8",
-                    "name": "Claude Opus 4.8",
-                    "attachment": true,
-                    "reasoning": true
-                }
-            }
         }
     },
     "model": "openwebui/north-mini",

@@ -28,11 +28,8 @@
 		"DEVCONTAINER_OS_STANDARDS": "0.8.4", // Remove to skip openstudio-standards gem (requires Ruby + OpenStudio)
 		"DEVCONTAINER_H2K_HPXML_BRANCH": "1.12.0.1", // Remove to skip H2K-HPXML dependency sync
 		"DEVCONTAINER_OPENSTUDIO_VERSION": "3.11.0", // Remove to skip OpenStudio/EnergyPlus install via osdep
-		"DEVCONTAINER_PY_DSS_INTERFACE": "2.3.0", // Remove to skip py-dss-interface (OpenDSS) install
-		// ── Host LLM access (remove to skip) ──
-		"DEVCONTAINER_VLLM_PORT": "8001", // vLLM port on the host machine
-		// "DEVCONTAINER_HOST_IP": "", // Override auto-detected host IP (for WSL2 setups where host-gateway is wrong)
-		"OPENCODE_CONFIG": "${containerWorkspaceFolder}/.devcontainer/ai_assistance/opencode.container.json"
+		"DEVCONTAINER_PY_DSS_INTERFACE": "2.3.0" // Remove to skip py-dss-interface (OpenDSS) install
+		// "DEVCONTAINER_HOST_IP": "" // Override auto-detected host IP (for WSL2 setups where host-gateway is wrong)
 	},
 	"customizations": {
 		"vscode": {

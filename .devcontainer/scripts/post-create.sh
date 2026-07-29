@@ -57,34 +57,7 @@ grep -v 'host\.docker\.internal' /etc/hosts > /tmp/hosts.tmp 2>/dev/null || true
 echo "$HOST_IP host.docker.internal" >> /tmp/hosts.tmp
 sudo cp /tmp/hosts.tmp /etc/hosts && rm -f /tmp/hosts.tmp
 
-# ── Generate OpenCode config from template (host LLM access) ──
-OPENCODE_TEMPLATE=".devcontainer/ai_assistance/opencode.container.json.template"
-OPENCODE_CONFIG_OUT=".devcontainer/ai_assistance/opencode.container.json"
-if [ -f "$OPENCODE_TEMPLATE" ]; then
-    VLLM_DEFAULT_PORT="${DEVCONTAINER_VLLM_PORT:-8001}"
-    VLLM_DETECTED_PORT=""
-
-    # Probe host for a running vLLM/OpenAI-compatible server
-    echo "🤖 Scanning host for vLLM server..."
-    for port in $VLLM_DEFAULT_PORT 8001 8000 8080 5000 11434; do
-        if curl -sf --connect-timeout 2 "http://host.docker.internal:${port}/v1/models" >/dev/null 2>&1; then
-            VLLM_DETECTED_PORT="$port"
-            break
-        fi
-    done
-
-    if [ -n "$VLLM_DETECTED_PORT" ]; then
-        echo "   ✅ Found vLLM server on host port $VLLM_DETECTED_PORT"
-        export DEVCONTAINER_VLLM_PORT="$VLLM_DETECTED_PORT"
-    else
-        echo "   ⚠️  No vLLM server detected on host, using default port $VLLM_DEFAULT_PORT"
-        export DEVCONTAINER_VLLM_PORT="$VLLM_DEFAULT_PORT"
-    fi
-
-    echo "🤖 Generating OpenCode config (vLLM port=${DEVCONTAINER_VLLM_PORT})..."
-    envsubst '${DEVCONTAINER_VLLM_PORT}' < "$OPENCODE_TEMPLATE" > "$OPENCODE_CONFIG_OUT"
-    echo "   ✅ $OPENCODE_CONFIG_OUT"
-fi
+# OpenCode reads opencode.json at the repo root; no generated config needed.
 
 # Refresh certificate status and enable terminal banner (non-blocking)
 if command -v certctl >/dev/null 2>&1; then
