@@ -13,6 +13,16 @@ _resolve_host_ip() {
     local port="${DEVCONTAINER_VLLM_PORT:-8001}"
     local candidates=""
 
+  # Wrap IPv6 hosts in brackets when building URLs (curl expects this form).
+  _url_host() {
+    local host="$1"
+    if [[ "$host" == *:* ]]; then
+      printf '[%s]' "$host"
+    else
+      printf '%s' "$host"
+    fi
+  }
+
     # Candidate 1: user-supplied override
     [ -n "${DEVCONTAINER_HOST_IP:-}" ] && candidates="$DEVCONTAINER_HOST_IP"
 
@@ -28,14 +38,16 @@ _resolve_host_ip() {
 
     # Probe each candidate
     for ip in $candidates; do
-        if curl -sf --connect-timeout 2 "http://${ip}:${port}/v1/models" >/dev/null 2>&1; then
+      local ip_for_url
+      ip_for_url="$(_url_host "$ip")"
+      if curl -sf --connect-timeout 2 "http://${ip_for_url}:${port}/v1/models" >/dev/null 2>&1; then
             echo "$ip"
             return 0
         fi
     done
-    # No probe succeeded — return whatever we have
+    # No probe succeeded: return best-effort fallback IP without failing script.
     [ -n "$current_ip" ] && echo "$current_ip" || echo "${gw_ip:-127.0.0.1}"
-    return 1
+    return 0
 }
 
 HOST_IP=$(_resolve_host_ip)
@@ -222,7 +234,12 @@ fi
 
 # Optional: GPU AI/LLM stack (PyTorch w/ CUDA) if host provides NVIDIA runtime
 # Installation delegated to modular script for maintainability
-bash "$(dirname "$0")/install-user-gpu-ai.sh" || true
+GPU_AI_SCRIPT="$(dirname "$0")/install-user-gpu-ai.sh"
+if [ -f "$GPU_AI_SCRIPT" ]; then
+  bash "$GPU_AI_SCRIPT" || true
+else
+  echo "ℹ️ Skipping GPU AI install (install-user-gpu-ai.sh not found)"
+fi
 
 # Configure Git (personalize as needed, edit as needed. Uncomment and set your details but avoid committing them)
 echo "📝 Configuring Git..."
@@ -240,6 +257,27 @@ for CANDIDATE in /workspaces/bluesky /workspaces/*; do
   if [ -f "${CANDIDATE}/.venv/bin/activate" ] && [ -z "$VIRTUAL_ENV" ]; then
     . "${CANDIDATE}/.venv/bin/activate"
     echo "🐍 Virtual environment activated: $(python --version)"
+    break
+  fi
+done
+
+EOF
+fi
+
+# Add project .env auto-load to bashrc.
+# `set -a` is required: a plain `source .env` sets shell variables without
+# exporting them, so child processes would not see them. .mcp.json and
+# opencode.json reference HBIX_API_KEY by name, so without this the MCP
+# servers send an empty X-API-Key header. See .env.example.
+if ! grep -q 'Auto-load project .env' ~/.bashrc 2>/dev/null; then
+    cat >> ~/.bashrc << 'EOF'
+
+# Auto-load project .env into environment
+for CANDIDATE in /workspaces/bluesky /workspaces/*; do
+  if [ -f "${CANDIDATE}/.env" ]; then
+    set -a
+    . "${CANDIDATE}/.env"
+    set +a
     break
   fi
 done
