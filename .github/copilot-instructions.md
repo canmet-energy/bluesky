@@ -40,9 +40,11 @@ is **register → admin approval → mint key**, not self-service:
 > The repo's older docs mention "self-registration" — that's out of date.
 > Admin approval is required before a key can be minted.
 
-If `HBIX_API_KEY` isn't set, this workspace's `.mcp.json` already carries a
-working key in the `X-API-Key` header of any hbix server — reuse that value
-rather than minting a second key. Never paste the key into committed files.
+In this workspace the key lives in the gitignored `.env` file, and the
+devcontainer's `~/.bashrc` loads it (`set -a && source .env`) so it is already
+exported in any terminal. `.mcp.json` and `opencode.json` reference it by name
+rather than embedding it. Copy `.env.example` to `.env` and fill in your key;
+never paste a real key into a committed file.
 
 ## Finding an endpoint (HTTP-contract-first, language-agnostic)
 
