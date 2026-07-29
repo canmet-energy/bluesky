@@ -1,69 +1,121 @@
-# Bluesky AI Agent Instructions
+# GitHub Copilot Instructions
 
-Concise, project-specific guidance for AI coding agents working in this repo.
+This repo (bluesky) uses the **hbix** platform: **6 REST APIs** for Canadian
+building-energy analysis (building codes, geocoding, weather, building stock,
+EnergyPlus/OpenStudio modelling lookups, and simulation runs). Other agents in
+this repo reach them as MCP servers (see `.mcp.json`), but Copilot in this
+environment has **no MCP support** — call the same services over plain HTTP
+instead. Every MCP tool has an equivalent REST endpoint behind the same base
+URL.
 
-## 1. Project Purpose & Architecture
-- Python package `bluesky` (CLI-centric) offering a styled greeting plus future extensibility.
-- Layers:
-  - `bluesky.cli.main`: User-facing CLI via Click + Rich + PyFiglet.
-  - `bluesky.utils.dependencies`: External dependency bootstrap (notably OpenStudio) reading config from `[tool.bluesky.dependencies]` in `pyproject.toml`.
-  - `bluesky.core`: Reserved for domain/business logic (currently empty scaffold).
-  - Dev environment infra under `.devcontainer/` (tool installers + robust certificate management script `certctl-safe.sh`).
-- Certificate management is a first-class concern so that development works inside corporate proxy / MITM environments; environment variables (e.g. `CURL_FLAGS`, `CERT_STATUS`) drive downstream install scripts.
+## Base URL and services
 
-## 2. Key Workflows
-- Install (editable): `pip install -e .` or `pip install -e ".[dev]"` (Python >=3.12 enforced in `pyproject.toml`).
-- Run CLI: `bluesky --help`, examples in README.
-- Energy simulation dependencies: OpenStudio and EnergyPlus are automatically installed via the `h2k-hpxml` Python package.
-- Tests: `pytest` (config in `[tool.pytest.ini_options]`; markers: `unit`, `integration`, `slow`). Keep new tests in `tests/unit/` unless exercising cross-component flows.
-- Lint / Format: `ruff check src/ --fix`, `black src/`, `mypy src/` (mypy mostly permissive; `ignore_missing_imports = true`).
-- DevContainer build: relies on scripts in `.devcontainer/scripts/` which respect `CURL_FLAGS` and certificate state.
+```
+https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod
+```
 
-## 3. Certificate & Networking Model
-- User adds corporate certs into `.devcontainer/certs/*.crt|*.pem` before container build.
-- Build path: copy certs -> `certctl-safe.sh certs-refresh` -> populate `/usr/local/share/ca-certificates/custom` -> `update-ca-certificates`.
-- Runtime probe (strict): all predefined HTTPS targets must succeed or environment flips to INSECURE (adds `-k` via `CURL_FLAGS`, sets `NODE_TLS_REJECT_UNAUTHORIZED=0`, etc.).
-- Custom cert detection sets status `SECURE_CUSTOM`. Unknown -> conservative secure defaults.
-- When modifying install scripts, always source `certctl-safe.sh` or run `eval "$(certctl env)"` early so subsequent downloads reuse correct TLS flags.
+| Service | Path | MCP equivalent | Purpose |
+|---------|------|----------------|---------|
+| codes | `/codes` | `mcp__codes__*` | NECB, NBC, ASHRAE 62.1 building codes |
+| geocoding | `/geocoding` | `mcp__geocoding__*` | Address geocoding, climate zones, FSA lookup |
+| weather | `/weather` | `mcp__weather__*` | EPW/STAT/DDY weather files, design conditions |
+| building-stock | `/building-stock` | `mcp__building-stock__*` | Canadian building footprints (NRCan) |
+| modelling | `/modelling` | `mcp__modelling__*` | EnergyPlus/OpenStudio IDD schema lookup |
+| simulation | `/simulation` | `mcp__simulation__*` | EnergyPlus/OpenStudio/HPXML simulation runs |
 
-## 4. Project Conventions
-- CLI options use explicit `show_default=True` and narrow `Choice` enumerations for colors.
-- Rich output preferred for user-facing text; plain `print` avoided. Follow existing style (Panels, Text color tokens like `[bold cyan]`).
-- Central config: version pins & dependency metadata live in `pyproject.toml`; duplicate version strings in code (e.g. `click.version_option`) should be kept in sync manually (no dynamic version import yet).
-- Dependency discovery: `_load_dependency_config()` searches multiple fallbacks; extend by appending new search paths instead of altering existing order.
-- Avoid adding heavy logic to `cli.main`; move expansion logic into `core/` modules to preserve a thin CLI layer.
+The MCP endpoints are just `<base>/<service>/mcp`; the REST endpoints are
+everything else under `<base>/<service>/`.
 
-## 5. Adding Features
-- New CLI command: create a new module under `bluesky/cli/`, register via a group command (might need to refactor current single-command structure into a Click group first). Provide tests in `tests/unit/` verifying option parsing and output text (use `capsys` or Click's CliRunner).
-- New dependency management step: add helper method to `DependencyManager`; expose flag in `dependencies.py`; reflect configurable values in `[tool.bluesky.dependencies]`.
-- External downloads: always honor `CURL_FLAGS` (exported by certctl) or use `requests` which respects `REQUESTS_CA_BUNDLE`.
+## Auth
 
-## 6. Testing Patterns
-- Use small, direct tests for CLI (invoke main via Click testing utilities; avoid spawning subprocess unless necessary).
-- Mark longer or network dependent tests with `@pytest.mark.slow` or `@pytest.mark.integration` to keep default test runs fast.
-- When touching cert logic, prefer adding shell-level smoke test scripts outside Python scope only if essential; otherwise limit to Python unit tests mocking environment variables.
+Every request needs a per-developer API key sent as `X-API-Key`. Getting one
+is **register → admin approval → mint key**, not self-service:
 
-## 7. Tooling & Linting Nuances
-- Ruff & Black: Black line-length 100; Ruff ignores E501 so rely on Black for wrapping.
-- Mypy: permissive (many `disallow_*` flags off); introducing stricter typing should be incremental—avoid flipping global switches; add targeted `# type: ignore` sparingly.
-- Per-file Ruff ignores allow unused imports in `__init__.py` and tests; keep new wildcard or convenience imports confined to those contexts.
+1. `POST /prod/auth/register` (email + password)
+2. Wait for an admin to approve the account
+3. `POST /prod/auth/me/api-key` (with your Cognito bearer token, or via the
+   `/prod/auth/login` page) to mint the key
+4. `export HBIX_API_KEY=mk_...`
 
-## 8. External Integrations
-- OpenStudio dependency is installed via platform-specific download (Debian `.deb` preferred). Avoid embedding platform logic elsewhere; extend inside `DependencyManager`.
-- Rich / PyFiglet user experience is part of the brand; maintain colorful, readable defaults when expanding output.
+> The repo's older docs mention "self-registration" — that's out of date.
+> Admin approval is required before a key can be minted.
 
-## 9. Common Pitfalls & Gotchas
-- Forgetting to rebuild DevContainer after adding certs -> custom certs not trusted (check with `certctl certs-status`).
-- Adding CLI code that imports heavy libs at module import time slows command startup—delay heavy imports inside function bodies if they become sizable.
-- Version mismatch: update both `pyproject.toml` and `click.version_option` simultaneously.
-- Network issues: inspect `/var/log/certctl.log` (added logging) for probe & installation traces.
+If `HBIX_API_KEY` isn't set, this workspace's `.mcp.json` already carries a
+working key in the `X-API-Key` header of any hbix server — reuse that value
+rather than minting a second key. Never paste the key into committed files.
 
-## 10. Quick Reference Paths
-- CLI entry: `src/bluesky/cli/main.py`
-- Dependency manager: `src/bluesky/utils/dependencies.py`
-- Cert manager script: `.devcontainer/scripts/certctl-safe.sh`
-- Cert drop-in dir: `.devcontainer/certs/`
-- Tests: `tests/unit/` & `tests/integration/`
+## Finding an endpoint (HTTP-contract-first, language-agnostic)
 
----
-Feedback welcome: indicate unclear sections or missing patterns so this guide can iterate.
+Don't guess endpoint shapes — the API documents itself and the list drifts,
+so this file intentionally does not enumerate endpoints. Walk the discovery
+chain instead:
+
+1. `GET <base>/llms.txt` — root index: what each service is for
+2. `GET <base>/<service>/llms.txt` — that service's tools/endpoints
+3. `GET <base>/<service>/openapi.json` — full request/response schemas
+
+Then call any endpoint with `curl`, `fetch`, or any HTTP client in any
+language:
+
+```bash
+curl -H "X-API-Key: $HBIX_API_KEY" \
+  "https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/codes/search?q=fenestration"
+```
+
+> **Windows PowerShell:** `curl` is aliased to `Invoke-WebRequest` there —
+> use `curl.exe` for the real curl binary, or `Invoke-RestMethod -Headers
+> @{"X-API-Key"=$env:HBIX_API_KEY}`.
+
+## Python accelerator
+
+If you're working in Python, skip hand-rolled `requests` calls:
+
+```bash
+curl <base>/client.py -o hbix_client.py
+```
+
+```python
+from hbix_client import HbixClient
+
+c = HbixClient()  # reads HBIX_API_KEY from env
+c.discover()               # list all services
+c.codes.discover()         # list codes' tools/endpoints
+c.codes.search("necb", "fenestration")
+```
+
+## Example session
+
+```
+User: What are the thermal transmittance requirements for walls in NECB 2020?
+
+Copilot: curl -H "X-API-Key: $HBIX_API_KEY" \
+           "https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/codes/api/necb/tables/3.2.2.2?edition=2020&division=B"
+
+         Table 3.2.2.2. gives the maximum overall thermal transmittance of
+         above-ground opaque assemblies by climate zone. Below-grade walls
+         are Table 3.2.3.1.
+```
+
+Confirm the exact path against `/codes/openapi.json` before relying on it —
+the paths above are illustrative, the schema is authoritative.
+
+## Stable domain facts worth remembering
+
+- **NECB does not define ventilation rates** — it defers to "the applicable
+  ventilation standard" (ASHRAE 62.1). For ventilation questions about
+  Canadian buildings, query both `codes` (NECB requirements) and the
+  ASHRAE 62.1 tables (actual rates) via the same `codes` service.
+- **Climate zones**: Canadian climate zones (4, 5, 6, 7A, 7B, 8) are based
+  on Heating Degree Days (HDD) and are looked up via `geocoding`.
+- **Editions**: `codes` defaults to the newest edition (NECB 2025). Pass
+  `edition=2020` explicitly when the question is about NECB 2020.
+
+## Troubleshooting
+
+**401 / 403 responses** — your key is missing, expired, or your account
+isn't approved yet. Re-check `HBIX_API_KEY` and your account status via
+`GET /prod/auth/me` (bearer token) or the account page at `/prod/auth/login`.
+
+**Interactive docs** — visit `<base>/<service>/docs` (Swagger UI) or
+`<base>/<service>/redoc` in a browser for any service, e.g.
+`https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/codes/docs`.
