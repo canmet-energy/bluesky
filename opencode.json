@@ -1,0 +1,211 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "provider": {
+        "openwebui": {
+            "npm": "@ai-sdk/openai-compatible",
+            "name": "Open WebUI (Ollama)",
+            "options": {
+                "baseURL": "http://wz-bcc-201447.nrn.nrcan.gc.ca:3000/api",
+                "apiKey": "{env:OPENWEBUI_API_KEY}"
+            },
+            "models": {
+                "north-mini": {
+                    "id": "hf.co/unsloth/North-Mini-Code-1.0-GGUF:UD-Q4_K_M",
+                    "name": "Cohere North-Mini-Code",
+                    "attachment": true,
+                    "reasoning": true
+                },
+                "command-r": {
+                    "id": "command-r:35b",
+                    "name": "Command-R 35B",
+                    "attachment": true,
+                    "reasoning": true
+                },
+                "qwen3-coder": {
+                    "id": "qwen3-coder:30b",
+                    "name": "Qwen3 Coder 30B",
+                    "attachment": true,
+                    "reasoning": true
+                },
+                "llama3.3": {
+                    "id": "llama3.3:70b",
+                    "name": "Llama 3.3 70B",
+                    "attachment": true,
+                    "reasoning": true
+                }
+            }
+        },
+        "vllm": {
+            "npm": "@ai-sdk/openai-compatible",
+            "name": "vLLM (host)",
+            "options": {
+                "baseURL": "http://host.docker.internal:8001/v1"
+            },
+            "models": {
+                "qwen3-coder": {
+                    "id": "qwen3-coder",
+                    "name": "Qwen3 Coder 30B",
+                    "attachment": true,
+                    "reasoning": true
+                }
+            }
+        },
+        "anthropic": {
+            "npm": "@ai-sdk/anthropic",
+            "name": "Anthropic (Claude)",
+            "options": {
+                "apiKey": "{env:ANTHROPIC_API_KEY}"
+            },
+            "models": {
+                "claude-opus-4-8": {
+                    "id": "claude-opus-4-8",
+                    "name": "Claude Opus 4.8",
+                    "attachment": true,
+                    "reasoning": true
+                }
+            }
+        }
+    },
+    "model": "openwebui/north-mini",
+    "mcp": {
+        "codes": {
+            "type": "remote",
+            "url": "https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/codes/mcp",
+            "headers": {
+                "X-API-Key": "{env:HBIX_API_KEY}"
+            }
+        },
+        "geocoding": {
+            "type": "remote",
+            "url": "https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/geocoding/mcp",
+            "headers": {
+                "X-API-Key": "{env:HBIX_API_KEY}"
+            }
+        },
+        "weather": {
+            "type": "remote",
+            "url": "https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/weather/mcp",
+            "headers": {
+                "X-API-Key": "{env:HBIX_API_KEY}"
+            }
+        },
+        "building-stock": {
+            "type": "remote",
+            "url": "https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/building-stock/mcp",
+            "headers": {
+                "X-API-Key": "{env:HBIX_API_KEY}"
+            }
+        },
+        "simulation": {
+            "type": "remote",
+            "url": "https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/simulation/mcp",
+            "headers": {
+                "X-API-Key": "{env:HBIX_API_KEY}"
+            }
+        },
+        "modelling": {
+            "type": "remote",
+            "url": "https://3ucoopudrb.execute-api.ca-central-1.amazonaws.com/prod/modelling/mcp",
+            "headers": {
+                "X-API-Key": "{env:HBIX_API_KEY}"
+            }
+        },
+        "aws_br": {
+            "type": "local",
+            "command": [
+                "uv",
+                "tool",
+                "run",
+                "--from",
+                "awslabs-amazon-bedrock-agentcore-mcp-server",
+                "awslabs.amazon-bedrock-agentcore-mcp-server"
+            ],
+            "env": {
+                "FASTMCP_LOG_LEVEL": "ERROR"
+            },
+            "enabled": true
+        },
+        "aws_kb": {
+            "type": "local",
+            "command": [
+                "uv",
+                "tool",
+                "run",
+                "fastmcp",
+                "run",
+                "https://knowledge-mcp.global.api.aws"
+            ],
+            "enabled": true
+        },
+        "aws_ecs": {
+            "type": "local",
+            "command": [
+                "uv",
+                "tool",
+                "run",
+                "--from",
+                "awslabs-ecs-mcp-server",
+                "ecs-mcp-server"
+            ],
+            "env": {
+                "FASTMCP_LOG_LEVEL": "ERROR"
+            },
+            "enabled": true
+        },
+        "aws_iac": {
+            "type": "local",
+            "command": [
+                "uv",
+                "tool",
+                "run",
+                "--from",
+                "awslabs-aws-iac-mcp-server",
+                "awslabs.aws-iac-mcp-server"
+            ],
+            "env": {
+                "FASTMCP_LOG_LEVEL": "ERROR"
+            },
+            "enabled": true
+        },
+        "aws_sl": {
+            "type": "local",
+            "command": [
+                "uv",
+                "tool",
+                "run",
+                "--from",
+                "awslabs-aws-serverless-mcp-server",
+                "awslabs.aws-serverless-mcp-server"
+            ],
+            "env": {
+                "FASTMCP_LOG_LEVEL": "ERROR"
+            },
+            "enabled": true
+        },
+        "aws-api-mcp-server": {
+            "type": "local",
+            "command": [
+                "uv",
+                "tool",
+                "run",
+                "awslabs.aws-api-mcp-server@latest"
+            ],
+            "env": {
+                "AWS_REGION": "ca-central-1"
+            },
+            "enabled": true
+        },
+        "aws-knowledge-mcp-server": {
+            "type": "local",
+            "command": [
+                "uv",
+                "tool",
+                "run",
+                "fastmcp",
+                "run",
+                "https://knowledge-mcp.global.api.aws"
+            ],
+            "enabled": true
+        }
+    }
+}
