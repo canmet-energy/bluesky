@@ -117,3 +117,6 @@ config/config.test.ini
 !config/templates/
 !config/defaults/
 !config/**/*.template.ini
+
+# Generated analysis artifacts (plots, geojson, csv, query results)
+outputs/
